@@ -21,111 +21,58 @@ M.~Caron, H.~Touvron, I.~Misra, H.~J{\'e}gou, J.~Mairal, P.~Bojanowski, and
   {\em Proceedings of the IEEE/CVF international conference on computer
   vision}, pp.~9650--9660, 2021.
 
-\bibitem{radford2021learning}
-A.~Radford, J.~W. Kim, C.~Hallacy, A.~Ramesh, G.~Goh, S.~Agarwal, G.~Sastry,
-  A.~Askell, P.~Mishkin, J.~Clark, {\em et~al.}, ``Learning transferable visual
-  models from natural language supervision,'' in {\em International conference
-  on machine learning}, pp.~8748--8763, PMLR, 2021.
+\bibitem{wang2022tokencut}
+Y.~Wang, X.~Shen, Y.~Yuan, Y.~Du, M.~Li, S.~X. Hu, J.~L. Crowley, and
+  D.~Vaufreydaz, ``Tokencut: Segmenting objects in images and videos with
+  self-supervised transformer and normalized cut,'' {\em arXiv preprint
+  arXiv:2209.00383}, 2022.
 
-\bibitem{liu2021swin}
-Z.~Liu, Y.~Lin, Y.~Cao, H.~Hu, Y.~Wei, Z.~Zhang, S.~Lin, and B.~Guo, ``Swin
-  transformer: Hierarchical vision transformer using shifted windows,'' in {\em
-  Proceedings of the IEEE/CVF international conference on computer vision},
-  pp.~10012--10022, 2021.
+\bibitem{chen2020simple}
+T.~Chen, S.~Kornblith, M.~Norouzi, and G.~Hinton, ``A simple framework for
+  contrastive learning of visual representations,'' 2020.
 
-\bibitem{long2015fully}
-J.~Long, E.~Shelhamer, and T.~Darrell, ``Fully convolutional networks for
-  semantic segmentation,'' in {\em Proceedings of the IEEE conference on
-  computer vision and pattern recognition}, pp.~3431--3440, 2015.
+\bibitem{he2020momentum}
+K.~He, H.~Fan, Y.~Wu, S.~Xie, and R.~Girshick, ``Momentum contrast for
+  unsupervised visual representation learning,'' 2020.
 
-\bibitem{zhao2017pyramid}
-H.~Zhao, J.~Shi, X.~Qi, X.~Wang, and J.~Jia, ``Pyramid scene parsing network,''
-  in {\em Proceedings of the IEEE conference on computer vision and pattern
-  recognition}, pp.~2881--2890, 2017.
+\bibitem{asano2020selflabelling}
+Y.~M. Asano, C.~Rupprecht, and A.~Vedaldi, ``Self-labelling via simultaneous
+  clustering and representation learning,'' 2020.
 
-\bibitem{chen2017rethinking}
-L.-C. Chen, G.~Papandreou, F.~Schroff, and H.~Adam, ``Rethinking atrous
-  convolution for semantic image segmentation,'' in {\em Proceedings of the
-  IEEE conference on computer vision and pattern recognition}, 2017.
+\bibitem{caron2021unsupervised}
+M.~Caron, I.~Misra, J.~Mairal, P.~Goyal, P.~Bojanowski, and A.~Joulin,
+  ``Unsupervised learning of visual features by contrasting cluster
+  assignments,'' 2021.
 
-\bibitem{fu2019dual}
-J.~Fu, J.~Liu, H.~Tian, Y.~Li, Y.~Bao, Z.~Fang, and H.~Lu, ``Dual attention
-  network for scene segmentation,'' in {\em Proceedings of the IEEE conference
-  on computer vision and pattern recognition}, 2019.
+\bibitem{grill2020bootstrap}
+J.-B. Grill, F.~Strub, F.~Altché, C.~Tallec, P.~H. Richemond, E.~Buchatskaya,
+  C.~Doersch, B.~A. Pires, Z.~D. Guo, M.~G. Azar, B.~Piot, K.~Kavukcuoglu,
+  R.~Munos, and M.~Valko, ``Bootstrap your own latent: A new approach to
+  self-supervised learning,'' 2020.
 
-\bibitem{yuan2018ocnet}
-Y.~Yuan and J.~Wang, ``Ocnet: Object context network for scene parsing,'' in
-  {\em Proceedings of the IEEE Conference on Computer Vision and Pattern
-  Recognition}, 2018.
+\bibitem{engstler2023understanding}
+P.~Engstler, L.~Melas-Kyriazi, C.~Rupprecht, and I.~Laina, ``Understanding
+  self-supervised features for learning unsupervised instance segmentation,''
+  2023.
 
-\bibitem{huang2019ccnet}
-Z.~Huang, X.~Wang, L.~Huang, C.~Huang, Y.~Wei, and W.~Liu, ``Ccnet: Criss-cross
-  attention for semantic segmentation,'' in {\em Proceedings of the IEEE
-  International Conference on Computer Vision}, 2019.
+\bibitem{simeoni2021localizing}
+O.~Siméoni, G.~Puy, H.~V. Vo, S.~Roburin, S.~Gidaris, A.~Bursuc, P.~Pérez,
+  R.~Marlet, and J.~Ponce, ``Localizing objects with self-supervised
+  transformers and no labels,'' 2021.
 
-\bibitem{zheng2021rethinking}
-S.~Zheng, J.~Lu, H.~Zhao, X.~Zhu, Z.~Luo, Y.~Wang, Y.~Fu, and J.~Feng,
-  ``Rethinking semantic segmentation from a sequence-to-sequence perspective
-  with transformers,'' in {\em Proceedings of the IEEE/CVF Conference on
-  Computer Vision and Pattern Recognition}, 2021.
+\bibitem{wang2022freesolo}
+X.~Wang, Z.~Yu, S.~D. Mello, J.~Kautz, A.~Anandkumar, C.~Shen, and J.~M.
+  Alvarez, ``Freesolo: Learning to segment objects without annotations,'' 2022.
 
-\bibitem{strudel2021segmenter}
-R.~Strudel, R.~Garcia, I.~Laptev, and C.~Schmid, ``Segmenter: Transformer for
-  semantic segmentation,'' in {\em Proceedings of the IEEE/CVF international
-  conference on computer vision}, pp.~7262--7272, 2021.
+\bibitem{Ishtiak_2023_CVPR}
+T.~Ishtiak, Q.~En, and Y.~Guo, ``Exemplar-freesolo: Enhancing unsupervised
+  instance segmentation with exemplars,'' in {\em Proceedings of the IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pp.~15424--15433, June 2023.
 
-\bibitem{cheng2021per}
-B.~Cheng, A.~Schwing, and A.~Kirillov, ``Per-pixel classification is not all
-  you need for semantic segmentation,'' {\em Advances in Neural Information
-  Processing Systems}, vol.~34, pp.~17864--17875, 2021.
-
-\bibitem{uijlings2013selective}
-J.~R. Uijlings, K.~E. Van De~Sande, T.~Gevers, and A.~W. Smeulders, ``Selective
-  search for object recognition,'' {\em International journal of computer
-  vision}, vol.~104, pp.~154--171, 2013.
-
-\bibitem{jia2021scaling}
-C.~Jia, Y.~Yang, Y.~Xia, Y.-T. Chen, Z.~Parekh, H.~Pham, Q.~Le, Y.-H. Sung,
-  Z.~Li, and T.~Duerig, ``Scaling up visual and vision-language representation
-  learning with noisy text supervision,'' in {\em International conference on
-  machine learning}, pp.~4904--4916, PMLR, 2021.
-
-\bibitem{Li2022LanguagedrivenSS}
-B.~Li, K.~Q. Weinberger, S.~J. Belongie, V.~Koltun, and R.~Ranftl,
-  ``Language-driven semantic segmentation,'' {\em ArXiv}, vol.~abs/2201.03546,
-  2022.
-
-\bibitem{ghiasi2022scaling}
-G.~Ghiasi, X.~Gu, Y.~Cui, and T.-Y. Lin, ``Scaling open-vocabulary image
-  segmentation with image-level labels,'' in {\em European Conference on
-  Computer Vision}, pp.~540--557, Springer, 2022.
-
-\bibitem{zhou2022extract}
-C.~Zhou, C.~C. Loy, and B.~Dai, ``Extract free dense labels from clip,'' in
-  {\em European Conference on Computer Vision}, pp.~696--712, Springer, 2022.
-
-\bibitem{xu2022groupvit}
-J.~Xu, S.~De~Mello, S.~Liu, W.~Byeon, T.~Breuel, J.~Kautz, and X.~Wang,
-  ``Groupvit: Semantic segmentation emerges from text supervision,'' in {\em
-  Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
-  Recognition}, pp.~18134--18144, 2022.
-
-\bibitem{liang2023open}
-F.~Liang, B.~Wu, X.~Dai, K.~Li, Y.~Zhao, H.~Zhang, P.~Zhang, P.~Vajda, and
-  D.~Marculescu, ``Open-vocabulary semantic segmentation with mask-adapted
-  clip,'' in {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
-  Pattern Recognition}, pp.~7061--7070, 2023.
-
-\bibitem{luo2023segclip}
-H.~Luo, J.~Bao, Y.~Wu, X.~He, and T.~Li, ``Segclip: Patch aggregation with
-  learnable centers for open-vocabulary semantic segmentation,'' in {\em
-  International Conference on Machine Learning}, pp.~23033--23044, PMLR, 2023.
-
-\bibitem{mukhoti2023open}
-J.~Mukhoti, T.-Y. Lin, O.~Poursaeed, R.~Wang, A.~Shah, P.~H. Torr, and S.-N.
-  Lim, ``Open vocabulary semantic segmentation with patch aligned contrastive
-  learning,'' in {\em Proceedings of the IEEE/CVF Conference on Computer Vision
-  and Pattern Recognition}, pp.~19413--19423, 2023.
+\bibitem{vangansbeke2022discovering}
+W.~V. Gansbeke, S.~Vandenhende, and L.~V. Gool, ``Discovering object masks with
+  transformers for unsupervised semantic segmentation,'' 2022.
 
 \bibitem{hwang2019segsort}
 J.-J. Hwang, S.~X. Yu, J.~Shi, M.~D. Collins, T.-J. Yang, X.~Zhang, and L.-C.
@@ -144,12 +91,6 @@ J.~H. Cho, U.~Mall, K.~Bala, and B.~Hariharan, ``Picie: Unsupervised semantic
   segmentation using invariance and equivariance in clustering,'' in {\em
   Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
   Recognition}, pp.~16794--16804, 2021.
-
-\bibitem{wang2022tokencut}
-Y.~Wang, X.~Shen, Y.~Yuan, Y.~Du, M.~Li, S.~X. Hu, J.~L. Crowley, and
-  D.~Vaufreydaz, ``Tokencut: Segmenting objects in images and videos with
-  self-supervised transformer and normalized cut,'' {\em arXiv preprint
-  arXiv:2209.00383}, 2022.
 
 \bibitem{hamilton2022unsupervised}
 M.~Hamilton, Z.~Zhang, B.~Hariharan, N.~Snavely, and W.~T. Freeman,
@@ -210,6 +151,12 @@ S.~C. Zhu and D.~Mumford, ``Prior learning and gibbs reaction-diffusion,'' {\em
 E.~Loper and S.~Bird, ``Nltk: The natural language toolkit,'' {\em arXiv
   preprint cs/0205028}, 2002.
 
+\bibitem{radford2021learning}
+A.~Radford, J.~W. Kim, C.~Hallacy, A.~Ramesh, G.~Goh, S.~Agarwal, G.~Sastry,
+  A.~Askell, P.~Mishkin, J.~Clark, {\em et~al.}, ``Learning transferable visual
+  models from natural language supervision,'' in {\em International conference
+  on machine learning}, pp.~8748--8763, PMLR, 2021.
+
 \bibitem{jang2016categorical}
 E.~Jang, S.~Gu, and B.~Poole, ``Categorical reparameterization with
   gumbel-softmax,'' {\em arXiv preprint arXiv:1611.01144}, 2016.
@@ -229,6 +176,12 @@ I.~O. Tolstikhin, N.~Houlsby, A.~Kolesnikov, L.~Beyer, X.~Zhai, T.~Unterthiner,
   J.~Yung, A.~Steiner, D.~Keysers, J.~Uszkoreit, {\em et~al.}, ``Mlp-mixer: An
   all-mlp architecture for vision,'' {\em Advances in neural information
   processing systems}, vol.~34, pp.~24261--24272, 2021.
+
+\bibitem{jia2021scaling}
+C.~Jia, Y.~Yang, Y.~Xia, Y.-T. Chen, Z.~Parekh, H.~Pham, Q.~Le, Y.-H. Sung,
+  Z.~Li, and T.~Duerig, ``Scaling up visual and vision-language representation
+  learning with noisy text supervision,'' in {\em International conference on
+  machine learning}, pp.~4904--4916, PMLR, 2021.
 
 \bibitem{palepu2022tier}
 A.~Palepu and A.~L. Beam, ``Tier: Text-image entropy regularization for
@@ -283,6 +236,12 @@ J.~Xu, J.~Hou, Y.~Zhang, R.~Feng, Y.~Wang, Y.~Qiao, and W.~Xie, ``Learning
 \bibitem{cover1967nearest}
 T.~Cover and P.~Hart, ``Nearest neighbor pattern classification,'' {\em IEEE
   transactions on information theory}, vol.~13, no.~1, pp.~21--27, 1967.
+
+\bibitem{xu2022groupvit}
+J.~Xu, S.~De~Mello, S.~Liu, W.~Byeon, T.~Breuel, J.~Kautz, and X.~Wang,
+  ``Groupvit: Semantic segmentation emerges from text supervision,'' in {\em
+  Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pp.~18134--18144, 2022.
 
 \bibitem{van2008visualizing}
 L.~Van~der Maaten and G.~Hinton, ``Visualizing data using t-sne.,'' {\em

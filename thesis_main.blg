@@ -15,45 +15,46 @@ The style file: ieeetr.bst
 Database file #1: bib/topic1.bib
 Database file #2: bib/topic2.bib
 Warning--empty journal in wang2023cut
-You've used 57 entries,
+Warning--empty journal in engstler2023understanding
+You've used 50 entries,
             1876 wiz_defined-function locations,
-            767 strings with 14964 characters,
-and the built_in function-call counts, 17663 in all, are:
-= -- 1562
-> -- 967
+            726 strings with 13853 characters,
+and the built_in function-call counts, 13887 in all, are:
+= -- 1170
+> -- 866
 < -- 0
-+ -- 342
-- -- 285
-* -- 1326
-:= -- 2539
-add.period$ -- 57
-call.type$ -- 57
-change.case$ -- 57
++ -- 306
+- -- 256
+* -- 1062
+:= -- 2081
+add.period$ -- 50
+call.type$ -- 50
+change.case$ -- 50
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 906
-empty$ -- 1613
-format.name$ -- 285
-if$ -- 4184
+cite$ -- 52
+duplicate$ -- 651
+empty$ -- 1251
+format.name$ -- 256
+if$ -- 3251
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 57
-newline$ -- 174
-num.names$ -- 57
-pop$ -- 272
+int.to.str$ -- 50
+missing$ -- 42
+newline$ -- 153
+num.names$ -- 50
+pop$ -- 234
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 564
+skip$ -- 407
 stack$ -- 0
-substring$ -- 1170
-swap$ -- 350
+substring$ -- 766
+swap$ -- 234
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 148
-width$ -- 59
-write$ -- 515
-(There was 1 warning)
+warning$ -- 2
+while$ -- 110
+width$ -- 52
+write$ -- 434
+(There were 2 warnings)
