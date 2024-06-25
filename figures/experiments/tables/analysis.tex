@@ -1,0 +1,82 @@
+
+% \begin{table}[htbp]
+% \begin{center}
+%     \begin{tabular}{|c|c|c|}
+%         \hline
+%         Model &  Data & mIoU     \\ \hline
+%         \gvit & \pvoc & $52.29$  \\
+%         \gvit & \coco & $24.3$   \\
+%         \ovs  & \pvoc & $53.78$  \\
+%         \ovs  & \coco & $25.06$  \\
+%         \hline
+%     \end{tabular}
+%     \end{center}
+
+%     \caption[Table caption]{\textbf{Table caption.} foo bar...\\}
+%     \label{tab:accuracy}
+% \end{table}
+
+
+
+\begin{table}[htbp]
+  \centering
+  
+  \begin{tabular}{c|c|cl}
+    \toprule
+    Model & Type & \pvoc \\
+    \midrule
+    \gvit & Original & 52.29  \\
+    \midrule
+    \gvit & Visual Grouping  & 54.16  \\
+    \midrule
+    \gvit & Visual Grouping(WB)  & 56.12  \\
+    \midrule
+    \gvit & Visual-Text Alignment & \textbf{76.18}  \\
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{Analysis of Visual Grouping and Visual-Text Alignment}]{\textbf{Analysis of Individual Components.} Here, `Visual Grouping (WB)' refers to the evaluation performed without considering the `background' class.}
+  
+ \label{tab:analyssiresult}
+\end{table}
+
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|cl}
+    \toprule
+    Model & K & \pvoc \\
+    \midrule
+    Visual Grouping & 5 & 51.85 \\
+    \midrule
+    Visual Grouping & 10  & 54.26  \\
+    \midrule
+    Visual Grouping & 15 & 51.93  \\
+    \midrule
+    Visual Grouping & 25 & 49.66  \\
+    \bottomrule
+  \end{tabular}
+  \caption{\textbf{Ablation on number of nearest neighbors for Visual Grouping}}
+ \label{tab:ablationK}
+\end{table}
+
+
+% \documentclass{article}
+% \usepackage{booktabs}
+
+% \begin{document}
+
+% \begin{table}[htbp]
+%   \centering
+%   \caption{My Pretty Table}
+%   \begin{tabular}{ccc}
+%     \toprule
+%     Column 1 & Column 2 & Column 3 \\
+%     \midrule
+%     Row 1, Cell 1 & Row 1, Cell 2 & Row 1, Cell 3 \\
+%     Row 2, Cell 1 & Row 2, Cell 2 & Row 2, Cell 3 \\
+%     Row 3, Cell 1 & Row 3, Cell 2 & Row 3, Cell 3 \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+% \end{document}

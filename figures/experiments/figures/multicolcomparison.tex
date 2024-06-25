@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{multicol}
+
+\begin{document}
+
+\begin{figure}[tbh!]
+  \centering
+  \subfloat {\textbf{\footnotesize \ \ \ \ \  \ \ \ Image}}
+  \hfill
+  \subfloat {\textbf{\footnotesize Pretrained Model}}
+  \hfill
+  \subfloat {\textbf{\footnotesize Our Baseline}}
+  \hfill
+  \subfloat {\textbf{\footnotesize Ground-Truth}
+  
+  \vspace{-0.05em}}
+  
+  \begin{multicols}{8}
+  
+    {\includegraphics[width=0.12\textwidth]{figures/experiments/coco/image/0038.jpg}}
+    {\includegraphics[width=0.12\textwidth]{figures/experiments/coco/orgckpt/0038.png}}
+    {\includegraphics[width=0.12\textwidth]{figures/experiments/coco/nonnoisy/0038.png}}
+    {\includegraphics[width=0.12\textwidth]{figures/experiments/coco/gt/000000003553_instanceTrainIds.png}}
+    
+    {\includegraphics[width=0.12\textwidth]{figures/experiments/coco/image/0042.jpg}}
+    {\includegraphics[width=0.12\textwidth]{figures/experiments/coco/orgckpt/0042.png}}
+    {\includegraphics[width=0.12\textwidth]{figures/experiments/coco/nonnoisy/0042.png}}
+    {\includegraphics[width=0.12\textwidth]{figures/experiments/coco/gt/000000006954_instanceTrainIds.png}}
+    
+    {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/image/0068.jpg}}
+    {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/orgckpt/0068.png}}
+    {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/nonnoisy/0068.png}}
+    {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/gt/000000004134_instanceTrainIds.png}}
+    
+    {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/image/0072.jpg}}
+    {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/orgckpt/0072.png}}
+    {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/nonnoisy/0072.png}}
+    {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/gt/000000007281_instanceTrainIds.png}}
+    
+  \end{multicols}
+  
+  \caption[\textbf{Qualitative analysis on Classes with low IoU}]{\textbf{Qualitative analysis on Classes with low IoU}}
+\end{figure}
+
+\end{document}

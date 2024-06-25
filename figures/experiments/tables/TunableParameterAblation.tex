@@ -1,0 +1,150 @@
+
+%\begin{document}
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|c|l|l|l}
+    \toprule
+    \multirow{2}{*}{Model} & Fine-tuned & \multicolumn{4}{c}{Datasets} \\
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+    \cline{3-6}
+    & components & COCO & PVOC & PContext & ADE20K \\
+    \midrule
+    \gvit & Original & 24.3  & \textbf{52.29} & 22.39 &  \textbf{8.59}\\
+    \midrule
+    \gvit & Both GBs & \textbf{26.15}  & 49.18 & 21.87 & 7.50 \\
+    \midrule
+    \gvit & 2nd GB & 25.79 & 49.15 & 21.71 & 7.69 \\
+    \midrule
+    \gvit & Both GBs  & 25.62 & 49.22 & \textbf{22.41} & 8.49\\
+          & + Img Proj &  &  &  & \\
+    \midrule
+    \gvit & 2nd GB  & 25.79 & 50.90 & 22.33 & 8.25\\
+     &  + Img Proj &  &  &  & \\ 
+    \midrule
+    \gvit & Both GBs +  & 25.05 & 48.33 & 22.39 & 7.61\\
+    
+     &  Projs &  &  &  & \\
+    \midrule
+    \gvit & 2nd GB + Projs &  25.04 & 47.94 & 21.7 & 7.67\\
+    \midrule
+    \gvit & Img Proj & 24.48 & 50.32 & 22.36 & 8.27\\
+    % \midrule
+    % \gvit & VE &  & & & \\
+    \midrule
+    \gvit & Projs & 24.49 & 50.24 & 21.87 & 8.15\\
+    \bottomrule
+    
+  \end{tabular}
+  
+  \caption[\textbf{Choice of Architectural Components to Fine-tune}]{\textbf{Choice of Architectural Components to Fine-tune}. Here, `GBs' stands for Grouping Blocks, while `Img Proj' represents the Image Projector within the Visual Encoder. `Projs' refers to both the Text MLP Projector and the Image MLP Projector. `+' is used to represent a combination of components.}
+  
+\label{tab:ft}
+\end{table}
+
+
+%\end{document}
+
+% \begin{table}[t]
+%     \scriptsize
+%     \centering
+%     \caption{Assessment of Approaches}
+%     \label{tab:multi_shape}
+%     \setlength\tabcolsep{5.0pt}
+%     \begin{threeparttable}
+%         \begin{tabular}{c|c|c|c|c|c|c|c|c}
+%             \toprule
+%                 \multirow{2}{2.0cm}{GroupViT} &  \multirow{2}{.5cm}{\centering GB1} & \multirow{2}{.5cm}{\centering GB2} &\multirow{2}{.5cm}{\centering IP} 
+%                 &\multirow{2}{.5cm}{\centering TP} & \multicolumn{4}{c}{Datasets} \\
+%                 %\cmidrule(lr){1-2} \cmidrule(lr){3-4}        
+%                 \cline{6-9}
+%                 & &  &  & & COCO & PVOC & PContext & ADE20K \\
+
+%                 \midrule
+%                 %single shape + sum & 65 & 70 & 68 \\
+%                  Original & - & - & - & - & 24.3  & \textbf{52.29} & 22.39 &  \textbf{8.59} \\
+%                 \midrule
+%                  %Img Proj
+%                 \multirow{10}{*}{Fine-tuned} & - & - & - & \checkmark & 24.48 & 50.32 & 22.36 & 8.27 \\
+%                 \cmidrule{2-9}
+%                 %Text Proj
+%                  & - & - & \checkmark & \checkmark & 24.49 & 50.24 & 21.87 & 8.15 \\
+%                 \cmidrule{2-9}
+%                 %2ndGB
+%                  & - & \checkmark & - & - & 25.79 & 49.15 & 21.71 & 7.69  \\
+%                 \cmidrule{2-9}
+%                 %2ndGB + Img Proj
+%                  & - & \checkmark & \checkmark & - & 25.79 & 50.90 & 22.33 & 8.25 \\
+%                 \cmidrule{2-9}
+%                 %2ndGB + Img Proj + Text Proj
+%                 & - & \checkmark & \checkmark & \checkmark & 25.04 & 47.94 & 21.7 & 7.67 \\
+%                 \cmidrule{2-9}
+%                 %BothGBs
+%                  & \checkmark & \checkmark & - & - &  \textbf{26.15}  & 49.18 & 21.87 & 7.50 \\
+%                 \cmidrule{2-9}
+%                 %BothGBs +ImgProj
+%                  & \checkmark & \checkmark & \checkmark & - & 25.62 & 49.22 & \textbf{22.41} & 8.49 \\
+%                 \cmidrule{2-9}
+%                  %BothGBs +ImgProj + TextProj
+%                  & \checkmark & \checkmark & \checkmark & \checkmark & 25.05 & 48.33 & 22.39 & 7.61 \\
+                
+%                 \bottomrule
+%         \end{tabular}
+%     \footnotesize
+%     \vspace{.3em}
+%     \hspace{-.11\linewidth}
+
+%     \end{threeparttable}
+%     \vspace{-0.3cm}
+% \end{table}
+
+
+% \begin{table}[t]
+%     \scriptsize
+%     \centering
+%     \caption{}
+%     \label{tab:multi_shape}
+%     \setlength\tabcolsep{5.0pt}
+%     \begin{threeparttable}
+%         \begin{tabular}{c|c|c|c|c|c|c|c|c}
+%             \toprule
+%                 GroupViT &   GB1 & GB2 & IP & TP & COCO \\
+%                 %\cmidrule(lr){1-2} \cmidrule(lr){3-4}        
+
+
+%                 \midrule
+%                 %single shape + sum & 65 & 70 & 68 \\
+%                  Original & - & - & - & - & 24.3  & \textbf{52.29} & 22.39 &  \textbf{8.59} \\
+%                 \midrule
+%                  %Img Proj
+%                 \multirow{10}{*}{Fine-tuned} & - & - & - & \checkmark & 24.48 & 50.32 & 22.36 & 8.27 \\
+%                 \cmidrule{2-9}
+%                 %Text Proj
+%                  & - & - & \checkmark & \checkmark & 24.49 & 50.24 & 21.87 & 8.15 \\
+%                 \cmidrule{2-9}
+%                 %2ndGB
+%                  & - & \checkmark & - & - & 25.79 & 49.15 & 21.71 & 7.69  \\
+%                 \cmidrule{2-9}
+%                 %2ndGB + Img Proj
+%                  & - & \checkmark & \checkmark & - & 25.79 & 50.90 & 22.33 & 8.25 \\
+%                 \cmidrule{2-9}
+%                 %2ndGB + Img Proj + Text Proj
+%                 & - & \checkmark & \checkmark & \checkmark & 25.04 & 47.94 & 21.7 & 7.67 \\
+%                 \cmidrule{2-9}
+%                 %BothGBs
+%                  & \checkmark & \checkmark & - & - &  \textbf{26.15}  & 49.18 & 21.87 & 7.50 \\
+%                 \cmidrule{2-9}
+%                 %BothGBs +ImgProj
+%                  & \checkmark & \checkmark & \checkmark & - & 25.62 & 49.22 & \textbf{22.41} & 8.49 \\
+%                 \cmidrule{2-9}
+%                  %BothGBs +ImgProj + TextProj
+%                  & \checkmark & \checkmark & \checkmark & \checkmark & 25.05 & 48.33 & 22.39 & 7.61 \\
+                
+%                 \bottomrule
+%         \end{tabular}
+%     \footnotesize
+%     \vspace{.3em}
+%     \hspace{-.11\linewidth}
+
+%     \end{threeparttable}
+%     \vspace{-0.3cm}
+% \end{table}

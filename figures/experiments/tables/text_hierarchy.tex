@@ -1,0 +1,199 @@
+
+
+% \begin{table}[htbp]
+% \begin{center}
+%     \begin{tabular}{|c|c|c|}
+%         \hline
+%         Model &  Data & mIoU     \\ \hline
+%         \gvit & \pvoc & $52.29$  \\
+%         \gvit & \coco & $24.3$   \\
+%         \ovs  & \pvoc & $53.78$  \\
+%         \ovs  & \coco & $25.06$  \\
+%         \hline
+%     \end{tabular}
+%     \end{center}
+
+%     \caption[Table caption]{\textbf{Table caption.} foo bar...\\}
+%     \label{tab:accuracy}
+% \end{table}
+
+% \begin{table}[htbp]
+%   \centering
+%   \caption{GroupViT - Ablation on Text hierarchy}
+%   \begin{tabular}{cccc|l}
+%     \toprule
+%     Model & #labels & Text-Type & \multicolumn{2}{c}{Datasets} \\
+%     \cmidrule(lr){1-3} \cmidrule(lr){4-5}
+%     & &&\pvoc & \coco \\
+%     \midrule
+%     \gvit & 3 & Nouns+Caption & 49.65 & 26.32 \\
+%     \gvit & 3 & NounPhrases+Noun+Caption & 50.24 & 26.35 \\
+%     \gvit & 5 & NounPhrases+Noun+Caption & 50.16 & 26.5 \\
+%     \gvit & 0 & Caption &  & 26.35 \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+% \begin{table}[htbp]
+%   \centering
+%   \begin{tabular}{ccc|c|l}
+%     \toprule
+%     Model & \#labels & Text-Type & \multicolumn{2}{c}{Datasets} \\
+%     \cmidrule(lr){1-4} \cmidrule(lr){4-5}
+%     & & & COCO & VOC\\
+%     \midrule
+%     \gvit & 3 & Nouns+Caption  & 26.32 & 49.65\\
+%     \gvit & 3 & NP+Nouns+Caption & 26.35 & 50.24 \\
+%     \gvit & 5 & NP+Nouns+Caption & \textbf{$26.74 \pm 0.0462$} & \textbf{$49.80 \pm 0.0042$}\\
+%     \gvit & 7 & NP+Nouns+Caption  & 25.67 & 48.11 \\
+%     \gvit & 0 & Caption  & $26.61 \pm 0.0175$ & \textbf{$51.79 \pm 0.0769$} \\
+%     \bottomrule
+%   \end{tabular}
+%     \caption[\textbf{Exploring impact of Text hierarchy}]{\textbf{Exploring impact of Text hierarchy.}The model "NP+Nouns+Caption" extracts noun phrases and nouns for use in multi-label contrastive loss and captions for contrastive loss. While the model "Nouns+Caption" extracts just noun for use in multi-label contrastive loss. The model "Caption" is trained without multi-label contrastive loss  }
+    
+%   \label{tab:texthierarchy}
+% \end{table}
+% \begin{table}[htbp]
+%   \centering
+%   \begin{tabular}{c|c|c|c|llll}
+%     \toprule
+%     \multirow{2}{*}{Model} & \multirow{2}{*}{\#labels} &\multirow{2}{*}{Text-Type}& \multicolumn{2}{c}{Datasets} \\
+%     \cline{4-7}
+%       % \cmidrule(lr){4-5}
+%     & & & COCO & VOC & Context & ADE20K\\
+%     \midrule
+%     \gvit & 3 & Nouns+Caption  & 26.32 & 49.65 & 22.04 & 7.95\\
+%     \gvit & 3 & NP+Nouns+Caption & 26.35 & 50.24 & 22.09 & 8.17\\
+%     \gvit & 5 & NP+Nouns+Caption & \textbf{26.74 $\pm$ 0.0462} & 49.80 $\pm$ 0.0042 & 21.92 $\pm$ 0.0061 & \\
+%     \gvit & 7 & NP+Nouns+Caption  & 25.67 & 48.11 & 21.78 & 7.66 \\
+%     \gvit & 0 & Caption  & 26.61 $\pm$ 0.0175 & \textbf{51.79 $\pm$ 0.0769} & 21.83 $\pm$ 0.0049 & \\
+%     \bottomrule
+%   \end{tabular}
+%   \caption[\textbf{Exploring the Impact of Text Hierarchy}]{\textbf{Exploring the Impact of Text Hierarchy.} The model `NP+Nouns+Caption' extracts noun phrases and nouns for use in multi-label contrastive loss and captions for contrastive loss, while the model `Nouns+Caption' extracts only nouns for use in multi-label contrastive loss. The model `Caption' is trained without multi-label contrastive loss.}
+%   \label{tab:texthierarchy}
+% \end{table}
+% \begin{table}[htbp]
+%   \centering
+%   \begin{tabular}{c|c|c|c|llll}
+%     \toprule
+%     \multirow{2}{*}{Model} & \multirow{2}{*}{\#labels} &\multirow{2}{*}{Text-Type}& \multicolumn{2}{c}{Datasets} \\
+%     \cline{4-7}
+%       % \cmidrule(lr){4-5}
+%     & & & COCO & VOC & Context & ADE20K\\
+%     \midrule
+%     \gvit & 3 & Nouns+Caption  & 26.32 & 49.65 & 22.04 & 7.95\\
+%     \gvit & 3 & NP+Nouns+Caption & 26.35 & 50.24 & 22.09 & 8.17\\
+%     \gvit & 5 & NP+Nouns+Caption & \textbf{26.74 $\pm$ 0.0462} & 49.80 $\pm$ 0.0042 & 21.92 $\pm$ 0.0061 & \\
+%     \gvit & 7 & NP+Nouns+Caption  & 25.67 & 48.11 & 21.78 & 7.66 \\
+%     \gvit & 0 & Caption  & 26.61 $\pm$ 0.0175 & \textbf{51.79 $\pm$ 0.0769} & 21.83 $\pm$ 0.0049 & \\
+%     \bottomrule
+%   \end{tabular}
+%   \caption[\textbf{Exploring the Impact of Text Hierarchy}]{\textbf{Exploring the Impact of Text Hierarchy.} The model `NP+Nouns+Caption' extracts noun phrases and nouns for use in multi-label contrastive loss and captions for contrastive loss, while the model `Nouns+Caption' extracts only nouns for use in multi-label contrastive loss. The model `Caption' is trained without multi-label contrastive loss.}
+%   \label{tab:texthierarchy}
+% \end{table}
+
+
+\begin{table}[htbp]
+  \centering
+  \small % Reduce font size
+  \setlength{\tabcolsep}{3.5pt} % Reduce column padding
+  \begin{tabular}{c|c|c|c|c|c|c}
+    \toprule
+    \multirow{2}{*}{Model} & \multirow{2}{*}{\#labels} & \multirow{2}{*}{Type} & \multicolumn{4}{c}{Datasets} \\
+    \cline{4-7}
+    & & & COCO & PVOC & PContext & ADE20K\\
+    \midrule
+     \gvit(Original) & 3 & Nouns+caption &  24.3 & \textbf{52.29}  & \textbf{22.39} & \textbf{8.56}\\
+     \midrule
+    \multirow{2}{*}{\gvit} & \multirow{2}{*}{3} & Nouns & \multirow{2}{*}{26.32} & \multirow{2}{*}{49.65} & \multirow{2}{*}{22.04} & \multirow{2}{*}{7.95}\\
+    & & +Caption& & & & \\
+    \midrule
+    \multirow{2}{*}{\gvit} & \multirow{2}{*}{3} & NP+Nouns & \multirow{2}{*}{26.35} & \multirow{2}{*}{50.24} & \multirow{2}{*}{\textbf{22.09}} & \multirow{2}{*}{\textbf{8.17}}\\
+    & &+Caption & & & & \\
+    \midrule
+    \multirow{2}{*}{\gvit} & \multirow{2}{*}{5} & NP+Nouns & \textbf{26.74} & 49.80  & 21.92 & 7.42\\
+    
+    & & + Caption & \textbf{$\pm$ 0.0462} & $\pm$ 0.0042 & $\pm$ 0.0061 & $\pm$ 0.0022\\
+   \midrule
+    \multirow{2}{*}{\gvit} & \multirow{2}{*}{7} & NP+Nouns & \multirow{2}{*}{25.67} & \multirow{2}{*}{48.11} & \multirow{2}{*}{21.78} & \multirow{2}{*}{7.66} \\
+    & & +Caption & & & & \\
+   \midrule
+    \multirow{2}{*}{\gvit} & \multirow{2}{*}{0} & \multirow{2}{*}{Caption} & 26.61 & 51.79 & 21.83  & 7.45 \\
+    
+    & & & $\pm$ 0.0175 & $\pm$ 0.0769 & $\pm$ 0.0049 & $\pm$ 0.0104\\
+    
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{Exploring the Impact of Text Hierarchy}]{\textbf{Exploring the Impact of Text Hierarchy.} The model `NP+Nouns+Caption' extracts noun phrases and nouns for use in multi-label contrastive loss and captions for contrastive loss, while the model `Nouns+Caption' extracts only nouns for use in multi-label contrastive loss. The model `Caption' is trained without multi-label contrastive loss.}
+  \label{tab:texthierarchy}
+\end{table}
+
+
+
+% \begin{table}[t]
+%     \scriptsize
+%     \centering
+%     \caption{Assessment of Approaches}
+%     \label{tab:multi_shape}
+%     \setlength\tabcolsep{5.0pt}
+%     \begin{threeparttable}
+%         \begin{tabular}{c|c|c|c|c|c|c|c|c}
+%             \toprule
+%                 % \multirow{2}{2.0cm}{GroupViT} &  \multirow{2}{1.5cm}{\centering Nouns} &\multirow{2}{1.5cm}{\centering Noun Phrases}&\multirow{2}{1.5cm}{\centering Caption} & \multirow{2}{1.5cm}{\centering \#Extracted Texts} &\multicolumn{4}{c}{Datasets} \\
+%                 % %\cmidrule(lr){1-2} \cmidrule(lr){3-4}        
+%                 % \cline{6-9}
+%                 % & &  &  & & COCO & PVOC & PContext & ADE20K \\
+%                 %\toprule
+%                 GroupViT &  Noun & Noun Phrases & Caption & \#Extracted Texts & COCO \\
+%                 %\cmidrule(lr){1-2} \cmidrule(lr){3-4}        
+
+
+%                 \midrule
+%                 %single shape + sum & 65 & 70 & 68 \\
+%                  Original & \checkmark & - & \checkmark & 3 & 24.3  & \textbf{52.29} & \textbf{22.39} &  \textbf{8.59} \\
+%                 \midrule
+%                 \multirow{8}{*}{\centering Fine-tuned} & \checkmark & - & \checkmark& 3  & 26.32 & 49.65 & 22.04 & 7.95 \\
+%                 \cmidrule{2-9}
+%                 %GE
+%                  & \multirow{4}{*}{\checkmark} & \multirow{4}{*}{\checkmark}  & \multirow{4}{*}{\checkmark}  & 3 & 26.35 & 50.24 & 22.09 & 8.17 \\
+%                  %LE
+%                  \cmidrule{5-9}
+%                  &  &   & & 5 & \textbf{26.74} & 49.80  & 21.92 & 7.42\\
+    
+%     % & &  & &&\textbf{$\pm$ 0.0462} & $\pm$ 0.0042 & $\pm$ 0.0061 & $\pm$ 0.0022\\
+%                 %SE
+%                 \cmidrule{5-9}
+%                  &  &  &  & 7 & 25.67 & 48.11 & 21.78 & 7.66 \\
+%                 %\midrule
+%                 %GE+LE
+%                 \cmidrule{2-9}
+%                  & - & - & \checkmark & 0 & 26.61 & 51.79 & 21.83  & 7.45 \\
+%                % & & & && $\pm$ 0.0175 & $\pm$ 0.0769 & $\pm$ 0.0049 & $\pm$ 0.0104\\
+             
+%                 \bottomrule
+%         \end{tabular}
+%     \footnotesize
+%     \vspace{.3em}
+%     \hspace{-.11\linewidth}
+
+%     \end{threeparttable}
+%     \vspace{-0.3cm}
+% \end{table}
+
+% \begin{table}[htbp]
+%   \centering
+%   \caption{GroupViT - Impact of curated labels }
+%   \begin{tabular}{ccc|l}
+%     \toprule
+%     Model & Method & \multicolumn{2}{c}{Datasets} \\
+%     \cmidrule(lr){1-2} \cmidrule(lr){3-4}
+%     & &\coco & \pvoc \\
+%     \midrule
+%     \gvit & All entities & 25.76 \\
+%     \gvit & Entity\_freq$>=1K$ & 25.63 \\
+%     \gvit & Entity\_freq$>=5K$ & 24.83 \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+

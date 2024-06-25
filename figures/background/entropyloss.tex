@@ -1,0 +1,25 @@
+\begin{algorithm}
+    \caption{Entropy Regularization over Group Token}
+    \label{algo:entropyloss}
+    \begin{algorithmic}[1]
+        \Procedure{Entropy Loss}{segment\_token, group\_token}
+            \\
+            \State \textcolor{blue}{\# segment\_token: Segment token $(64, 384)$ after grouping block 1}
+            \State \textcolor{blue}{\# group\_token: Group token $(8, 384)$ for grouping block 2}
+            \\            
+            \State \textbf{Output:} $Entropy\_Loss$ 
+            \\
+            \State $soft\_attention\_map \gets$ cross\_attention(group\_token, segment\_token)
+            \\
+            \State $probabilistic\_distribution \gets$ 
+            Softmax($soft\_attention\_map$, dim=-1)
+            \\
+            \State $entropy \gets$ 
+            entropy($probabilistic\_distribution$)
+            \\
+            \State $entropy\_loss \gets$ 
+            mean($entropy$)
+            \State \textbf{return} $entropy\_loss$
+        \EndProcedure
+    \end{algorithmic}
+\end{algorithm}

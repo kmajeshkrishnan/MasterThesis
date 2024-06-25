@@ -1,0 +1,109 @@
+% \newcommand{\rulesep}{\unskip\ \vrule\ }
+
+
+\begin{figure}[p!]
+  \centering
+  \subfloat {\textbf{\small \ \ Image}}
+  \hspace{4em}
+  \subfloat {\textbf{\small \ \ \ Pretrained Model}}
+  \hspace{1.5em}
+  \subfloat {\textbf{\small Our Baseline}}
+  \hspace{1.5em}
+  \subfloat {\textbf{\small \ \ \ \ Ground-Truth}}
+  \vspace{-0.05em} % Add some vertical space between rows
+  \vspace{-0.05em}
+  
+
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/image/0024.jpg}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/orgckpt/0024.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/nonnoisy/0024.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/gt/000000002153_instanceTrainIds.png}}
+  
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/image/0042.jpg}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/orgckpt/0042.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/nonnoisy/0042.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/gt/000000004134_instanceTrainIds.png}}
+  % {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/image/0068.jpg}}
+  % {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/orgckpt/0068.png}}
+  % {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/nonnoisy/0068.png}}
+  % {\includegraphics[width=0.24\textwidth]{figures/experiments/coco/gt/000000006954_instanceTrainIds.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/image/0072.jpg}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/orgckpt/0072.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/nonnoisy/0072.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/gt/000000007281_instanceTrainIds.png}}
+  
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/image/0038.jpg}}
+  {\includegraphics[width=0.24\textwidth,height=1.8cm]{figures/experiments/coco/orgckpt/0038.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/nonnoisy/0038.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/gt/000000003553_instanceTrainIds.png}}
+
+  {\includegraphics[width=0.24\textwidth, height=2cm]{figures/experiments/coco/image/0080.jpg}}
+  {\includegraphics[width=0.24\textwidth, height=2cm]{figures/experiments/coco/orgckpt/0080.png}}
+  {\includegraphics[width=0.24\textwidth, height=2cm]{figures/experiments/coco/nonnoisy/0080.png}}
+  {\includegraphics[width=0.24\textwidth, height=2cm]{figures/experiments/coco/gt/000000007888_instanceTrainIds.png}}
+
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/image/0089.jpg}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/orgckpt/0089.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/nonnoisy/0089.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/gt/000000008762_instanceTrainIds.png}}
+  
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/image/0063.jpg}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/orgckpt/0063.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/nonnoisy/0063.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/gt/000000006723_instanceTrainIds.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/image/0059.jpg}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/orgckpt/0059.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/nonnoisy/0059.png}}
+  {\includegraphics[width=0.24\textwidth, height=1.8cm]{figures/experiments/coco/gt/000000006213_instanceTrainIds.png}}
+
+
+  \caption[\textbf{Qualitative analysis on COCO Classes with low IoU}]{\textbf{Qualitative analysis on COCO Classes with low IoU.} For the `person' class, we see mistakes like labeling it as `baseball bat' and `tie' in the first two rows. In the third and fourth row, the `person' is not classified. Moreover, in fourth row, the background is wrongly tagged as a `bench'. Despite correctly identifying `clock', it's being overmasked. Structures associated with `Traffic light' and `Sink' are also masked with the object in last two rows.}
+  \label{fig:cocobad}
+\end{figure}
+
+
+\begin{figure}[tbhp!]
+  \centering
+  \subfloat {\textbf{\small \ \ Image}}
+  \hspace{4em}
+  \subfloat {\textbf{\small \ \ \ Pretrained Model}}
+  \hspace{1.5em}
+  \subfloat {\textbf{\small Our Baseline}}
+  \hspace{1.5em}
+  \subfloat {\textbf{\small \ \ \ \ Ground-Truth}}
+  \vspace{-0.05em} % Add some vertical space between rows
+  \vspace{-0.05em}
+  
+  
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/image/0072.jpg}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/orgckpt/0072.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/nonnoisybaseline/0072.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/gt/2007_002378.png}}
+  
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/image/0075.jpg}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/orgckpt/0075.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/nonnoisybaseline/0075.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/gt/2007_002412.png}}
+  
+    {\includegraphics[width=0.24\textwidth, height=3cm]{figures/experiments/pascal/image/0042.jpg}}
+  {\includegraphics[width=0.24\textwidth, height=3cm]{figures/experiments/pascal/orgckpt/0042.png}}
+  {\includegraphics[width=0.24\textwidth, height=3cm]{figures/experiments/pascal/nonnoisybaseline/0042.png}}
+  {\includegraphics[width=0.24\textwidth, height=3cm]{figures/experiments/pascal/gt/2007_001408.png}}
+
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/image/0006.jpg}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/orgckpt/0006.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/nonnoisybaseline/0006.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/gt/2007_000039.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/image/0014.jpg}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/orgckpt/0014.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/nonnoisybaseline/0014.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/gt/2007_000559.png}}
+
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/image/0017.jpg}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/orgckpt/0017.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/nonnoisybaseline/0017.png}}
+  {\includegraphics[width=0.24\textwidth]{figures/experiments/pascal/gt/2007_000636.png}}
+
+  \caption[\textbf{Qualitative analysis on PASCAL VOC Classes with low IoU}]{\textbf{Qualitative analysis on PASCAL VOC  Classes with low IoU.} We observe that in the first row, `plant' refines the mask compared to the pretrained model, but in the second row, it mistakenly identifies a tree as `plant'. In the third row, the model struggles with precise classification of `person' and `bottle'. Finally, in the last row, we see the mask of `train' incorrectly incorporating its associated structure. }
+  \label{fig:pascalbad}
+\end{figure}

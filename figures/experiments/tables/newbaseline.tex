@@ -1,0 +1,128 @@
+% \begin{table}[htbp]
+% \begin{center}
+%     \begin{tabular}{|c|c|c|}
+%         \hline
+%         Model &  Data & mIoU     \\ \hline
+%         \gvit & \pvoc & $52.29$  \\
+%         \gvit & \coco & $24.3$   \\
+%         \ovs  & \pvoc & $53.78$  \\
+%         \ovs  & \coco & $25.06$  \\
+%         \hline
+%     \end{tabular}
+%     \end{center}
+
+%     \caption[Table caption]{\textbf{Table caption.} foo bar...\\}
+%     \label{tab:accuracy}
+% \end{table}
+
+
+
+
+% \begin{table}[htbp]
+%   \centering
+%   \caption{GroupViT vs OVSegmentator}
+%   \begin{tabular}{ccc|l|l|l}
+%     \toprule
+%     Model & Finetuned & \multicolumn{4}{c}{Datasets} \\
+%     %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+%     & components& VOC & COCO & ADE20K & Context\\
+%     \midrule
+%     \gvit(Original) &  & 52.29 & 24.3 \\
+%     \gvit & GB  & 50.16 & 26.26 \\
+%     \gvit & VE & 45.46 & 21.44 \\
+%     \gvit(NPE) & GB & 50.45 & 26.78 \\
+%     \ovs  & GB + MMD & 53.78 & 25.06 \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|c|l|l|l}
+    \toprule
+    \multirow{2}{*}{Model} & \multirow{2}{*}{Method} & \multicolumn{4}{c}{Datasets} \\
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+    \cline{3-6}
+    &  & COCO & PVOC & PContext & ADE20K \\
+     
+    \midrule
+    \gvit & Original & 24.3 & 52.29  & 22.39 & 8.56\\
+    \midrule
+    \gvit & Fine-tuning & 25.64  & 48.26 & 21.33 & \textbf{7.64}\\
+    %\gvit & VE& 45.46 & 21.44 \\
+    \midrule
+    \gvit & \textbf{Fine-tuning} & \textbf{26.2} & \textbf{49.37} & \textbf{21.88} & 7.61 \\
+      & \textbf{with refined extraction} &  &  && \\
+    %\ovs  & GB + MMD & 53.78 & 25.06 \\
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{Fine-tuning with Refined Extraction of Labels}]{\textbf{Fine-tuning with Refined Extraction of Labels.} We compare vanilla fine-tuning with the model trained with refined label extraction methodology. We also provide mIoU score of the pretrained model for reference.}
+  \label{tab:refinedextraction}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|c|l|l|l}
+    \toprule
+    \multirow{2}{*}{Model} & \multirow{2}{*}{Method} & \multicolumn{4}{c}{Datasets} \\
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+    \cline{3-6}
+    &  & COCO & PVOC & PContext & ADE20K \\
+     
+    \midrule
+    \multirow{4}{*}{\gvit} & {\color{gray}Original} & {\color{gray}24.3} & {\color{gray}52.29}  & {\color{gray}22.39} & {\color{gray}8.56}\\
+    \cmidrule{2-6}
+     & Fine-tuning & 25.64  & 48.26 & 21.33 & \textbf{7.64}\\
+    %\gvit & VE& 45.46 & 21.44 \\
+    \cmidrule{2-6}
+     & Fine-tuning & \textbf{26.2} & \textbf{49.37} & \textbf{21.88} & 7.61 \\
+      & with Refined Text Set &  &  && \\
+    %\ovs  & GB + MMD & 53.78 & 25.06 \\
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{Fine-tuning with Refined Extraction of Labels}]{\textbf{Fine-tuning with Refined Extraction of Labels.} We compare vanilla fine-tuning with the model trained with refined label extraction methodology. We also provide mIoU score of the pretrained model for reference.}
+  \label{tab:refinedextraction}
+\end{table}
+
+
+
+
+% \begin{table}[htbp]
+%   \centering
+%   \caption{GroupViT - Impact of curated labels }
+%   \begin{tabular}{ccc|l}
+%     \toprule
+%     Model & Method & \multicolumn{2}{c}{Datasets} \\
+%     \cmidrule(lr){1-2} \cmidrule(lr){3-4}
+%     & &\coco & \pvoc \\
+%     \midrule
+%     \gvit & All entities & 25.76 \\
+%     \gvit & Entity\_freq$>=1K$ & 25.63 \\
+%     \gvit & Entity\_freq$>=5K$ & 24.83 \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+
+% \documentclass{article}
+% \usepackage{booktabs}
+
+% \begin{document}
+
+% \begin{table}[htbp]
+%   \centering
+%   \caption{My Pretty Table}
+%   \begin{tabular}{ccc}
+%     \toprule
+%     Column 1 & Column 2 & Column 3 \\
+%     \midrule
+%     Row 1, Cell 1 & Row 1, Cell 2 & Row 1, Cell 3 \\
+%     Row 2, Cell 1 & Row 2, Cell 2 & Row 2, Cell 3 \\
+%     Row 3, Cell 1 & Row 3, Cell 2 & Row 3, Cell 3 \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+% \end{document}

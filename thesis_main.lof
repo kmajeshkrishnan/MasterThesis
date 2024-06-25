@@ -1,0 +1,36 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Comparison of maskcut and CutLer outputs}}}{2}{figure.caption.6}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2}{\ignorespaces \textbf {Architecture of Transformer Block}}}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {3}{\ignorespaces \textbf {DINO Architecture }}}{14}{figure.caption.12}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4}{\ignorespaces \textbf {GroupViT: Architecture and Training Pipeline}}}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {GroupViT: The Architecture of Grouping Block}}}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Comparison of keys of images of same and different classes}}}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Visualization of concepts learned by Group Tokens}}}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Visualization of multiple concepts learned by a Group Token}}}{25}{figure.caption.25}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {GroupViT: Inference Pipeline}}}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {GroupViT: Visualization of Attention Maps of Group Tokens}}}{31}{figure.caption.33}%
+\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {GroupViT: Visualization of Entropy Maps}}}{32}{figure.caption.34}%
+\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Training Pipeline for Entropy Regularization}}}{34}{figure.caption.35}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Visualization of Visual Grouping Vs Visual-Text Alignment}}}{42}{figure.caption.46}%
+\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Qualitative Analysis after Fine-tuning on Pascal VOC}}}{48}{figure.caption.54}%
+\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Visualization of Entropy Distribution}}}{50}{figure.caption.56}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \textbf {Visualization of Entropy Distribution over Labels}}}{51}{figure.caption.57}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \textbf {Qualitative Analysis on Pascal VOC for model trained with Entropy Regularization}}}{52}{figure.caption.59}%
+\contentsline {figure}{\numberline {18}{\ignorespaces \textbf {Qualitative analysis of the baseline across datasets}}}{54}{figure.caption.62}%
+\contentsline {figure}{\numberline {19}{\ignorespaces \textbf {IoU Disparity per Class Compared to Pretrained Model on Pascal VOC Dataset}\relax }}{56}{figure.caption.64}%
+\contentsline {figure}{\numberline {20}{\ignorespaces \textbf {IoU Disparity per Class Compared to Pretrained Model on COCO Dataset.}}}{57}{figure.caption.65}%
+\contentsline {figure}{\numberline {21}{\ignorespaces \textbf {Visualizations of Learned Representation Space }\relax }}{59}{figure.caption.66}%
+\contentsline {figure}{\numberline {22}{\ignorespaces \textbf {Qualitative analysis on COCO Classes with low IoU}}}{60}{figure.caption.67}%
+\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {Qualitative analysis on PASCAL VOC Classes with low IoU}}}{61}{figure.caption.68}%
+\contentsline {figure}{\numberline {24}{\ignorespaces \textbf {DINO vs GroupViT: Patch Feature Affinity Metric}}}{66}{figure.caption.70}%
+\contentsline {figure}{\numberline {25}{\ignorespaces \textbf {Validation curves of baselines}}}{69}{figure.caption.72}%
+\contentsline {figure}{\numberline {26}{\ignorespaces \textbf {Qualitative analysis on COCO}}}{70}{figure.caption.73}%
+\contentsline {figure}{\numberline {27}{\ignorespaces \textbf {Qualitative analysis on PASCAL}}}{71}{figure.caption.74}%
+\contentsline {figure}{\numberline {28}{\ignorespaces \textbf {Qualitative analysis on Pascal Context}}}{72}{figure.caption.75}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

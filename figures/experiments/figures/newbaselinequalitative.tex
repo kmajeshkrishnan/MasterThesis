@@ -1,0 +1,54 @@
+\newcommand{\incvisualsrow}[4]{
+\begin{subfigure}{\linewidth}\begin{adjustbox}{width=\textwidth}{\def\arraystretch{0.2}\setlength\tabcolsep{#1pt}\begin{tabular}{ccccc}
+\raisebox{1.2\normalbaselineskip}[0pt][0pt]{\rotatebox{90}{\tiny #2}} &
+\includegraphics[height=2cm]{figures/experiments/coco/image/#3.jpg} &
+\includegraphics[height=2cm]{figures/experiments/coco/orgckpt/#3.png} &
+\includegraphics[height=2cm]{figures/experiments/coco/nonnoisy/#3.png} &
+\includegraphics[height=2cm]{figures/experiments/coco/gt/#4.png} \\
+\end{tabular}}\end{adjustbox}\end{subfigure}}
+
+\newcommand{\incpascalvisualsrow}[4]{
+\begin{subfigure}{\linewidth}\begin{adjustbox}{width=\textwidth}{\def\arraystretch{0.2}\setlength\tabcolsep{#1pt}\begin{tabular}{ccccc}
+\raisebox{1.2\normalbaselineskip}[0pt][0pt]{\rotatebox{90}{\tiny #2}} &
+\includegraphics[height=2cm]{figures/experiments/pascal/image/#3.jpg} &
+\includegraphics[height=2cm]{figures/experiments/pascal/orgckpt/#3.png} &
+\includegraphics[height=2cm]{figures/experiments/pascal/nonnoisybaseline/#3.png} &
+\includegraphics[height=2cm]{figures/experiments/pascal/gt/#4.png} \\
+\end{tabular}}\end{adjustbox}\end{subfigure}}
+
+\newcommand{\inccontextvisualsrow}[4]{
+\begin{subfigure}{\linewidth}\begin{adjustbox}{width=\textwidth}{\def\arraystretch{0.2}\setlength\tabcolsep{#1pt}\begin{tabular}{ccccc}
+\raisebox{1.2\normalbaselineskip}[0pt][0pt]{\rotatebox{90}{\tiny #2}} &
+\includegraphics[height=2cm]{figures/experiments/context/image/#3.jpg} &
+\includegraphics[height=2cm]{figures/experiments/context/orgckpt/#3.png} &
+\includegraphics[height=2cm]{figures/experiments/context/nonnoisy/#3.png} &
+\includegraphics[height=2cm]{figures/experiments/context/gt/#4.png} \\
+\end{tabular}}\end{adjustbox}\end{subfigure}}
+
+\begin{figure}[thp]
+\centering
+  \vspace{-0.5em}
+ 
+  \subfloat {\textbf{\small \ \ Image}}
+  \hspace{4em}
+  \subfloat {\textbf{\small \ \ \ Pretrained Model}}
+  \hspace{1.5em}
+  \subfloat {\textbf{\small Our Baseline}}
+  \hspace{1.5em}
+  \subfloat {\textbf{\small \ \ \ \ Ground-Truth}}
+  \vspace{-0.02em} % Add some vertical space between rows
+  \vspace{-0.05em}
+\incvisualsrow{0.5}{\small \textbf{Coco}}{0013}{mask}
+\incpascalvisualsrow{0.5}{\small \textbf{Pascal}}{0059}{2007_001763}
+\inccontextvisualsrow{0.5}{\small \textbf{Context}}{0027}{2008_000084}
+\incvisualsrow{0.5}{\small \textbf{Coco}}
+{0021}{000000001993_instanceTrainIds}
+\incpascalvisualsrow{0.5}{\small \textbf{Pascal}}{0039}{2007_001311}
+\inccontextvisualsrow{0.5}{\textbf{Context}}{0018}{2008_000062}
+
+
+\caption[\textbf{Qualitative analysis of the baseline across datasets}]{\textbf{Qualitative analysis of the baseline across datasets}. We visualize segmentation maps obtained from PASCAL VOC, COCO and PASCAL Context for the model trained with noise-free contrastive loss as reported in Table \ref{tab:npe}.}
+\label{fig:qualitative_alldatabaseline}
+\end{figure}
+
+  

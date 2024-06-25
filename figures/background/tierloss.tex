@@ -1,0 +1,54 @@
+\begin{algorithm}
+    \caption{TIER Loss: Text Image Entropy Regularization}
+    \label{algo:entropyloss}
+    \begin{algorithmic}[1]
+        \Procedure{TIER Loss}{$\vec{Z}_{I}$, $\vec{Z}_{T}$, $\lambda_{\text{segment}}$, $\lambda_{\text{token}}$}
+            \\
+            \State \textcolor{blue}{\# $\vec{Z}_{I}$: Image embedding $(8, 256)$ projected in multimodal feature space}
+            \State \textcolor{blue}{\# $\vec{Z}_{T}$: Text embedding $(8, 256)$ projected in multimodal feature space}
+            \State \textcolor{blue}{\# $\lambda_{\text{segment}}$: Image penalty}
+            \State \textcolor{blue}{\# $\lambda_{\text{token}}$: Text Penalty}
+            \\            
+            \State \textbf{Output:} $TIER\_Loss$ 
+            \\
+
+            \State
+            \textcolor{blue}{\# Normalize the embeddings } 
+            \State $\vec{Z}_{I} \gets \text{l2\_normalize}(\vec{Z}_{I})$
+            
+            \State $\vec{Z}_{T} \gets \text{l2\_normalize}(\vec{Z}_{T})$
+            
+            \State
+            \textcolor{blue}{\# Compute patch-to-token similarity matrix }
+    
+            \State $\text{sim\_matrix} \gets \text{batch\_multiply}(\vec{Z}_{I}, \vec{Z}_{T})$
+            
+            \State\textcolor{blue}{\# Compute segment entropies}
+            \State $\text{patch\_entropies} \gets \text{entropy}(\text{softmax}(\text{sim\_matrix}, \text{axis}=2))$
+            %\Comment{Compute patch entropies}
+    
+            \State
+            \textcolor{blue}{\# Compute segment penalty}
+            \State $\text{patch\_penalty} \gets \lambda_{\text{segment}} \times \text{mean}(\text{patch\_entropies})$ %\Comment{Compute patch penalty}
+    
+            \State
+            \textcolor{blue}{\# Compute text token entropies}        
+            \State $\text{token\_entropies} \gets \text{entropy}(\text{softmax}(\text{sim\_matrix}, \text{axis}=1))$ %\Comment{Compute token entropies}
+    
+            \State
+            
+            \State
+            \textcolor{blue}{\# Compute text penalty}
+            \State $\text{token\_penalty} \gets \lambda_{\text{token}} \times \text{mean}(\text{token\_entropies})$ %\Comment{Compute token penalty}
+    
+            \State
+    
+            \State
+            \textcolor{blue}{\# Compute TIER Loss}
+            \State $\text{TIER\_loss} \gets \text{patch\_penalty} + \text{token\_penalty}$ %\Comment{Compute regularized loss}
+                
+    
+            \State \textbf{return} $TIER\_Loss$
+        \EndProcedure
+    \end{algorithmic}
+\end{algorithm}

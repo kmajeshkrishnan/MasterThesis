@@ -1,0 +1,31 @@
+\newcommand{\group}[7]{
+\begin{subfigure}{\linewidth}\begin{adjustbox}{width=\textwidth}{\def\arraystretch{0.2}\setlength\tabcolsep{#1pt}\begin{tabular}{ccccc}
+\raisebox{1.2\normalbaselineskip}[0pt][0pt]{\rotatebox{90}{\tiny #2}} &
+\includegraphics[height=2cm]{figures/#7/#3} &
+\includegraphics[height=2cm]{figures/#7/#4} &
+\includegraphics[height=2cm]{figures/#7/#5} &
+\includegraphics[height=2cm]{figures/#7/#6} \\
+\end{tabular}}\end{adjustbox}\end{subfigure}}
+
+\begin{figure}[thp]
+\centering
+\vspace{-0.5em}
+\group{0.5}{\textbf{Image}}{0050.jpg}{0008.jpg}{0023.jpg}{0024.jpg}{group0}
+
+\group{0.5}{\textbf{Group 0}}{0050attn_map0withouttitle.png}{0008attn_map0withouttitle.png}{0023attn_map0withouttitle.png}{0024attn_map0withouttitle.png}{group0}
+\group{0.5}{\tiny \textbf{Image}}{0004.jpg}
+{0007.jpg}
+{0031.jpg}
+{0009.jpg}
+{group5}
+\group{0.5}{\tiny \textbf{Group 5}}
+{0004attn_map5withouttitle.png}
+{0007attn_map5withouttitle.pdf}
+{0031attn_map5withouttitle.png}
+{0009attn_map5withouttitle.pdf}
+{group5}
+
+\caption[\textbf{Visualization of concepts learned by Group Tokens}]{\textbf{Visualization of concepts learned by Group Tokens in the final stage}. We visualize 
+ the concepts learned by Group 0 in top row and Group 5 in bottom row. Group 0 learns `horse', while Group 5 learns `person'.}
+\label{fig:conceptslearnedbygt}
+\end{figure}

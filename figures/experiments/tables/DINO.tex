@@ -1,0 +1,40 @@
+% \begin{table}[htbp]
+%   \centering
+
+%   \begin{tabular}{ccc}
+%     \toprule
+%     Model  & COCO \\
+%     \midrule
+%     GroupViT + DINO & 24.21 \\
+%     GroupViT & \textbf{26.78} \\
+%     \bottomrule
+%   \end{tabular}
+%   \caption[\textbf{GroupViT with DINO Features}]{\textbf{GroupViT with DINO Features}}
+%  \label{tab:DINO}
+% \end{table}
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|l|l|l}
+    \toprule
+    \multirow{2}{*}{Model}  & \multicolumn{4}{c}{Datasets} \\
+    \cline{2-5}
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+    &   COCO & PVOC & PContext & ADE20K \\
+    \midrule
+    GroupViT + DINO & 24.21 & 45.97& 20.26 & 7.14\\
+    \midrule
+    GroupViT & \textbf{25.96} & \textbf{48.67} & \textbf{21.64} & \textbf{7.60} \\
+    % \gvit & All entities & \textbf{25.76} & 49.20 & 21.87 & 7.50\\
+    % %\gvit & VE& 45.46 & 21.44 \\
+    % \midrule
+    
+    % \gvit &  Entity\_freq$>=1K$ & 25.25   & 48.70 & 21.72 & 6.95\\
+    % \midrule
+    
+    % \gvit &  Entity\_freq$>=5K$ & 23.86  & 46.87 & 21.19 & 6.63\\
+    %\ovs  & GB + MMD & 53.78 & 25.06 \\
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{GroupViT with DINO Features}]{\textbf{GroupViT with DINO Features}. Here, we report mIoU for GroupViT model trained with refined extraction as in Section \ref{sec:ftre} and model additionally employing DINO distillation loss. }
+ \label{tab:DINO}
+\end{table}

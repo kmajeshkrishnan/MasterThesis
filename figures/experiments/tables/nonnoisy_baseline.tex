@@ -1,0 +1,69 @@
+\begin{table}[htbp]
+  \centering
+  
+  \begin{tabular}{c|c|c|l|l|l}
+    \toprule
+    \multirow{2}{*}{Model} & \multirow{2}{*}{Method} & \multicolumn{4}{c}{Datasets} \\
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+        
+    \cline{3-6}
+    &  & COCO & PVOC & PContext & ADE20K \\
+
+    \midrule
+    %     \multirow{2}{*}{Model} & \multirow{2}{*}{\#labels} &\multirow{2}{*}{Text-Type}& \multicolumn{2}{c}{Datasets} \\
+    % \cline{4-4}
+    % \cline{5-5}
+    %   % \cmidrule(lr){4-5}
+    % & & & COCO & VOC\\
+    % %\gvit & VE& 45.46 & 21.44 \\
+    % \midrule
+    
+    \gvit & Original & 24.3  & 52.29 & 22.39 &  \textbf{8.59}\\
+    \midrule
+    \gvit & Fine-tuning &  26.81 &46.9 &  20.82 & 7.77\\
+    \midrule
+    \gvit & GE   & 27.86 & 53.38 & 22.25 & 7.66 \\
+    \midrule
+    \gvit & Non-noisy CL + GE &  \textbf{28.68}  & \textbf{53.41} & \textbf{23.34} & 7.96\\
+    %\ovs  & GB + MMD & 53.78 & 25.06 \\
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{Non-noisy Contrastive Loss}]{\textbf{Non-noisy Contrastive Loss.} Here, Fine-tuning is fine-tuning with refined extraction. GE denotes Group Entropy Regularization baseline. Non-noisy CL + GE denotes model trained with noise-free contrastive loss and Group Entropy Regularization. All the models are trained on the resolution of 384.}
+  
+\label{tab:npe}
+\end{table}
+
+% \begin{table}[t]
+%     \scriptsize
+%     \centering
+%     \caption{Assessment of Approaches}
+%     \label{tab:multi_shape}
+%     \setlength\tabcolsep{5.0pt}
+%     \begin{threeparttable}
+%         \begin{tabular}{c|c|c|c|c|c|c|c}
+%             \toprule
+%                 \multirow{2}{2.0cm}{GroupViT} &  \multirow{2}{1.5cm}{\centering Refined Text Set} &\multirow{2}{1.5cm}{\centering Group Entropy}&\multirow{2}{1.5cm}{\centering Non-noisy CL} &\multicolumn{4}{c}{Datasets} \\
+%                 %\cmidrule(lr){1-2} \cmidrule(lr){3-4}        
+%                 \cline{5-8}
+%                 & &  &   & COCO & PVOC & PContext & ADE20K \\
+
+%                 \midrule
+%                 %single shape + sum & 65 & 70 & 68 \\
+%                  Original & - & - & - &  24.3  & 52.29 & 22.39 &  \textbf{8.59} \\
+%                 \midrule
+%                 \multirow{4}{*}{Fine-tuned} & - & - & - & 25.64  & 48.26 & 21.33 & 7.64 \\
+%                  & \checkmark & - & - & 26.81 &46.9 &  20.82 & 7.77 \\
+%                 %\midrule
+%                   & \checkmark & \checkmark & - & 27.86 & 53.38 & 22.25 & 7.66\\
+%                 %\midrule
+%                 %both + goal + sum  & 65 & 75 & 70\\
+%                  & \checkmark & \checkmark & \checkmark & \textbf{28.68}  & \textbf{53.41} & \textbf{23.34} & 7.96\\
+%                 \bottomrule
+%         \end{tabular}
+%     \footnotesize
+%     \vspace{.3em}
+%     \hspace{-.11\linewidth}
+
+%     \end{threeparttable}
+%     \vspace{-0.3cm}
+% \end{table}

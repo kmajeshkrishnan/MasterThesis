@@ -1,0 +1,59 @@
+
+%\begin{document}
+\begin{table}[htbp]
+\label{tab:hp}
+  \centering
+  \begin{tabular}{c|c}
+    \toprule
+    \textbf{Hyperparameter} & \textbf{Value} \\
+    \midrule
+    Training Epochs & 30 \\
+    \midrule
+    Warmup Epochs & 0\\
+    \midrule
+    Batch Size & 4096 \\
+    \midrule
+    Learning rate(LR) scheduler &  Cosine\\
+    \midrule
+    Minimum LR & $4e^{-5}$ \\
+    \midrule
+    Warmup LR & $4e^{-6}$ \\
+    \midrule
+    Base LR & 0.0016\\
+    \midrule
+    Optimizer &  AdamW\\
+    \midrule
+    Weight decay & 0.05 \\
+    \midrule
+    Number of nouns to extract(K) & 3 \\
+    \midrule
+    Number of stages & 3 \\
+    \midrule
+    Number of transformer block on each stage & 6, 3, 3 \\
+    \midrule
+    Group tokens on every stage & 64, 8, 0\\
+    \midrule
+    Number of heads in transformer block & 6, 6, 6\\
+    \midrule
+    Vision Encoder embedding dimension & 384\\
+    \midrule
+    Number of Transformer blocks in Text encoder & 12\\
+    \midrule
+    Text Encoder embedding dimension & 256\\
+    \midrule
+    Context Length  & 77\\
+    \midrule
+    Vocabulary size  & 49408\\
+    \midrule
+    Multimodal space embedding dimension & 256\\
+    \midrule
+    Contrastive loss temperature  & 0.07\\
+    \bottomrule
+    
+  \end{tabular}
+  
+  \caption{GroupViT  Hyperparameters}
+\end{table}
+
+
+%\end{document}

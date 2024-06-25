@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\label{tab:VACL}
+  \centering
+  \begin{tabular}{ccc|l|l|l}
+    \toprule
+    Model & Method & \multicolumn{4}{c}{Datasets} \\
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+    &  & COCO & VOC & Context & ADE20K \\
+    \midrule
+    
+    %\gvit & VE& 45.46 & 21.44 \\
+    \midrule
+    
+    \gvit & Original & 24.3  & 52.29 & 22.39 &  \textbf{8.59}\\
+    \gvit & Baseline &  \textbf{28.68}  & \textbf{53.41} & \textbf{23.34} & 7.96\\
+    \gvit & VACL\_CL & 25 & 46.95 & 22.88 & 7.78 \\
+    \gvit & VACL\_CL\_MLCL  & 47.52 & 23.06 & 22.25 & 7.99 \\
+    %\ovs  & GB + MMD & 53.78 & 25.06 \\
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{GroupViT: Visual Text Aligned Loss}]{\textbf{GroupViT: Visual Text Aligned Loss.} Baseline refers to the model trained with noise-free contrastive loss with Group Entropy Regularization. VACL\_CL corresponds to the approach employing weighted image embeddings for contrastive loss. VACL\_CL\_MLCL represents the method using weighted image embeddings for contrastive loss, along with multi-label contrastive loss.}
+  % \caption[\textbf{GroupViT: Visual Text Aligned Loss}]{\textbf{GroupViT: Visual Text Aligned Loss.} Here, Baseline represents the model trained with noise-free contrastive loss with Group Entropy Regularization. VACL_CL represents the method that uses weighted image embedding for contrastive loss. VACL_CL_MLCL represents the method that uses weighted image mebediing fro contrastive loss as well as multi-label contrastive loss}
+\end{table}

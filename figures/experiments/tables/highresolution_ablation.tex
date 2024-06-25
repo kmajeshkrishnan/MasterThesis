@@ -1,0 +1,35 @@
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|c|c|l}
+    \toprule
+    % Model  & Inf Res & Bg Thresh & \multicolumn{2}{c}{Datasets} \\
+    % \cmidrule(lr){1-4} \cmidrule(lr){4-5}
+    % & & & COCO & VOC \\
+     \multirow{2}{*}{Model} & \multirow{2}{*}{Inference Res} &\multirow{2}{*}{Bg Threshold}& \multicolumn{2}{c}{Datasets} \\
+    \cline{4-4}
+    \cline{5-5}
+      % \cmidrule(lr){4-5}
+    & & & COCO & PVOC\\
+    \midrule
+    \gvit & 448  & 0.9 & 28.68 & 52.03 \\
+    \midrule
+    \gvit & 448 & 0.95 & 28.71 & 53.41 \\
+    \midrule
+    \gvit & 448  & 0.98 & 28.44 & 54.89 \\
+    \midrule
+    \gvit & 448  & 0.99 & 28.43 & 55.07 \\
+    \midrule
+    \gvit & 512  & 0.9 & 28.61 & 53.05 \\
+    \midrule
+    \gvit & 512  & 0.95 & \textbf{28.96} & 54.21 \\
+    \midrule
+    \gvit & 512  & 0.98 & 28.9 & 55.31 \\
+    \midrule
+    \gvit & 512  & 0.99 & 28.89 & \textbf{56.41} \\
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{Ablation on Inference Parameters}]{
+  \textbf{Ablation on Inference Parameters.} Here, `Inference Res' represents resolution of images set during inference and `Bg Threshold' represents Background Threshold.
+  }
+\label{tab:infhp}
+\end{table}

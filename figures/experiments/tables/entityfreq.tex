@@ -1,0 +1,40 @@
+% \begin{table}[htbp]
+%   \centering
+
+%   \begin{tabular}{ccc}
+%     \toprule
+%     Model & Method & COCO \\
+%     \midrule
+%     \gvit & All entities & 25.76 \\
+%     \gvit & Entity\_freq$>=1K$ & 25.25 \\
+%     \gvit & Entity\_freq$>=5K$ & 23.86 \\
+%     \bottomrule
+%   \end{tabular}
+%   \caption[\textbf{Impact of curated labels}]{\textbf{Impact of curated labels }}
+%  \label{tab:curatedlabels}
+% \end{table}
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|c|l|l|l}
+    \toprule
+    \multirow{2}{*}{Model} & \multirow{2}{*}{Method} & \multicolumn{4}{c}{Datasets} \\
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+    \cline{3-6}
+    &  & COCO & PVOC & PContext & ADE20K \\
+    \midrule
+    \gvit & All Entities & \textbf{25.76} & \textbf{49.20} & \textbf{21.87} & \textbf{7.50}\\
+    %\gvit & VE& 45.46 & 21.44 \\
+    \midrule
+    
+    \gvit &  Entity\_freq$>=1K$ & 25.25   & 48.70 & 21.72 & 6.95\\
+    \midrule
+    
+    \gvit &  Entity\_freq$>=5K$ & 23.86  & 46.87 & 21.19 & 6.63\\
+    %\ovs  & GB + MMD & 53.78 & 25.06 \\
+    \bottomrule
+  \end{tabular}
+   \caption[\textbf{Impact of Curated Labels}]
+   {\textbf{Impact of Curated Labels.} We assess the impact of curated labels by comparing the mIoU scores of three models: one trained with labels having frequencies over 1K in the COCO Caption dataset (`Entity\_freq$\geq1$K'), another with labels having frequencies over 5K (`Entity\_freq$\geq5$K'), and the vanilla model, which includes all entities.}
+   % {Here, we compare mIoU score of model trained with labels with high frequencies in the training dataset with the vanilla model. Model ` Entity\_freq$>=1K$' prioritise labels having frequency over 1K in the COCO Caption dataset while extracting labels from caption.  Model ` Entity\_freq$>=5K$' prioritise labels having frequency over 5K. Model 'All Entities' is the vanilla mdoel }
+ \label{tab:curatedlabels}
+\end{table}

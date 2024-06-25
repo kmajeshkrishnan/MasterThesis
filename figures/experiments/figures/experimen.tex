@@ -1,0 +1,50 @@
+\usepackage{mwe}
+\usepackage{caption}
+\usepackage[skip=0.5ex, belowskip=1ex]{subcaption}
+
+\usepackage{tikz}
+\usetikzlibrary{quotes,
+                tikzmark}
+
+
+\begin{figure}[htbp]
+     \centering
+     \setkeys{Gin}{width=0.95\linewidth}
+\tikzmarknode{A}{~\begin{subfigure}{0.32\textwidth} % observe ~ before subfigure
+     \includegraphics{example-image-empty}
+     \caption{caption 1ss}
+\end{subfigure}}
+\hfill
+\begin{subfigure}{0.32\textwidth}
+     \includegraphics{example-image-empty}
+     \caption{caption 1sg}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.32\textwidth}
+     \includegraphics{example-image-empty}
+     \caption{caption 1sd}
+\end{subfigure}
+
+ \medskip
+\tikzmarknode{B}{~\begin{subfigure}{0.32\textwidth}  % observe ~ before subfigure
+     \includegraphics{example-image-empty}
+     \caption{caption 1ts}
+ \end{subfigure}}
+\hfill
+ \begin{subfigure}{0.32\textwidth}
+     \includegraphics{example-image-empty}
+     \caption{caption 1tg}
+ \end{subfigure}
+\hfill
+ \begin{subfigure}{0.32\textwidth}
+     \includegraphics{example-image-empty}
+     \caption{caption 1td}
+\end{subfigure}
+\end{figure}
+
+%%%% drawing square bracket
+%%%% drawing a line
+\begin{tikzpicture}[overlay,remember picture]
+    \path[draw=purple, thick, text=purple, scale=1.2]
+         ([xshift=10mm] B.south west) -- (B.south west) -- ([yshift=1mm] A.north west) -- ++ (1,0);
+\end{tikzpicture}

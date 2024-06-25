@@ -1,0 +1,89 @@
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|c|l|l|l}
+    \toprule
+    \multirow{2}{*}{Model} & \multirow{2}{*}{Method} & \multicolumn{4}{c}{Datasets} \\
+    \cline{3-6}
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+    & & COCO & PVOC & PContext & ADE20K\\
+    \midrule
+    \gvit & Original & 24.3 & \textbf{52.29} & 22.39 & \textbf{8.56}\\
+    \midrule
+    \gvit & Fine-tuned(RE) & 26.2 & 49.37 & 21.88 & 7.61 \\
+    \midrule
+    \gvit & SE  & 26.61 & 48.78 & 21.61 & 7.54\\
+    \midrule
+    \gvit & LE  & \textbf{26.76} & 49.69 & 21.92 & 7.53 \\
+    \midrule
+    \gvit & GE   & 26.61 & 50.16 & 22.41 & 7.82 \\
+    \midrule
+    \gvit  & GE + SE  & 26.41 & 50.92 & 22.65 & 7.51\\
+    \midrule
+    \gvit  & LE + SE  & 26.61 & 49.77 & 21.8 & 7.32 \\
+    \midrule
+    \gvit  & GE + LE  & 26.66 & 51.41 & \textbf{22.67} & 7.67\\
+    \midrule
+    \gvit  & GE + LE + SE  & 26.61 & 50.67 & 22.47 & 7.72\\
+    \bottomrule
+  \end{tabular}
+   \caption[\textbf{Entropy Regularization}]{\textbf{Entropy Regularization}. Here, first row represents the original checkpoint. Fine-tuned(RE) refers to model fine-tuned with refined label extraction methodology. GE, SE and LE indicates models trained with penalty for entropy over groups, entropy over segment affinity metric,  and entropy over labels respectively. `+' between them indicates model is trained with more than one loss function.}
+   
+\label{tab:entropyreg}
+\end{table}
+
+% \begin{table}[t]
+%     \scriptsize
+%     \centering
+%     \caption{Assessment of Approaches}
+%     \label{tab:multi_shape}
+%     \setlength\tabcolsep{5.0pt}
+%     \begin{threeparttable}
+%         \begin{tabular}{c|c|c|c|c|c|c|c}
+%             \toprule
+%                 % \multirow{2}{2.0cm}{GroupViT} &  \multirow{2}{1.5cm}{\centering GE} &\multirow{2}{1.5cm}{\centering LE}&\multirow{2}{1.5cm}{\centering SE} &\multicolumn{4}{c}{Datasets} \\
+%                 % %\cmidrule(lr){1-2} \cmidrule(lr){3-4}        
+%                 % \cline{5-8}
+%                 % & &  &   & COCO & PVOC & PContext & ADE20K \\
+%                 GroupViT &  GE &  LE &  SE & COCO} \\
+%                 %\cmidrule(lr){1-2} \cmidrule(lr){3-4}        
+
+%                 \midrule
+%                 %single shape + sum & 65 & 70 & 68 \\
+%                  Original & - & - & - &  24.3  & \textbf{52.29} & 22.39 &  \textbf{8.59} \\
+%                 \midrule
+%                 \multirow{8}{*}{Fine-tuned (RTE)} & - & - & - & 26.2 & 49.37 & 21.88 & 7.61 \\
+%                 \cmidrule{2-8}
+%                 %GE
+%                  & \checkmark & - & - & 26.61 & 50.16 & 22.41 & 7.82 \\
+%                  %LE
+%                  \cmidrule{2-8}
+%                  & - & \checkmark  & - & \textbf{26.76} & 49.69 & 21.92 & 7.53 \\
+%                 %SE
+%                 \cmidrule{2-8}
+%                  & - & - & \checkmark  & 26.61 & 48.78 & 21.61 & 7.54 \\
+%                 %\midrule
+%                 %GE+LE
+%                 \cmidrule{2-8}
+%                   & \checkmark & \checkmark & - & 26.66 & 51.41 & \textbf{22.67} & 7.67\\
+%                 %GE+SE
+%                 \cmidrule{2-8}
+%                   & \checkmark & - & \checkmark & 26.41 & 50.92 & 22.65 & 7.51\\
+%                 %LE+SE
+%                 \cmidrule{2-8}
+%                   & - & \checkmark & \checkmark & 26.61 & 49.77 & 21.8 & 7.32\\
+%                 %\midrule
+%                 %both + goal + sum  & 65 & 75 & 70\\
+%                 %GE+LE+SE
+%                 \cmidrule{2-8}
+%                  & \checkmark & \checkmark & \checkmark & 26.61 & 50.67 & 22.47 & 7.72\\
+%                 \bottomrule
+%         \end{tabular}
+%     \footnotesize
+%     \vspace{.3em}
+%     \hspace{-.11\linewidth}
+
+%     \end{threeparttable}
+%     \vspace{-0.3cm}
+% \end{table}
+
+

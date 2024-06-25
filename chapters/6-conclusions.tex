@@ -1,0 +1,28 @@
+\chapter{Conclusion and Future Work}\label{chap:conclusion}
+
+GroupViT introduced a fresh perspective to semantic segmentation through a bottom-up approach. We closely examined GroupViT to grasp its two fundamental ideas: Grouping and Recognition. We then assessed each of these concepts individually to identify opportunities for improvement. We systematically pursued these enhancements to develop an efficient fine-tuning strategy.
+
+
+During our investigation, we thoroughly analyzed various aspects of training and refining the text extraction process. To enhance our approach, we further introduced entropy regularization techniques. When our model is trained on high-resolution images, these techniques not only improve mIoU on the training dataset but also have a positive impact on downstream dataset performance.
+
+In our pursuit of enhancing the model's performance further, we integrated a noise-free contrastive loss tailored for training on a cleaner, smaller dataset like MSCOCO. By following this recipe of fine-tuning, we witnessed an increase of  18\% mIoU on the COCO dataset, all while maintaining consistent performance on other datasets such as PASCAL VOC and PASCAL Context.
+
+Furthermore, we investigated the potential of utilizing GroupViT's grouping mechanism for grouping DINO features. In addition, we made progress in the direction of knowledge distillation from DINO to GroupViT by introducing a formulation, establishing a foundation for potential advancements in this area.
+
+In essence, our exploration of GroupViT has involved dissecting its components, refining its training process while maintaining its capabilities on downstream datasets, and delving into opportunities for knowledge distillation. This journey has not only revealed the intricacies of GroupViT but also pointed toward promising directions for future advancements.
+\section{Future Work}
+
+The future possibilities for advancing GroupViT's capabilities present an exciting journey. We provide a brief overview of these prospects here:
+
+\subsection{Integration of DINO Features: Synergizing Strengths}
+A promising direction for future exploration involves integrating DINO and GroupViT. This integration would involve developing a unified framework to compare deep-layer features extracted from DINO and segment features extracted from GroupViT within a shared context. Additionally, investigating the potential of knowledge distillation could unveil new opportunities for enhancing the model's visual grouping capabilities..
+
+\subsection{Enriching Negative Sample Pool for Noise-Free Contrastive Loss}
+While the advantages of noise-free contrastive loss are clear, we must address the challenge of a limited negative sample pool. An effective approach to overcome this challenge is the creation of an extensive memory bank for negative samples. By this, the model can benefit from noise-free contrastive loss while maintaining a diverse set of negative samples, potentially resulting in enhanced performance.
+
+\subsection{Exploring Hierarchical Grouping with Web-Scaled Data}
+The potential of hierarchical grouping at more advanced stages remains unexplored due to resource limitations in our study. Expanding this research to include web-scaled datasets could provide valuable insights into the impact of hierarchical grouping on advanced stages of GroupViT.
+
+\subsection{Training with Datasets Including Stuff Classes}
+While GroupViT performs well on datasets like Pascal VOC and MSCOCO, it encounters difficulties with more complex datasets such as Context and ADE20K. These challenges arise from the presence of stuff classes like `air', `water', and `sky', which are relatively underrepresented in human-annotated datasets like MSCOCO. To tackle this issue, future efforts could involve training GroupViT on datasets explicitly designed to include these stuff classes or specialized datasets created for this purpose. This approach has the potential to enhance GroupViT's adaptability to real-world scenarios and improve its performance across diverse scenes. 
+

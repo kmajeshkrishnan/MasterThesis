@@ -1,0 +1,40 @@
+% \begin{table}[htbp]
+%   \centering
+
+%   \begin{tabular}{ccc}
+%     \toprule
+%     Model & Batch Size & MSCOCO \\
+%     \midrule
+%     \gvit & 256 & \textbf{26.49} \\
+%     \gvit & 512 & 26.4 \\
+%     \gvit & 1024 & 26.16 \\
+%     \bottomrule
+%   \end{tabular}
+%   \caption[\textbf{Choice of Batch Size}]{\textbf{Choice of Batch Size }}
+%  \label{tab:batchsize}
+% \end{table}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|c|l|l|l}
+    \toprule
+     \multirow{2}{*}{Model} & \multirow{2}{*}{Batch Size} & \multicolumn{4}{c}{Datasets} \\
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+    \cline{3-6}
+    &  & COCO & PVOC & PContext & ADE20K \\
+    \midrule
+    \gvit & 256 & 25.96 & 48.67 & 21.64 & 7.60\\
+    %\gvit & VE& 45.46 & 21.44 \\
+    \midrule
+    
+    \gvit & 512 & \textbf{26.13}   & 49.29 & 21.63 & \textbf{7.92}\\
+    \midrule
+    
+    \gvit & 1024 & 25.92  & \textbf{49.73} & \textbf{21.71} & 7.57\\
+    %\ovs  & GB + MMD & 53.78 & 25.06 \\
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{Choice of Batch Size}]{\textbf{Choice of Batch Size }}
+  \label{tab:batchsize}
+\end{table}
+

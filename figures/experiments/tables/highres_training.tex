@@ -1,0 +1,33 @@
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|c|c|l|l|l}
+    \toprule
+    % Method & Training Res. & \multicolumn{4}{c}{Datasets} \\
+    % %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+    % &  & COCO & VOC & Context & ADE20K\\
+    % \midrule
+    \multirow{2}{*}{Method} & Training & \multicolumn{4}{c}{Datasets} \\
+    %\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+        
+    \cline{3-6}
+    & Resolution & COCO & PVOC & PContext & ADE20K \\
+
+    \midrule
+    Original & 224 & 24.3 & 52.29  & \textbf{22.39} & \textbf{8.56}\\
+    \midrule
+    Fine-tuned & 384  & 26.81 & 46.9 & 20.82 & 7.77\\
+    \midrule
+    %GE+LE &  384  & \textbf{28.13} & 53.29 & \textbf{22.4} & 7.66 \\
+    %GE+LE(50) & 384  & 53.38  & 28.25  & \textbf{22.45}  & 7.69 \\
+    SE  & 384  & 27.24 & 49.54 & 21.61 & 7.74 \\
+    \midrule
+    LE  & 384  & 27.25 & 49.46 & 21.87 & 7.74 \\
+    \midrule
+    GE  & 384  & \textbf{27.86} & \textbf{53.38}& 22.25 & 7.66 \\
+    %GE(50) & 384 & \textbf{53.49} & \textbf{28.3} & 22.33  & 7.77 \\
+    \bottomrule
+  \end{tabular}
+  \caption[\textbf{High Resolution Fine-tuning}]{\textbf{High Resolution Fine-tuning}. Here, Fine-tuned is the model trained with refined extraction. GE is the model trained with group entropy loss. LE is trained with label entropy loss. SE is the model trained with penalty for entropy over the `segment affinity metric'.}
+ \label{tab:highres}
+\end{table}
