@@ -74,28 +74,34 @@ T.~Ishtiak, Q.~En, and Y.~Guo, ``Exemplar-freesolo: Enhancing unsupervised
 W.~V. Gansbeke, S.~Vandenhende, and L.~V. Gool, ``Discovering object masks with
   transformers for unsupervised semantic segmentation,'' 2022.
 
-\bibitem{hwang2019segsort}
-J.-J. Hwang, S.~X. Yu, J.~Shi, M.~D. Collins, T.-J. Yang, X.~Zhang, and L.-C.
-  Chen, ``Segsort: Segmentation by discriminative sorting of segments,'' in
-  {\em Proceedings of the IEEE/CVF International Conference on Computer
-  Vision}, pp.~7334--7344, 2019.
-
-\bibitem{melas2022deep}
-L.~Melas-Kyriazi, C.~Rupprecht, I.~Laina, and A.~Vedaldi, ``Deep spectral
-  methods: A surprisingly strong baseline for unsupervised semantic
-  segmentation and localization,'' in {\em Proceedings of the IEEE/CVF
-  Conference on Computer Vision and Pattern Recognition}, pp.~8364--8375, 2022.
-
-\bibitem{cho2021picie}
-J.~H. Cho, U.~Mall, K.~Bala, and B.~Hariharan, ``Picie: Unsupervised semantic
-  segmentation using invariance and equivariance in clustering,'' in {\em
+\bibitem{Li_2022_CVPR}
+Y.-J. Li, X.~Dai, C.-Y. Ma, Y.-C. Liu, K.~Chen, B.~Wu, Z.~He, K.~Kitani, and
+  P.~Vajda, ``Cross-domain adaptive teacher for object detection,'' in {\em
   Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
-  Recognition}, pp.~16794--16804, 2021.
+  Recognition (CVPR)}, pp.~7581--7590, June 2022.
 
-\bibitem{hamilton2022unsupervised}
-M.~Hamilton, Z.~Zhang, B.~Hariharan, N.~Snavely, and W.~T. Freeman,
-  ``Unsupervised semantic segmentation by distilling feature correspondences,''
-  {\em arXiv preprint arXiv:2203.08414}, 2022.
+\bibitem{liu2021unbiasedteachersemisupervisedobject}
+Y.-C. Liu, C.-Y. Ma, Z.~He, C.-W. Kuo, K.~Chen, P.~Zhang, B.~Wu, Z.~Kira, and
+  P.~Vajda, ``Unbiased teacher for semi-supervised object detection,'' 2021.
+
+\bibitem{xu2021endtoendsemisupervisedobjectdetection}
+M.~Xu, Z.~Zhang, H.~Hu, J.~Wang, L.~Wang, F.~Wei, X.~Bai, and Z.~Liu,
+  ``End-to-end semi-supervised object detection with soft teacher,'' 2021.
+
+\bibitem{Aberman_2018}
+K.~Aberman, J.~Liao, M.~Shi, D.~Lischinski, B.~Chen, and D.~Cohen-Or, ``Neural
+  best-buddies: sparse cross-domain correspondence,'' {\em ACM Transactions on
+  Graphics}, vol.~37, p.~1–14, July 2018.
+
+\bibitem{sarlin2020supergluelearningfeaturematching}
+P.-E. Sarlin, D.~DeTone, T.~Malisiewicz, and A.~Rabinovich, ``Superglue:
+  Learning feature matching with graph neural networks,'' 2020.
+
+\bibitem{WALTEROS2014553}
+J.~L. Walteros, C.~Vogiatzis, E.~L. Pasiliao, and P.~M. Pardalos, ``Integer
+  programming models for the multidimensional assignment problem with star
+  costs,'' {\em European Journal of Operational Research}, vol.~235, no.~3,
+  pp.~553--568, 2014.
 
 \bibitem{vaswani2017attention}
 A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
@@ -246,5 +252,11 @@ J.~Xu, S.~De~Mello, S.~Liu, W.~Byeon, T.~Breuel, J.~Kautz, and X.~Wang,
 \bibitem{van2008visualizing}
 L.~Van~der Maaten and G.~Hinton, ``Visualizing data using t-sne.,'' {\em
   Journal of machine learning research}, vol.~9, no.~11, 2008.
+
+\bibitem{melas2022deep}
+L.~Melas-Kyriazi, C.~Rupprecht, I.~Laina, and A.~Vedaldi, ``Deep spectral
+  methods: A surprisingly strong baseline for unsupervised semantic
+  segmentation and localization,'' in {\em Proceedings of the IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition}, pp.~8364--8375, 2022.
 
 \end{thebibliography}

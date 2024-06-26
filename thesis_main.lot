@@ -3,22 +3,22 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces \textbf {AP and AP50 of evaluation(box) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{35}{table.caption.36}%
-\contentsline {table}{\numberline {2}{\ignorespaces \textbf {AP and AP50 of evaluation(segm) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{35}{table.caption.37}%
-\contentsline {table}{\numberline {3}{\ignorespaces \textbf {Analysis of Visual Grouping and Visual-Text Alignment}}}{41}{table.caption.47}%
-\contentsline {table}{\numberline {4}{\ignorespaces \textbf {Ablation on number of nearest neighbors for Visual Grouping}\relax }}{42}{table.caption.48}%
-\contentsline {table}{\numberline {5}{\ignorespaces \textbf {Choice of Architectural Components to Fine-tune}}}{44}{table.caption.49}%
-\contentsline {table}{\numberline {6}{\ignorespaces \textbf {Choice of Batch Size}}}{44}{table.caption.50}%
-\contentsline {table}{\numberline {7}{\ignorespaces \textbf {Exploring the Impact of Text Hierarchy}}}{46}{table.caption.51}%
-\contentsline {table}{\numberline {8}{\ignorespaces \textbf {Fine-tuning with Refined Extraction of Labels}}}{46}{table.caption.52}%
-\contentsline {table}{\numberline {9}{\ignorespaces \textbf {Fine-tuning with Refined Extraction of Labels}}}{47}{table.caption.53}%
-\contentsline {table}{\numberline {10}{\ignorespaces \textbf {Impact of Curated Labels}}}{49}{table.caption.55}%
-\contentsline {table}{\numberline {11}{\ignorespaces \textbf {Entropy Regularization}}}{49}{table.caption.58}%
-\contentsline {table}{\numberline {12}{\ignorespaces \textbf {High Resolution Fine-tuning}}}{53}{table.caption.60}%
-\contentsline {table}{\numberline {13}{\ignorespaces \textbf {Non-noisy Contrastive Loss}}}{53}{table.caption.61}%
-\contentsline {table}{\numberline {14}{\ignorespaces \textbf {Ablation on Inference Parameters}}}{55}{table.caption.63}%
-\contentsline {table}{\numberline {15}{\ignorespaces \textbf {Exploring hierarchy of Visual Encoder}}}{63}{table.caption.69}%
-\contentsline {table}{\numberline {16}{\ignorespaces \textbf {GroupViT with DINO Features}}}{67}{table.caption.71}%
+\contentsline {table}{\numberline {1}{\ignorespaces \textbf {AP and AP50 of evaluation(box) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{35}{table.caption.37}%
+\contentsline {table}{\numberline {2}{\ignorespaces \textbf {AP and AP50 of evaluation(segm) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{35}{table.caption.38}%
+\contentsline {table}{\numberline {3}{\ignorespaces \textbf {Analysis of Visual Grouping and Visual-Text Alignment}}}{41}{table.caption.48}%
+\contentsline {table}{\numberline {4}{\ignorespaces \textbf {Ablation on number of nearest neighbors for Visual Grouping}\relax }}{42}{table.caption.49}%
+\contentsline {table}{\numberline {5}{\ignorespaces \textbf {Choice of Architectural Components to Fine-tune}}}{44}{table.caption.50}%
+\contentsline {table}{\numberline {6}{\ignorespaces \textbf {Choice of Batch Size}}}{44}{table.caption.51}%
+\contentsline {table}{\numberline {7}{\ignorespaces \textbf {Exploring the Impact of Text Hierarchy}}}{46}{table.caption.52}%
+\contentsline {table}{\numberline {8}{\ignorespaces \textbf {Fine-tuning with Refined Extraction of Labels}}}{46}{table.caption.53}%
+\contentsline {table}{\numberline {9}{\ignorespaces \textbf {Fine-tuning with Refined Extraction of Labels}}}{47}{table.caption.54}%
+\contentsline {table}{\numberline {10}{\ignorespaces \textbf {Impact of Curated Labels}}}{49}{table.caption.56}%
+\contentsline {table}{\numberline {11}{\ignorespaces \textbf {Entropy Regularization}}}{49}{table.caption.59}%
+\contentsline {table}{\numberline {12}{\ignorespaces \textbf {High Resolution Fine-tuning}}}{53}{table.caption.61}%
+\contentsline {table}{\numberline {13}{\ignorespaces \textbf {Non-noisy Contrastive Loss}}}{53}{table.caption.62}%
+\contentsline {table}{\numberline {14}{\ignorespaces \textbf {Ablation on Inference Parameters}}}{55}{table.caption.64}%
+\contentsline {table}{\numberline {15}{\ignorespaces \textbf {Exploring hierarchy of Visual Encoder}}}{63}{table.caption.70}%
+\contentsline {table}{\numberline {16}{\ignorespaces \textbf {GroupViT with DINO Features}}}{67}{table.caption.72}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
