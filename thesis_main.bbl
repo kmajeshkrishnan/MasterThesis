@@ -103,45 +103,16 @@ J.~L. Walteros, C.~Vogiatzis, E.~L. Pasiliao, and P.~M. Pardalos, ``Integer
   costs,'' {\em European Journal of Operational Research}, vol.~235, no.~3,
   pp.~553--568, 2014.
 
-\bibitem{vaswani2017attention}
+\bibitem{vaswani2023attentionneed}
 A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
-  {\L}.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' {\em Advances
-  in neural information processing systems}, vol.~30, 2017.
-
-\bibitem{hochreiter1997long}
-S.~Hochreiter and J.~Schmidhuber, ``Long short-term memory,'' {\em Neural
-  computation}, vol.~9, no.~8, pp.~1735--1780, 1997.
-
-\bibitem{chung2014empirical}
-J.~Chung, C.~Gulcehre, K.~Cho, and Y.~Bengio, ``Empirical evaluation of gated
-  recurrent neural networks on sequence modeling,'' {\em arXiv preprint
-  arXiv:1412.3555}, 2014.
-
-\bibitem{gage1994new}
-P.~Gage, ``A new algorithm for data compression,'' {\em C Users Journal},
-  vol.~12, no.~2, pp.~23--38, 1994.
-
-\bibitem{wu2016google}
-Y.~Wu, M.~Schuster, Z.~Chen, Q.~V. Le, M.~Norouzi, W.~Macherey, M.~Krikun,
-  Y.~Cao, Q.~Gao, K.~Macherey, {\em et~al.}, ``Google's neural machine
-  translation system: Bridging the gap between human and machine translation,''
-  {\em arXiv preprint arXiv:1609.08144}, 2016.
+  L.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' 2023.
 
 \bibitem{weng2020transformer}
 L.~Weng, ``The transformer family,'' {\em lilianweng.github.io}, Apr 2020.
 
-\bibitem{hendrycks2016gaussian}
-D.~Hendrycks and K.~Gimpel, ``Gaussian error linear units (gelus),'' {\em arXiv
-  preprint arXiv:1606.08415}, 2016.
-
-\bibitem{qiao2019micro}
-S.~Qiao, H.~Wang, C.~Liu, W.~Shen, and A.~Yuille, ``Micro-batch training with
-  batch-channel normalization and weight standardization,'' {\em arXiv preprint
-  arXiv:1903.10520}, 2019.
-
-\bibitem{baevski2018adaptive}
-A.~Baevski and M.~Auli, ``Adaptive input representations for neural language
-  modeling,'' {\em arXiv preprint arXiv:1809.10853}, 2018.
+\bibitem{li2021cutpasteselfsupervisedlearninganomaly}
+C.-L. Li, K.~Sohn, J.~Yoon, and T.~Pfister, ``Cutpaste: Self-supervised
+  learning for anomaly detection and localization,'' 2021.
 
 \bibitem{buhmann1999image}
 J.~M. Buhmann, J.~Malik, and P.~Perona, ``Image recognition: Visual grouping,
@@ -152,6 +123,11 @@ J.~M. Buhmann, J.~Malik, and P.~Perona, ``Image recognition: Visual grouping,
 S.~C. Zhu and D.~Mumford, ``Prior learning and gibbs reaction-diffusion,'' {\em
   IEEE Transactions on Pattern Analysis and Machine Intelligence}, vol.~19,
   no.~11, pp.~1236--1250, 1997.
+
+\bibitem{vaswani2017attention}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  {\L}.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' {\em Advances
+  in neural information processing systems}, vol.~30, 2017.
 
 \bibitem{loper2002nltk}
 E.~Loper and S.~Bird, ``Nltk: The natural language toolkit,'' {\em arXiv

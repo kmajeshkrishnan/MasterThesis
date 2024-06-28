@@ -14,52 +14,44 @@ A level-1 auxiliary file: chapters/7-acknowledgments.aux
 The style file: ieeetr.bst
 Database file #1: bib/topic1.bib
 Database file #2: bib/topic2.bib
-I was expecting a `,' or a `}'---line 236 of file bib/topic2.bib
- :       
- :       url={https://arxiv.org/abs/1911.11763},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--empty journal in wang2023cut
-Warning--empty journal in engstler2023understanding
-You've used 53 entries,
+You've used 48 entries,
             1876 wiz_defined-function locations,
-            742 strings with 14536 characters,
-and the built_in function-call counts, 14566 in all, are:
-= -- 1209
-> -- 944
+            712 strings with 13664 characters,
+and the built_in function-call counts, 13358 in all, are:
+= -- 1096
+> -- 890
 < -- 0
-+ -- 333
-- -- 280
-* -- 1124
-:= -- 2199
-add.period$ -- 53
-call.type$ -- 53
-change.case$ -- 53
++ -- 313
+- -- 265
+* -- 1029
+:= -- 2005
+add.period$ -- 48
+call.type$ -- 48
+change.case$ -- 48
 chr.to.int$ -- 0
-cite$ -- 55
-duplicate$ -- 666
-empty$ -- 1297
-format.name$ -- 280
-if$ -- 3407
+cite$ -- 48
+duplicate$ -- 585
+empty$ -- 1190
+format.name$ -- 265
+if$ -- 3130
 int.to.chr$ -- 0
-int.to.str$ -- 53
-missing$ -- 42
-newline$ -- 162
-num.names$ -- 53
-pop$ -- 247
+int.to.str$ -- 48
+missing$ -- 33
+newline$ -- 147
+num.names$ -- 48
+pop$ -- 241
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 431
+skip$ -- 409
 stack$ -- 0
-substring$ -- 754
-swap$ -- 242
+substring$ -- 690
+swap$ -- 219
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 112
-width$ -- 55
-write$ -- 459
-(There was 1 error message)
+warning$ -- 0
+while$ -- 101
+width$ -- 50
+write$ -- 411
