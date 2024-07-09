@@ -277,3 +277,137 @@
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2012.07177}, 
 }
+
+@ARTICLE{normcut,
+  author={Jianbo Shi and Malik, J.},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Normalized cuts and image segmentation}, 
+  year={2000},
+  volume={22},
+  number={8},
+  pages={888-905},
+  keywords={Image segmentation;Brightness;Clustering algorithms;Data mining;Eigenvalues and eigenfunctions;Bayesian methods;Coherence;Tree data structures;Filling;Partitioning algorithms},
+  doi={10.1109/34.868688}}
+
+
+%Tokencut related works
+@misc{simeoni2021localizingobjectsselfsupervisedtransformers,
+      title={Localizing Objects with Self-Supervised Transformers and no Labels}, 
+      author={Oriane Siméoni and Gilles Puy and Huy V. Vo and Simon Roburin and Spyros Gidaris and Andrei Bursuc and Patrick Pérez and Renaud Marlet and Jean Ponce},
+      year={2021},
+      eprint={2109.14279},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2109.14279}, 
+}
+@misc{vangansbeke2022discoveringobjectmaskstransformers,
+      title={Discovering Object Masks with Transformers for Unsupervised Semantic Segmentation}, 
+      author={Wouter Van Gansbeke and Simon Vandenhende and Luc Van Gool},
+      year={2022},
+      eprint={2206.06363},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2206.06363}, 
+}
+@misc{wang2023tokencutsegmentingobjectsimages,
+      title={TokenCut: Segmenting Objects in Images and Videos with Self-supervised Transformer and Normalized Cut}, 
+      author={Yangtao Wang and Xi Shen and Yuan Yuan and Yuming Du and Maomao Li and Shell Xu Hu and James L Crowley and Dominique Vaufreydaz},
+      year={2023},
+      eprint={2209.00383},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2209.00383}, 
+}
+
+% object centric prior
+@INPROCEEDINGS{obj_centric_prior,
+  author={Maji, Subhransu and Vishnoi, Nisheeth K. and Malik, Jitendra},
+  booktitle={CVPR 2011}, 
+  title={Biased normalized cuts}, 
+  year={2011},
+  volume={},
+  number={},
+  pages={2057-2064},
+  keywords={Detectors;Image segmentation;Correlation;Image edge detection;Eigenvalues and eigenfunctions;Laplace equations;Vectors},
+  doi={10.1109/CVPR.2011.5995630}
+}
+
+% properties, maskcut cond. 1
+@misc{caron2021emergingpropertiesselfsupervisedvision,
+      title={Emerging Properties in Self-Supervised Vision Transformers}, 
+      author={Mathilde Caron and Hugo Touvron and Ishan Misra and Hervé Jégou and Julien Mairal and Piotr Bojanowski and Armand Joulin},
+      year={2021},
+      eprint={2104.14294},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2104.14294}, 
+}
+@InProceedings{cond1_support_2,
+author="Vo, Huy V.
+and P{\'e}rez, Patrick
+and Ponce, Jean",
+editor="Vedaldi, Andrea
+and Bischof, Horst
+and Brox, Thomas
+and Frahm, Jan-Michael",
+title="Toward Unsupervised, Multi-object Discovery in Large-Scale Image Collections",
+booktitle="Computer Vision -- ECCV 2020",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="779--795",
+abstract="This paper addresses the problem of discovering the objects present in a collection of images without any supervision. We build on the optimization approach of Vo et al.[34] with several key novelties: (1) We propose a novel saliency-based region proposal algorithm that achieves significantly higher overlap with ground-truth objects than other competitive methods. This procedure leverages off-the-shelf CNN features trained on classification tasks without any bounding box information, but is otherwise unsupervised. (2) We exploit the inherent hierarchical structure of proposals as an effective regularizer for the approach to object discovery of[34], boosting its performance to significantly improve over the state of the art on several standard benchmarks. (3) We adopt a two-stage strategy to select promising proposals using small random sets of images before using the whole image collection to discover the objects it depicts, allowing us to tackle, for the first time (to the best of our knowledge), the discovery of multiple objects in each one of the pictures making up datasets with up to 20,000 images, an over five-fold increase compared to existing methods, and a first step toward true large-scale unsupervised image interpretation.",
+isbn="978-3-030-58592-1"
+}
+
+%Mask RCNN
+@misc{he2018maskrcnn,
+      title={Mask R-CNN}, 
+      author={Kaiming He and Georgia Gkioxari and Piotr Dollár and Ross Girshick},
+      year={2018},
+      eprint={1703.06870},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/1703.06870}, 
+}
+%CascadeMask RCNN
+@misc{cai2019cascadercnnhighquality,
+      title={Cascade R-CNN: High Quality Object Detection and Instance Segmentation}, 
+      author={Zhaowei Cai and Nuno Vasconcelos},
+      year={2019},
+      eprint={1906.09756},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/1906.09756}, 
+}
+
+%ImageNet
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+
+%Resnet50
+@misc{he2015deepresiduallearningimage,
+      title={Deep Residual Learning for Image Recognition}, 
+      author={Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+      year={2015},
+      eprint={1512.03385},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/1512.03385}, 
+}
+
+%COCO dataset
+@inproceedings{lin2014microsoft,
+  title={Microsoft coco: Common objects in context},
+  author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+  booktitle={Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13},
+  pages={740--755},
+  year={2014},
+  organization={Springer}
+}

@@ -114,6 +114,63 @@ L.~Weng, ``The transformer family,'' {\em lilianweng.github.io}, Apr 2020.
 C.-L. Li, K.~Sohn, J.~Yoon, and T.~Pfister, ``Cutpaste: Self-supervised
   learning for anomaly detection and localization,'' 2021.
 
+\bibitem{normcut}
+J.~Shi and J.~Malik, ``Normalized cuts and image segmentation,'' {\em IEEE
+  Transactions on Pattern Analysis and Machine Intelligence}, vol.~22, no.~8,
+  pp.~888--905, 2000.
+
+\bibitem{simeoni2021localizingobjectsselfsupervisedtransformers}
+O.~Siméoni, G.~Puy, H.~V. Vo, S.~Roburin, S.~Gidaris, A.~Bursuc, P.~Pérez,
+  R.~Marlet, and J.~Ponce, ``Localizing objects with self-supervised
+  transformers and no labels,'' 2021.
+
+\bibitem{vangansbeke2022discoveringobjectmaskstransformers}
+W.~V. Gansbeke, S.~Vandenhende, and L.~V. Gool, ``Discovering object masks with
+  transformers for unsupervised semantic segmentation,'' 2022.
+
+\bibitem{wang2023tokencutsegmentingobjectsimages}
+Y.~Wang, X.~Shen, Y.~Yuan, Y.~Du, M.~Li, S.~X. Hu, J.~L. Crowley, and
+  D.~Vaufreydaz, ``Tokencut: Segmenting objects in images and videos with
+  self-supervised transformer and normalized cut,'' 2023.
+
+\bibitem{caron2021emergingpropertiesselfsupervisedvision}
+M.~Caron, H.~Touvron, I.~Misra, H.~Jégou, J.~Mairal, P.~Bojanowski, and
+  A.~Joulin, ``Emerging properties in self-supervised vision transformers,''
+  2021.
+
+\bibitem{obj_centric_prior}
+S.~Maji, N.~K. Vishnoi, and J.~Malik, ``Biased normalized cuts,'' in {\em CVPR
+  2011}, pp.~2057--2064, 2011.
+
+\bibitem{cond1_support_2}
+H.~V. Vo, P.~P{\'e}rez, and J.~Ponce, ``Toward unsupervised, multi-object
+  discovery in large-scale image collections,'' in {\em Computer Vision -- ECCV
+  2020} (A.~Vedaldi, H.~Bischof, T.~Brox, and J.-M. Frahm, eds.), (Cham),
+  pp.~779--795, Springer International Publishing, 2020.
+
+\bibitem{deng2009imagenet}
+J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei, ``Imagenet: A
+  large-scale hierarchical image database,'' in {\em 2009 IEEE conference on
+  computer vision and pattern recognition}, pp.~248--255, Ieee, 2009.
+
+\bibitem{he2018maskrcnn}
+K.~He, G.~Gkioxari, P.~Dollár, and R.~Girshick, ``Mask r-cnn,'' 2018.
+
+\bibitem{cai2019cascadercnnhighquality}
+Z.~Cai and N.~Vasconcelos, ``Cascade r-cnn: High quality object detection and
+  instance segmentation,'' 2019.
+
+\bibitem{he2015deepresiduallearningimage}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
+  recognition,'' 2015.
+
+\bibitem{lin2014microsoft}
+T.-Y. Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan,
+  P.~Doll{\'a}r, and C.~L. Zitnick, ``Microsoft coco: Common objects in
+  context,'' in {\em Computer Vision--ECCV 2014: 13th European Conference,
+  Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13},
+  pp.~740--755, Springer, 2014.
+
 \bibitem{buhmann1999image}
 J.~M. Buhmann, J.~Malik, and P.~Perona, ``Image recognition: Visual grouping,
   recognition, and learning,'' {\em Proceedings of the National Academy of

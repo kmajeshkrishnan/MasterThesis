@@ -114,14 +114,63 @@ Instead of using the teacher model directly, DINO employs a momentum encoder mec
 The teacher model's parameters are updated using a momentum update rule as given in Eq. \ref{eq:momentum}. Where \(\theta_t\) are the parameters of the teacher model, \(\theta_s\) are the parameters of the student model, and \(m\)is a momentum parameter (typically close to 1) that controls the rate of updating.
 
 \subsection{Training Process}
- DINO uses different augmentations of the same image to create multiple views. These augmented views are passed through both the teacher and student models. Outputs from both models are projected into a lower-dimensional space using projection heads. Outputs from both models are projected into a lower-dimensional space using projection heads. The optimization objective is to minimize the cross-entropy loss between the predicted probability distributions of the teacher and student models. Assume \(P_t(x)\) and \(P_s(x)\) represent the probability distributions predicted by the teacher and student models, respectively. The training process is illustrated in \ref{fig:dino}
+DINO uses different augmentations of the same image to create multiple views. These augmented views are passed through both the teacher and student models. Outputs from both models are projected into a lower-dimensional space using projection heads. Outputs from both models are projected into a lower-dimensional space using projection heads. The optimization objective is to minimize the cross-entropy loss between the predicted probability distributions of the teacher and student models. Assume \(P_t(x)\) and \(P_s(x)\) represent the probability distributions predicted by the teacher and student models, respectively. The training process is illustrated in \ref{fig:dino}
+
+\begin{equation}
+	\label{eq:dino_objective}
+	\min_{\theta_s} \mathcal{H}(P_t(x), P_s(x))
+\end{equation}
+
+The cross-entropy loss is computed between the softened distributions of the teacher and student models across all augmented views as given in Eq. \ref{eq:dino_objective}.
+
+\section{CutLer}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Images/main/cutler_flow.png}
+	\caption[\textbf{Cutler overview}]{\textbf{Cutler overview} The flow consist of MaskCut for extracting coarse masks from the features of a self-supervised ViT. Following this, a detector utilizing a loss dropping strategy designed to be resilient against objects that MaskCut may overlook is used. Additionally, the model undergoes further enhancement through multiple rounds of self-training. Illustration taken from \cite{wang2023cut}}.
+	\label{fig:cutler_flow}
+\end{figure} 
+
+Cutler\cite{wang2023cut} introduces a novel approach to address the challenges of object detection and instance segmentation in an unsupervised learning framework. By integrating Cut-Paste\cite{li2021cutpasteselfsupervisedlearninganomaly} augmentation and a contrastive learning framework, the method not only circumvents the need for labeled data but also achieves state-of-the-art results in object detection and instance segmentation. The complete process is illustrated in Fig. \ref{fig:cutler_flow}.
  
- \begin{equation}
- 	\label{eq:dino_objective}
- 	\min_{\theta_s} \mathcal{H}(P_t(x), P_s(x))
- \end{equation}
- 
- The cross-entropy loss is computed between the softened distributions of the teacher and student models across all augmented views as given in Eq. \ref{eq:dino_objective}.
- 
- \section{CutLer}
- Cutler\cite{wang2023cut} introduces a novel approach to address the challenges of object detection and instance segmentation in an unsupervised learning framework. By integrating Cut-Paste\cite{li2021cutpasteselfsupervisedlearninganomaly} augmentation and a contrastive learning framework, the method not only circumvents the need for labeled data but also achieves state-of-the-art results in object detection and instance segmentation.
+\subsection{Maskcut}
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\textwidth]{Images/main/maskcut_eg.png}
+	\caption[\textbf{Maskcut flow}]{\textbf{Maskcut} works on the patch-wise
+		similarity matrix for the image using a self-supervised DINO \cite{caron2021emerging} model feature. N=3 defines the number of times NCut\cite{normcut} is repeated on the background. In this case, 3 instances will be discovered per image in each step. Illustration taken from \cite{wang2023cut}}.
+	\label{fig:maskcut_flow}
+\end{figure}
+Maskcut considers image segmentation problem as a graph partitioning task\cite{normcut}. The inspiration of Maskcut comes from TokenCut\cite{wang2022tokencut}, which constructs a fully connected undirected graph by representing each image as a node. 
+
+\begin{equation}
+	\label{eq:eig_problem}
+	(D - W)x = \lambda Dx
+\end{equation}
+
+Edges connect every pair of nodes, with weights \(W_{ij}\) reflecting the similarity between the connected nodes and reduces the cost of dividing the graph into two sub-graphs, or a bipartition, by solving a generalized eigenvalue problem as given in Eq. \ref{eq:eig_problem}. In Tokencut\cite{wang2022tokencut}, the authors determine the similarity weight \( W_{ij} \) in NCut based on the similarity of patches in the DINO feature space. Following recent methods \cite{simeoni2021localizingobjectsselfsupervisedtransformers, vangansbeke2022discoveringobjectmaskstransformers, wang2023tokencutsegmentingobjectsimages}, they specifically employ the cosine similarity of 'key' features from the final attention layer of the DINO-pretrained model, represented as:
+
+\begin{equation}
+W_{ij} = \frac{K_i \cdot K_j}{\|K_i\|_2 \|K_j\|_2}
+\end{equation}
+
+where \( K_i \) denotes the 'key' feature of patch \( i \). They then solve Eq. \ref{eq:eig_problem} to find the second smallest eigenvector \( x \). The main drawback of the approach is only using the smallest eigenvector resulting in finding only one instance in the image. Maskcut overcomes this drawback and finds more instances by iteratively applying the same process in the background N times as given in Fig. \ref{fig:maskcut_flow}. The figure shows the flow of Maskcut algorithm for N=3(Defines the number of times NCut\cite{normcut} is repeated. In this case, 3 instances will be discovered per image) Building on the work of \cite{wang2023tokencutsegmentingobjectsimages, caron2021emergingpropertiesselfsupervisedvision}, a patch-wise similarity matrix for the image using features from a self-supervised DINO model \cite{caron2021emerging} is created. Normalized Cuts\cite{normcut} is applied to this matrix to obtain a single foreground object mask for the image. Subsequently, this foreground mask is used to mask out the affinity matrix values and repeat the process. This iterative approach enables MaskCut to identify multiple object masks within a single image.
+
+Maskcut uses two conditions to improve the performance.  1. An object centric prior\cite{obj_centric_prior} is used to filter out backgrounds. ie, if the foreground contains more than 2 out of 4 corners, foreground and background are switched. 2. From the intuition that foreground patches are more prominent than background ones \cite{caron2021emergingpropertiesselfsupervisedvision, cond1_support_2}, we assert that foreground mask should contain the patch corresponding to the maximum absolute value in the second smallest eigenvector. If condition 1 is not satisfied and current foreground contains two corners, background and foreground are switched.
+
+\subsection{Droploss}
+A standard detection loss penalizes predicted regions \( r_i \) that do not overlap with the 'ground truth'. Since the ground truth masks from MaskCut may miss some instances, the standard loss does not allow the detector to identify new instances not labeled in the ground truth. To address this, the author proposes ignoring the loss for predicted regions \( r_i \) with minimal overlap with the ground truth.
+
+\begin{equation}
+	\label{eq:drop_loss}
+L_{\text{drop}}(r_i) = \mathds{1}(\text{IoU}_i^{\text{max}} > \tau^{\text{IoU}}) L_{\text{vanilla}}(r_i)
+\end{equation}
+
+Specifically, during training, the loss is dropped for any predicted region \( r_i \) that has a maximum overlap of \( \tau^{\text{IoU}} \) with any ground truth instance as given in Eq. \ref{eq:drop_loss} where \(\text{IoU}_i^{\text{max}}\) denotes the maximum IoU with all ground truth for \( r_i \), and \( L_{\text{vanilla}} \) refers to the standard loss function for detectors. \( L_{\text{drop}} \) avoids penalizing the model for detecting objects missed in the 'ground truth', thus encouraging the exploration of different image regions.
+
+\subsection{Self-Training}
+Apart from the training  for 160K iterations on Imagenet\cite{deng2009imagenet} using Mask-RCNN \cite{he2018maskrcnn} or cascade Mask-RCNN\cite{cai2019cascadercnnhighquality} dectectors with a ResNet-50\cite{he2015deepresiduallearningimage} backbone using Maskcut masks as pseudo ground truths, it is further refined using self training loops.
+
+Along with Cutler mask predictions with confidence score > 0.7, Maskcut masks with IoU < 0.5 with the Cutler prediction masks together make the pseudo ground truth masks for the next self training round. Each self training loop is trained for 80K iterations which results in further improvement in the evaluation score(AP) on COCOVal dataset \cite{lin2014microsoft} till 3 self-training loops.
+
+This pseudo ground truth masks selection process can be further refined to improve the performance of Cutler by removing the noisy background masks from the Maskcut masks, which will be discussed in the coming sections in our work.

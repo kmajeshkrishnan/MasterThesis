@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.28)  28 JUN 2024 19:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.28)  9 JUL 2024 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,9 +452,12 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count290
 \calc@Cskip=\skip76
 )
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 51.
+(scrhack)             need that hack, on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
@@ -949,8 +952,8 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
 ))
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 124.
-Package hyperref Info: Option `plainpages' set `false' on input line 124.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 125.
+Package hyperref Info: Option `plainpages' set `false' on input line 125.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -1311,7 +1314,7 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 27.
 
  (./chapters/1-introduction.tex
 chapter 1.
-<Images/main/mask_cut_cutler_comparison.png, id=336, 1134.639pt x 395.3169pt>
+<Images/main/mask_cut_cutler_comparison.png, id=346, 1134.639pt x 395.3169pt>
 File: Images/main/mask_cut_cutler_comparison.png Graphic file (type png)
 <use Images/main/mask_cut_cutler_comparison.png>
 Package pdftex.def Info: Images/main/mask_cut_cutler_comparison.png  used on in
@@ -1340,7 +1343,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ]
 chapter 2.
 [5] [6]
-<Images/main/correspondences.png, id=413, 251.4996pt x 162.6075pt>
+<Images/main/correspondences.png, id=423, 251.4996pt x 162.6075pt>
 File: Images/main/correspondences.png Graphic file (type png)
 <use Images/main/correspondences.png>
 Package pdftex.def Info: Images/main/correspondences.png  used on input line 34
@@ -1356,7 +1359,7 @@ LaTeX Warning: Reference `sarlin2020supergluelearningfeaturematching' on page 7
 
  (./chapters/3-background.tex
 chapter 3.
-<Images/main/vit_full_arch.png, id=436, 1168.365pt x 800.9925pt>
+<Images/main/vit_full_arch.png, id=446, 1168.365pt x 800.9925pt>
 File: Images/main/vit_full_arch.png Graphic file (type png)
 <use Images/main/vit_full_arch.png>
 Package pdftex.def Info: Images/main/vit_full_arch.png  used on input line 7.
@@ -1368,7 +1371,7 @@ Package pdftex.def Info: Images/main/vit_full_arch.png  used on input line 7.
 
 
 ]
-<Images/main/transformerblock.png, id=464, 155.98276pt x 332.442pt>
+<Images/main/transformerblock.png, id=474, 155.98276pt x 332.442pt>
 File: Images/main/transformerblock.png Graphic file (type png)
 <use Images/main/transformerblock.png>
 Package pdftex.def Info: Images/main/transformerblock.png  used on input line 3
@@ -1381,7 +1384,7 @@ Underfull \vbox (badness 3078) has occurred while \output is active []
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
  [11 <./Images/main/transformerblock.png>]
-<Images/main/dino.png, id=492, 242.70676pt x 251.13824pt>
+<Images/main/dino.png, id=502, 242.70676pt x 251.13824pt>
 File: Images/main/dino.png Graphic file (type png)
 <use Images/main/dino.png>
 Package pdftex.def Info: Images/main/dino.png  used on input line 100.
@@ -1389,39 +1392,63 @@ Package pdftex.def Info: Images/main/dino.png  used on input line 100.
  [12]
 Underfull \vbox (badness 5908) has occurred while \output is active []
 
- [13 <./Images/main/dino.png>]) [14]
+ [13 <./Images/main/dino.png>]
+<Images/main/cutler_flow.png, id=529, 1134.2375pt x 393.47pt>
+File: Images/main/cutler_flow.png Graphic file (type png)
+<use Images/main/cutler_flow.png>
+Package pdftex.def Info: Images/main/cutler_flow.png  used on input line 129.
+(pdftex.def)             Requested size: 318.67212pt x 110.54909pt.
+<Images/main/maskcut_eg.png, id=535, 1488.56125pt x 313.17pt>
+File: Images/main/maskcut_eg.png Graphic file (type png)
+<use Images/main/maskcut_eg.png>
+Package pdftex.def Info: Images/main/maskcut_eg.png  used on input line 139.
+(pdftex.def)             Requested size: 398.33864pt x 83.802pt.
+ [14] [15 <./Images/main/cutler_flow.png> <./Images/main/maskcut_eg.png>]
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
+66.
+ (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/10.95'
+(microtype)             (new value: 10.95pt) on input line 166.
+Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/8'
+(microtype)             (new value: 8.0pt) on input line 166.
+Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/6'
+(microtype)             (new value: 6.0pt) on input line 166.
+
+[16]) [17]
 \openout2 = `chapters/4-approach.aux'.
 
- (./chapters/4-approach.tex
-chapter 4.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Images/gvitarch.drawio (5).pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/gvitarch.drawio (5).pdf, id=530, 615.25862pt x 796.89719pt>
-File: Images/gvitarch.drawio (5).pdf Graphic file (type pdf)
-<use Images/gvitarch.drawio (5).pdf>
-Package pdftex.def Info: Images/gvitarch.drawio (5).pdf  used on input line 21.
-
-(pdftex.def)             Requested size: 362.48961pt x 469.50865pt.
-<Images/GB.drawio (2).drawio (3).png, id=531, 835.12pt x 829.0975pt>
-File: Images/GB.drawio (2).drawio (3).png Graphic file (type png)
-<use Images/GB.drawio (2).drawio (3).png>
-Package pdftex.def Info: Images/GB.drawio (2).drawio (3).png  used on input lin
-e 29.
-(pdftex.def)             Requested size: 398.33864pt x 395.47005pt.
-[15
+ (./chapters/4-approach.tex [18
 
 
 
 
 
 ]
+chapter 4.
 
-LaTeX Warning: Text page 16 contains only floats.
 
-[16 <./Images/gvitarch.drawio (5).pdf>]
-<Images/same_vs_diff_class/plot_giraffe_cosine.png, id=569, 462.528pt x 346.896
+pdfTeX warning: /usr/bin/pdflatex (file ./Images/gvitarch.drawio (5).pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/gvitarch.drawio (5).pdf, id=609, 615.25862pt x 796.89719pt>
+File: Images/gvitarch.drawio (5).pdf Graphic file (type pdf)
+<use Images/gvitarch.drawio (5).pdf>
+Package pdftex.def Info: Images/gvitarch.drawio (5).pdf  used on input line 21.
+
+(pdftex.def)             Requested size: 362.48961pt x 469.50865pt.
+<Images/GB.drawio (2).drawio (3).png, id=610, 835.12pt x 829.0975pt>
+File: Images/GB.drawio (2).drawio (3).png Graphic file (type png)
+<use Images/GB.drawio (2).drawio (3).png>
+Package pdftex.def Info: Images/GB.drawio (2).drawio (3).png  used on input lin
+e 29.
+(pdftex.def)             Requested size: 398.33864pt x 395.47005pt.
+[19]
+
+LaTeX Warning: Text page 20 contains only floats.
+
+[20 <./Images/gvitarch.drawio (5).pdf>]
+<Images/same_vs_diff_class/plot_giraffe_cosine.png, id=649, 462.528pt x 346.896
 pt>
 File: Images/same_vs_diff_class/plot_giraffe_cosine.png Graphic file (type png)
 
@@ -1429,7 +1456,7 @@ File: Images/same_vs_diff_class/plot_giraffe_cosine.png Graphic file (type png)
 Package pdftex.def Info: Images/same_vs_diff_class/plot_giraffe_cosine.png  use
 d on input line 49.
 (pdftex.def)             Requested size: 187.21964pt x 140.418pt.
-<Images/same_vs_diff_class/plot_giraffe_euc.png, id=570, 462.528pt x 346.896pt>
+<Images/same_vs_diff_class/plot_giraffe_euc.png, id=650, 462.528pt x 346.896pt>
 
 File: Images/same_vs_diff_class/plot_giraffe_euc.png Graphic file (type png)
 <use Images/same_vs_diff_class/plot_giraffe_euc.png>
@@ -1445,13 +1472,13 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./Images/GB.drawio (2).drawio (3).png>] [18 <./Images/same_vs_diff_class/
+ [21 <./Images/GB.drawio (2).drawio (3).png>] [22 <./Images/same_vs_diff_class/
 plot_giraffe_cosine.png> <./Images/same_vs_diff_class/plot_giraffe_euc.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
 
-[19] [20] [21]
+[23] [24] [25]
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
@@ -1459,92 +1486,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [26]
 (./figures/experiments/plots/groups.tex
-<figures/group0/0050.jpg, id=665, 481.8pt x 399.4925pt>
+<figures/group0/0050.jpg, id=744, 481.8pt x 399.4925pt>
 File: figures/group0/0050.jpg Graphic file (type jpg)
 <use figures/group0/0050.jpg>
 Package pdftex.def Info: figures/group0/0050.jpg  used on input line 13.
 (pdftex.def)             Requested size: 68.62779pt x 56.9055pt.
-<figures/group0/0008.jpg, id=666, 501.875pt x 334.24875pt>
+<figures/group0/0008.jpg, id=745, 501.875pt x 334.24875pt>
 File: figures/group0/0008.jpg Graphic file (type jpg)
 <use figures/group0/0008.jpg>
 Package pdftex.def Info: figures/group0/0008.jpg  used on input line 13.
 (pdftex.def)             Requested size: 85.44014pt x 56.9055pt.
-<figures/group0/0023.jpg, id=667, 481.8pt x 438.63875pt>
+<figures/group0/0023.jpg, id=746, 481.8pt x 438.63875pt>
 File: figures/group0/0023.jpg Graphic file (type jpg)
 <use figures/group0/0023.jpg>
 Package pdftex.def Info: figures/group0/0023.jpg  used on input line 13.
 (pdftex.def)             Requested size: 62.50386pt x 56.9055pt.
-<figures/group0/0024.jpg, id=668, 501.875pt x 442.65375pt>
+<figures/group0/0024.jpg, id=747, 501.875pt x 442.65375pt>
 File: figures/group0/0024.jpg Graphic file (type jpg)
 <use figures/group0/0024.jpg>
 Package pdftex.def Info: figures/group0/0024.jpg  used on input line 13.
 (pdftex.def)             Requested size: 64.51852pt x 56.9055pt.
-<figures/group0/0050attn_map0withouttitle.png, id=669, 417.7206pt x 346.896pt>
+<figures/group0/0050attn_map0withouttitle.png, id=748, 417.7206pt x 346.896pt>
 File: figures/group0/0050attn_map0withouttitle.png Graphic file (type png)
 <use figures/group0/0050attn_map0withouttitle.png>
 Package pdftex.def Info: figures/group0/0050attn_map0withouttitle.png  used on 
 input line 15.
 (pdftex.def)             Requested size: 68.51936pt x 56.9055pt.
-<figures/group0/0008attn_map0withouttitle.png, id=670, 462.528pt x 307.8702pt>
+<figures/group0/0008attn_map0withouttitle.png, id=749, 462.528pt x 307.8702pt>
 File: figures/group0/0008attn_map0withouttitle.png Graphic file (type png)
 <use figures/group0/0008attn_map0withouttitle.png>
 Package pdftex.def Info: figures/group0/0008attn_map0withouttitle.png  used on 
 input line 15.
 (pdftex.def)             Requested size: 85.4887pt x 56.9055pt.
-<figures/group0/0023attn_map0withouttitle.png, id=671, 380.8629pt x 346.896pt>
+<figures/group0/0023attn_map0withouttitle.png, id=750, 380.8629pt x 346.896pt>
 File: figures/group0/0023attn_map0withouttitle.png Graphic file (type png)
 <use figures/group0/0023attn_map0withouttitle.png>
 Package pdftex.def Info: figures/group0/0023attn_map0withouttitle.png  used on 
 input line 15.
 (pdftex.def)             Requested size: 62.47354pt x 56.9055pt.
-<figures/group0/0024attn_map0withouttitle.png, id=672, 393.1488pt x 346.896pt>
+<figures/group0/0024attn_map0withouttitle.png, id=751, 393.1488pt x 346.896pt>
 File: figures/group0/0024attn_map0withouttitle.png Graphic file (type png)
 <use figures/group0/0024attn_map0withouttitle.png>
 Package pdftex.def Info: figures/group0/0024attn_map0withouttitle.png  used on 
 input line 15.
 (pdftex.def)             Requested size: 64.48882pt x 56.9055pt.
-<figures/group5/0004.jpg, id=673, 335.2525pt x 501.875pt>
+<figures/group5/0004.jpg, id=752, 335.2525pt x 501.875pt>
 File: figures/group5/0004.jpg Graphic file (type jpg)
 <use figures/group5/0004.jpg>
 Package pdftex.def Info: figures/group5/0004.jpg  used on input line 20.
 (pdftex.def)             Requested size: 38.0084pt x 56.9055pt.
-<figures/group5/0007.jpg, id=674, 501.875pt x 376.40625pt>
+<figures/group5/0007.jpg, id=753, 501.875pt x 376.40625pt>
 File: figures/group5/0007.jpg Graphic file (type jpg)
 <use figures/group5/0007.jpg>
 Package pdftex.def Info: figures/group5/0007.jpg  used on input line 20.
 (pdftex.def)             Requested size: 75.86766pt x 56.9055pt.
-<figures/group5/0031.jpg, id=675, 376.40625pt x 501.875pt>
+<figures/group5/0031.jpg, id=754, 376.40625pt x 501.875pt>
 File: figures/group5/0031.jpg Graphic file (type jpg)
 <use figures/group5/0031.jpg>
 Package pdftex.def Info: figures/group5/0031.jpg  used on input line 20.
 (pdftex.def)             Requested size: 42.67412pt x 56.9055pt.
-<figures/group5/0009.jpg, id=676, 501.875pt x 376.40625pt>
+<figures/group5/0009.jpg, id=755, 501.875pt x 376.40625pt>
 File: figures/group5/0009.jpg Graphic file (type jpg)
 <use figures/group5/0009.jpg>
 Package pdftex.def Info: figures/group5/0009.jpg  used on input line 20.
 (pdftex.def)             Requested size: 75.86766pt x 56.9055pt.
-<figures/group5/0004attn_map5withouttitle.png, id=677, 231.264pt x 346.896pt>
+<figures/group5/0004attn_map5withouttitle.png, id=756, 231.264pt x 346.896pt>
 File: figures/group5/0004attn_map5withouttitle.png Graphic file (type png)
 <use figures/group5/0004attn_map5withouttitle.png>
 Package pdftex.def Info: figures/group5/0004attn_map5withouttitle.png  used on 
 input line 26.
 (pdftex.def)             Requested size: 37.93459pt x 56.9055pt.
-<figures/group5/0007attn_map5withouttitle.pdf, id=678, 462.52798pt x 346.89601p
+<figures/group5/0007attn_map5withouttitle.pdf, id=757, 462.52798pt x 346.89601p
 t>
 File: figures/group5/0007attn_map5withouttitle.pdf Graphic file (type pdf)
 <use figures/group5/0007attn_map5withouttitle.pdf>
 Package pdftex.def Info: figures/group5/0007attn_map5withouttitle.pdf  used on 
 input line 26.
 (pdftex.def)             Requested size: 75.86919pt x 56.9055pt.
-<figures/group5/0031attn_map5withouttitle.png, id=679, 259.4493pt x 346.896pt>
+<figures/group5/0031attn_map5withouttitle.png, id=758, 259.4493pt x 346.896pt>
 File: figures/group5/0031attn_map5withouttitle.png Graphic file (type png)
 <use figures/group5/0031attn_map5withouttitle.png>
 Package pdftex.def Info: figures/group5/0031attn_map5withouttitle.png  used on 
 input line 26.
 (pdftex.def)             Requested size: 42.55786pt x 56.9055pt.
-<figures/group5/0009attn_map5withouttitle.pdf, id=680, 462.52798pt x 346.89601p
+<figures/group5/0009attn_map5withouttitle.pdf, id=759, 462.52798pt x 346.89601p
 t>
 File: figures/group5/0009attn_map5withouttitle.pdf Graphic file (type pdf)
 <use figures/group5/0009attn_map5withouttitle.pdf>
@@ -1553,12 +1580,12 @@ input line 26.
 (pdftex.def)             Requested size: 75.86919pt x 56.9055pt.
 )
 (./figures/experiments/plots/singlegroup.tex
-<figures/group0/0000.jpg, id=681, 501.875pt x 367.3725pt>
+<figures/group0/0000.jpg, id=760, 501.875pt x 367.3725pt>
 File: figures/group0/0000.jpg Graphic file (type jpg)
 <use figures/group0/0000.jpg>
 Package pdftex.def Info: figures/group0/0000.jpg  used on input line 6.
 (pdftex.def)             Requested size: 77.7362pt x 56.9055pt.
-<figures/group0/0074.jpg, id=682, 351.3125pt x 501.875pt>
+<figures/group0/0074.jpg, id=761, 351.3125pt x 501.875pt>
 File: figures/group0/0074.jpg Graphic file (type jpg)
 <use figures/group0/0074.jpg>
 Package pdftex.def Info: figures/group0/0074.jpg  used on input line 6.
@@ -1567,18 +1594,18 @@ File: figures/group0/0023.jpg Graphic file (type jpg)
 <use figures/group0/0023.jpg>
 Package pdftex.def Info: figures/group0/0023.jpg  used on input line 6.
 (pdftex.def)             Requested size: 62.50386pt x 56.9055pt.
-<figures/group0/0030.jpg, id=683, 501.875pt x 354.32375pt>
+<figures/group0/0030.jpg, id=762, 501.875pt x 354.32375pt>
 File: figures/group0/0030.jpg Graphic file (type jpg)
 <use figures/group0/0030.jpg>
 Package pdftex.def Info: figures/group0/0030.jpg  used on input line 6.
 (pdftex.def)             Requested size: 80.6003pt x 56.9055pt.
-<figures/group0/0000attn_map0withouttitle.png, id=684, 462.528pt x 338.2236pt>
+<figures/group0/0000attn_map0withouttitle.png, id=763, 462.528pt x 338.2236pt>
 File: figures/group0/0000attn_map0withouttitle.png Graphic file (type png)
 <use figures/group0/0000attn_map0withouttitle.png>
 Package pdftex.def Info: figures/group0/0000attn_map0withouttitle.png  used on 
 input line 7.
 (pdftex.def)             Requested size: 77.8171pt x 56.9055pt.
-<figures/group0/0074attn_map0withouttitle.png, id=685, 242.1045pt x 346.896pt>
+<figures/group0/0074attn_map0withouttitle.png, id=764, 242.1045pt x 346.896pt>
 File: figures/group0/0074attn_map0withouttitle.png Graphic file (type png)
 <use figures/group0/0074attn_map0withouttitle.png>
 Package pdftex.def Info: figures/group0/0074attn_map0withouttitle.png  used on 
@@ -1589,13 +1616,13 @@ File: figures/group0/0023attn_map0withouttitle.png Graphic file (type png)
 Package pdftex.def Info: figures/group0/0023attn_map0withouttitle.png  used on 
 input line 7.
 (pdftex.def)             Requested size: 62.47354pt x 56.9055pt.
-<figures/group0/0030attn_map0withouttitle.png, id=686, 462.528pt x 325.9377pt>
+<figures/group0/0030attn_map0withouttitle.png, id=765, 462.528pt x 325.9377pt>
 File: figures/group0/0030attn_map0withouttitle.png Graphic file (type png)
 <use figures/group0/0030attn_map0withouttitle.png>
 Package pdftex.def Info: figures/group0/0030attn_map0withouttitle.png  used on 
 input line 7.
 (pdftex.def)             Requested size: 80.75305pt x 56.9055pt.
-) [23] [24 <./figures/group0/0050.jpg> <./figures/group0/0008.jpg> <./figures/g
+) [27] [28 <./figures/group0/0050.jpg> <./figures/group0/0008.jpg> <./figures/g
 roup0/0023.jpg> <./figures/group0/0024.jpg> <./figures/group0/0050attn_map0with
 outtitle.png> <./figures/group0/0008attn_map0withouttitle.png> <./figures/group
 0/0023attn_map0withouttitle.png> <./figures/group0/0024attn_map0withouttitle.pn
@@ -1607,7 +1634,7 @@ tn_map5withouttitle.png> <./figures/group5/0009attn_map5withouttitle.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/group5/0009attn_map5withoutti
 tle.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
->] [25 <./figures/group0/0000.jpg> <./figures/group0/0074.jpg> <./figures/group
+>] [29 <./figures/group0/0000.jpg> <./figures/group0/0074.jpg> <./figures/group
 0/0030.jpg> <./figures/group0/0000attn_map0withouttitle.png> <./figures/group0/
 0074attn_map0withouttitle.png> <./figures/group0/0030attn_map0withouttitle.png>
 ]
@@ -1619,12 +1646,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Images/temp.drawio (4).pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/temp.drawio (4).pdf, id=726, 615.25862pt x 796.89719pt>
+<Images/temp.drawio (4).pdf, id=806, 615.25862pt x 796.89719pt>
 File: Images/temp.drawio (4).pdf Graphic file (type pdf)
 <use Images/temp.drawio (4).pdf>
 Package pdftex.def Info: Images/temp.drawio (4).pdf  used on input line 266.
 (pdftex.def)             Requested size: 398.33617pt x 476.64636pt.
-[26] [27 <./Images/temp.drawio (4).pdf>]
+[30] [31 <./Images/temp.drawio (4).pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 329--331
 
  []
@@ -1632,19 +1659,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--331
 
 Underfull \vbox (badness 3118) has occurred while \output is active []
 
- [28]
-[29]
+ [32]
+[33]
 
-LaTeX Warning: Reference `fig:group_vis' on page 30 undefined on input line 368
+LaTeX Warning: Reference `fig:group_vis' on page 34 undefined on input line 368
 .
 
-[30]
-<Images/0009.jpg, id=818, 501.875pt x 376.40625pt>
+[34]
+<Images/0009.jpg, id=896, 501.875pt x 376.40625pt>
 File: Images/0009.jpg Graphic file (type jpg)
 <use Images/0009.jpg>
 Package pdftex.def Info: Images/0009.jpg  used on input line 403.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/all group tokens/10/attn_map2withouttitle.pdf, id=819, 462.52798pt x 34
+<Images/all group tokens/10/attn_map2withouttitle.pdf, id=897, 462.52798pt x 34
 6.89601pt>
 File: Images/all group tokens/10/attn_map2withouttitle.pdf Graphic file (type p
 df)
@@ -1652,7 +1679,7 @@ df)
 Package pdftex.def Info: Images/all group tokens/10/attn_map2withouttitle.pdf  
 used on input line 409.
 (pdftex.def)             Requested size: 75.6853pt x 56.76427pt.
-<Images/all group tokens/10/attn_map5withouttitle.pdf, id=820, 462.52798pt x 34
+<Images/all group tokens/10/attn_map5withouttitle.pdf, id=898, 462.52798pt x 34
 6.89601pt>
 File: Images/all group tokens/10/attn_map5withouttitle.pdf Graphic file (type p
 df)
@@ -1660,7 +1687,7 @@ df)
 Package pdftex.def Info: Images/all group tokens/10/attn_map5withouttitle.pdf  
 used on input line 415.
 (pdftex.def)             Requested size: 75.6853pt x 56.76427pt.
-<Images/all group tokens/10/attn_map0withouttitle.pdf, id=821, 462.52798pt x 34
+<Images/all group tokens/10/attn_map0withouttitle.pdf, id=899, 462.52798pt x 34
 6.89601pt>
 File: Images/all group tokens/10/attn_map0withouttitle.pdf Graphic file (type p
 df)
@@ -1668,7 +1695,7 @@ df)
 Package pdftex.def Info: Images/all group tokens/10/attn_map0withouttitle.pdf  
 used on input line 421.
 (pdftex.def)             Requested size: 75.6853pt x 56.76427pt.
-<Images/all group tokens/10/attn_map7withouttitle.pdf, id=822, 462.52798pt x 34
+<Images/all group tokens/10/attn_map7withouttitle.pdf, id=900, 462.52798pt x 34
 6.89601pt>
 File: Images/all group tokens/10/attn_map7withouttitle.pdf Graphic file (type p
 df)
@@ -1680,20 +1707,20 @@ File: Images/0009.jpg Graphic file (type jpg)
 <use Images/0009.jpg>
 Package pdftex.def Info: Images/0009.jpg  used on input line 441.
 (pdftex.def)             Requested size: 127.47127pt x 95.60037pt.
-<Images/entropymaps/entropy_mapwithoutcb.png, id=823, 462.528pt x 345.4506pt>
+<Images/entropymaps/entropy_mapwithoutcb.png, id=901, 462.528pt x 345.4506pt>
 File: Images/entropymaps/entropy_mapwithoutcb.png Graphic file (type png)
 <use Images/entropymaps/entropy_mapwithoutcb.png>
 Package pdftex.def Info: Images/entropymaps/entropy_mapwithoutcb.png  used on i
 nput line 447.
 (pdftex.def)             Requested size: 127.47127pt x 95.20213pt.
-<Images/entropymaps/class_entropywithoutcb.pdf, id=824, 462.52798pt x 346.89601
+<Images/entropymaps/class_entropywithoutcb.pdf, id=902, 462.52798pt x 346.89601
 pt>
 File: Images/entropymaps/class_entropywithoutcb.pdf Graphic file (type pdf)
 <use Images/entropymaps/class_entropywithoutcb.pdf>
 Package pdftex.def Info: Images/entropymaps/class_entropywithoutcb.pdf  used on
  input line 455.
 (pdftex.def)             Requested size: 127.47127pt x 95.60048pt.
- [31 <./Images/0009.jpg> <./Images/all group tokens/10/attn_map2withouttitle.pd
+ [35 <./Images/0009.jpg> <./Images/all group tokens/10/attn_map2withouttitle.pd
 f> <./Images/all group tokens/10/attn_map5withouttitle.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Images/all group tokens/10/attn_map5w
@@ -1712,15 +1739,15 @@ ngle page
 >]
 Underfull \vbox (badness 4765) has occurred while \output is active []
 
- [32 <./Images/entropymaps/entropy_mapwithoutcb.png> <./Images/entropymaps/clas
+ [36 <./Images/entropymaps/entropy_mapwithoutcb.png> <./Images/entropymaps/clas
 s_entropywithoutcb.pdf>]
-<Images/entropy.drawio (8).drawio (4).png, id=865, 752.8125pt x 889.3225pt>
+<Images/entropy.drawio (8).drawio (4).png, id=945, 752.8125pt x 889.3225pt>
 File: Images/entropy.drawio (8).drawio (4).png Graphic file (type png)
 <use Images/entropy.drawio (8).drawio (4).png>
 Package pdftex.def Info: Images/entropy.drawio (8).drawio (4).png  used on inpu
 t line 515.
 (pdftex.def)             Requested size: 398.33864pt x 470.57875pt.
-) [33] [34 <./Images/entropy.drawio (8).drawio (4).png>]
+) [37] [38 <./Images/entropy.drawio (8).drawio (4).png>]
 \openout2 = `chapters/5-experiments.aux'.
 
 
@@ -1736,155 +1763,157 @@ Overfull \hbox (52.69449pt too wide) in paragraph at lines 24--35
  [][] 
  []
 
-[35
+[39
 
 
 
 
 
-] [36] [37]
+] [40] [41]
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [38]
+ [42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-[40]
-<Images/analysis/0000.jpg, id=958, 501.875pt x 367.3725pt>
+ [43]
+[44]
+<Images/analysis/0000.jpg, id=1038, 501.875pt x 367.3725pt>
 File: Images/analysis/0000.jpg Graphic file (type jpg)
 <use Images/analysis/0000.jpg>
 Package pdftex.def Info: Images/analysis/0000.jpg  used on input line 207.
 (pdftex.def)             Requested size: 75.6853pt x 55.40059pt.
-<Images/analysis/0.png, id=959, 501.875pt x 367.3725pt>
+<Images/analysis/0.png, id=1039, 501.875pt x 367.3725pt>
 File: Images/analysis/0.png Graphic file (type png)
 <use Images/analysis/0.png>
 Package pdftex.def Info: Images/analysis/0.png  used on input line 208.
 (pdftex.def)             Requested size: 75.6853pt x 55.40059pt.
-<Images/analysis/colored_mask_gi_val0.png, id=960, 501.875pt x 367.3725pt>
+<Images/analysis/colored_mask_gi_val0.png, id=1040, 501.875pt x 367.3725pt>
 File: Images/analysis/colored_mask_gi_val0.png Graphic file (type png)
 <use Images/analysis/colored_mask_gi_val0.png>
 Package pdftex.def Info: Images/analysis/colored_mask_gi_val0.png  used on inpu
 t line 209.
 (pdftex.def)             Requested size: 75.6853pt x 55.40059pt.
-<Images/analysis/originalcheckpoint/0000.png, id=961, 501.875pt x 367.3725pt>
+<Images/analysis/originalcheckpoint/0000.png, id=1041, 501.875pt x 367.3725pt>
 File: Images/analysis/originalcheckpoint/0000.png Graphic file (type png)
 <use Images/analysis/originalcheckpoint/0000.png>
 Package pdftex.def Info: Images/analysis/originalcheckpoint/0000.png  used on i
 nput line 210.
 (pdftex.def)             Requested size: 75.6853pt x 55.40059pt.
-<Images/analysis/2007_000033.png, id=962, 501.875pt x 367.3725pt>
+<Images/analysis/2007_000033.png, id=1042, 501.875pt x 367.3725pt>
 File: Images/analysis/2007_000033.png Graphic file (type png)
 <use Images/analysis/2007_000033.png>
 Package pdftex.def Info: Images/analysis/2007_000033.png  used on input line 21
 1.
 (pdftex.def)             Requested size: 75.6853pt x 55.40059pt.
-<Images/analysis/0081.jpg, id=963, 501.875pt x 376.40625pt>
+<Images/analysis/0081.jpg, id=1043, 501.875pt x 376.40625pt>
 File: Images/analysis/0081.jpg Graphic file (type jpg)
 <use Images/analysis/0081.jpg>
 Package pdftex.def Info: Images/analysis/0081.jpg  used on input line 212.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/81.png, id=964, 501.875pt x 376.40625pt>
+<Images/analysis/81.png, id=1044, 501.875pt x 376.40625pt>
 File: Images/analysis/81.png Graphic file (type png)
 <use Images/analysis/81.png>
 Package pdftex.def Info: Images/analysis/81.png  used on input line 213.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/colored_mask_gi_val81.png, id=965, 501.875pt x 376.40625pt>
+<Images/analysis/colored_mask_gi_val81.png, id=1045, 501.875pt x 376.40625pt>
 File: Images/analysis/colored_mask_gi_val81.png Graphic file (type png)
 <use Images/analysis/colored_mask_gi_val81.png>
 Package pdftex.def Info: Images/analysis/colored_mask_gi_val81.png  used on inp
 ut line 214.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/originalcheckpoint/0081.png, id=966, 501.875pt x 376.40625pt>
+<Images/analysis/originalcheckpoint/0081.png, id=1046, 501.875pt x 376.40625pt>
+
 File: Images/analysis/originalcheckpoint/0081.png Graphic file (type png)
 <use Images/analysis/originalcheckpoint/0081.png>
 Package pdftex.def Info: Images/analysis/originalcheckpoint/0081.png  used on i
 nput line 215.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/2007_002565.png, id=967, 501.875pt x 376.40625pt>
+<Images/analysis/2007_002565.png, id=1047, 501.875pt x 376.40625pt>
 File: Images/analysis/2007_002565.png Graphic file (type png)
 <use Images/analysis/2007_002565.png>
 Package pdftex.def Info: Images/analysis/2007_002565.png  used on input line 21
 6.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/0086.jpg, id=968, 501.875pt x 376.40625pt>
+<Images/analysis/0086.jpg, id=1048, 501.875pt x 376.40625pt>
 File: Images/analysis/0086.jpg Graphic file (type jpg)
 <use Images/analysis/0086.jpg>
 Package pdftex.def Info: Images/analysis/0086.jpg  used on input line 217.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/86.png, id=969, 501.875pt x 376.40625pt>
+<Images/analysis/86.png, id=1049, 501.875pt x 376.40625pt>
 File: Images/analysis/86.png Graphic file (type png)
 <use Images/analysis/86.png>
 Package pdftex.def Info: Images/analysis/86.png  used on input line 218.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/colored_mask_gi_val86.png, id=970, 501.875pt x 376.40625pt>
+<Images/analysis/colored_mask_gi_val86.png, id=1050, 501.875pt x 376.40625pt>
 File: Images/analysis/colored_mask_gi_val86.png Graphic file (type png)
 <use Images/analysis/colored_mask_gi_val86.png>
 Package pdftex.def Info: Images/analysis/colored_mask_gi_val86.png  used on inp
 ut line 219.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/originalcheckpoint/0086.png, id=971, 501.875pt x 376.40625pt>
+<Images/analysis/originalcheckpoint/0086.png, id=1051, 501.875pt x 376.40625pt>
+
 File: Images/analysis/originalcheckpoint/0086.png Graphic file (type png)
 <use Images/analysis/originalcheckpoint/0086.png>
 Package pdftex.def Info: Images/analysis/originalcheckpoint/0086.png  used on i
 nput line 220.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/2007_002643.png, id=972, 501.875pt x 376.40625pt>
+<Images/analysis/2007_002643.png, id=1052, 501.875pt x 376.40625pt>
 File: Images/analysis/2007_002643.png Graphic file (type png)
 <use Images/analysis/2007_002643.png>
 Package pdftex.def Info: Images/analysis/2007_002643.png  used on input line 22
 1.
 (pdftex.def)             Requested size: 75.6853pt x 56.7629pt.
-<Images/analysis/0262.jpg, id=973, 481.8pt x 424.58624pt>
+<Images/analysis/0262.jpg, id=1053, 481.8pt x 424.58624pt>
 File: Images/analysis/0262.jpg Graphic file (type jpg)
 <use Images/analysis/0262.jpg>
 Package pdftex.def Info: Images/analysis/0262.jpg  used on input line 222.
 (pdftex.def)             Requested size: 75.6853pt x 66.69775pt.
-<Images/analysis/262.png, id=974, 481.8pt x 424.58624pt>
+<Images/analysis/262.png, id=1054, 481.8pt x 424.58624pt>
 File: Images/analysis/262.png Graphic file (type png)
 <use Images/analysis/262.png>
 Package pdftex.def Info: Images/analysis/262.png  used on input line 223.
 (pdftex.def)             Requested size: 75.6853pt x 66.69775pt.
-<Images/analysis/colored_mask_gi_val262.png, id=975, 481.8pt x 424.58624pt>
+<Images/analysis/colored_mask_gi_val262.png, id=1055, 481.8pt x 424.58624pt>
 File: Images/analysis/colored_mask_gi_val262.png Graphic file (type png)
 <use Images/analysis/colored_mask_gi_val262.png>
 Package pdftex.def Info: Images/analysis/colored_mask_gi_val262.png  used on in
 put line 224.
 (pdftex.def)             Requested size: 75.6853pt x 66.69775pt.
-<Images/analysis/originalcheckpoint/0262.png, id=976, 481.8pt x 424.58624pt>
+<Images/analysis/originalcheckpoint/0262.png, id=1056, 481.8pt x 424.58624pt>
 File: Images/analysis/originalcheckpoint/0262.png Graphic file (type png)
 <use Images/analysis/originalcheckpoint/0262.png>
 Package pdftex.def Info: Images/analysis/originalcheckpoint/0262.png  used on i
 nput line 225.
 (pdftex.def)             Requested size: 75.6853pt x 66.69775pt.
-<Images/analysis/2007_008256.png, id=977, 481.8pt x 424.58624pt>
+<Images/analysis/2007_008256.png, id=1057, 481.8pt x 424.58624pt>
 File: Images/analysis/2007_008256.png Graphic file (type png)
 <use Images/analysis/2007_008256.png>
 Package pdftex.def Info: Images/analysis/2007_008256.png  used on input line 22
 6.
 (pdftex.def)             Requested size: 75.6853pt x 66.69775pt.
-<Images/analysis/0270.jpg, id=978, 357.335pt x 481.8pt>
+<Images/analysis/0270.jpg, id=1058, 357.335pt x 481.8pt>
 File: Images/analysis/0270.jpg Graphic file (type jpg)
 <use Images/analysis/0270.jpg>
 Package pdftex.def Info: Images/analysis/0270.jpg  used on input line 227.
 (pdftex.def)             Requested size: 75.6853pt x 102.04848pt.
-<Images/analysis/270.png, id=979, 357.335pt x 481.8pt>
+<Images/analysis/270.png, id=1059, 357.335pt x 481.8pt>
 File: Images/analysis/270.png Graphic file (type png)
 <use Images/analysis/270.png>
 Package pdftex.def Info: Images/analysis/270.png  used on input line 228.
 (pdftex.def)             Requested size: 75.6853pt x 102.04848pt.
-<Images/analysis/colored_mask_gi_val270.png, id=980, 357.335pt x 481.8pt>
+<Images/analysis/colored_mask_gi_val270.png, id=1060, 357.335pt x 481.8pt>
 File: Images/analysis/colored_mask_gi_val270.png Graphic file (type png)
 <use Images/analysis/colored_mask_gi_val270.png>
 Package pdftex.def Info: Images/analysis/colored_mask_gi_val270.png  used on in
 put line 229.
 (pdftex.def)             Requested size: 75.6853pt x 102.04848pt.
-<Images/analysis/originalcheckpoint/0270.png, id=981, 357.335pt x 481.8pt>
+<Images/analysis/originalcheckpoint/0270.png, id=1061, 357.335pt x 481.8pt>
 File: Images/analysis/originalcheckpoint/0270.png Graphic file (type png)
 <use Images/analysis/originalcheckpoint/0270.png>
 Package pdftex.def Info: Images/analysis/originalcheckpoint/0270.png  used on i
 nput line 230.
 (pdftex.def)             Requested size: 75.6853pt x 102.04848pt.
-<Images/analysis/2007_008596.png, id=982, 357.335pt x 481.8pt>
+<Images/analysis/2007_008596.png, id=1062, 357.335pt x 481.8pt>
 File: Images/analysis/2007_008596.png Graphic file (type png)
 <use Images/analysis/2007_008596.png>
 Package pdftex.def Info: Images/analysis/2007_008596.png  used on input line 23
@@ -1893,8 +1922,8 @@ Package pdftex.def Info: Images/analysis/2007_008596.png  used on input line 23
  (./figures/experiments/tables/analysis.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
-[42 <./Images/analysis/0000.jpg> <./Images/analysis/0.png (PNG copy)> <./Images
+ [45]
+[46 <./Images/analysis/0000.jpg> <./Images/analysis/0.png (PNG copy)> <./Images
 /analysis/colored_mask_gi_val0.png (PNG copy)> <./Images/analysis/originalcheck
 point/0000.png> <./Images/analysis/2007_000033.png> <./Images/analysis/0081.jpg
 > <./Images/analysis/81.png (PNG copy)> <./Images/analysis/colored_mask_gi_val8
@@ -1908,8 +1937,13 @@ s/colored_mask_gi_val262.png (PNG copy)> <./Images/analysis/originalcheckpoint/
 mages/analysis/270.png (PNG copy)> <./Images/analysis/colored_mask_gi_val270.pn
 g (PNG copy)> <./Images/analysis/originalcheckpoint/0270.png> <./Images/analysi
 s/2007_008596.png>] (./figures/experiments/tables/TunableParameterAblation.tex)
-(./figures/experiments/tables/batchsize.tex) [43] [44]
+(./figures/experiments/tables/batchsize.tex) [47] [48]
 (./figures/experiments/tables/text_hierarchy.tex
+Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/10'
+(microtype)             (new value: 10.0pt) on input line 100.
+Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/7'
+(microtype)             (new value: 7.0pt) on input line 100.
+
 Overfull \hbox (9.76976pt too wide) in paragraph at lines 100--127
  [][] 
  []
@@ -1920,109 +1954,109 @@ Underfull \hbox (badness 4819) in paragraph at lines 127--127
 T1/lmr/m/n/10.95 (+20) The model
  []
 
-) (./figures/experiments/tables/newbaseline.tex [45]
+) (./figures/experiments/tables/newbaseline.tex [49]
 Overfull \hbox (5.80058pt too wide) in paragraph at lines 43--61
  [][] 
  []
 
 )
-<figures/experiments/pascal/0000.jpg, id=1033, 501.875pt x 367.3725pt>
+<figures/experiments/pascal/0000.jpg, id=1112, 501.875pt x 367.3725pt>
 File: figures/experiments/pascal/0000.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/0000.jpg>
 Package pdftex.def Info: figures/experiments/pascal/0000.jpg  used on input lin
 e 290.
 (pdftex.def)             Requested size: 95.60345pt x 69.98087pt.
-<figures/experiments/pascal/orgckpt/0000.png, id=1034, 501.875pt x 367.3725pt>
+<figures/experiments/pascal/orgckpt/0000.png, id=1113, 501.875pt x 367.3725pt>
 File: figures/experiments/pascal/orgckpt/0000.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0000.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0000.png  used on i
 nput line 291.
 (pdftex.def)             Requested size: 95.60345pt x 69.98087pt.
-<figures/experiments/pascal/ft/0000.png, id=1035, 501.875pt x 367.3725pt>
+<figures/experiments/pascal/ft/0000.png, id=1114, 501.875pt x 367.3725pt>
 File: figures/experiments/pascal/ft/0000.png Graphic file (type png)
 <use figures/experiments/pascal/ft/0000.png>
 Package pdftex.def Info: figures/experiments/pascal/ft/0000.png  used on input 
 line 292.
 (pdftex.def)             Requested size: 95.60345pt x 69.98087pt.
-<figures/experiments/pascal/gt/2007_000033.png, id=1036, 501.875pt x 367.3725pt
+<figures/experiments/pascal/gt/2007_000033.png, id=1115, 501.875pt x 367.3725pt
 >
 File: figures/experiments/pascal/gt/2007_000033.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_000033.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_000033.png  used on
  input line 293.
 (pdftex.def)             Requested size: 95.60345pt x 69.98087pt.
-<figures/experiments/pascal/0010.jpg, id=1037, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/0010.jpg, id=1116, 501.875pt x 376.40625pt>
 File: figures/experiments/pascal/0010.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/0010.jpg>
 Package pdftex.def Info: figures/experiments/pascal/0010.jpg  used on input lin
 e 295.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/orgckpt/0010.png, id=1038, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/orgckpt/0010.png, id=1117, 501.875pt x 376.40625pt>
 
 File: figures/experiments/pascal/orgckpt/0010.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0010.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0010.png  used on i
 nput line 296.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/ft/0010.png, id=1039, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/ft/0010.png, id=1118, 501.875pt x 376.40625pt>
 File: figures/experiments/pascal/ft/0010.png Graphic file (type png)
 <use figures/experiments/pascal/ft/0010.png>
 Package pdftex.def Info: figures/experiments/pascal/ft/0010.png  used on input 
 line 297.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/gt/2007_000452.png, id=1040, 501.875pt x 376.40625p
+<figures/experiments/pascal/gt/2007_000452.png, id=1119, 501.875pt x 376.40625p
 t>
 File: figures/experiments/pascal/gt/2007_000452.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_000452.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_000452.png  used on
  input line 298.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/0013.jpg, id=1041, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/0013.jpg, id=1120, 501.875pt x 376.40625pt>
 File: figures/experiments/pascal/0013.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/0013.jpg>
 Package pdftex.def Info: figures/experiments/pascal/0013.jpg  used on input lin
 e 300.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/orgckpt/0013.png, id=1042, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/orgckpt/0013.png, id=1121, 501.875pt x 376.40625pt>
 
 File: figures/experiments/pascal/orgckpt/0013.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0013.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0013.png  used on i
 nput line 301.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/ft/0013.png, id=1043, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/ft/0013.png, id=1122, 501.875pt x 376.40625pt>
 File: figures/experiments/pascal/ft/0013.png Graphic file (type png)
 <use figures/experiments/pascal/ft/0013.png>
 Package pdftex.def Info: figures/experiments/pascal/ft/0013.png  used on input 
 line 302.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/gt/2007_000529.png, id=1044, 501.875pt x 376.40625p
+<figures/experiments/pascal/gt/2007_000529.png, id=1123, 501.875pt x 376.40625p
 t>
 File: figures/experiments/pascal/gt/2007_000529.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_000529.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_000529.png  used on
  input line 303.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/image/0039.jpg, id=1045, 501.875pt x 320.19624pt>
+<figures/experiments/pascal/image/0039.jpg, id=1124, 501.875pt x 320.19624pt>
 File: figures/experiments/pascal/image/0039.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/image/0039.jpg>
 Package pdftex.def Info: figures/experiments/pascal/image/0039.jpg  used on inp
 ut line 305.
 (pdftex.def)             Requested size: 95.60345pt x 60.99425pt.
-<figures/experiments/pascal/orgckpt/0039.png, id=1046, 501.875pt x 320.19624pt>
+<figures/experiments/pascal/orgckpt/0039.png, id=1125, 501.875pt x 320.19624pt>
 
 File: figures/experiments/pascal/orgckpt/0039.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0039.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0039.png  used on i
 nput line 306.
 (pdftex.def)             Requested size: 95.60345pt x 60.99425pt.
-<figures/experiments/pascal/ft/0039.png, id=1047, 501.875pt x 320.19624pt>
+<figures/experiments/pascal/ft/0039.png, id=1126, 501.875pt x 320.19624pt>
 File: figures/experiments/pascal/ft/0039.png Graphic file (type png)
 <use figures/experiments/pascal/ft/0039.png>
 Package pdftex.def Info: figures/experiments/pascal/ft/0039.png  used on input 
 line 307.
 (pdftex.def)             Requested size: 95.60345pt x 60.99425pt.
-<figures/experiments/pascal/gt/2007_001311.png, id=1048, 501.875pt x 320.19624p
+<figures/experiments/pascal/gt/2007_001311.png, id=1127, 501.875pt x 320.19624p
 t>
 File: figures/experiments/pascal/gt/2007_001311.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_001311.png>
@@ -2032,11 +2066,11 @@ Package pdftex.def Info: figures/experiments/pascal/gt/2007_001311.png  used on
  (./figures/experiments/tables/entityfreq.tex
 Underfull \vbox (badness 1221) has occurred while \output is active []
 
- [46]
+ [50]
 Underfull \vbox (badness 2119) has occurred while \output is active []
 
- [47])
-<figures/experiments/entropymaps/finetuned/13/0013.jpg, id=1060, 501.875pt x 37
+ [51])
+<figures/experiments/entropymaps/finetuned/13/0013.jpg, id=1138, 501.875pt x 37
 6.40625pt>
 File: figures/experiments/entropymaps/finetuned/13/0013.jpg Graphic file (type 
 jpg)
@@ -2044,7 +2078,7 @@ jpg)
 Package pdftex.def Info: figures/experiments/entropymaps/finetuned/13/0013.jpg 
  used on input line 327.
 (pdftex.def)             Requested size: 119.50279pt x 89.62715pt.
-<figures/experiments/entropymaps/finetuned/13/entropy_mapwithoutcb.png, id=1061
+<figures/experiments/entropymaps/finetuned/13/entropy_mapwithoutcb.png, id=1139
 , 462.528pt x 345.4506pt>
 File: figures/experiments/entropymaps/finetuned/13/entropy_mapwithoutcb.png Gra
 phic file (type png)
@@ -2052,7 +2086,7 @@ phic file (type png)
 Package pdftex.def Info: figures/experiments/entropymaps/finetuned/13/entropy_m
 apwithoutcb.png  used on input line 331.
 (pdftex.def)             Requested size: 119.50279pt x 89.25102pt.
-<figures/experiments/entropymaps/er/13/entropy_mapwithoutcb.png, id=1062, 462.5
+<figures/experiments/entropymaps/er/13/entropy_mapwithoutcb.png, id=1140, 462.5
 28pt x 345.4506pt>
 File: figures/experiments/entropymaps/er/13/entropy_mapwithoutcb.png Graphic fi
 le (type png)
@@ -2060,7 +2094,7 @@ le (type png)
 Package pdftex.def Info: figures/experiments/entropymaps/er/13/entropy_mapwitho
 utcb.png  used on input line 336.
 (pdftex.def)             Requested size: 119.50279pt x 89.25102pt.
-<figures/experiments/entropymaps/finetuned/10/0010.jpg, id=1063, 501.875pt x 37
+<figures/experiments/entropymaps/finetuned/10/0010.jpg, id=1141, 501.875pt x 37
 6.40625pt>
 File: figures/experiments/entropymaps/finetuned/10/0010.jpg Graphic file (type 
 jpg)
@@ -2068,7 +2102,7 @@ jpg)
 Package pdftex.def Info: figures/experiments/entropymaps/finetuned/10/0010.jpg 
  used on input line 340.
 (pdftex.def)             Requested size: 119.50279pt x 89.62715pt.
-<figures/experiments/entropymaps/finetuned/10/entropy_mapwithoutcb.png, id=1064
+<figures/experiments/entropymaps/finetuned/10/entropy_mapwithoutcb.png, id=1142
 , 462.528pt x 345.4506pt>
 File: figures/experiments/entropymaps/finetuned/10/entropy_mapwithoutcb.png Gra
 phic file (type png)
@@ -2076,7 +2110,7 @@ phic file (type png)
 Package pdftex.def Info: figures/experiments/entropymaps/finetuned/10/entropy_m
 apwithoutcb.png  used on input line 344.
 (pdftex.def)             Requested size: 119.50279pt x 89.25102pt.
-<figures/experiments/entropymaps/er/10/entropy_mapwithoutcb.png, id=1065, 462.5
+<figures/experiments/entropymaps/er/10/entropy_mapwithoutcb.png, id=1143, 462.5
 28pt x 345.4506pt>
 File: figures/experiments/entropymaps/er/10/entropy_mapwithoutcb.png Graphic fi
 le (type png)
@@ -2090,15 +2124,15 @@ jpg)
 Package pdftex.def Info: figures/experiments/entropymaps/finetuned/13/0013.jpg 
  used on input line 358.
 (pdftex.def)             Requested size: 119.50279pt x 89.62715pt.
-<figures/experiments/entropymaps/finetuned/13/class_entropywithoutcb.pdf, id=10
-66, 462.52798pt x 346.89601pt>
+<figures/experiments/entropymaps/finetuned/13/class_entropywithoutcb.pdf, id=11
+44, 462.52798pt x 346.89601pt>
 File: figures/experiments/entropymaps/finetuned/13/class_entropywithoutcb.pdf G
 raphic file (type pdf)
 <use figures/experiments/entropymaps/finetuned/13/class_entropywithoutcb.pdf>
 Package pdftex.def Info: figures/experiments/entropymaps/finetuned/13/class_ent
 ropywithoutcb.pdf  used on input line 362.
 (pdftex.def)             Requested size: 119.50279pt x 89.62445pt.
-<figures/experiments/entropymaps/er/13/class_entropywithoutcb.pdf, id=1067, 462
+<figures/experiments/entropymaps/er/13/class_entropywithoutcb.pdf, id=1145, 462
 .52798pt x 346.89601pt>
 File: figures/experiments/entropymaps/er/13/class_entropywithoutcb.pdf Graphic 
 file (type pdf)
@@ -2112,15 +2146,15 @@ jpg)
 Package pdftex.def Info: figures/experiments/entropymaps/finetuned/10/0010.jpg 
  used on input line 370.
 (pdftex.def)             Requested size: 119.50279pt x 89.62715pt.
-<figures/experiments/entropymaps/finetuned/10/class_entropywithoutcb.pdf, id=10
-68, 462.52798pt x 346.89601pt>
+<figures/experiments/entropymaps/finetuned/10/class_entropywithoutcb.pdf, id=11
+46, 462.52798pt x 346.89601pt>
 File: figures/experiments/entropymaps/finetuned/10/class_entropywithoutcb.pdf G
 raphic file (type pdf)
 <use figures/experiments/entropymaps/finetuned/10/class_entropywithoutcb.pdf>
 Package pdftex.def Info: figures/experiments/entropymaps/finetuned/10/class_ent
 ropywithoutcb.pdf  used on input line 374.
 (pdftex.def)             Requested size: 119.50279pt x 89.62445pt.
-<figures/experiments/entropymaps/er/10/class_entropywithoutcb.pdf, id=1069, 462
+<figures/experiments/entropymaps/er/10/class_entropywithoutcb.pdf, id=1147, 462
 .52798pt x 346.89601pt>
 File: figures/experiments/entropymaps/er/10/class_entropywithoutcb.pdf Graphic 
 file (type pdf)
@@ -2140,7 +2174,7 @@ File: figures/experiments/pascal/ft/0000.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/ft/0000.png  used on input 
 line 421.
 (pdftex.def)             Requested size: 95.60345pt x 69.98087pt.
-<figures/experiments/pascal/highres+ge/0000.png, id=1080, 501.875pt x 367.3725p
+<figures/experiments/pascal/highres+ge/0000.png, id=1158, 501.875pt x 367.3725p
 t>
 File: figures/experiments/pascal/highres+ge/0000.png Graphic file (type png)
 <use figures/experiments/pascal/highres+ge/0000.png>
@@ -2162,7 +2196,7 @@ File: figures/experiments/pascal/ft/0010.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/ft/0010.png  used on input 
 line 426.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/highres+ge/0010.png, id=1081, 501.875pt x 376.40625
+<figures/experiments/pascal/highres+ge/0010.png, id=1159, 501.875pt x 376.40625
 pt>
 File: figures/experiments/pascal/highres+ge/0010.png Graphic file (type png)
 <use figures/experiments/pascal/highres+ge/0010.png>
@@ -2184,7 +2218,7 @@ File: figures/experiments/pascal/ft/0013.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/ft/0013.png  used on input 
 line 431.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/highres+ge/0013.png, id=1082, 501.875pt x 376.40625
+<figures/experiments/pascal/highres+ge/0013.png, id=1160, 501.875pt x 376.40625
 pt>
 File: figures/experiments/pascal/highres+ge/0013.png Graphic file (type png)
 <use figures/experiments/pascal/highres+ge/0013.png>
@@ -2206,7 +2240,7 @@ File: figures/experiments/pascal/ft/0039.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/ft/0039.png  used on input 
 line 436.
 (pdftex.def)             Requested size: 95.60345pt x 60.99425pt.
-<figures/experiments/pascal/highres+ge/0039.png, id=1083, 501.875pt x 320.19624
+<figures/experiments/pascal/highres+ge/0039.png, id=1161, 501.875pt x 320.19624
 pt>
 File: figures/experiments/pascal/highres+ge/0039.png Graphic file (type png)
 <use figures/experiments/pascal/highres+ge/0039.png>
@@ -2218,7 +2252,7 @@ File: figures/experiments/pascal/gt/2007_001311.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_001311.png  used on
  input line 438.
 (pdftex.def)             Requested size: 95.60345pt x 60.99425pt.
- [48 <./figures/experiments/pascal/0000.jpg> <./figures/experiments/pascal/orgc
+ [52 <./figures/experiments/pascal/0000.jpg> <./figures/experiments/pascal/orgc
 kpt/0000.png> <./figures/experiments/pascal/ft/0000.png> <./figures/experiments
 /pascal/gt/2007_000033.png> <./figures/experiments/pascal/0010.jpg> <./figures/
 experiments/pascal/orgckpt/0010.png> <./figures/experiments/pascal/ft/0010.png>
@@ -2227,8 +2261,8 @@ l/0013.jpg> <./figures/experiments/pascal/orgckpt/0013.png> <./figures/experime
 nts/pascal/ft/0013.png> <./figures/experiments/pascal/gt/2007_000529.png> <./fi
 gures/experiments/pascal/image/0039.jpg> <./figures/experiments/pascal/orgckpt/
 0039.png> <./figures/experiments/pascal/ft/0039.png> <./figures/experiments/pas
-cal/gt/2007_001311.png>] [49]
-(./figures/experiments/tables/highres_training.tex [50 <./figures/experiments/e
+cal/gt/2007_001311.png>] [53]
+(./figures/experiments/tables/highres_training.tex [54 <./figures/experiments/e
 ntropymaps/finetuned/13/0013.jpg> <./figures/experiments/entropymaps/finetuned/
 13/entropy_mapwithoutcb.png> <./figures/experiments/entropymaps/er/13/entropy_m
 apwithoutcb.png> <./figures/experiments/entropymaps/finetuned/10/0010.jpg> <./f
@@ -2236,7 +2270,7 @@ igures/experiments/entropymaps/finetuned/10/entropy_mapwithoutcb.png> <./figure
 s/experiments/entropymaps/er/10/entropy_mapwithoutcb.png>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51 <./figures/experiments/entropymaps/finetuned/13/class_entropywithoutcb.pdf
+ [55 <./figures/experiments/entropymaps/finetuned/13/class_entropywithoutcb.pdf
 > <./figures/experiments/entropymaps/er/13/class_entropywithoutcb.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/experiments/entropymaps/er/13
@@ -2252,49 +2286,49 @@ up included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/experiments/entropymaps/er/10
 /class_entropywithoutcb.pdf): PDF inclusion: multiple pdfs with page group incl
 uded in a single page
->] [52 <./figures/experiments/pascal/highres+ge/0000.png> <./figures/experiment
+>] [56 <./figures/experiments/pascal/highres+ge/0000.png> <./figures/experiment
 s/pascal/highres+ge/0010.png> <./figures/experiments/pascal/highres+ge/0013.png
 > <./figures/experiments/pascal/highres+ge/0039.png>]
 (./figures/experiments/tables/nonnoisy_baseline.tex)
 (./figures/experiments/figures/newbaselinequalitative.tex
-<figures/experiments/coco/image/0013.jpg, id=1148, 642.4pt x 513.92pt>
+<figures/experiments/coco/image/0013.jpg, id=1228, 642.4pt x 513.92pt>
 File: figures/experiments/coco/image/0013.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0013.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0013.jpg  used on input
  line 41.
 (pdftex.def)             Requested size: 71.12492pt x 56.9055pt.
-<figures/experiments/coco/orgckpt/0013.png, id=1149, 642.4pt x 513.92pt>
+<figures/experiments/coco/orgckpt/0013.png, id=1229, 642.4pt x 513.92pt>
 File: figures/experiments/coco/orgckpt/0013.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0013.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0013.png  used on inp
 ut line 41.
 (pdftex.def)             Requested size: 71.12492pt x 56.9055pt.
-<figures/experiments/coco/nonnoisy/0013.png, id=1150, 642.4pt x 513.92pt>
+<figures/experiments/coco/nonnoisy/0013.png, id=1230, 642.4pt x 513.92pt>
 File: figures/experiments/coco/nonnoisy/0013.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0013.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0013.png  used on in
 put line 41.
 (pdftex.def)             Requested size: 71.12492pt x 56.9055pt.
-<figures/experiments/coco/gt/mask.png, id=1151, 642.4pt x 513.92pt>
+<figures/experiments/coco/gt/mask.png, id=1231, 642.4pt x 513.92pt>
 File: figures/experiments/coco/gt/mask.png Graphic file (type png)
 <use figures/experiments/coco/gt/mask.png>
 Package pdftex.def Info: figures/experiments/coco/gt/mask.png  used on input li
 ne 41.
 (pdftex.def)             Requested size: 71.12492pt x 56.9055pt.
-<figures/experiments/pascal/image/0059.jpg, id=1152, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/image/0059.jpg, id=1232, 501.875pt x 376.40625pt>
 File: figures/experiments/pascal/image/0059.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/image/0059.jpg>
 Package pdftex.def Info: figures/experiments/pascal/image/0059.jpg  used on inp
 ut line 42.
 (pdftex.def)             Requested size: 75.86766pt x 56.9055pt.
-<figures/experiments/pascal/orgckpt/0059.png, id=1153, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/orgckpt/0059.png, id=1233, 501.875pt x 376.40625pt>
 
 File: figures/experiments/pascal/orgckpt/0059.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0059.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0059.png  used on i
 nput line 42.
 (pdftex.def)             Requested size: 75.86766pt x 56.9055pt.
-<figures/experiments/pascal/nonnoisybaseline/0059.png, id=1154, 501.875pt x 376
+<figures/experiments/pascal/nonnoisybaseline/0059.png, id=1234, 501.875pt x 376
 .40625pt>
 File: figures/experiments/pascal/nonnoisybaseline/0059.png Graphic file (type p
 ng)
@@ -2302,59 +2336,59 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0059.png  
 used on input line 42.
 (pdftex.def)             Requested size: 75.86766pt x 56.9055pt.
-<figures/experiments/pascal/gt/2007_001763.png, id=1155, 501.875pt x 376.40625p
+<figures/experiments/pascal/gt/2007_001763.png, id=1235, 501.875pt x 376.40625p
 t>
 File: figures/experiments/pascal/gt/2007_001763.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_001763.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_001763.png  used on
  input line 42.
 (pdftex.def)             Requested size: 75.86766pt x 56.9055pt.
-<figures/experiments/context/image/0027.jpg, id=1156, 501.875pt x 371.3875pt>
+<figures/experiments/context/image/0027.jpg, id=1236, 501.875pt x 371.3875pt>
 File: figures/experiments/context/image/0027.jpg Graphic file (type jpg)
 <use figures/experiments/context/image/0027.jpg>
 Package pdftex.def Info: figures/experiments/context/image/0027.jpg  used on in
 put line 43.
 (pdftex.def)             Requested size: 76.89383pt x 56.9055pt.
-<figures/experiments/context/orgckpt/0027.png, id=1157, 501.875pt x 371.3875pt>
+<figures/experiments/context/orgckpt/0027.png, id=1237, 501.875pt x 371.3875pt>
 
 File: figures/experiments/context/orgckpt/0027.png Graphic file (type png)
 <use figures/experiments/context/orgckpt/0027.png>
 Package pdftex.def Info: figures/experiments/context/orgckpt/0027.png  used on 
 input line 43.
 (pdftex.def)             Requested size: 76.89383pt x 56.9055pt.
-<figures/experiments/context/nonnoisy/0027.png, id=1158, 501.875pt x 371.3875pt
+<figures/experiments/context/nonnoisy/0027.png, id=1238, 501.875pt x 371.3875pt
 >
 File: figures/experiments/context/nonnoisy/0027.png Graphic file (type png)
 <use figures/experiments/context/nonnoisy/0027.png>
 Package pdftex.def Info: figures/experiments/context/nonnoisy/0027.png  used on
  input line 43.
 (pdftex.def)             Requested size: 76.89383pt x 56.9055pt.
-<figures/experiments/context/gt/2008_000084.png, id=1159, 501.875pt x 371.3875p
+<figures/experiments/context/gt/2008_000084.png, id=1239, 501.875pt x 371.3875p
 t>
 File: figures/experiments/context/gt/2008_000084.png Graphic file (type png)
 <use figures/experiments/context/gt/2008_000084.png>
 Package pdftex.def Info: figures/experiments/context/gt/2008_000084.png  used o
 n input line 43.
 (pdftex.def)             Requested size: 76.89383pt x 56.9055pt.
-<figures/experiments/coco/image/0021.jpg, id=1160, 642.4pt x 420.57124pt>
+<figures/experiments/coco/image/0021.jpg, id=1240, 642.4pt x 420.57124pt>
 File: figures/experiments/coco/image/0021.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0021.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0021.jpg  used on input
  line 45.
 (pdftex.def)             Requested size: 86.91629pt x 56.9055pt.
-<figures/experiments/coco/orgckpt/0021.png, id=1161, 642.4pt x 420.57124pt>
+<figures/experiments/coco/orgckpt/0021.png, id=1241, 642.4pt x 420.57124pt>
 File: figures/experiments/coco/orgckpt/0021.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0021.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0021.png  used on inp
 ut line 45.
 (pdftex.def)             Requested size: 86.91629pt x 56.9055pt.
-<figures/experiments/coco/nonnoisy/0021.png, id=1162, 642.4pt x 420.57124pt>
+<figures/experiments/coco/nonnoisy/0021.png, id=1242, 642.4pt x 420.57124pt>
 File: figures/experiments/coco/nonnoisy/0021.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0021.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0021.png  used on in
 put line 45.
 (pdftex.def)             Requested size: 86.91629pt x 56.9055pt.
-<figures/experiments/coco/gt/000000001993_instanceTrainIds.png, id=1163, 642.4p
+<figures/experiments/coco/gt/000000001993_instanceTrainIds.png, id=1243, 642.4p
 t x 420.57124pt>
 File: figures/experiments/coco/gt/000000001993_instanceTrainIds.png Graphic fil
 e (type png)
@@ -2372,7 +2406,7 @@ File: figures/experiments/pascal/orgckpt/0039.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0039.png  used on i
 nput line 46.
 (pdftex.def)             Requested size: 89.19255pt x 56.9055pt.
-<figures/experiments/pascal/nonnoisybaseline/0039.png, id=1164, 501.875pt x 320
+<figures/experiments/pascal/nonnoisybaseline/0039.png, id=1244, 501.875pt x 320
 .19624pt>
 File: figures/experiments/pascal/nonnoisybaseline/0039.png Graphic file (type p
 ng)
@@ -2385,34 +2419,34 @@ File: figures/experiments/pascal/gt/2007_001311.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_001311.png  used on
  input line 46.
 (pdftex.def)             Requested size: 89.19255pt x 56.9055pt.
-<figures/experiments/context/image/0018.jpg, id=1165, 494.84875pt x 501.875pt>
+<figures/experiments/context/image/0018.jpg, id=1245, 494.84875pt x 501.875pt>
 File: figures/experiments/context/image/0018.jpg Graphic file (type jpg)
 <use figures/experiments/context/image/0018.jpg>
 Package pdftex.def Info: figures/experiments/context/image/0018.jpg  used on in
 put line 47.
 (pdftex.def)             Requested size: 56.10225pt x 56.9055pt.
-<figures/experiments/context/orgckpt/0018.png, id=1166, 494.84875pt x 501.875pt
+<figures/experiments/context/orgckpt/0018.png, id=1246, 494.84875pt x 501.875pt
 >
 File: figures/experiments/context/orgckpt/0018.png Graphic file (type png)
 <use figures/experiments/context/orgckpt/0018.png>
 Package pdftex.def Info: figures/experiments/context/orgckpt/0018.png  used on 
 input line 47.
 (pdftex.def)             Requested size: 56.10225pt x 56.9055pt.
-<figures/experiments/context/nonnoisy/0018.png, id=1167, 494.84875pt x 501.875p
+<figures/experiments/context/nonnoisy/0018.png, id=1247, 494.84875pt x 501.875p
 t>
 File: figures/experiments/context/nonnoisy/0018.png Graphic file (type png)
 <use figures/experiments/context/nonnoisy/0018.png>
 Package pdftex.def Info: figures/experiments/context/nonnoisy/0018.png  used on
  input line 47.
 (pdftex.def)             Requested size: 56.10225pt x 56.9055pt.
-<figures/experiments/context/gt/2008_000062.png, id=1168, 494.84875pt x 501.875
+<figures/experiments/context/gt/2008_000062.png, id=1248, 494.84875pt x 501.875
 pt>
 File: figures/experiments/context/gt/2008_000062.png Graphic file (type png)
 <use figures/experiments/context/gt/2008_000062.png>
 Package pdftex.def Info: figures/experiments/context/gt/2008_000062.png  used o
 n input line 47.
 (pdftex.def)             Requested size: 56.10225pt x 56.9055pt.
-) [53] [54 <./figures/experiments/coco/image/0013.jpg> <./figures/experiments/c
+) [57] [58 <./figures/experiments/coco/image/0013.jpg> <./figures/experiments/c
 oco/orgckpt/0013.png> <./figures/experiments/coco/nonnoisy/0013.png> <./figures
 /experiments/coco/gt/mask.png (PNG copy)> <./figures/experiments/pascal/image/0
 059.jpg> <./figures/experiments/pascal/orgckpt/0059.png> <./figures/experiments
@@ -2427,28 +2461,28 @@ instanceTrainIds.png (PNG copy)> <./figures/experiments/pascal/nonnoisybaseline
 s/context/orgckpt/0018.png> <./figures/experiments/context/nonnoisy/0018.png> <
 ./figures/experiments/context/gt/2008_000062.png (PNG copy)>]
 (./figures/experiments/tables/highresolution_ablation.tex)
-<figures/fig_plots/ioupascal.png, id=1193, 276.93864pt x 276.43275pt>
+<figures/fig_plots/ioupascal.png, id=1272, 276.93864pt x 276.43275pt>
 File: figures/fig_plots/ioupascal.png Graphic file (type png)
 <use figures/fig_plots/ioupascal.png>
 Package pdftex.def Info: figures/fig_plots/ioupascal.png  used on input line 49
 8.
 (pdftex.def)             Requested size: 358.49893pt x 357.51503pt.
-<figures/fig_plots/ioucoco.png, id=1194, 277.08318pt x 276.57729pt>
+<figures/fig_plots/ioucoco.png, id=1273, 277.08318pt x 276.57729pt>
 File: figures/fig_plots/ioucoco.png Graphic file (type png)
 <use figures/fig_plots/ioucoco.png>
 Package pdftex.def Info: figures/fig_plots/ioucoco.png  used on input line 506.
 
 (pdftex.def)             Requested size: 358.52534pt x 357.49939pt.
- [55] [56 <./figures/fig_plots/ioupascal.png>]
+ [59] [60 <./figures/fig_plots/ioupascal.png>]
 Underfull \vbox (badness 6944) has occurred while \output is active []
 
- [57 <./figures/fig_plots/ioucoco.png>]
-<figures/fig_plots/tsne.pdf, id=1217, 993.9643pt x 319.43982pt>
+ [61 <./figures/fig_plots/ioucoco.png>]
+<figures/fig_plots/tsne.pdf, id=1296, 993.9643pt x 319.43982pt>
 File: figures/fig_plots/tsne.pdf Graphic file (type pdf)
 <use figures/fig_plots/tsne.pdf>
 Package pdftex.def Info: figures/fig_plots/tsne.pdf  used on input line 531.
 (pdftex.def)             Requested size: 398.33864pt x 128.01736pt.
-<figures/fig_plots/allfeat_tsne_plot_org_baseline_coco_lowmIoU.pdf, id=1218, 10
+<figures/fig_plots/allfeat_tsne_plot_org_baseline_coco_lowmIoU.pdf, id=1297, 10
 02.38638pt x 312.24072pt>
 File: figures/fig_plots/allfeat_tsne_plot_org_baseline_coco_lowmIoU.pdf Graphic
  file (type pdf)
@@ -2457,26 +2491,26 @@ Package pdftex.def Info: figures/fig_plots/allfeat_tsne_plot_org_baseline_coco_
 lowmIoU.pdf  used on input line 537.
 (pdftex.def)             Requested size: 398.33864pt x 124.07936pt.
  (./figures/experiments/figures/comparison.tex
-[58]
-<figures/experiments/coco/image/0024.jpg, id=1232, 642.4pt x 481.8pt>
+[62]
+<figures/experiments/coco/image/0024.jpg, id=1311, 642.4pt x 481.8pt>
 File: figures/experiments/coco/image/0024.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0024.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0024.jpg  used on input
  line 17.
 (pdftex.def)             Requested size: 95.60106pt x 51.2117pt.
-<figures/experiments/coco/orgckpt/0024.png, id=1233, 642.4pt x 481.8pt>
+<figures/experiments/coco/orgckpt/0024.png, id=1312, 642.4pt x 481.8pt>
 File: figures/experiments/coco/orgckpt/0024.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0024.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0024.png  used on inp
 ut line 18.
 (pdftex.def)             Requested size: 95.60106pt x 51.2117pt.
-<figures/experiments/coco/nonnoisy/0024.png, id=1234, 642.4pt x 481.8pt>
+<figures/experiments/coco/nonnoisy/0024.png, id=1313, 642.4pt x 481.8pt>
 File: figures/experiments/coco/nonnoisy/0024.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0024.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0024.png  used on in
 put line 19.
 (pdftex.def)             Requested size: 95.60106pt x 51.2117pt.
-<figures/experiments/coco/gt/000000002153_instanceTrainIds.png, id=1235, 642.4p
+<figures/experiments/coco/gt/000000002153_instanceTrainIds.png, id=1314, 642.4p
 t x 481.8pt>
 File: figures/experiments/coco/gt/000000002153_instanceTrainIds.png Graphic fil
 e (type png)
@@ -2484,25 +2518,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000002153_instanceTrain
 Ids.png  used on input line 20.
 (pdftex.def)             Requested size: 95.60106pt x 51.2117pt.
-<figures/experiments/coco/image/0042.jpg, id=1236, 642.4pt x 426.59375pt>
+<figures/experiments/coco/image/0042.jpg, id=1315, 642.4pt x 426.59375pt>
 File: figures/experiments/coco/image/0042.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0042.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0042.jpg  used on input
  line 22.
 (pdftex.def)             Requested size: 95.60106pt x 51.21507pt.
-<figures/experiments/coco/orgckpt/0042.png, id=1237, 642.4pt x 426.59375pt>
+<figures/experiments/coco/orgckpt/0042.png, id=1316, 642.4pt x 426.59375pt>
 File: figures/experiments/coco/orgckpt/0042.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0042.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0042.png  used on inp
 ut line 23.
 (pdftex.def)             Requested size: 95.60106pt x 51.21507pt.
-<figures/experiments/coco/nonnoisy/0042.png, id=1238, 642.4pt x 426.59375pt>
+<figures/experiments/coco/nonnoisy/0042.png, id=1317, 642.4pt x 426.59375pt>
 File: figures/experiments/coco/nonnoisy/0042.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0042.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0042.png  used on in
 put line 24.
 (pdftex.def)             Requested size: 95.60106pt x 51.21507pt.
-<figures/experiments/coco/gt/000000004134_instanceTrainIds.png, id=1239, 642.4p
+<figures/experiments/coco/gt/000000004134_instanceTrainIds.png, id=1318, 642.4p
 t x 426.59375pt>
 File: figures/experiments/coco/gt/000000004134_instanceTrainIds.png Graphic fil
 e (type png)
@@ -2510,25 +2544,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000004134_instanceTrain
 Ids.png  used on input line 25.
 (pdftex.def)             Requested size: 95.60106pt x 51.21507pt.
-<figures/experiments/coco/image/0072.jpg, id=1240, 642.4pt x 362.35374pt>
+<figures/experiments/coco/image/0072.jpg, id=1319, 642.4pt x 362.35374pt>
 File: figures/experiments/coco/image/0072.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0072.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0072.jpg  used on input
  line 30.
 (pdftex.def)             Requested size: 95.60106pt x 51.2102pt.
-<figures/experiments/coco/orgckpt/0072.png, id=1241, 642.4pt x 362.35374pt>
+<figures/experiments/coco/orgckpt/0072.png, id=1320, 642.4pt x 362.35374pt>
 File: figures/experiments/coco/orgckpt/0072.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0072.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0072.png  used on inp
 ut line 31.
 (pdftex.def)             Requested size: 95.60106pt x 51.2102pt.
-<figures/experiments/coco/nonnoisy/0072.png, id=1242, 642.4pt x 362.35374pt>
+<figures/experiments/coco/nonnoisy/0072.png, id=1321, 642.4pt x 362.35374pt>
 File: figures/experiments/coco/nonnoisy/0072.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0072.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0072.png  used on in
 put line 32.
 (pdftex.def)             Requested size: 95.60106pt x 51.2102pt.
-<figures/experiments/coco/gt/000000007281_instanceTrainIds.png, id=1243, 642.4p
+<figures/experiments/coco/gt/000000007281_instanceTrainIds.png, id=1322, 642.4p
 t x 362.35374pt>
 File: figures/experiments/coco/gt/000000007281_instanceTrainIds.png Graphic fil
 e (type png)
@@ -2536,25 +2570,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000007281_instanceTrain
 Ids.png  used on input line 33.
 (pdftex.def)             Requested size: 95.60106pt x 51.2102pt.
-<figures/experiments/coco/image/0038.jpg, id=1244, 642.4pt x 428.60126pt>
+<figures/experiments/coco/image/0038.jpg, id=1323, 642.4pt x 428.60126pt>
 File: figures/experiments/coco/image/0038.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0038.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0038.jpg  used on input
  line 35.
 (pdftex.def)             Requested size: 95.60106pt x 51.21411pt.
-<figures/experiments/coco/orgckpt/0038.png, id=1245, 642.4pt x 428.60126pt>
+<figures/experiments/coco/orgckpt/0038.png, id=1324, 642.4pt x 428.60126pt>
 File: figures/experiments/coco/orgckpt/0038.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0038.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0038.png  used on inp
 ut line 36.
 (pdftex.def)             Requested size: 95.60106pt x 51.21411pt.
-<figures/experiments/coco/nonnoisy/0038.png, id=1246, 642.4pt x 428.60126pt>
+<figures/experiments/coco/nonnoisy/0038.png, id=1325, 642.4pt x 428.60126pt>
 File: figures/experiments/coco/nonnoisy/0038.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0038.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0038.png  used on in
 put line 37.
 (pdftex.def)             Requested size: 95.60106pt x 51.21411pt.
-<figures/experiments/coco/gt/000000003553_instanceTrainIds.png, id=1247, 642.4p
+<figures/experiments/coco/gt/000000003553_instanceTrainIds.png, id=1326, 642.4p
 t x 428.60126pt>
 File: figures/experiments/coco/gt/000000003553_instanceTrainIds.png Graphic fil
 e (type png)
@@ -2562,25 +2596,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000003553_instanceTrain
 Ids.png  used on input line 38.
 (pdftex.def)             Requested size: 95.60106pt x 51.21411pt.
-<figures/experiments/coco/image/0080.jpg, id=1248, 640.3925pt x 642.4pt>
+<figures/experiments/coco/image/0080.jpg, id=1327, 640.3925pt x 642.4pt>
 File: figures/experiments/coco/image/0080.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0080.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0080.jpg  used on input
  line 40.
 (pdftex.def)             Requested size: 95.59546pt x 56.90189pt.
-<figures/experiments/coco/orgckpt/0080.png, id=1249, 640.3925pt x 642.4pt>
+<figures/experiments/coco/orgckpt/0080.png, id=1328, 640.3925pt x 642.4pt>
 File: figures/experiments/coco/orgckpt/0080.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0080.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0080.png  used on inp
 ut line 41.
 (pdftex.def)             Requested size: 95.59546pt x 56.90189pt.
-<figures/experiments/coco/nonnoisy/0080.png, id=1250, 640.3925pt x 642.4pt>
+<figures/experiments/coco/nonnoisy/0080.png, id=1329, 640.3925pt x 642.4pt>
 File: figures/experiments/coco/nonnoisy/0080.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0080.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0080.png  used on in
 put line 42.
 (pdftex.def)             Requested size: 95.59546pt x 56.90189pt.
-<figures/experiments/coco/gt/000000007888_instanceTrainIds.png, id=1251, 640.39
+<figures/experiments/coco/gt/000000007888_instanceTrainIds.png, id=1330, 640.39
 25pt x 642.4pt>
 File: figures/experiments/coco/gt/000000007888_instanceTrainIds.png Graphic fil
 e (type png)
@@ -2588,25 +2622,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000007888_instanceTrain
 Ids.png  used on input line 43.
 (pdftex.def)             Requested size: 95.59546pt x 56.90189pt.
-<figures/experiments/coco/image/0089.jpg, id=1252, 642.4pt x 428.60126pt>
+<figures/experiments/coco/image/0089.jpg, id=1331, 642.4pt x 428.60126pt>
 File: figures/experiments/coco/image/0089.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0089.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0089.jpg  used on input
  line 45.
 (pdftex.def)             Requested size: 95.60106pt x 51.21411pt.
-<figures/experiments/coco/orgckpt/0089.png, id=1253, 642.4pt x 428.60126pt>
+<figures/experiments/coco/orgckpt/0089.png, id=1332, 642.4pt x 428.60126pt>
 File: figures/experiments/coco/orgckpt/0089.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0089.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0089.png  used on inp
 ut line 46.
 (pdftex.def)             Requested size: 95.60106pt x 51.21411pt.
-<figures/experiments/coco/nonnoisy/0089.png, id=1254, 642.4pt x 428.60126pt>
+<figures/experiments/coco/nonnoisy/0089.png, id=1333, 642.4pt x 428.60126pt>
 File: figures/experiments/coco/nonnoisy/0089.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0089.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0089.png  used on in
 put line 47.
 (pdftex.def)             Requested size: 95.60106pt x 51.21411pt.
-<figures/experiments/coco/gt/000000008762_instanceTrainIds.png, id=1255, 642.4p
+<figures/experiments/coco/gt/000000008762_instanceTrainIds.png, id=1334, 642.4p
 t x 428.60126pt>
 File: figures/experiments/coco/gt/000000008762_instanceTrainIds.png Graphic fil
 e (type png)
@@ -2614,25 +2648,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000008762_instanceTrain
 Ids.png  used on input line 48.
 (pdftex.def)             Requested size: 95.60106pt x 51.21411pt.
-<figures/experiments/coco/image/0063.jpg, id=1256, 642.4pt x 362.35374pt>
+<figures/experiments/coco/image/0063.jpg, id=1335, 642.4pt x 362.35374pt>
 File: figures/experiments/coco/image/0063.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0063.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0063.jpg  used on input
  line 50.
 (pdftex.def)             Requested size: 95.60106pt x 51.2102pt.
-<figures/experiments/coco/orgckpt/0063.png, id=1257, 642.4pt x 362.35374pt>
+<figures/experiments/coco/orgckpt/0063.png, id=1336, 642.4pt x 362.35374pt>
 File: figures/experiments/coco/orgckpt/0063.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0063.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0063.png  used on inp
 ut line 51.
 (pdftex.def)             Requested size: 95.60106pt x 51.2102pt.
-<figures/experiments/coco/nonnoisy/0063.png, id=1258, 642.4pt x 362.35374pt>
+<figures/experiments/coco/nonnoisy/0063.png, id=1337, 642.4pt x 362.35374pt>
 File: figures/experiments/coco/nonnoisy/0063.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0063.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0063.png  used on in
 put line 52.
 (pdftex.def)             Requested size: 95.60106pt x 51.2102pt.
-<figures/experiments/coco/gt/000000006723_instanceTrainIds.png, id=1259, 642.4p
+<figures/experiments/coco/gt/000000006723_instanceTrainIds.png, id=1338, 642.4p
 t x 362.35374pt>
 File: figures/experiments/coco/gt/000000006723_instanceTrainIds.png Graphic fil
 e (type png)
@@ -2640,25 +2674,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000006723_instanceTrain
 Ids.png  used on input line 53.
 (pdftex.def)             Requested size: 95.60106pt x 51.2102pt.
-<figures/experiments/coco/image/0059.jpg, id=1260, 642.4pt x 426.59375pt>
+<figures/experiments/coco/image/0059.jpg, id=1339, 642.4pt x 426.59375pt>
 File: figures/experiments/coco/image/0059.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0059.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0059.jpg  used on input
  line 54.
 (pdftex.def)             Requested size: 95.60106pt x 51.21507pt.
-<figures/experiments/coco/orgckpt/0059.png, id=1261, 642.4pt x 426.59375pt>
+<figures/experiments/coco/orgckpt/0059.png, id=1340, 642.4pt x 426.59375pt>
 File: figures/experiments/coco/orgckpt/0059.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0059.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0059.png  used on inp
 ut line 55.
 (pdftex.def)             Requested size: 95.60106pt x 51.21507pt.
-<figures/experiments/coco/nonnoisy/0059.png, id=1262, 642.4pt x 426.59375pt>
+<figures/experiments/coco/nonnoisy/0059.png, id=1341, 642.4pt x 426.59375pt>
 File: figures/experiments/coco/nonnoisy/0059.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0059.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0059.png  used on in
 put line 56.
 (pdftex.def)             Requested size: 95.60106pt x 51.21507pt.
-<figures/experiments/coco/gt/000000006213_instanceTrainIds.png, id=1263, 642.4p
+<figures/experiments/coco/gt/000000006213_instanceTrainIds.png, id=1342, 642.4p
 t x 426.59375pt>
 File: figures/experiments/coco/gt/000000006213_instanceTrainIds.png Graphic fil
 e (type png)
@@ -2666,20 +2700,20 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000006213_instanceTrain
 Ids.png  used on input line 57.
 (pdftex.def)             Requested size: 95.60106pt x 51.21507pt.
-<figures/experiments/pascal/image/0072.jpg, id=1264, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/image/0072.jpg, id=1343, 501.875pt x 376.40625pt>
 File: figures/experiments/pascal/image/0072.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/image/0072.jpg>
 Package pdftex.def Info: figures/experiments/pascal/image/0072.jpg  used on inp
 ut line 78.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/orgckpt/0072.png, id=1265, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/orgckpt/0072.png, id=1344, 501.875pt x 376.40625pt>
 
 File: figures/experiments/pascal/orgckpt/0072.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0072.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0072.png  used on i
 nput line 79.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/nonnoisybaseline/0072.png, id=1266, 501.875pt x 376
+<figures/experiments/pascal/nonnoisybaseline/0072.png, id=1345, 501.875pt x 376
 .40625pt>
 File: figures/experiments/pascal/nonnoisybaseline/0072.png Graphic file (type p
 ng)
@@ -2687,27 +2721,27 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0072.png  
 used on input line 80.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/gt/2007_002378.png, id=1267, 501.875pt x 376.40625p
+<figures/experiments/pascal/gt/2007_002378.png, id=1346, 501.875pt x 376.40625p
 t>
 File: figures/experiments/pascal/gt/2007_002378.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_002378.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_002378.png  used on
  input line 81.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/image/0075.jpg, id=1268, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/image/0075.jpg, id=1347, 501.875pt x 376.40625pt>
 File: figures/experiments/pascal/image/0075.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/image/0075.jpg>
 Package pdftex.def Info: figures/experiments/pascal/image/0075.jpg  used on inp
 ut line 83.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/orgckpt/0075.png, id=1269, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/orgckpt/0075.png, id=1348, 501.875pt x 376.40625pt>
 
 File: figures/experiments/pascal/orgckpt/0075.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0075.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0075.png  used on i
 nput line 84.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/nonnoisybaseline/0075.png, id=1270, 501.875pt x 376
+<figures/experiments/pascal/nonnoisybaseline/0075.png, id=1349, 501.875pt x 376
 .40625pt>
 File: figures/experiments/pascal/nonnoisybaseline/0075.png Graphic file (type p
 ng)
@@ -2715,27 +2749,27 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0075.png  
 used on input line 85.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/gt/2007_002412.png, id=1271, 501.875pt x 376.40625p
+<figures/experiments/pascal/gt/2007_002412.png, id=1350, 501.875pt x 376.40625p
 t>
 File: figures/experiments/pascal/gt/2007_002412.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_002412.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_002412.png  used on
  input line 86.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/image/0042.jpg, id=1272, 334.24875pt x 501.875pt>
+<figures/experiments/pascal/image/0042.jpg, id=1351, 334.24875pt x 501.875pt>
 File: figures/experiments/pascal/image/0042.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/image/0042.jpg>
 Package pdftex.def Info: figures/experiments/pascal/image/0042.jpg  used on inp
 ut line 88.
 (pdftex.def)             Requested size: 95.60359pt x 85.3559pt.
-<figures/experiments/pascal/orgckpt/0042.png, id=1273, 334.24875pt x 501.875pt>
+<figures/experiments/pascal/orgckpt/0042.png, id=1352, 334.24875pt x 501.875pt>
 
 File: figures/experiments/pascal/orgckpt/0042.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0042.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0042.png  used on i
 nput line 89.
 (pdftex.def)             Requested size: 95.60359pt x 85.3559pt.
-<figures/experiments/pascal/nonnoisybaseline/0042.png, id=1274, 334.24875pt x 5
+<figures/experiments/pascal/nonnoisybaseline/0042.png, id=1353, 334.24875pt x 5
 01.875pt>
 File: figures/experiments/pascal/nonnoisybaseline/0042.png Graphic file (type p
 ng)
@@ -2743,27 +2777,27 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0042.png  
 used on input line 90.
 (pdftex.def)             Requested size: 95.60359pt x 85.3559pt.
-<figures/experiments/pascal/gt/2007_001408.png, id=1275, 334.24875pt x 501.875p
+<figures/experiments/pascal/gt/2007_001408.png, id=1354, 334.24875pt x 501.875p
 t>
 File: figures/experiments/pascal/gt/2007_001408.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_001408.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_001408.png  used on
  input line 91.
 (pdftex.def)             Requested size: 95.60359pt x 85.3559pt.
-<figures/experiments/pascal/image/0006.jpg, id=1276, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/image/0006.jpg, id=1355, 501.875pt x 376.40625pt>
 File: figures/experiments/pascal/image/0006.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/image/0006.jpg>
 Package pdftex.def Info: figures/experiments/pascal/image/0006.jpg  used on inp
 ut line 93.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/orgckpt/0006.png, id=1277, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/orgckpt/0006.png, id=1356, 501.875pt x 376.40625pt>
 
 File: figures/experiments/pascal/orgckpt/0006.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0006.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0006.png  used on i
 nput line 94.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/nonnoisybaseline/0006.png, id=1278, 501.875pt x 376
+<figures/experiments/pascal/nonnoisybaseline/0006.png, id=1357, 501.875pt x 376
 .40625pt>
 File: figures/experiments/pascal/nonnoisybaseline/0006.png Graphic file (type p
 ng)
@@ -2771,26 +2805,26 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0006.png  
 used on input line 95.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/gt/2007_000039.png, id=1279, 501.875pt x 376.40625p
+<figures/experiments/pascal/gt/2007_000039.png, id=1358, 501.875pt x 376.40625p
 t>
 File: figures/experiments/pascal/gt/2007_000039.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_000039.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_000039.png  used on
  input line 96.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/image/0014.jpg, id=1280, 501.875pt x 371.3875pt>
+<figures/experiments/pascal/image/0014.jpg, id=1359, 501.875pt x 371.3875pt>
 File: figures/experiments/pascal/image/0014.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/image/0014.jpg>
 Package pdftex.def Info: figures/experiments/pascal/image/0014.jpg  used on inp
 ut line 97.
 (pdftex.def)             Requested size: 95.60345pt x 70.7457pt.
-<figures/experiments/pascal/orgckpt/0014.png, id=1281, 501.875pt x 371.3875pt>
+<figures/experiments/pascal/orgckpt/0014.png, id=1360, 501.875pt x 371.3875pt>
 File: figures/experiments/pascal/orgckpt/0014.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0014.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0014.png  used on i
 nput line 98.
 (pdftex.def)             Requested size: 95.60345pt x 70.7457pt.
-<figures/experiments/pascal/nonnoisybaseline/0014.png, id=1282, 501.875pt x 371
+<figures/experiments/pascal/nonnoisybaseline/0014.png, id=1361, 501.875pt x 371
 .3875pt>
 File: figures/experiments/pascal/nonnoisybaseline/0014.png Graphic file (type p
 ng)
@@ -2798,27 +2832,27 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0014.png  
 used on input line 99.
 (pdftex.def)             Requested size: 95.60345pt x 70.7457pt.
-<figures/experiments/pascal/gt/2007_000559.png, id=1283, 501.875pt x 371.3875pt
+<figures/experiments/pascal/gt/2007_000559.png, id=1362, 501.875pt x 371.3875pt
 >
 File: figures/experiments/pascal/gt/2007_000559.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_000559.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_000559.png  used on
  input line 100.
 (pdftex.def)             Requested size: 95.60345pt x 70.7457pt.
-<figures/experiments/pascal/image/0017.jpg, id=1284, 501.875pt x 336.25626pt>
+<figures/experiments/pascal/image/0017.jpg, id=1363, 501.875pt x 336.25626pt>
 File: figures/experiments/pascal/image/0017.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/image/0017.jpg>
 Package pdftex.def Info: figures/experiments/pascal/image/0017.jpg  used on inp
 ut line 102.
 (pdftex.def)             Requested size: 95.60345pt x 64.05353pt.
-<figures/experiments/pascal/orgckpt/0017.png, id=1285, 501.875pt x 336.25626pt>
+<figures/experiments/pascal/orgckpt/0017.png, id=1364, 501.875pt x 336.25626pt>
 
 File: figures/experiments/pascal/orgckpt/0017.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0017.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0017.png  used on i
 nput line 103.
 (pdftex.def)             Requested size: 95.60345pt x 64.05353pt.
-<figures/experiments/pascal/nonnoisybaseline/0017.png, id=1286, 501.875pt x 336
+<figures/experiments/pascal/nonnoisybaseline/0017.png, id=1365, 501.875pt x 336
 .25626pt>
 File: figures/experiments/pascal/nonnoisybaseline/0017.png Graphic file (type p
 ng)
@@ -2826,7 +2860,7 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0017.png  
 used on input line 104.
 (pdftex.def)             Requested size: 95.60345pt x 64.05353pt.
-<figures/experiments/pascal/gt/2007_000636.png, id=1287, 501.875pt x 336.25626p
+<figures/experiments/pascal/gt/2007_000636.png, id=1366, 501.875pt x 336.25626p
 t>
 File: figures/experiments/pascal/gt/2007_000636.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_000636.png>
@@ -2841,13 +2875,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
 Underfull \vbox (badness 1648) has occurred while \output is active []
 
- [59 <./figures/fig_plots/tsne.pdf> <./figures/fig_plots/allfeat_tsne_plot_org_
+ [63 <./figures/fig_plots/tsne.pdf> <./figures/fig_plots/allfeat_tsne_plot_org_
 baseline_coco_lowmIoU.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/fig_plots/allfeat_tsne_plot_o
 rg_baseline_coco_lowmIoU.pdf): PDF inclusion: multiple pdfs with page group inc
 luded in a single page
->] [60 <./figures/experiments/coco/image/0024.jpg> <./figures/experiments/coco/
+>] [64 <./figures/experiments/coco/image/0024.jpg> <./figures/experiments/coco/
 orgckpt/0024.png> <./figures/experiments/coco/nonnoisy/0024.png> <./figures/exp
 eriments/coco/gt/000000002153_instanceTrainIds.png (PNG copy)> <./figures/exper
 iments/coco/image/0042.jpg> <./figures/experiments/coco/orgckpt/0042.png> <./fi
@@ -2868,7 +2902,7 @@ es/experiments/coco/orgckpt/0063.png> <./figures/experiments/coco/nonnoisy/0063
 .png> <./figures/experiments/coco/gt/000000006723_instanceTrainIds.png (PNG cop
 y)> <./figures/experiments/coco/image/0059.jpg> <./figures/experiments/coco/org
 ckpt/0059.png> <./figures/experiments/coco/nonnoisy/0059.png> <./figures/experi
-ments/coco/gt/000000006213_instanceTrainIds.png (PNG copy)>] [61 <./figures/exp
+ments/coco/gt/000000006213_instanceTrainIds.png (PNG copy)>] [65 <./figures/exp
 eriments/pascal/image/0072.jpg> <./figures/experiments/pascal/orgckpt/0072.png>
  <./figures/experiments/pascal/nonnoisybaseline/0072.png> <./figures/experiment
 s/pascal/gt/2007_002378.png> <./figures/experiments/pascal/image/0075.jpg> <./f
@@ -2884,107 +2918,107 @@ ckpt/0014.png> <./figures/experiments/pascal/nonnoisybaseline/0014.png> <./figu
 res/experiments/pascal/gt/2007_000559.png> <./figures/experiments/pascal/image/
 0017.jpg> <./figures/experiments/pascal/orgckpt/0017.png> <./figures/experiment
 s/pascal/nonnoisybaseline/0017.png> <./figures/experiments/pascal/gt/2007_00063
-6.png>] [62] (./figures/experiments/tables/stage_hierarchy.tex)
+6.png>] [66] (./figures/experiments/tables/stage_hierarchy.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
-[64] (./figures/experiments/figures/dinovsgroupvit.tex
-<figures/cos_simmat_dino_0.png, id=1496, 462.528pt x 346.896pt>
+ [67]
+[68] (./figures/experiments/figures/dinovsgroupvit.tex
+<figures/cos_simmat_dino_0.png, id=1576, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_0.png Graphic file (type png)
 <use figures/cos_simmat_dino_0.png>
 Package pdftex.def Info: figures/cos_simmat_dino_0.png  used on input line 8.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_0.png, id=1497, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_0.png, id=1577, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_0.png Graphic file (type png)
 <use figures/cos_simmat_gvit_0.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_0.png  used on input line 9.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_dino_1.png, id=1498, 462.528pt x 346.896pt>
+<figures/cos_simmat_dino_1.png, id=1578, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_1.png Graphic file (type png)
 <use figures/cos_simmat_dino_1.png>
 Package pdftex.def Info: figures/cos_simmat_dino_1.png  used on input line 10.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_1.png, id=1499, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_1.png, id=1579, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_1.png Graphic file (type png)
 <use figures/cos_simmat_gvit_1.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_1.png  used on input line 11.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_dino_2.png, id=1500, 462.528pt x 346.896pt>
+<figures/cos_simmat_dino_2.png, id=1580, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_2.png Graphic file (type png)
 <use figures/cos_simmat_dino_2.png>
 Package pdftex.def Info: figures/cos_simmat_dino_2.png  used on input line 15.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_2.png, id=1501, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_2.png, id=1581, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_2.png Graphic file (type png)
 <use figures/cos_simmat_gvit_2.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_2.png  used on input line 16.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_dino_3.png, id=1502, 462.528pt x 346.896pt>
+<figures/cos_simmat_dino_3.png, id=1582, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_3.png Graphic file (type png)
 <use figures/cos_simmat_dino_3.png>
 Package pdftex.def Info: figures/cos_simmat_dino_3.png  used on input line 17.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_3.png, id=1503, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_3.png, id=1583, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_3.png Graphic file (type png)
 <use figures/cos_simmat_gvit_3.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_3.png  used on input line 18.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_dino_4.png, id=1504, 462.528pt x 346.896pt>
+<figures/cos_simmat_dino_4.png, id=1584, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_4.png Graphic file (type png)
 <use figures/cos_simmat_dino_4.png>
 Package pdftex.def Info: figures/cos_simmat_dino_4.png  used on input line 22.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_4.png, id=1505, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_4.png, id=1585, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_4.png Graphic file (type png)
 <use figures/cos_simmat_gvit_4.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_4.png  used on input line 23.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_dino_5.png, id=1506, 462.528pt x 346.896pt>
+<figures/cos_simmat_dino_5.png, id=1586, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_5.png Graphic file (type png)
 <use figures/cos_simmat_dino_5.png>
 Package pdftex.def Info: figures/cos_simmat_dino_5.png  used on input line 24.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_5.png, id=1507, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_5.png, id=1587, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_5.png Graphic file (type png)
 <use figures/cos_simmat_gvit_5.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_5.png  used on input line 25.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_dino_6.png, id=1508, 462.528pt x 346.896pt>
+<figures/cos_simmat_dino_6.png, id=1588, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_6.png Graphic file (type png)
 <use figures/cos_simmat_dino_6.png>
 Package pdftex.def Info: figures/cos_simmat_dino_6.png  used on input line 29.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_6.png, id=1509, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_6.png, id=1589, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_6.png Graphic file (type png)
 <use figures/cos_simmat_gvit_6.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_6.png  used on input line 30.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_dino_7.png, id=1510, 462.528pt x 346.896pt>
+<figures/cos_simmat_dino_7.png, id=1590, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_7.png Graphic file (type png)
 <use figures/cos_simmat_dino_7.png>
 Package pdftex.def Info: figures/cos_simmat_dino_7.png  used on input line 31.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_7.png, id=1511, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_7.png, id=1591, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_7.png Graphic file (type png)
 <use figures/cos_simmat_gvit_7.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_7.png  used on input line 32.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_dino_8.png, id=1512, 462.528pt x 346.896pt>
+<figures/cos_simmat_dino_8.png, id=1592, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_8.png Graphic file (type png)
 <use figures/cos_simmat_dino_8.png>
 Package pdftex.def Info: figures/cos_simmat_dino_8.png  used on input line 36.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_8.png, id=1513, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_8.png, id=1593, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_8.png Graphic file (type png)
 <use figures/cos_simmat_gvit_8.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_8.png  used on input line 37.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_dino_9.png, id=1514, 462.528pt x 346.896pt>
+<figures/cos_simmat_dino_9.png, id=1594, 462.528pt x 346.896pt>
 File: figures/cos_simmat_dino_9.png Graphic file (type png)
 <use figures/cos_simmat_dino_9.png>
 Package pdftex.def Info: figures/cos_simmat_dino_9.png  used on input line 38.
 (pdftex.def)             Requested size: 95.60345pt x 71.70168pt.
-<figures/cos_simmat_gvit_9.png, id=1515, 462.528pt x 346.896pt>
+<figures/cos_simmat_gvit_9.png, id=1595, 462.528pt x 346.896pt>
 File: figures/cos_simmat_gvit_9.png Graphic file (type png)
 <use figures/cos_simmat_gvit_9.png>
 Package pdftex.def Info: figures/cos_simmat_gvit_9.png  used on input line 39.
@@ -2994,7 +3028,7 @@ Overfull \hbox (33.27522pt too wide) in paragraph at lines 4--42
  [][] 
  []
 
-) [65] [66 <./figures/cos_simmat_dino_0.png> <./figures/cos_simmat_gvit_0.png> 
+) [69] [70 <./figures/cos_simmat_dino_0.png> <./figures/cos_simmat_gvit_0.png> 
 <./figures/cos_simmat_dino_1.png> <./figures/cos_simmat_gvit_1.png> <./figures/
 cos_simmat_dino_2.png> <./figures/cos_simmat_gvit_2.png> <./figures/cos_simmat_
 dino_3.png> <./figures/cos_simmat_gvit_3.png> <./figures/cos_simmat_dino_4.png>
@@ -3003,8 +3037,8 @@ dino_3.png> <./figures/cos_simmat_gvit_3.png> <./figures/cos_simmat_dino_4.png>
 _gvit_6.png> <./figures/cos_simmat_dino_7.png> <./figures/cos_simmat_gvit_7.png
 > <./figures/cos_simmat_dino_8.png> <./figures/cos_simmat_gvit_8.png> <./figure
 s/cos_simmat_dino_9.png> <./figures/cos_simmat_gvit_9.png>]
-(./figures/experiments/tables/DINO.tex) [67]
-<figures/experiments/baselineplots/ft1baseline.png, id=1567, 419.8887pt x 320.3
+(./figures/experiments/tables/DINO.tex) [71]
+<figures/experiments/baselineplots/ft1baseline.png, id=1647, 419.8887pt x 320.3
 97pt>
 File: figures/experiments/baselineplots/ft1baseline.png Graphic file (type png)
 
@@ -3012,7 +3046,7 @@ File: figures/experiments/baselineplots/ft1baseline.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/baselineplots/ft1baseline.png  use
 d on input line 679.
 (pdftex.def)             Requested size: 191.20084pt x 145.8982pt.
-<figures/experiments/baselineplots/prevbaseline.png, id=1568, 419.8887pt x 319.
+<figures/experiments/baselineplots/prevbaseline.png, id=1648, 419.8887pt x 319.
 1925pt>
 File: figures/experiments/baselineplots/prevbaseline.png Graphic file (type png
 )
@@ -3020,14 +3054,14 @@ File: figures/experiments/baselineplots/prevbaseline.png Graphic file (type png
 Package pdftex.def Info: figures/experiments/baselineplots/prevbaseline.png  us
 ed on input line 686.
 (pdftex.def)             Requested size: 191.20084pt x 145.3497pt.
-<figures/experiments/baselineplots/baseline.png, id=1569, 410.2527pt x 316.3017
+<figures/experiments/baselineplots/baseline.png, id=1649, 410.2527pt x 316.3017
 pt>
 File: figures/experiments/baselineplots/baseline.png Graphic file (type png)
 <use figures/experiments/baselineplots/baseline.png>
 Package pdftex.def Info: figures/experiments/baselineplots/baseline.png  used o
 n input line 693.
 (pdftex.def)             Requested size: 191.20084pt x 147.41177pt.
-<figures/experiments/baselineplots/texthierarchy (4).png, id=1570, 715.473pt x 
+<figures/experiments/baselineplots/texthierarchy (4).png, id=1650, 715.473pt x 
 426.393pt>
 File: figures/experiments/baselineplots/texthierarchy (4).png Graphic file (typ
 e png)
@@ -3078,25 +3112,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000001993_instanceTrain
 Ids.png  used on input line 28.
 (pdftex.def)             Requested size: 95.60345pt x 62.58882pt.
-<figures/experiments/coco/image/0032.jpg, id=1574, 642.4pt x 367.3725pt>
+<figures/experiments/coco/image/0032.jpg, id=1654, 642.4pt x 367.3725pt>
 File: figures/experiments/coco/image/0032.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0032.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0032.jpg  used on input
  line 30.
 (pdftex.def)             Requested size: 95.60345pt x 54.67186pt.
-<figures/experiments/coco/orgckpt/0032.png, id=1575, 642.4pt x 367.3725pt>
+<figures/experiments/coco/orgckpt/0032.png, id=1655, 642.4pt x 367.3725pt>
 File: figures/experiments/coco/orgckpt/0032.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0032.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0032.png  used on inp
 ut line 31.
 (pdftex.def)             Requested size: 95.60345pt x 54.67186pt.
-<figures/experiments/coco/nonnoisy/0032.png, id=1576, 642.4pt x 367.3725pt>
+<figures/experiments/coco/nonnoisy/0032.png, id=1656, 642.4pt x 367.3725pt>
 File: figures/experiments/coco/nonnoisy/0032.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0032.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0032.png  used on in
 put line 32.
 (pdftex.def)             Requested size: 95.60345pt x 54.67186pt.
-<figures/experiments/coco/gt/000000002592_instanceTrainIds.png, id=1577, 642.4p
+<figures/experiments/coco/gt/000000002592_instanceTrainIds.png, id=1657, 642.4p
 t x 367.3725pt>
 File: figures/experiments/coco/gt/000000002592_instanceTrainIds.png Graphic fil
 e (type png)
@@ -3104,25 +3138,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000002592_instanceTrain
 Ids.png  used on input line 33.
 (pdftex.def)             Requested size: 95.60345pt x 54.67186pt.
-<figures/experiments/coco/image/0035.jpg, id=1578, 444.66125pt x 642.4pt>
+<figures/experiments/coco/image/0035.jpg, id=1658, 444.66125pt x 642.4pt>
 File: figures/experiments/coco/image/0035.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0035.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0035.jpg  used on input
  line 34.
 (pdftex.def)             Requested size: 95.60345pt x 138.1133pt.
-<figures/experiments/coco/orgckpt/0035.png, id=1579, 444.66125pt x 642.4pt>
+<figures/experiments/coco/orgckpt/0035.png, id=1659, 444.66125pt x 642.4pt>
 File: figures/experiments/coco/orgckpt/0035.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0035.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0035.png  used on inp
 ut line 35.
 (pdftex.def)             Requested size: 95.60345pt x 138.1133pt.
-<figures/experiments/coco/nonnoisy/0035.png, id=1580, 444.66125pt x 642.4pt>
+<figures/experiments/coco/nonnoisy/0035.png, id=1660, 444.66125pt x 642.4pt>
 File: figures/experiments/coco/nonnoisy/0035.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0035.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0035.png  used on in
 put line 36.
 (pdftex.def)             Requested size: 95.60345pt x 138.1133pt.
-<figures/experiments/coco/gt/000000003156_instanceTrainIds.png, id=1581, 444.66
+<figures/experiments/coco/gt/000000003156_instanceTrainIds.png, id=1661, 444.66
 125pt x 642.4pt>
 File: figures/experiments/coco/gt/000000003156_instanceTrainIds.png Graphic fil
 e (type png)
@@ -3130,25 +3164,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000003156_instanceTrain
 Ids.png  used on input line 37.
 (pdftex.def)             Requested size: 95.60345pt x 138.1133pt.
-<figures/experiments/coco/image/0090.jpg, id=1582, 642.4pt x 427.5975pt>
+<figures/experiments/coco/image/0090.jpg, id=1662, 642.4pt x 427.5975pt>
 File: figures/experiments/coco/image/0090.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0090.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0090.jpg  used on input
  line 44.
 (pdftex.def)             Requested size: 95.60345pt x 63.63446pt.
-<figures/experiments/coco/orgckpt/0090.png, id=1583, 642.4pt x 427.5975pt>
+<figures/experiments/coco/orgckpt/0090.png, id=1663, 642.4pt x 427.5975pt>
 File: figures/experiments/coco/orgckpt/0090.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0090.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0090.png  used on inp
 ut line 45.
 (pdftex.def)             Requested size: 95.60345pt x 63.63446pt.
-<figures/experiments/coco/nonnoisy/0090.png, id=1584, 642.4pt x 427.5975pt>
+<figures/experiments/coco/nonnoisy/0090.png, id=1664, 642.4pt x 427.5975pt>
 File: figures/experiments/coco/nonnoisy/0090.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0090.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0090.png  used on in
 put line 46.
 (pdftex.def)             Requested size: 95.60345pt x 63.63446pt.
-<figures/experiments/coco/gt/000000008844_instanceTrainIds.png, id=1585, 642.4p
+<figures/experiments/coco/gt/000000008844_instanceTrainIds.png, id=1665, 642.4p
 t x 427.5975pt>
 File: figures/experiments/coco/gt/000000008844_instanceTrainIds.png Graphic fil
 e (type png)
@@ -3156,25 +3190,25 @@ e (type png)
 Package pdftex.def Info: figures/experiments/coco/gt/000000008844_instanceTrain
 Ids.png  used on input line 47.
 (pdftex.def)             Requested size: 95.60345pt x 63.63446pt.
-<figures/experiments/coco/image/0004.jpg, id=1586, 429.605pt x 642.4pt>
+<figures/experiments/coco/image/0004.jpg, id=1666, 429.605pt x 642.4pt>
 File: figures/experiments/coco/image/0004.jpg Graphic file (type jpg)
 <use figures/experiments/coco/image/0004.jpg>
 Package pdftex.def Info: figures/experiments/coco/image/0004.jpg  used on input
  line 49.
 (pdftex.def)             Requested size: 95.60345pt x 142.9556pt.
-<figures/experiments/coco/orgckpt/0004.png, id=1587, 429.605pt x 642.4pt>
+<figures/experiments/coco/orgckpt/0004.png, id=1667, 429.605pt x 642.4pt>
 File: figures/experiments/coco/orgckpt/0004.png Graphic file (type png)
 <use figures/experiments/coco/orgckpt/0004.png>
 Package pdftex.def Info: figures/experiments/coco/orgckpt/0004.png  used on inp
 ut line 50.
 (pdftex.def)             Requested size: 95.60345pt x 142.9556pt.
-<figures/experiments/coco/nonnoisy/0004.png, id=1588, 429.605pt x 642.4pt>
+<figures/experiments/coco/nonnoisy/0004.png, id=1668, 429.605pt x 642.4pt>
 File: figures/experiments/coco/nonnoisy/0004.png Graphic file (type png)
 <use figures/experiments/coco/nonnoisy/0004.png>
 Package pdftex.def Info: figures/experiments/coco/nonnoisy/0004.png  used on in
 put line 51.
 (pdftex.def)             Requested size: 95.60345pt x 142.9556pt.
-<figures/experiments/coco/gt/000000000776_instanceTrainIds.png, id=1589, 429.60
+<figures/experiments/coco/gt/000000000776_instanceTrainIds.png, id=1669, 429.60
 5pt x 642.4pt>
 File: figures/experiments/coco/gt/000000000776_instanceTrainIds.png Graphic fil
 e (type png)
@@ -3184,7 +3218,7 @@ Ids.png  used on input line 52.
 (pdftex.def)             Requested size: 95.60345pt x 142.9556pt.
 )
 (./figures/experiments/figures/pascal_newbaseline.tex
-<Images/0000.jpg, id=1590, 501.875pt x 367.3725pt>
+<Images/0000.jpg, id=1670, 501.875pt x 367.3725pt>
 File: Images/0000.jpg Graphic file (type jpg)
 <use Images/0000.jpg>
 Package pdftex.def Info: Images/0000.jpg  used on input line 14.
@@ -3194,7 +3228,7 @@ File: figures/experiments/pascal/orgckpt/0000.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0000.png  used on i
 nput line 15.
 (pdftex.def)             Requested size: 95.60345pt x 69.98087pt.
-<figures/experiments/pascal/nonnoisybaseline/0000.png, id=1591, 501.875pt x 367
+<figures/experiments/pascal/nonnoisybaseline/0000.png, id=1671, 501.875pt x 367
 .3725pt>
 File: figures/experiments/pascal/nonnoisybaseline/0000.png Graphic file (type p
 ng)
@@ -3207,21 +3241,21 @@ File: figures/experiments/pascal/gt/2007_000033.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_000033.png  used on
  input line 17.
 (pdftex.def)             Requested size: 95.60345pt x 69.98087pt.
-<figures/experiments/pascal/orgckpt/0080.jpg, id=1592, 501.875pt x 334.24875pt>
+<figures/experiments/pascal/orgckpt/0080.jpg, id=1672, 501.875pt x 334.24875pt>
 
 File: figures/experiments/pascal/orgckpt/0080.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/orgckpt/0080.jpg>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0080.jpg  used on i
 nput line 19.
 (pdftex.def)             Requested size: 95.60345pt x 63.67113pt.
-<figures/experiments/pascal/orgckpt/0080.png, id=1593, 501.875pt x 334.24875pt>
+<figures/experiments/pascal/orgckpt/0080.png, id=1673, 501.875pt x 334.24875pt>
 
 File: figures/experiments/pascal/orgckpt/0080.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0080.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0080.png  used on i
 nput line 20.
 (pdftex.def)             Requested size: 95.60345pt x 63.67113pt.
-<figures/experiments/pascal/nonnoisybaseline/0080.png, id=1594, 501.875pt x 334
+<figures/experiments/pascal/nonnoisybaseline/0080.png, id=1674, 501.875pt x 334
 .24875pt>
 File: figures/experiments/pascal/nonnoisybaseline/0080.png Graphic file (type p
 ng)
@@ -3229,28 +3263,28 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0080.png  
 used on input line 21.
 (pdftex.def)             Requested size: 95.60345pt x 63.67113pt.
-<figures/experiments/pascal/gt/2007_002539.png, id=1595, 501.875pt x 334.24875p
+<figures/experiments/pascal/gt/2007_002539.png, id=1675, 501.875pt x 334.24875p
 t>
 File: figures/experiments/pascal/gt/2007_002539.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_002539.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_002539.png  used on
  input line 22.
 (pdftex.def)             Requested size: 95.60345pt x 63.67113pt.
-<figures/experiments/pascal/orgckpt/0086.jpg, id=1596, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/orgckpt/0086.jpg, id=1676, 501.875pt x 376.40625pt>
 
 File: figures/experiments/pascal/orgckpt/0086.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/orgckpt/0086.jpg>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0086.jpg  used on i
 nput line 24.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/orgckpt/0086.png, id=1597, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/orgckpt/0086.png, id=1677, 501.875pt x 376.40625pt>
 
 File: figures/experiments/pascal/orgckpt/0086.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0086.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0086.png  used on i
 nput line 25.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/nonnoisybaseline/0086.png, id=1598, 501.875pt x 376
+<figures/experiments/pascal/nonnoisybaseline/0086.png, id=1678, 501.875pt x 376
 .40625pt>
 File: figures/experiments/pascal/nonnoisybaseline/0086.png Graphic file (type p
 ng)
@@ -3258,28 +3292,28 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0086.png  
 used on input line 26.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/gt/2007_002643.png, id=1599, 501.875pt x 376.40625p
+<figures/experiments/pascal/gt/2007_002643.png, id=1679, 501.875pt x 376.40625p
 t>
 File: figures/experiments/pascal/gt/2007_002643.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_002643.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_002643.png  used on
  input line 27.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/orgckpt/0031.jpg, id=1600, 376.40625pt x 501.875pt>
+<figures/experiments/pascal/orgckpt/0031.jpg, id=1680, 376.40625pt x 501.875pt>
 
 File: figures/experiments/pascal/orgckpt/0031.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/orgckpt/0031.jpg>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0031.jpg  used on i
 nput line 29.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/pascal/orgckpt/0031.png, id=1601, 376.40625pt x 501.875pt>
+<figures/experiments/pascal/orgckpt/0031.png, id=1681, 376.40625pt x 501.875pt>
 
 File: figures/experiments/pascal/orgckpt/0031.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0031.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0031.png  used on i
 nput line 30.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/pascal/nonnoisybaseline/0031.png, id=1602, 376.40625pt x 5
+<figures/experiments/pascal/nonnoisybaseline/0031.png, id=1682, 376.40625pt x 5
 01.875pt>
 File: figures/experiments/pascal/nonnoisybaseline/0031.png Graphic file (type p
 ng)
@@ -3287,14 +3321,14 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0031.png  
 used on input line 31.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/pascal/gt/2007_000999.png, id=1603, 376.40625pt x 501.875p
+<figures/experiments/pascal/gt/2007_000999.png, id=1683, 376.40625pt x 501.875p
 t>
 File: figures/experiments/pascal/gt/2007_000999.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_000999.png>
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_000999.png  used on
  input line 32.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/pascal/orgckpt/0059.jpg, id=1604, 501.875pt x 376.40625pt>
+<figures/experiments/pascal/orgckpt/0059.jpg, id=1684, 501.875pt x 376.40625pt>
 
 File: figures/experiments/pascal/orgckpt/0059.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/orgckpt/0059.jpg>
@@ -3317,21 +3351,21 @@ File: figures/experiments/pascal/gt/2007_001763.png Graphic file (type png)
 Package pdftex.def Info: figures/experiments/pascal/gt/2007_001763.png  used on
  input line 43.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/pascal/orgckpt/0070.jpg, id=1605, 376.40625pt x 501.875pt>
+<figures/experiments/pascal/orgckpt/0070.jpg, id=1685, 376.40625pt x 501.875pt>
 
 File: figures/experiments/pascal/orgckpt/0070.jpg Graphic file (type jpg)
 <use figures/experiments/pascal/orgckpt/0070.jpg>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0070.jpg  used on i
 nput line 45.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/pascal/orgckpt/0070.png, id=1606, 376.40625pt x 501.875pt>
+<figures/experiments/pascal/orgckpt/0070.png, id=1686, 376.40625pt x 501.875pt>
 
 File: figures/experiments/pascal/orgckpt/0070.png Graphic file (type png)
 <use figures/experiments/pascal/orgckpt/0070.png>
 Package pdftex.def Info: figures/experiments/pascal/orgckpt/0070.png  used on i
 nput line 46.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/pascal/nonnoisybaseline/0070.png, id=1607, 376.40625pt x 5
+<figures/experiments/pascal/nonnoisybaseline/0070.png, id=1687, 376.40625pt x 5
 01.875pt>
 File: figures/experiments/pascal/nonnoisybaseline/0070.png Graphic file (type p
 ng)
@@ -3339,7 +3373,7 @@ ng)
 Package pdftex.def Info: figures/experiments/pascal/nonnoisybaseline/0070.png  
 used on input line 47.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/pascal/gt/2007_002284.png, id=1608, 376.40625pt x 501.875p
+<figures/experiments/pascal/gt/2007_002284.png, id=1688, 376.40625pt x 501.875p
 t>
 File: figures/experiments/pascal/gt/2007_002284.png Graphic file (type png)
 <use figures/experiments/pascal/gt/2007_002284.png>
@@ -3348,169 +3382,169 @@ Package pdftex.def Info: figures/experiments/pascal/gt/2007_002284.png  used on
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
 )
 (./figures/experiments/figures/psacalcontext.tex
-<figures/experiments/context/image/0016.jpg, id=1609, 501.875pt x 376.40625pt>
+<figures/experiments/context/image/0016.jpg, id=1689, 501.875pt x 376.40625pt>
 File: figures/experiments/context/image/0016.jpg Graphic file (type jpg)
 <use figures/experiments/context/image/0016.jpg>
 Package pdftex.def Info: figures/experiments/context/image/0016.jpg  used on in
 put line 15.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/context/orgckpt/0016.png, id=1610, 501.875pt x 376.40625pt
+<figures/experiments/context/orgckpt/0016.png, id=1690, 501.875pt x 376.40625pt
 >
 File: figures/experiments/context/orgckpt/0016.png Graphic file (type png)
 <use figures/experiments/context/orgckpt/0016.png>
 Package pdftex.def Info: figures/experiments/context/orgckpt/0016.png  used on 
 input line 16.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/context/nonnoisy/0016.png, id=1611, 501.875pt x 376.40625p
+<figures/experiments/context/nonnoisy/0016.png, id=1691, 501.875pt x 376.40625p
 t>
 File: figures/experiments/context/nonnoisy/0016.png Graphic file (type png)
 <use figures/experiments/context/nonnoisy/0016.png>
 Package pdftex.def Info: figures/experiments/context/nonnoisy/0016.png  used on
  input line 17.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/context/gt/2008_000056.png, id=1612, 501.875pt x 376.40625
+<figures/experiments/context/gt/2008_000056.png, id=1692, 501.875pt x 376.40625
 pt>
 File: figures/experiments/context/gt/2008_000056.png Graphic file (type png)
 <use figures/experiments/context/gt/2008_000056.png>
 Package pdftex.def Info: figures/experiments/context/gt/2008_000056.png  used o
 n input line 18.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/context/image/0020.jpg, id=1613, 376.40625pt x 501.875pt>
+<figures/experiments/context/image/0020.jpg, id=1693, 376.40625pt x 501.875pt>
 File: figures/experiments/context/image/0020.jpg Graphic file (type jpg)
 <use figures/experiments/context/image/0020.jpg>
 Package pdftex.def Info: figures/experiments/context/image/0020.jpg  used on in
 put line 20.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/context/orgckpt/0020.png, id=1614, 376.40625pt x 501.875pt
+<figures/experiments/context/orgckpt/0020.png, id=1694, 376.40625pt x 501.875pt
 >
 File: figures/experiments/context/orgckpt/0020.png Graphic file (type png)
 <use figures/experiments/context/orgckpt/0020.png>
 Package pdftex.def Info: figures/experiments/context/orgckpt/0020.png  used on 
 input line 21.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/context/nonnoisy/0020.png, id=1615, 376.40625pt x 501.875p
+<figures/experiments/context/nonnoisy/0020.png, id=1695, 376.40625pt x 501.875p
 t>
 File: figures/experiments/context/nonnoisy/0020.png Graphic file (type png)
 <use figures/experiments/context/nonnoisy/0020.png>
 Package pdftex.def Info: figures/experiments/context/nonnoisy/0020.png  used on
  input line 22.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/context/gt/2008_000067.png, id=1616, 376.40625pt x 501.875
+<figures/experiments/context/gt/2008_000067.png, id=1696, 376.40625pt x 501.875
 pt>
 File: figures/experiments/context/gt/2008_000067.png Graphic file (type png)
 <use figures/experiments/context/gt/2008_000067.png>
 Package pdftex.def Info: figures/experiments/context/gt/2008_000067.png  used o
 n input line 23.
 (pdftex.def)             Requested size: 95.60345pt x 127.46716pt.
-<figures/experiments/context/image/0005.jpg, id=1617, 501.875pt x 376.40625pt>
+<figures/experiments/context/image/0005.jpg, id=1697, 501.875pt x 376.40625pt>
 File: figures/experiments/context/image/0005.jpg Graphic file (type jpg)
 <use figures/experiments/context/image/0005.jpg>
 Package pdftex.def Info: figures/experiments/context/image/0005.jpg  used on in
 put line 25.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/context/orgckpt/0005.png, id=1618, 501.875pt x 376.40625pt
+<figures/experiments/context/orgckpt/0005.png, id=1698, 501.875pt x 376.40625pt
 >
 File: figures/experiments/context/orgckpt/0005.png Graphic file (type png)
 <use figures/experiments/context/orgckpt/0005.png>
 Package pdftex.def Info: figures/experiments/context/orgckpt/0005.png  used on 
 input line 26.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/context/nonnoisy/0005.png, id=1619, 501.875pt x 376.40625p
+<figures/experiments/context/nonnoisy/0005.png, id=1699, 501.875pt x 376.40625p
 t>
 File: figures/experiments/context/nonnoisy/0005.png Graphic file (type png)
 <use figures/experiments/context/nonnoisy/0005.png>
 Package pdftex.def Info: figures/experiments/context/nonnoisy/0005.png  used on
  input line 27.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/context/gt/2008_000021.png, id=1620, 501.875pt x 376.40625
+<figures/experiments/context/gt/2008_000021.png, id=1700, 501.875pt x 376.40625
 pt>
 File: figures/experiments/context/gt/2008_000021.png Graphic file (type png)
 <use figures/experiments/context/gt/2008_000021.png>
 Package pdftex.def Info: figures/experiments/context/gt/2008_000021.png  used o
 n input line 28.
 (pdftex.def)             Requested size: 95.60345pt x 71.70172pt.
-<figures/experiments/context/image/0013.jpg, id=1621, 501.875pt x 372.39125pt>
+<figures/experiments/context/image/0013.jpg, id=1701, 501.875pt x 372.39125pt>
 File: figures/experiments/context/image/0013.jpg Graphic file (type jpg)
 <use figures/experiments/context/image/0013.jpg>
 Package pdftex.def Info: figures/experiments/context/image/0013.jpg  used on in
 put line 30.
 (pdftex.def)             Requested size: 95.60345pt x 70.93689pt.
-<figures/experiments/context/orgckpt/0013.png, id=1622, 501.875pt x 372.39125pt
+<figures/experiments/context/orgckpt/0013.png, id=1702, 501.875pt x 372.39125pt
 >
 File: figures/experiments/context/orgckpt/0013.png Graphic file (type png)
 <use figures/experiments/context/orgckpt/0013.png>
 Package pdftex.def Info: figures/experiments/context/orgckpt/0013.png  used on 
 input line 31.
 (pdftex.def)             Requested size: 95.60345pt x 70.93689pt.
-<figures/experiments/context/nonnoisy/0013.png, id=1623, 501.875pt x 372.39125p
+<figures/experiments/context/nonnoisy/0013.png, id=1703, 501.875pt x 372.39125p
 t>
 File: figures/experiments/context/nonnoisy/0013.png Graphic file (type png)
 <use figures/experiments/context/nonnoisy/0013.png>
 Package pdftex.def Info: figures/experiments/context/nonnoisy/0013.png  used on
  input line 32.
 (pdftex.def)             Requested size: 95.60345pt x 70.93689pt.
-<figures/experiments/context/gt/2008_000051.png, id=1624, 501.875pt x 372.39125
+<figures/experiments/context/gt/2008_000051.png, id=1704, 501.875pt x 372.39125
 pt>
 File: figures/experiments/context/gt/2008_000051.png Graphic file (type png)
 <use figures/experiments/context/gt/2008_000051.png>
 Package pdftex.def Info: figures/experiments/context/gt/2008_000051.png  used o
 n input line 33.
 (pdftex.def)             Requested size: 95.60345pt x 70.93689pt.
-<figures/experiments/context/image/0014.jpg, id=1625, 313.17pt x 188.705pt>
+<figures/experiments/context/image/0014.jpg, id=1705, 313.17pt x 188.705pt>
 File: figures/experiments/context/image/0014.jpg Graphic file (type jpg)
 <use figures/experiments/context/image/0014.jpg>
 Package pdftex.def Info: figures/experiments/context/image/0014.jpg  used on in
 put line 35.
 (pdftex.def)             Requested size: 95.60345pt x 57.60532pt.
-<figures/experiments/context/orgckpt/0014.png, id=1626, 313.17pt x 188.705pt>
+<figures/experiments/context/orgckpt/0014.png, id=1706, 313.17pt x 188.705pt>
 File: figures/experiments/context/orgckpt/0014.png Graphic file (type png)
 <use figures/experiments/context/orgckpt/0014.png>
 Package pdftex.def Info: figures/experiments/context/orgckpt/0014.png  used on 
 input line 36.
 (pdftex.def)             Requested size: 95.60345pt x 57.60532pt.
-<figures/experiments/context/nonnoisy/0014.png, id=1627, 313.17pt x 188.705pt>
+<figures/experiments/context/nonnoisy/0014.png, id=1707, 313.17pt x 188.705pt>
 File: figures/experiments/context/nonnoisy/0014.png Graphic file (type png)
 <use figures/experiments/context/nonnoisy/0014.png>
 Package pdftex.def Info: figures/experiments/context/nonnoisy/0014.png  used on
  input line 37.
 (pdftex.def)             Requested size: 95.60345pt x 57.60532pt.
-<figures/experiments/context/gt/2008_000052.png, id=1628, 313.17pt x 188.705pt>
+<figures/experiments/context/gt/2008_000052.png, id=1708, 313.17pt x 188.705pt>
 
 File: figures/experiments/context/gt/2008_000052.png Graphic file (type png)
 <use figures/experiments/context/gt/2008_000052.png>
 Package pdftex.def Info: figures/experiments/context/gt/2008_000052.png  used o
 n input line 38.
 (pdftex.def)             Requested size: 95.60345pt x 57.60532pt.
-<figures/experiments/context/image/0029.jpg, id=1629, 415.5525pt x 501.875pt>
+<figures/experiments/context/image/0029.jpg, id=1709, 415.5525pt x 501.875pt>
 File: figures/experiments/context/image/0029.jpg Graphic file (type jpg)
 <use figures/experiments/context/image/0029.jpg>
 Package pdftex.def Info: figures/experiments/context/image/0029.jpg  used on in
 put line 40.
 (pdftex.def)             Requested size: 95.60345pt x 115.45944pt.
-<figures/experiments/context/orgckpt/0029.png, id=1630, 415.5525pt x 501.875pt>
+<figures/experiments/context/orgckpt/0029.png, id=1710, 415.5525pt x 501.875pt>
 
 File: figures/experiments/context/orgckpt/0029.png Graphic file (type png)
 <use figures/experiments/context/orgckpt/0029.png>
 Package pdftex.def Info: figures/experiments/context/orgckpt/0029.png  used on 
 input line 41.
 (pdftex.def)             Requested size: 95.60345pt x 115.45944pt.
-<figures/experiments/context/nonnoisy/0029.png, id=1631, 415.5525pt x 501.875pt
+<figures/experiments/context/nonnoisy/0029.png, id=1711, 415.5525pt x 501.875pt
 >
 File: figures/experiments/context/nonnoisy/0029.png Graphic file (type png)
 <use figures/experiments/context/nonnoisy/0029.png>
 Package pdftex.def Info: figures/experiments/context/nonnoisy/0029.png  used on
  input line 42.
 (pdftex.def)             Requested size: 95.60345pt x 115.45944pt.
-<figures/experiments/context/gt/2008_000107.png, id=1632, 415.5525pt x 501.875p
+<figures/experiments/context/gt/2008_000107.png, id=1712, 415.5525pt x 501.875p
 t>
 File: figures/experiments/context/gt/2008_000107.png Graphic file (type png)
 <use figures/experiments/context/gt/2008_000107.png>
 Package pdftex.def Info: figures/experiments/context/gt/2008_000107.png  used o
 n input line 43.
 (pdftex.def)             Requested size: 95.60345pt x 115.45944pt.
-)) [68] [69 <./figures/experiments/baselineplots/ft1baseline.png> <./figures/ex
+)) [72] [73 <./figures/experiments/baselineplots/ft1baseline.png> <./figures/ex
 periments/baselineplots/prevbaseline.png> <./figures/experiments/baselineplots/
-baseline.png> <./figures/experiments/baselineplots/texthierarchy (4).png>] [70 
+baseline.png> <./figures/experiments/baselineplots/texthierarchy (4).png>] [74 
 <./figures/experiments/coco/image/0032.jpg> <./figures/experiments/coco/orgckpt
 /0032.png> <./figures/experiments/coco/nonnoisy/0032.png> <./figures/experiment
 s/coco/gt/000000002592_instanceTrainIds.png (PNG copy)> <./figures/experiments/
@@ -3521,7 +3555,7 @@ instanceTrainIds.png (PNG copy)> <./figures/experiments/coco/image/0090.jpg> <.
 y/0090.png> <./figures/experiments/coco/gt/000000008844_instanceTrainIds.png (P
 NG copy)> <./figures/experiments/coco/image/0004.jpg> <./figures/experiments/co
 co/orgckpt/0004.png> <./figures/experiments/coco/nonnoisy/0004.png> <./figures/
-experiments/coco/gt/000000000776_instanceTrainIds.png (PNG copy)>] [71 <./Image
+experiments/coco/gt/000000000776_instanceTrainIds.png (PNG copy)>] [75 <./Image
 s/0000.jpg> <./figures/experiments/pascal/nonnoisybaseline/0000.png> <./figures
 /experiments/pascal/orgckpt/0080.jpg> <./figures/experiments/pascal/orgckpt/008
 0.png> <./figures/experiments/pascal/nonnoisybaseline/0080.png> <./figures/expe
@@ -3533,7 +3567,7 @@ orgckpt/0031.png> <./figures/experiments/pascal/nonnoisybaseline/0031.png> <./f
 igures/experiments/pascal/gt/2007_000999.png> <./figures/experiments/pascal/org
 ckpt/0059.jpg> <./figures/experiments/pascal/orgckpt/0070.jpg> <./figures/exper
 iments/pascal/orgckpt/0070.png> <./figures/experiments/pascal/nonnoisybaseline/
-0070.png> <./figures/experiments/pascal/gt/2007_002284.png>] [72 <./figures/exp
+0070.png> <./figures/experiments/pascal/gt/2007_002284.png>] [76 <./figures/exp
 eriments/context/image/0016.jpg> <./figures/experiments/context/orgckpt/0016.pn
 g> <./figures/experiments/context/nonnoisy/0016.png> <./figures/experiments/con
 text/gt/2008_000056.png (PNG copy)> <./figures/experiments/context/image/0020.j
@@ -3554,29 +3588,29 @@ periments/context/gt/2008_000107.png (PNG copy)>]
 
  (./chapters/6-conclusions.tex
 chapter 6.
-[73
+[77
 
 
 
 
 
-]) [74]
+]) [78]
 \openout2 = `chapters/7-acknowledgments.aux'.
 
  (./chapters/7-acknowledgments.tex
 chapter 7.
-) [75
+) [79
 
 
 
 
 
-] (./thesis_main.bbl [76
+] (./thesis_main.bbl [80
 
 
 
 
-] [77] [78] [79] [80]) [81] [82]
+] [81] [82] [83] [84] [85]) [86] [87]
 (./thesis_main.aux (./chapters/0_0-titlepage.aux)
 (./chapters/0_1-declaration.aux) (./chapters/0_2-abstract.aux)
 (./chapters/1-introduction.aux) (./chapters/2-relatedwork.aux)
@@ -3597,35 +3631,35 @@ Package rerunfilecheck Info: File `thesis_main.out' has not changed.
 ### simple group (level 1) entered at line 93 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 33482 strings out of 480171
- 687332 string characters out of 5894489
- 1022012 words of memory out of 5000000
- 49856 multiletter control sequences out of 15000+600000
- 596993 words of font info for 264 fonts, out of 8000000 for 9000
+ 33609 strings out of 480171
+ 690196 string characters out of 5894489
+ 1022901 words of memory out of 5000000
+ 49937 multiletter control sequences out of 15000+600000
+ 598089 words of font info for 274 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  108i,15n,106p,10606b,1014s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texm
 f/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.e
 nc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/e
 nc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr
-/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx6.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-ssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
-fb>
-Output written on thesis_main.pdf (96 pages, 14845736 bytes).
+/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx6.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
+9.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis_main.pdf (101 pages, 15181767 bytes).
 PDF statistics:
- 2166 PDF objects out of 2487 (max. 8388607)
- 1435 compressed objects within 15 object streams
- 358 named destinations out of 1000 (max. 500000)
- 75196 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2268 PDF objects out of 2487 (max. 8388607)
+ 1521 compressed objects within 16 object streams
+ 383 named destinations out of 1000 (max. 500000)
+ 75230 words of extra memory for PDF output out of 89155 (max. 10000000)
 

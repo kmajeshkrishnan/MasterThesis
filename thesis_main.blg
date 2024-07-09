@@ -14,44 +14,44 @@ A level-1 auxiliary file: chapters/7-acknowledgments.aux
 The style file: ieeetr.bst
 Database file #1: bib/topic1.bib
 Database file #2: bib/topic2.bib
-You've used 48 entries,
+You've used 60 entries,
             1876 wiz_defined-function locations,
-            712 strings with 13664 characters,
-and the built_in function-call counts, 13358 in all, are:
-= -- 1096
-> -- 890
+            764 strings with 15686 characters,
+and the built_in function-call counts, 16606 in all, are:
+= -- 1359
+> -- 1105
 < -- 0
-+ -- 313
-- -- 265
-* -- 1029
-:= -- 2005
-add.period$ -- 48
-call.type$ -- 48
-change.case$ -- 48
++ -- 388
+- -- 328
+* -- 1271
+:= -- 2478
+add.period$ -- 60
+call.type$ -- 60
+change.case$ -- 60
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 585
-empty$ -- 1190
-format.name$ -- 265
-if$ -- 3130
+cite$ -- 60
+duplicate$ -- 716
+empty$ -- 1498
+format.name$ -- 328
+if$ -- 3905
 int.to.chr$ -- 0
-int.to.str$ -- 48
-missing$ -- 33
-newline$ -- 147
-num.names$ -- 48
-pop$ -- 241
+int.to.str$ -- 60
+missing$ -- 38
+newline$ -- 183
+num.names$ -- 62
+pop$ -- 315
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 409
+skip$ -- 515
 stack$ -- 0
-substring$ -- 690
-swap$ -- 219
+substring$ -- 850
+swap$ -- 266
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 101
-width$ -- 50
-write$ -- 411
+while$ -- 127
+width$ -- 62
+write$ -- 511
