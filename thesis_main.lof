@@ -1,40 +1,15 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Comparison of maskcut and CutLer outputs}}}{2}{figure.caption.6}%
+\contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Comparison of maskcut and CutLER outputs}}}{2}{figure.caption.6}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2}{\ignorespaces \textbf {Keypoint correspondecences using relaxed best buddies}}}{8}{figure.caption.7}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3}{\ignorespaces \textbf {ViT Architecture}}}{10}{figure.caption.8}%
 \contentsline {figure}{\numberline {4}{\ignorespaces \textbf {Transformer Encoder Architecture}}}{11}{figure.caption.9}%
 \contentsline {figure}{\numberline {5}{\ignorespaces \textbf {DINO Architecture }}}{13}{figure.caption.16}%
-\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Cutler overview}}}{15}{figure.caption.19}%
+\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {CutLER overview}}}{15}{figure.caption.19}%
 \contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Maskcut flow}}}{15}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {GroupViT: Architecture and Training Pipeline}}}{20}{figure.caption.21}%
-\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {GroupViT: The Architecture of Grouping Block}}}{21}{figure.caption.22}%
-\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Comparison of keys of images of same and different classes}}}{22}{figure.caption.23}%
-\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Visualization of concepts learned by Group Tokens}}}{28}{figure.caption.32}%
-\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Visualization of multiple concepts learned by a Group Token}}}{29}{figure.caption.33}%
-\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {GroupViT: Inference Pipeline}}}{31}{figure.caption.34}%
-\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {GroupViT: Visualization of Attention Maps of Group Tokens}}}{35}{figure.caption.41}%
-\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {GroupViT: Visualization of Entropy Maps}}}{36}{figure.caption.42}%
-\contentsline {figure}{\numberline {16}{\ignorespaces \textbf {Training Pipeline for Entropy Regularization}}}{38}{figure.caption.43}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {17}{\ignorespaces \textbf {Visualization of Visual Grouping Vs Visual-Text Alignment}}}{46}{figure.caption.54}%
-\contentsline {figure}{\numberline {18}{\ignorespaces \textbf {Qualitative Analysis after Fine-tuning on Pascal VOC}}}{52}{figure.caption.62}%
-\contentsline {figure}{\numberline {19}{\ignorespaces \textbf {Visualization of Entropy Distribution}}}{54}{figure.caption.64}%
-\contentsline {figure}{\numberline {20}{\ignorespaces \textbf {Visualization of Entropy Distribution over Labels}}}{55}{figure.caption.65}%
-\contentsline {figure}{\numberline {21}{\ignorespaces \textbf {Qualitative Analysis on Pascal VOC for model trained with Entropy Regularization}}}{56}{figure.caption.67}%
-\contentsline {figure}{\numberline {22}{\ignorespaces \textbf {Qualitative analysis of the baseline across datasets}}}{58}{figure.caption.70}%
-\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {IoU Disparity per Class Compared to Pretrained Model on Pascal VOC Dataset}\relax }}{60}{figure.caption.72}%
-\contentsline {figure}{\numberline {24}{\ignorespaces \textbf {IoU Disparity per Class Compared to Pretrained Model on COCO Dataset.}}}{61}{figure.caption.73}%
-\contentsline {figure}{\numberline {25}{\ignorespaces \textbf {Visualizations of Learned Representation Space }\relax }}{63}{figure.caption.74}%
-\contentsline {figure}{\numberline {26}{\ignorespaces \textbf {Qualitative analysis on COCO Classes with low IoU}}}{64}{figure.caption.75}%
-\contentsline {figure}{\numberline {27}{\ignorespaces \textbf {Qualitative analysis on PASCAL VOC Classes with low IoU}}}{65}{figure.caption.76}%
-\contentsline {figure}{\numberline {28}{\ignorespaces \textbf {DINO vs GroupViT: Patch Feature Affinity Metric}}}{70}{figure.caption.78}%
-\contentsline {figure}{\numberline {29}{\ignorespaces \textbf {Validation curves of baselines}}}{73}{figure.caption.80}%
-\contentsline {figure}{\numberline {30}{\ignorespaces \textbf {Qualitative analysis on COCO}}}{74}{figure.caption.81}%
-\contentsline {figure}{\numberline {31}{\ignorespaces \textbf {Qualitative analysis on PASCAL}}}{75}{figure.caption.82}%
-\contentsline {figure}{\numberline {32}{\ignorespaces \textbf {Qualitative analysis on Pascal Context}}}{76}{figure.caption.83}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

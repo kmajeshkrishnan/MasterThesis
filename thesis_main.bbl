@@ -88,14 +88,14 @@ Y.-C. Liu, C.-Y. Ma, Z.~He, C.-W. Kuo, K.~Chen, P.~Zhang, B.~Wu, Z.~Kira, and
 M.~Xu, Z.~Zhang, H.~Hu, J.~Wang, L.~Wang, F.~Wei, X.~Bai, and Z.~Liu,
   ``End-to-end semi-supervised object detection with soft teacher,'' 2021.
 
+\bibitem{sarlin2020supergluelearningfeaturematching}
+P.-E. Sarlin, D.~DeTone, T.~Malisiewicz, and A.~Rabinovich, ``Superglue:
+  Learning feature matching with graph neural networks,'' 2020.
+
 \bibitem{Aberman_2018}
 K.~Aberman, J.~Liao, M.~Shi, D.~Lischinski, B.~Chen, and D.~Cohen-Or, ``Neural
   best-buddies: sparse cross-domain correspondence,'' {\em ACM Transactions on
   Graphics}, vol.~37, p.~1–14, July 2018.
-
-\bibitem{sarlin2020supergluelearningfeaturematching}
-P.-E. Sarlin, D.~DeTone, T.~Malisiewicz, and A.~Rabinovich, ``Superglue:
-  Learning feature matching with graph neural networks,'' 2020.
 
 \bibitem{WALTEROS2014553}
 J.~L. Walteros, C.~Vogiatzis, E.~L. Pasiliao, and P.~M. Pardalos, ``Integer
@@ -110,9 +110,10 @@ A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
 \bibitem{weng2020transformer}
 L.~Weng, ``The transformer family,'' {\em lilianweng.github.io}, Apr 2020.
 
-\bibitem{li2021cutpasteselfsupervisedlearninganomaly}
-C.-L. Li, K.~Sohn, J.~Yoon, and T.~Pfister, ``Cutpaste: Self-supervised
-  learning for anomaly detection and localization,'' 2021.
+\bibitem{ghiasi2021simplecopypastestrongdata}
+G.~Ghiasi, Y.~Cui, A.~Srinivas, R.~Qian, T.-Y. Lin, E.~D. Cubuk, Q.~V. Le, and
+  B.~Zoph, ``Simple copy-paste is a strong data augmentation method for
+  instance segmentation,'' 2021.
 
 \bibitem{normcut}
 J.~Shi and J.~Malik, ``Normalized cuts and image segmentation,'' {\em IEEE
@@ -171,125 +172,44 @@ T.-Y. Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan,
   Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13},
   pp.~740--755, Springer, 2014.
 
-\bibitem{buhmann1999image}
-J.~M. Buhmann, J.~Malik, and P.~Perona, ``Image recognition: Visual grouping,
-  recognition, and learning,'' {\em Proceedings of the National Academy of
-  Sciences}, vol.~96, no.~25, pp.~14203--14204, 1999.
+\bibitem{Wang_2022_CVPR}
+Y.~Wang, X.~Shen, S.~X. Hu, Y.~Yuan, J.~L. Crowley, and D.~Vaufreydaz,
+  ``Self-supervised transformers for unsupervised object discovery using
+  normalized cut,'' in {\em Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR)}, pp.~14543--14553, June 2022.
 
-\bibitem{zhu1997prior}
-S.~C. Zhu and D.~Mumford, ``Prior learning and gibbs reaction-diffusion,'' {\em
-  IEEE Transactions on Pattern Analysis and Machine Intelligence}, vol.~19,
-  no.~11, pp.~1236--1250, 1997.
+\bibitem{Tang_2018_CVPR}
+M.~Tang, A.~Djelouah, F.~Perazzi, Y.~Boykov, and C.~Schroers, ``Normalized cut
+  loss for weakly-supervised cnn segmentation,'' in {\em Proceedings of the
+  IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, June
+  2018.
 
-\bibitem{vaswani2017attention}
-A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
-  {\L}.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' {\em Advances
-  in neural information processing systems}, vol.~30, 2017.
+\bibitem{ziegler2022selfsupervisedlearningobjectparts}
+A.~Ziegler and Y.~M. Asano, ``Self-supervised learning of object parts for
+  semantic segmentation,'' 2022.
 
-\bibitem{loper2002nltk}
-E.~Loper and S.~Bird, ``Nltk: The natural language toolkit,'' {\em arXiv
-  preprint cs/0205028}, 2002.
+\bibitem{kara2022image}
+S.~Kara, H.~Ammar, F.~Chabot, and Q.-C. Pham, ``Image segmentation-based
+  unsupervised multiple objects discovery,'' 2022.
 
-\bibitem{radford2021learning}
-A.~Radford, J.~W. Kim, C.~Hallacy, A.~Ramesh, G.~Goh, S.~Agarwal, G.~Sastry,
-  A.~Askell, P.~Mishkin, J.~Clark, {\em et~al.}, ``Learning transferable visual
-  models from natural language supervision,'' in {\em International conference
-  on machine learning}, pp.~8748--8763, PMLR, 2021.
+\bibitem{xie2020selftrainingnoisystudentimproves}
+Q.~Xie, M.-T. Luong, E.~Hovy, and Q.~V. Le, ``Self-training with noisy student
+  improves imagenet classification,'' 2020.
 
-\bibitem{jang2016categorical}
-E.~Jang, S.~Gu, and B.~Poole, ``Categorical reparameterization with
-  gumbel-softmax,'' {\em arXiv preprint arXiv:1611.01144}, 2016.
+\bibitem{lin2015microsoftcococommonobjects}
+T.-Y. Lin, M.~Maire, S.~Belongie, L.~Bourdev, R.~Girshick, J.~Hays, P.~Perona,
+  D.~Ramanan, C.~L. Zitnick, and P.~Dollár, ``Microsoft coco: Common objects
+  in context,'' 2015.
 
-\bibitem{maddison2016concrete}
-C.~J. Maddison, A.~Mnih, and Y.~W. Teh, ``The concrete distribution: A
-  continuous relaxation of discrete random variables,'' {\em arXiv preprint
-  arXiv:1611.00712}, 2016.
+\bibitem{Geiger2013IJRR}
+A.~Geiger, P.~Lenz, C.~Stiller, and R.~Urtasun, ``Vision meets robotics: The
+  kitti dataset,'' {\em International Journal of Robotics Research (IJRR)},
+  2013.
 
-\bibitem{van2017neural}
-A.~Van Den~Oord, O.~Vinyals, {\em et~al.}, ``Neural discrete representation
-  learning,'' {\em Advances in neural information processing systems}, vol.~30,
-  2017.
-
-\bibitem{tolstikhin2021mlp}
-I.~O. Tolstikhin, N.~Houlsby, A.~Kolesnikov, L.~Beyer, X.~Zhai, T.~Unterthiner,
-  J.~Yung, A.~Steiner, D.~Keysers, J.~Uszkoreit, {\em et~al.}, ``Mlp-mixer: An
-  all-mlp architecture for vision,'' {\em Advances in neural information
-  processing systems}, vol.~34, pp.~24261--24272, 2021.
-
-\bibitem{jia2021scaling}
-C.~Jia, Y.~Yang, Y.~Xia, Y.-T. Chen, Z.~Parekh, H.~Pham, Q.~Le, Y.-H. Sung,
-  Z.~Li, and T.~Duerig, ``Scaling up visual and vision-language representation
-  learning with noisy text supervision,'' in {\em International conference on
-  machine learning}, pp.~4904--4916, PMLR, 2021.
-
-\bibitem{palepu2022tier}
-A.~Palepu and A.~L. Beam, ``Tier: Text-image entropy regularization for
-  clip-style models,'' {\em arXiv preprint arXiv:2212.06710}, 2022.
-
-\bibitem{chen2015microsoft}
-X.~Chen, H.~Fang, T.-Y. Lin, R.~Vedantam, S.~Gupta, P.~Doll{\'a}r, and C.~L.
-  Zitnick, ``Microsoft coco captions: Data collection and evaluation server,''
-  {\em arXiv preprint arXiv:1504.00325}, 2015.
-
-\bibitem{everinghamc}
-M.~Everingham, L.~Van~Gool, and W.~KI, ``C., winn, j., \& zisserman,
-  a.(2010),'' {\em The PASCAL Visual Object Classes (VOC) Challenge},
-  pp.~303--338, 2010.
-
-\bibitem{mottaghi2014role}
-R.~Mottaghi, X.~Chen, X.~Liu, N.-G. Cho, S.-W. Lee, S.~Fidler, R.~Urtasun, and
-  A.~Yuille, ``The role of context for object detection and semantic
-  segmentation in the wild,'' in {\em Proceedings of the IEEE conference on
-  computer vision and pattern recognition}, pp.~891--898, 2014.
-
-\bibitem{zhou2017scene}
-B.~Zhou, H.~Zhao, X.~Puig, S.~Fidler, A.~Barriuso, and A.~Torralba, ``Scene
-  parsing through ade20k dataset,'' in {\em Proceedings of the IEEE conference
-  on computer vision and pattern recognition}, pp.~633--641, 2017.
-
-\bibitem{changpinyo2021conceptual}
-S.~Changpinyo, P.~Sharma, N.~Ding, and R.~Soricut, ``Conceptual 12m: Pushing
-  web-scale image-text pre-training to recognize long-tail visual concepts,''
-  in {\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
-  Recognition}, pp.~3558--3568, 2021.
-
-\bibitem{thomee2016yfcc100m}
-B.~Thomee, D.~A. Shamma, G.~Friedland, B.~Elizalde, K.~Ni, D.~Poland, D.~Borth,
-  and L.-J. Li, ``Yfcc100m: The new data in multimedia research,'' {\em
-  Communications of the ACM}, vol.~59, no.~2, pp.~64--73, 2016.
-
-\bibitem{kingma2014adam}
-D.~Kingma and J.~Ba, ``Adam: A method for stochastic optimization,'' {\em arXiv
-  preprint arXiv:1412.6980}, 2014.
-
-\bibitem{loshchilov2016sgdr}
-I.~Loshchilov and F.~Hutter, ``Sgdr: Stochastic gradient descent with warm
-  restarts,'' {\em arXiv preprint arXiv:1608.03983}, 2016.
-
-\bibitem{xu2023learning}
-J.~Xu, J.~Hou, Y.~Zhang, R.~Feng, Y.~Wang, Y.~Qiao, and W.~Xie, ``Learning
-  open-vocabulary semantic segmentation models from natural language
-  supervision,'' in {\em Proceedings of the IEEE/CVF Conference on Computer
-  Vision and Pattern Recognition}, pp.~2935--2944, 2023.
-
-\bibitem{cover1967nearest}
-T.~Cover and P.~Hart, ``Nearest neighbor pattern classification,'' {\em IEEE
-  transactions on information theory}, vol.~13, no.~1, pp.~21--27, 1967.
-
-\bibitem{xu2022groupvit}
-J.~Xu, S.~De~Mello, S.~Liu, W.~Byeon, T.~Breuel, J.~Kautz, and X.~Wang,
-  ``Groupvit: Semantic segmentation emerges from text supervision,'' in {\em
-  Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
-  Recognition}, pp.~18134--18144, 2022.
-
-\bibitem{van2008visualizing}
-L.~Van~der Maaten and G.~Hinton, ``Visualizing data using t-sne.,'' {\em
-  Journal of machine learning research}, vol.~9, no.~11, 2008.
-
-\bibitem{melas2022deep}
-L.~Melas-Kyriazi, C.~Rupprecht, I.~Laina, and A.~Vedaldi, ``Deep spectral
-  methods: A surprisingly strong baseline for unsupervised semantic
-  segmentation and localization,'' in {\em Proceedings of the IEEE/CVF
-  Conference on Computer Vision and Pattern Recognition}, pp.~8364--8375, 2022.
+\bibitem{Inoue_2018_CVPR}
+N.~Inoue, R.~Furuta, T.~Yamasaki, and K.~Aizawa, ``Cross-domain
+  weakly-supervised object detection through progressive domain adaptation,''
+  in {\em Proceedings of the IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, June 2018.
 
 \end{thebibliography}
