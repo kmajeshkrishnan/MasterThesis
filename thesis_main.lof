@@ -1,13 +1,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Comparison of maskcut and CutLER outputs}}}{2}{figure.caption.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2}{\ignorespaces \textbf {Keypoint correspondecences using relaxed best buddies}}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {2}{\ignorespaces \textbf {ViT Architecture}}}{6}{figure.caption.7}%
+\contentsline {figure}{\numberline {3}{\ignorespaces \textbf {Transformer Encoder Architecture}}}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces \textbf {DINO Architecture }}}{9}{figure.caption.15}%
+\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {CutLER overview}}}{11}{figure.caption.18}%
+\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Maskcut flow}}}{11}{figure.caption.19}%
+\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Copy-Paste Augmentation}}}{13}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3}{\ignorespaces \textbf {ViT Architecture}}}{10}{figure.caption.8}%
-\contentsline {figure}{\numberline {4}{\ignorespaces \textbf {Transformer Encoder Architecture}}}{11}{figure.caption.9}%
-\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {DINO Architecture }}}{13}{figure.caption.16}%
-\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {CutLER overview}}}{15}{figure.caption.19}%
-\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Maskcut flow}}}{15}{figure.caption.20}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Keypoint correspondecences using relaxed best buddies}}}{18}{figure.caption.21}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

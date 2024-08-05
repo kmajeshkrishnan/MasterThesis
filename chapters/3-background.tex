@@ -140,7 +140,7 @@ CutLER~\cite{wang2023cut} introduces a novel approach to address the challenges 
 		similarity matrix for the image using a self-supervised DINO~\cite{caron2021emerging} model feature. N=3 defines the number of times NCut~\cite{normcut} is repeated on the background. In this case, 3 instances will be discovered per image in each step. Illustration taken from~\cite{wang2023cut}}.
 	\label{fig:maskcut_flow}
 \end{figure}
-Maskcut considers image segmentation problem as a graph partitioning task~\cite{normcut}. The inspiration of Maskcut comes from TokenCut~\cite{wang2022tokencut}, which constructs a fully connected undirected graph by representing each image as a node. 
+Maskcut considers image segmentation problem as a graph partitioning task~\cite{normcut}. The inspiration of Maskcut comes from TokenCut~\cite{wang2022tokencut}, which constructs a fully connected undirected graph by representing each patch as a node. 
 
 \begin{equation}
 	\label{eq:eig_problem}
@@ -167,9 +167,26 @@ L_{\text{drop}}(r_i) = \mathds{1}(\text{IoU}_i^{\text{max}} > \tau^{\text{IoU}})
 
 Specifically, during training, the loss is dropped for any predicted region \( r_i \) that has a maximum overlap of \( \tau^{\text{IoU}} \) with any ground truth instance as given in Eq. \ref{eq:drop_loss} where \(\text{IoU}_i^{\text{max}}\) denotes the maximum IoU with all ground truth for \( r_i \), and \( L_{\text{vanilla}} \) refers to the standard loss function for detectors. \( L_{\text{drop}} \) avoids penalizing the model for detecting objects missed in the 'ground truth', thus encouraging the exploration of different image regions.
 
-\subsection{Self-Training}
-Apart from the training  for 160K iterations on Imagenet~\cite{deng2009imagenet} using Mask-RCNN~\cite{he2018maskrcnn} or cascade Mask-RCNN~\cite{cai2019cascadercnnhighquality} dectectors with a ResNet-50~\cite{he2015deepresiduallearningimage} backbone using Maskcut masks as pseudo ground truths, it is further refined using self training loops.
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\textwidth]{Images/main/copy-paste.png}
+	\caption[\textbf{Copy-Paste Augmentation}]{Illustration of Copy-Paste augmentation from~\cite{ghiasi2021simplecopypastestrongdata}}.
+	\label{fig:copy_paste_aug}
+\end{figure}
 
-Along with CutLER mask predictions with confidence score > 0.7, Maskcut masks with IoU < 0.5 with the CutLER prediction masks together make the pseudo ground truth masks for the next self training round. Each self training loop is trained for 80K iterations which results in further improvement in the evaluation score(AP) on COCOVal dataset~\cite{lin2014microsoft} till 3 self-training loops.
+\subsection{Copy-Paste Augmentation}
+Copy-Paste Augmentation~\cite{ghiasi2021simplecopypastestrongdata} is a data augmentation technique used to enhance the diversity of training datasets by artificially creating new training samples. This method involves copying objects from one image and pasting them onto another, thereby generating new training examples with diverse object placements and backgrounds as illustrated in Fig.~\ref{fig:copy_paste_aug}. The pasted objects can be resized, rotated, or otherwise manipulated to fit the new context. Lastly, the ground-truth annotations are also adjusted accordingly
 
-This pseudo ground truth masks selection process can be further refined to improve the performance of CutLER by removing the noisy background masks from the Maskcut masks, which will be discussed in the coming sections in our work.
+In Cutler, instead of using the standard copy-paste augmentation, where masks are rescaled with a factor between 0.8 and 1.25, masks are randomly downsampled with a scalar uniformly sampled between 0.3 and 1.0. This approach enables Cutler to recognize even smaller instances in the image effectively.
+
+\subsection{Training}
+The training process is divided into two stages: initial training followed by self-training, as depicted in Fig.\ref{fig:cutler_flow}. CutLER is agnostic regarding the choice of detector, allowing the use of any preferred detector. However, based on the experiments detailed in the paper, Cascade Mask R-CNN\cite{cai2019cascadercnnhighquality} yields better results compared to Mask R-CNN~\cite{he2018maskrcnn}.
+
+First, pseudo-ground truth masks are generated using MaskCut for all images in Imagenet~\cite{deng2009imagenet} training set. The detector with a ResNet-50~\cite{he2015deepresiduallearningimage} backbone is trained using these pseudo-ground truth masks for 160K iterations with Copy-Paste augmentations and DropLoss.
+
+To further improve the model performance, several self-training loops are also carried out. The CutLER mask predictions of each image with confidence score > 0.7 generated using the final model of last training phase and corresponding MaskCut masks which doesn't overlap more than 50\% with the predicted masks together forms the pseudo-ground truth masks for the first round of self-training. The same process is repeated for the following self-training rounds except that instead of MaskCut masks, pseudo-ground truth masks of the previous stage is used to compare with predicted masks. Each self training round is consist of 80K rounds and does not use DropLoss as we obtain comparatively good quality masks in the first round it self. The detailed information about the training are explained later in Section~\ref{section:implementation_details}.
+
+\subsection{Mask refinement in CutLER}
+Before each self-training loop, 30 masks per image are generated for the entire Imagenet dataset using the latest trained model. Of these, masks are filtered based on the confidence score. In the paper, the masks with confidence score greater than \(0.7 - 0.05 * i\) on the \(i\) th iteration are kept and the rest are rejected. These filtered CutLER masks are compared with the corresponding Maskcut masks(in the first self-training round) or the pseudo-ground truth masks from the last round for each image. If the IoU between CutLER mask and Maskcut mask is less than 0.5, the corresponding Maskcut mask is added along with CutLER masks and this constitutes the pseudo-ground truth for the self-training loop.
+
+The intuition is to retain masks from previous pseudo-ground truths that do not significantly overlap (i.e., overlap less than 0.5) with the current predictions. This strategy allows CutLER to explore new regions of the image that have not been thoroughly examined in previous iterations. However, a challenge with this approach is that it may perpetuate the inclusion of noisy masks in the ground truth during each self-training loop. Our approach seeks to address this issue by implementing a more refined method for removing the noisy background masks from the MaskCut masks and to improve the quality of the masks iteratively.

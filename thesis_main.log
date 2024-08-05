@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.28)  4 AUG 2024 20:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.28)  5 AUG 2024 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,7 +1001,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./thesis_main.aux
 (./chapters/0_0-titlepage.aux) (./chapters/0_1-declaration.aux)
 (./chapters/0_2-abstract.aux) (./chapters/1-introduction.aux)
-(./chapters/2-relatedwork.aux) (./chapters/3-background.aux)
+(./chapters/3-background.aux) (./chapters/2-relatedwork.aux)
 (./chapters/4-approach.aux) (./chapters/5-experiments.aux
 
 LaTeX Warning: Label `tab:ablationK' multiply defined.
@@ -1259,7 +1259,7 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 27.
 
  (./chapters/1-introduction.tex
 chapter 1.
-<Images/main/mask_cut_cutler_comparison.png, id=186, 1134.639pt x 395.3169pt>
+<Images/main/mask_cut_cutler_comparison.png, id=201, 1134.639pt x 395.3169pt>
 File: Images/main/mask_cut_cutler_comparison.png Graphic file (type png)
 <use Images/main/mask_cut_cutler_comparison.png>
 Package pdftex.def Info: Images/main/mask_cut_cutler_comparison.png  used on in
@@ -1276,9 +1276,9 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) [3]
-\openout2 = `chapters/2-relatedwork.aux'.
+\openout2 = `chapters/3-background.aux'.
 
- (./chapters/2-relatedwork.tex
+ (./chapters/3-background.tex
 [4
 
 
@@ -1287,34 +1287,15 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ]
 chapter 2.
-[5] [6]
-<Images/main/correspondences.png, id=260, 251.4996pt x 162.6075pt>
-File: Images/main/correspondences.png Graphic file (type png)
-<use Images/main/correspondences.png>
-Package pdftex.def Info: Images/main/correspondences.png  used on input line 34
-.
-(pdftex.def)             Requested size: 378.42049pt x 244.69717pt.
- [7]) [8 <./Images/main/correspondences.png>]
-\openout2 = `chapters/3-background.aux'.
-
-
-(./chapters/3-background.tex
-chapter 3.
-<Images/main/vit_full_arch.png, id=287, 1168.365pt x 800.9925pt>
+<Images/main/vit_full_arch.png, id=236, 1168.365pt x 800.9925pt>
 File: Images/main/vit_full_arch.png Graphic file (type png)
 <use Images/main/vit_full_arch.png>
 Package pdftex.def Info: Images/main/vit_full_arch.png  used on input line 7.
 (pdftex.def)             Requested size: 358.50233pt x 245.77512pt.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [9
-
-
-
-
-
-]
-<Images/main/transformerblock.png, id=315, 155.98276pt x 332.442pt>
+) [5]
+<Images/main/transformerblock.png, id=264, 155.98276pt x 332.442pt>
 File: Images/main/transformerblock.png Graphic file (type png)
 <use Images/main/transformerblock.png>
 Package pdftex.def Info: Images/main/transformerblock.png  used on input line 3
@@ -1323,30 +1304,30 @@ Package pdftex.def Info: Images/main/transformerblock.png  used on input line 3
 
 Underfull \vbox (badness 3078) has occurred while \output is active []
 
- [10 <./Images/main/vit_full_arch.png>]
+ [6 <./Images/main/vit_full_arch.png>]
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
- [11 <./Images/main/transformerblock.png>]
-<Images/main/dino.png, id=343, 242.70676pt x 251.13824pt>
+ [7 <./Images/main/transformerblock.png>]
+<Images/main/dino.png, id=292, 242.70676pt x 251.13824pt>
 File: Images/main/dino.png Graphic file (type png)
 <use Images/main/dino.png>
 Package pdftex.def Info: Images/main/dino.png  used on input line 100.
 (pdftex.def)             Requested size: 199.16931pt x 206.08797pt.
- [12]
+ [8]
 Underfull \vbox (badness 5908) has occurred while \output is active []
 
- [13 <./Images/main/dino.png>]
-<Images/main/cutler_flow.png, id=370, 1134.2375pt x 393.47pt>
+ [9 <./Images/main/dino.png>]
+<Images/main/cutler_flow.png, id=318, 1134.2375pt x 393.47pt>
 File: Images/main/cutler_flow.png Graphic file (type png)
 <use Images/main/cutler_flow.png>
 Package pdftex.def Info: Images/main/cutler_flow.png  used on input line 128.
 (pdftex.def)             Requested size: 318.67212pt x 110.54909pt.
-<Images/main/maskcut_eg.png, id=376, 1488.56125pt x 313.17pt>
+<Images/main/maskcut_eg.png, id=324, 1488.56125pt x 313.17pt>
 File: Images/main/maskcut_eg.png Graphic file (type png)
 <use Images/main/maskcut_eg.png>
 Package pdftex.def Info: Images/main/maskcut_eg.png  used on input line 138.
 (pdftex.def)             Requested size: 398.33864pt x 83.802pt.
- [14] [15 <./Images/main/cutler_flow.png> <./Images/main/maskcut_eg.png>]
+ [10] [11 <./Images/main/cutler_flow.png> <./Images/main/maskcut_eg.png>]
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
 65.
  (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
@@ -1359,56 +1340,87 @@ Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/8'
 Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/6'
 (microtype)             (new value: 6.0pt) on input line 165.
 
-[16]) [17]
+[12]
+<Images/main/copy-paste.png, id=377, 1403.2425pt x 600.2425pt>
+File: Images/main/copy-paste.png Graphic file (type png)
+<use Images/main/copy-paste.png>
+Package pdftex.def Info: Images/main/copy-paste.png  used on input line 172.
+(pdftex.def)             Requested size: 398.33864pt x 170.39313pt.
+ [13 <./Images/main/copy-paste.png>]) [14]
+\openout2 = `chapters/2-relatedwork.aux'.
+
+ (./chapters/2-relatedwork.tex
+chapter 3.
+[15
+
+
+
+
+
+] [16]
+<Images/main/correspondences.png, id=440, 251.4996pt x 162.6075pt>
+File: Images/main/correspondences.png Graphic file (type png)
+<use Images/main/correspondences.png>
+Package pdftex.def Info: Images/main/correspondences.png  used on input line 34
+.
+(pdftex.def)             Requested size: 378.42049pt x 244.69717pt.
+ [17]) [18 <./Images/main/correspondences.png>]
 \openout2 = `chapters/4-approach.aux'.
 
- (./chapters/4-approach.tex [18
+
+(./chapters/4-approach.tex
+chapter 4.
+[19
+
+
+
+
+
+] [20]) [21]
+\openout2 = `chapters/5-experiments.aux'.
+
+ (./chapters/5-experiments.tex [22
 
 
 
 
 
 ]
-chapter 4.
-[19] [20]
-Underfull \vbox (badness 1205) has occurred while \output is active []
-
- [21])
-[22]
-\openout2 = `chapters/5-experiments.aux'.
-
- (./chapters/5-experiments.tex
 chapter 5.
-[23
-
-
-
-
-
-] [24] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+[23] [24] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 ) [25]
-Overfull \hbox (21.52933pt too wide) in paragraph at lines 75--81
+Overfull \hbox (55.64441pt too wide) in paragraph at lines 62--77
  [][] 
  []
 
 
-Overfull \hbox (52.69449pt too wide) in paragraph at lines 99--110
+Overfull \hbox (125.5926pt too wide) in paragraph at lines 84--95
  [][] 
  []
 
 
-Overfull \hbox (52.69449pt too wide) in paragraph at lines 116--127
+Overfull \hbox (21.52933pt too wide) in paragraph at lines 119--125
  [][] 
  []
 
-) [26] [27]
+
+Overfull \hbox (52.69449pt too wide) in paragraph at lines 143--154
+ [][] 
+ []
+
+
+Overfull \hbox (52.69449pt too wide) in paragraph at lines 160--171
+ [][] 
+ []
+
+[26] [27] [28]) [29]
 \openout2 = `chapters/6-conclusions.aux'.
 
- (./chapters/6-conclusions.tex [28
+ (./chapters/6-conclusions.tex [30
 
 
 
@@ -1416,10 +1428,10 @@ Overfull \hbox (52.69449pt too wide) in paragraph at lines 116--127
 
 ]
 chapter 6.
-) [29]
+) [31]
 \openout2 = `chapters/7-acknowledgments.aux'.
 
- (./chapters/7-acknowledgments.tex [30
+ (./chapters/7-acknowledgments.tex [32
 
 
 
@@ -1427,15 +1439,15 @@ chapter 6.
 
 ]
 chapter 7.
-) [31] (./thesis_main.bbl [32
+) [33] (./thesis_main.bbl [34
 
 
 
 
-] [33] [34] [35]) [36] [37] (./thesis_main.aux
+] [35] [36] [37]) [38] [39] (./thesis_main.aux
 (./chapters/0_0-titlepage.aux) (./chapters/0_1-declaration.aux)
 (./chapters/0_2-abstract.aux) (./chapters/1-introduction.aux)
-(./chapters/2-relatedwork.aux) (./chapters/3-background.aux)
+(./chapters/3-background.aux) (./chapters/2-relatedwork.aux)
 (./chapters/4-approach.aux) (./chapters/5-experiments.aux)
 (./chapters/6-conclusions.aux) (./chapters/7-acknowledgments.aux))
 
@@ -1445,10 +1457,10 @@ Package rerunfilecheck Info: File `thesis_main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31866 strings out of 480171
- 608616 string characters out of 5894489
- 997978 words of memory out of 5000000
- 48762 multiletter control sequences out of 15000+600000
+ 31890 strings out of 480171
+ 609062 string characters out of 5894489
+ 1017242 words of memory out of 5000000
+ 48776 multiletter control sequences out of 15000+600000
  552128 words of font info for 195 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  108i,11n,106p,10606b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1467,10 +1479,10 @@ xmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 s/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_main.pdf (49 pages, 3050808 bytes).
+Output written on thesis_main.pdf (51 pages, 4427207 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
- 710 compressed objects within 8 object streams
- 177 named destinations out of 1000 (max. 500000)
- 46520 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 867 PDF objects out of 1000 (max. 8388607)
+ 748 compressed objects within 8 object streams
+ 186 named destinations out of 1000 (max. 500000)
+ 46557 words of extra memory for PDF output out of 51595 (max. 10000000)
 

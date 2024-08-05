@@ -26,7 +26,8 @@ Although the KITTI dataset offers rich annotations, including 3D object labels a
 In addition to real-world image datasets, we also incorporate art datasets, such as Comic and Watercolor~\cite{Inoue_2018_CVPR}, to evaluate the model's generalization capabilities across diverse visual styles. Since these datasets lack segmentation annotations, we use only the bounding box data for evaluation, as in our approach for the KITTI dataset. 
 
 \section{Implementation Details}
-Our implementation largely follows the baseline approach; however, it is important to note a key difference in our setup. While the baseline experiments use a batch size of 16, we utilize batch sizes of 4 and 8 due to resource constraints. To ensure a fair comparison, we also train the baseline model from scratch using these same batch sizes of 4 and 8.
+\label{section:implementation_details}
+Our implementation largely follows the baseline approach; however, it is important to note a key difference in our setup. While in the baseline paper experiments use a batch size of 16, we utilize batch sizes of 4 and 8 due to resource constraints. To ensure a fair comparison, we also train the baseline model from scratch using these same batch sizes of 4 and 8.
 
 \subsection{Training data}
 Only the images from ImageNet dataset(1.3 Million images) are used for the training(including self-training). We do not use any supervised pretrained models or labels for training baseline or the proposed method. However, the bounding box annotations are used to analyze the impact of images with overlapping instances in section <REF:>
@@ -52,11 +53,54 @@ Initial training on ImageNet with batch size 8 spans over 160K iterations on fou
 
 
 \section{Experiments}
+\subsection{Exploring Impact of Overlapping Instances}
+
+\subsection{Proposed Method}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|cc|cc|cc|cc|cc}
+		\toprule
+		& \multicolumn{2}{c|}{COCO} & \multicolumn{2}{c|}{KITTI} & \multicolumn{2}{c|}{VOC} & \multicolumn{2}{c|}{Comic} & \multicolumn{2}{c}{Watercolor} \\ \midrule
+		& AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 \\ \midrule
+		\multicolumn{11}{c}{Train} \\ \midrule
+		Baseline & 11.17 & 20.12 & 4.79 & 10.27 & 19.98 & 36.26 & \textbf{11.80} & \textbf{28.39} & \textbf{14.67} & \textbf{35.60} \\ \midrule
+		Ours & \textbf{11.47} & \textbf{20.81} & \textbf{6.28} & \textbf{13.48} & \textbf{20.24} & \textbf{36.56} & 10.81 & 26.50 & 14.00 & 35.27 \\ \midrule
+		\multicolumn{11}{c}{Self-train-r1} \\ \midrule
+		Baseline & 11.70 & 21.15 & 6.60 & 14.19 & 19.56 & 36.81 &  \textbf{11.05} &  \textbf{27.53} & 12.92 & 33.45 \\ \midrule
+		Ours & \textbf{11.94} & \textbf{21.65} & \textbf{8.21} & \textbf{18.49} & \textbf{20.24} & \textbf{37.95} & 10.80 & 27.40 & \textbf{15.37} & \textbf{37.74} \\
+		\midrule
+		\multicolumn{11}{c}{Self-train-r2} \\ \midrule
+		Baseline & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ \midrule
+		Ours & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ \bottomrule
+	\end{tabular}
+	\caption{AP and AP50 for Training and Self-Training (Batch size 8)}
+	\label{tab:combined_train}
+\end{table}
+
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|cc|cc|cc|cc|cc}
+		\toprule
+		& & \multicolumn{2}{c|}{COCO} & \multicolumn{2}{c|}{KITTI} & \multicolumn{2}{c|}{VOC} & \multicolumn{2}{c|}{Comic} & \multicolumn{2}{c}{Watercolor} \\ \midrule
+		& & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 \\ \midrule
+		\multirow{2}{*}{Train} & Baseline & 11.17 & 20.12 & 4.79 & 10.27 & 19.98 & 36.26 & \textbf{11.80} & \textbf{28.39} & \textbf{14.67} & \textbf{35.60} \\ 
+		& Ours & \textbf{11.47} & \textbf{20.81} & \textbf{6.28} & \textbf{13.48} & \textbf{20.24} & \textbf{36.56} & 10.81 & 26.50 & 14.00 & 35.27 \\ \midrule
+		\multirow{2}{*}{Self-train-r1} & Baseline & 11.70 & 21.15 & 6.60 & 14.19 & 19.56 & 36.81 & \textbf{11.05} & \textbf{27.53} & 12.92 & 33.45 \\ 
+		& Ours & \textbf{11.94} & \textbf{21.65} & \textbf{8.21} & \textbf{18.49} & \textbf{20.24} & \textbf{37.95} & 10.80 & 27.40 & \textbf{15.37} & \textbf{37.74} \\ \midrule
+		\multirow{2}{*}{Self-train-r2} & Baseline & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ 
+		& Ours & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ \bottomrule
+	\end{tabular}
+	\caption{AP and AP50 for Training and Self-Training (Batch size 8)}
+	\label{tab:combined_train_1}
+\end{table}
 
 
 
 \section{Result of bs-8 CutLER training}
 % \todo{This section is completely adapted from openseg, add more infor and rephrase the text}
+
 \cite{wang2023cut}
 \begin{table}[htbp]
 	\centering
@@ -127,6 +171,11 @@ Initial training on ImageNet with batch size 8 spans over 160K iterations on fou
 	\caption{\textbf{AP and AP50 of evaluation(segm) on COCO Eval datasets on models trained on imagenet for 90K iterations}}
 	\label{tab:ablationK}
 \end{table}
+
+\subsection{Choice of batch size}
+In the baseline paper, experiments were conducted using a batch size of 16. Due to resource constraints, we performed our experiments with batch sizes of 4 and 8. As shown in Table <Table Number>, we observe a slight improvement in performance with a higher batch size. Our experiments also indicate that batch size influences the relative improvement achieved through self-training.
+
+For batch sizes of 4 and 8, we observed that in self-training round 2, the performance of both the baseline and our method decreased instead of improving. This contrasts with the results in the baseline paper with batch size 16, where performance continued to improve until round 2.
 
 %\subsection{\ad}
 %ADE20K, introduced by  Zhou et al., provides detailed annotations for pixel-level segmentation, covering both objects and stuff categories \cite{zhou2017scene}. The dataset is split into a training set and a validation set. The training set consists of approximately 20,000 images, while the validation set contains around 2,000 images. ADE20K is known for its comprehensive coverage of scenes and contains annotations for 150 object classes and 92 stuff categories, making it a valuable resource for zero-shot semantic segmentation in our experiments.
