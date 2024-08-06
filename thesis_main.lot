@@ -4,12 +4,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1}{\ignorespaces AP and AP50 for Training and Self-Training (Batch size 8)\relax }}{27}{table.caption.22}%
-\contentsline {table}{\numberline {2}{\ignorespaces AP and AP50 for Training and Self-Training (Batch size 8)\relax }}{27}{table.caption.23}%
-\contentsline {table}{\numberline {3}{\ignorespaces AP and AP50\relax }}{27}{table.caption.24}%
-\contentsline {table}{\numberline {4}{\ignorespaces AP and AP50\relax }}{27}{table.caption.25}%
-\contentsline {table}{\numberline {5}{\ignorespaces AP and AP50\relax }}{28}{table.caption.26}%
-\contentsline {table}{\numberline {6}{\ignorespaces \textbf {AP and AP50 of evaluation(box) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{28}{table.caption.27}%
-\contentsline {table}{\numberline {7}{\ignorespaces \textbf {AP and AP50 of evaluation(segm) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{28}{table.caption.28}%
+\contentsline {table}{\numberline {2}{\ignorespaces \textbf {AP and AP50 of evaluation(box) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{27}{table.caption.23}%
+\contentsline {table}{\numberline {3}{\ignorespaces \textbf {AP and AP50 of evaluation(segm) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{27}{table.caption.24}%
+\contentsline {table}{\numberline {4}{\ignorespaces AP and AP50 for Training and Self-Training (Batch size 8)\relax }}{27}{table.caption.25}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

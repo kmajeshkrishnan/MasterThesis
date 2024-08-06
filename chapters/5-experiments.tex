@@ -57,86 +57,46 @@ Initial training on ImageNet with batch size 8 spans over 160K iterations on fou
 
 \subsection{Proposed Method}
 
+%\begin{table}[htbp]
+%	\centering
+%	\begin{tabular}{c|cc|cc|cc|cc|cc}
+%		\toprule
+%		& \multicolumn{2}{c|}{COCO} & \multicolumn{2}{c|}{KITTI} & \multicolumn{2}{c|}{VOC} & \multicolumn{2}{c|}{Comic} & \multicolumn{2}{c}{Watercolor} \\ \midrule
+%		& AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 \\ \midrule
+%		\multicolumn{11}{c}{Train} \\ \midrule
+%		Baseline & 11.17 & 20.12 & 4.79 & 10.27 & 19.98 & 36.26 & \textbf{11.80} & \textbf{28.39} & \textbf{14.67} & \textbf{35.60} \\ \midrule
+%		Ours & \textbf{11.47} & \textbf{20.81} & \textbf{6.28} & \textbf{13.48} & \textbf{20.24} & \textbf{36.56} & 10.81 & 26.50 & 14.00 & 35.27 \\ \midrule
+%		\multicolumn{11}{c}{Self-train-r1} \\ \midrule
+%		Baseline & 11.70 & 21.15 & 6.60 & 14.19 & 19.56 & 36.81 &  \textbf{11.05} &  \textbf{27.53} & 12.92 & 33.45 \\ \midrule
+%		Ours & \textbf{11.94} & \textbf{21.65} & \textbf{8.21} & \textbf{18.49} & \textbf{20.24} & \textbf{37.95} & 10.80 & 27.40 & \textbf{15.37} & \textbf{37.74} \\
+%		\midrule
+%		\multicolumn{11}{c}{Self-train-r2} \\ \midrule
+%		Baseline & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ \midrule
+%		Ours & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ \bottomrule
+%	\end{tabular}
+%	\caption{AP and AP50 for Training and Self-Training (Batch size 8)}
+%	\label{tab:combined_train_old}
+%\end{table}
+
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|cc|cc|cc|cc|cc}
-		\toprule
-		& \multicolumn{2}{c|}{COCO} & \multicolumn{2}{c|}{KITTI} & \multicolumn{2}{c|}{VOC} & \multicolumn{2}{c|}{Comic} & \multicolumn{2}{c}{Watercolor} \\ \midrule
-		& AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 \\ \midrule
-		\multicolumn{11}{c}{Train} \\ \midrule
-		Baseline & 11.17 & 20.12 & 4.79 & 10.27 & 19.98 & 36.26 & \textbf{11.80} & \textbf{28.39} & \textbf{14.67} & \textbf{35.60} \\ \midrule
-		Ours & \textbf{11.47} & \textbf{20.81} & \textbf{6.28} & \textbf{13.48} & \textbf{20.24} & \textbf{36.56} & 10.81 & 26.50 & 14.00 & 35.27 \\ \midrule
-		\multicolumn{11}{c}{Self-train-r1} \\ \midrule
-		Baseline & 11.70 & 21.15 & 6.60 & 14.19 & 19.56 & 36.81 &  \textbf{11.05} &  \textbf{27.53} & 12.92 & 33.45 \\ \midrule
-		Ours & \textbf{11.94} & \textbf{21.65} & \textbf{8.21} & \textbf{18.49} & \textbf{20.24} & \textbf{37.95} & 10.80 & 27.40 & \textbf{15.37} & \textbf{37.74} \\
-		\midrule
-		\multicolumn{11}{c}{Self-train-r2} \\ \midrule
-		Baseline & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ \midrule
-		Ours & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ \bottomrule
-	\end{tabular}
+	\resizebox{1.2\textwidth}{!}{%
+		\begin{tabular}{c|c|cc|cc|cc|cc|cc}
+			\toprule
+			& & \multicolumn{2}{c|}{COCO} & \multicolumn{2}{c|}{KITTI} & \multicolumn{2}{c|}{VOC} & \multicolumn{2}{c|}{Comic} & \multicolumn{2}{c}{Watercolor} \\ \midrule
+			& & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 \\ \midrule
+			\multirow{2}{*}{Train} & Baseline & 11.17 & 20.12 & 4.79 & 10.27 & 19.98 & 36.26 & \textbf{11.80} & \textbf{28.39} & \textbf{14.67} & \textbf{35.60} \\ 
+			& Ours & \textbf{11.47} & \textbf{20.81} & \textbf{6.28} & \textbf{13.48} & \textbf{20.24} & \textbf{36.56} & 10.81 & 26.50 & 14.00 & 35.27 \\ \midrule
+			\multirow{2}{*}{r1} & Baseline & 11.70 & 21.15 & 6.60 & 14.19 & 19.56 & 36.81 & \textbf{11.05} & \textbf{27.53} & 12.92 & 33.45 \\ 
+			& Ours & \textbf{11.94} & \textbf{21.65} & \textbf{8.21} & \textbf{18.49} & \textbf{20.24} & \textbf{37.95} & 10.80 & 27.40 & \textbf{15.37} & \textbf{37.74} \\ \midrule
+			\multirow{2}{*}{r2} & Baseline & \textbf{11.02} & 20.32 & 6.73 & 15.02 & \textbf{18.06} & 35.09 & \textbf{9.90} & \textbf{25.36} & \textbf{13.59} & \textbf{34.31} \\ 
+			& Ours & 10.81 & \textbf{20.47} & \textbf{7.69} & \textbf{17.04} & 17.93 & \textbf{35.24} & 8.94 & 22.74 & 12.06 & 30.02 \\ \bottomrule
+		\end{tabular}%
+	}
 	\caption{AP and AP50 for Training and Self-Training (Batch size 8)}
 	\label{tab:combined_train}
 \end{table}
 
-
-\begin{table}[htbp]
-	\centering
-	\begin{tabular}{c|c|cc|cc|cc|cc|cc}
-		\toprule
-		& & \multicolumn{2}{c|}{COCO} & \multicolumn{2}{c|}{KITTI} & \multicolumn{2}{c|}{VOC} & \multicolumn{2}{c|}{Comic} & \multicolumn{2}{c}{Watercolor} \\ \midrule
-		& & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 \\ \midrule
-		\multirow{2}{*}{Train} & Baseline & 11.17 & 20.12 & 4.79 & 10.27 & 19.98 & 36.26 & \textbf{11.80} & \textbf{28.39} & \textbf{14.67} & \textbf{35.60} \\ 
-		& Ours & \textbf{11.47} & \textbf{20.81} & \textbf{6.28} & \textbf{13.48} & \textbf{20.24} & \textbf{36.56} & 10.81 & 26.50 & 14.00 & 35.27 \\ \midrule
-		\multirow{2}{*}{Self-train-r1} & Baseline & 11.70 & 21.15 & 6.60 & 14.19 & 19.56 & 36.81 & \textbf{11.05} & \textbf{27.53} & 12.92 & 33.45 \\ 
-		& Ours & \textbf{11.94} & \textbf{21.65} & \textbf{8.21} & \textbf{18.49} & \textbf{20.24} & \textbf{37.95} & 10.80 & 27.40 & \textbf{15.37} & \textbf{37.74} \\ \midrule
-		\multirow{2}{*}{Self-train-r2} & Baseline & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ 
-		& Ours & 11.02 & 20.32 & 6.73 & 15.02 & 18.06 & 35.09 & 9.90 & 25.36 & 13.59 & 34.31 \\ \bottomrule
-	\end{tabular}
-	\caption{AP and AP50 for Training and Self-Training (Batch size 8)}
-	\label{tab:combined_train_1}
-\end{table}
-
-
-
-\section{Result of bs-8 CutLER training}
-% \todo{This section is completely adapted from openseg, add more infor and rephrase the text}
-
-\cite{wang2023cut}
-\begin{table}[htbp]
-	\centering
-	\begin{tabular}{c|c|c|c|c|cl}
-		\toprule
-		train & COCO & KITTI & VOC & Comic & Watercolor \\ \midrule
-		Baseline & 11.17,20.12 & 4.79,10.27 & 19.98,36.26 & 11.80,28.39 & 14.67,35.6 \\ \midrule
-		Ours & \textbf{11.47,20.81} & \textbf{6.28,13.48} & \textbf{20.24,36.56} & 10.81,26.50 & 14.00,35.27 \\ \bottomrule
-	\end{tabular}
-	\caption{AP and AP50}
-	\label{tab:base_train}
-\end{table}
-
-\begin{table}[htbp]
-	\centering
-	\begin{tabular}{c|c|c|c|c|cl}
-		\toprule
-		self-train-r1 & COCO & KITTI & VOC & Comic & Watercolor \\ \midrule
-		Baseline & 11.7,21.15 & 6.60,14.19 & 19.56,36.81 & 11.05,27.53 & 12.92,33.45 \\ \midrule
-		Ours & \textbf{11.94,21.65} & \textbf{8.21,18.49} & \textbf{20.24,37.95} & 10.80,27.4 & \textbf{15.37,37.74} \\ \bottomrule
-	\end{tabular}
-	\caption{AP and AP50}
-	\label{tab:r1_train}
-\end{table}
-
-\begin{table}[htbp]
-	\centering
-	\begin{tabular}{c|c|c|c|c|cl}
-		\toprule
-		self-train-r2 & COCO & KITTI & VOC & Comic & Watercolor \\ \midrule
-		Baseline & 11.02,20.32 & 6.73,15.02 & 18.06,35.09 & 9.90,25.36 & 13.59,34.31 \\ \midrule
-		Ours & - & - & - & - & - \\ \bottomrule
-	\end{tabular}
-	\caption{AP and AP50}
-	\label{tab:r2_train}
-\end{table}
 
 \begin{table}[htbp]
 	\centering
@@ -173,7 +133,26 @@ Initial training on ImageNet with batch size 8 spans over 160K iterations on fou
 \end{table}
 
 \subsection{Choice of batch size}
-In the baseline paper, experiments were conducted using a batch size of 16. Due to resource constraints, we performed our experiments with batch sizes of 4 and 8. As shown in Table <Table Number>, we observe a slight improvement in performance with a higher batch size. Our experiments also indicate that batch size influences the relative improvement achieved through self-training.
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|cc|cc}
+		\toprule
+		& & \multicolumn{2}{c|}{Batch size = 8} & \multicolumn{2}{c}{Batch size = 4} \\ \midrule
+		& & AP & AP50 & AP & AP50 \\ \midrule
+		\multirow{2}{*}{Train} & Baseline & 11.17 & 20.12 & 10.74 & 19.78 \\ 
+		& Ours & \textbf{11.47} & \textbf{20.81} & \textbf{11.66} & \textbf{21.33} \\ \midrule
+		\multirow{2}{*}{Self-train-r1} & Baseline & 11.70 & 21.15 & 11.35 & 21.23 \\ 
+		& Ours & \textbf{11.94} & \textbf{21.65} & \textbf{11.79} & \textbf{21.58} \\ \midrule
+		\multirow{2}{*}{Self-train-r2} & Baseline & \textbf{11.02} & 20.32 & 10.51 & 20.03 \\ 
+		& Ours & 10.81 & \textbf{20.47} & \textbf{11.25} & \textbf{20.20 }\\ \bottomrule
+	\end{tabular}
+	\caption{AP and AP50 for Training and Self-Training (Batch size 8)}
+	\label{tab:batch_size_table}
+\end{table}
+
+
+In the baseline paper, experiments were conducted using a batch size of 16. Due to resource constraints, we performed our experiments with batch sizes of 4 and 8. As shown in Table~\ref{tab:batch_size_table}, we observe a slight improvement in performance with a higher batch size. Our experiments also indicate that batch size influences the relative improvement achieved through self-training.
 
 For batch sizes of 4 and 8, we observed that in self-training round 2, the performance of both the baseline and our method decreased instead of improving. This contrasts with the results in the baseline paper with batch size 16, where performance continued to improve until round 2.
 

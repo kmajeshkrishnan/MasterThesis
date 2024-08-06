@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.28)  5 AUG 2024 19:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.28)  7 AUG 2024 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1259,7 +1259,7 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 27.
 
  (./chapters/1-introduction.tex
 chapter 1.
-<Images/main/mask_cut_cutler_comparison.png, id=201, 1134.639pt x 395.3169pt>
+<Images/main/mask_cut_cutler_comparison.png, id=192, 1134.639pt x 395.3169pt>
 File: Images/main/mask_cut_cutler_comparison.png Graphic file (type png)
 <use Images/main/mask_cut_cutler_comparison.png>
 Package pdftex.def Info: Images/main/mask_cut_cutler_comparison.png  used on in
@@ -1287,7 +1287,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ]
 chapter 2.
-<Images/main/vit_full_arch.png, id=236, 1168.365pt x 800.9925pt>
+<Images/main/vit_full_arch.png, id=228, 1168.365pt x 800.9925pt>
 File: Images/main/vit_full_arch.png Graphic file (type png)
 <use Images/main/vit_full_arch.png>
 Package pdftex.def Info: Images/main/vit_full_arch.png  used on input line 7.
@@ -1295,7 +1295,7 @@ Package pdftex.def Info: Images/main/vit_full_arch.png  used on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [5]
-<Images/main/transformerblock.png, id=264, 155.98276pt x 332.442pt>
+<Images/main/transformerblock.png, id=256, 155.98276pt x 332.442pt>
 File: Images/main/transformerblock.png Graphic file (type png)
 <use Images/main/transformerblock.png>
 Package pdftex.def Info: Images/main/transformerblock.png  used on input line 3
@@ -1308,7 +1308,7 @@ Underfull \vbox (badness 3078) has occurred while \output is active []
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
  [7 <./Images/main/transformerblock.png>]
-<Images/main/dino.png, id=292, 242.70676pt x 251.13824pt>
+<Images/main/dino.png, id=284, 242.70676pt x 251.13824pt>
 File: Images/main/dino.png Graphic file (type png)
 <use Images/main/dino.png>
 Package pdftex.def Info: Images/main/dino.png  used on input line 100.
@@ -1317,12 +1317,12 @@ Package pdftex.def Info: Images/main/dino.png  used on input line 100.
 Underfull \vbox (badness 5908) has occurred while \output is active []
 
  [9 <./Images/main/dino.png>]
-<Images/main/cutler_flow.png, id=318, 1134.2375pt x 393.47pt>
+<Images/main/cutler_flow.png, id=310, 1134.2375pt x 393.47pt>
 File: Images/main/cutler_flow.png Graphic file (type png)
 <use Images/main/cutler_flow.png>
 Package pdftex.def Info: Images/main/cutler_flow.png  used on input line 128.
 (pdftex.def)             Requested size: 318.67212pt x 110.54909pt.
-<Images/main/maskcut_eg.png, id=324, 1488.56125pt x 313.17pt>
+<Images/main/maskcut_eg.png, id=316, 1488.56125pt x 313.17pt>
 File: Images/main/maskcut_eg.png Graphic file (type png)
 <use Images/main/maskcut_eg.png>
 Package pdftex.def Info: Images/main/maskcut_eg.png  used on input line 138.
@@ -1341,7 +1341,7 @@ Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/6'
 (microtype)             (new value: 6.0pt) on input line 165.
 
 [12]
-<Images/main/copy-paste.png, id=377, 1403.2425pt x 600.2425pt>
+<Images/main/copy-paste.png, id=369, 1403.2425pt x 600.2425pt>
 File: Images/main/copy-paste.png Graphic file (type png)
 <use Images/main/copy-paste.png>
 Package pdftex.def Info: Images/main/copy-paste.png  used on input line 172.
@@ -1358,7 +1358,7 @@ chapter 3.
 
 
 ] [16]
-<Images/main/correspondences.png, id=440, 251.4996pt x 162.6075pt>
+<Images/main/correspondences.png, id=432, 251.4996pt x 162.6075pt>
 File: Images/main/correspondences.png Graphic file (type png)
 <use Images/main/correspondences.png>
 Package pdftex.def Info: Images/main/correspondences.png  used on input line 34
@@ -1376,62 +1376,54 @@ chapter 4.
 
 
 
-] [20]) [21]
-\openout2 = `chapters/5-experiments.aux'.
-
- (./chapters/5-experiments.tex [22
-
-
-
-
-
-]
-chapter 5.
-[23] [24] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+] [20]) [21] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-34.def
+[22
+
+
+]
+\openout2 = `chapters/5-experiments.aux'.
+
+ (./chapters/5-experiments.tex
+chapter 5.
+[23
+
+
+
+] [24] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
-) [25]
-Overfull \hbox (55.64441pt too wide) in paragraph at lines 62--77
+)
+[25]
+Overfull \hbox (79.67949pt too wide) in paragraph at lines 83--96
  [][] 
  []
 
 
-Overfull \hbox (125.5926pt too wide) in paragraph at lines 84--95
+Overfull \hbox (52.69449pt too wide) in paragraph at lines 103--114
  [][] 
  []
 
 
-Overfull \hbox (21.52933pt too wide) in paragraph at lines 119--125
+Overfull \hbox (52.69449pt too wide) in paragraph at lines 120--131
  [][] 
  []
 
-
-Overfull \hbox (52.69449pt too wide) in paragraph at lines 143--154
- [][] 
- []
-
-
-Overfull \hbox (52.69449pt too wide) in paragraph at lines 160--171
- [][] 
- []
-
-[26] [27] [28]) [29]
+) [26] [27] [28]
 \openout2 = `chapters/6-conclusions.aux'.
 
- (./chapters/6-conclusions.tex [30
+ (./chapters/6-conclusions.tex
+chapter 6.
+) [29
 
 
 
 
 
 ]
-chapter 6.
-) [31]
 \openout2 = `chapters/7-acknowledgments.aux'.
 
- (./chapters/7-acknowledgments.tex [32
+ (./chapters/7-acknowledgments.tex [30
 
 
 
@@ -1439,12 +1431,12 @@ chapter 6.
 
 ]
 chapter 7.
-) [33] (./thesis_main.bbl [34
+) [31] (./thesis_main.bbl [32
 
 
 
 
-] [35] [36] [37]) [38] [39] (./thesis_main.aux
+] [33] [34] [35]) [36] [37] (./thesis_main.aux
 (./chapters/0_0-titlepage.aux) (./chapters/0_1-declaration.aux)
 (./chapters/0_2-abstract.aux) (./chapters/1-introduction.aux)
 (./chapters/3-background.aux) (./chapters/2-relatedwork.aux)
@@ -1457,10 +1449,10 @@ Package rerunfilecheck Info: File `thesis_main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31890 strings out of 480171
- 609062 string characters out of 5894489
- 1017242 words of memory out of 5000000
- 48776 multiletter control sequences out of 15000+600000
+ 31881 strings out of 480171
+ 608951 string characters out of 5894489
+ 1008111 words of memory out of 5000000
+ 48773 multiletter control sequences out of 15000+600000
  552128 words of font info for 195 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  108i,11n,106p,10606b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1479,10 +1471,10 @@ xmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 s/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_main.pdf (51 pages, 4427207 bytes).
+Output written on thesis_main.pdf (49 pages, 4425605 bytes).
 PDF statistics:
- 867 PDF objects out of 1000 (max. 8388607)
- 748 compressed objects within 8 object streams
- 186 named destinations out of 1000 (max. 500000)
- 46557 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 846 PDF objects out of 1000 (max. 8388607)
+ 729 compressed objects within 8 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 46549 words of extra memory for PDF output out of 51595 (max. 10000000)
 
