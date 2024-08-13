@@ -3,10 +3,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces AP and AP50 for Training and Self-Training (Batch size 8)\relax }}{33}{table.caption.28}%
-\contentsline {table}{\numberline {2}{\ignorespaces \textbf {AP and AP50 of evaluation(box) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{33}{table.caption.29}%
-\contentsline {table}{\numberline {3}{\ignorespaces \textbf {AP and AP50 of evaluation(segm) on COCO Eval datasets on models trained on imagenet for 90K iterations}\relax }}{33}{table.caption.30}%
-\contentsline {table}{\numberline {4}{\ignorespaces AP and AP50 for Training and Self-Training (Batch size 8)\relax }}{33}{table.caption.31}%
+\contentsline {table}{\numberline {1}{\ignorespaces \textbf {Evaluation of Models Trained with and without overlapping instances }}}{35}{table.caption.34}%
+\contentsline {table}{\numberline {2}{\ignorespaces \textbf {Evaluation of Models Trained with and without overlapping instances with evaluation dataset split}}}{35}{table.caption.35}%
+\contentsline {table}{\numberline {3}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{38}{table.caption.47}%
+\contentsline {table}{\numberline {4}{\ignorespaces \textbf {\(AP_{segm}\) and \(AP50_{segm}\) for Training and Self-Training}}}{38}{table.caption.48}%
+\contentsline {table}{\numberline {5}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training} for different batch sizes}}{40}{table.caption.49}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
