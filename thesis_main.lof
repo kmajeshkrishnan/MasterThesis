@@ -8,16 +8,16 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Maskcut flow}}}{11}{figure.caption.19}%
 \contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Copy-Paste Augmentation}}}{13}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Keypoint correspondecences using relaxed best buddies}}}{18}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Cutler performance on images with overlapping instances}}}{20}{figure.caption.22}%
-\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Cutler performance on images with complex background}}}{21}{figure.caption.23}%
-\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Dependence on Initial Masks}}}{22}{figure.caption.24}%
-\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Baseline training pipeline}}}{24}{figure.caption.25}%
-\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Proposed training pipeline}}}{25}{figure.caption.26}%
-\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Mask filtration comparison}}}{26}{figure.caption.27}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Cutler performance on images with overlapping instances}}}{20}{figure.caption.21}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Cutler performance on images with complex background}}}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Dependence on Initial Masks}}}{22}{figure.caption.23}%
+\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Baseline training pipeline}}}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Proposed training pipeline}}}{25}{figure.caption.25}%
+\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Mask filtration comparison}}}{26}{figure.caption.26}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Training without overlapping instances - Class wise comparison}}}{36}{figure.caption.40}%
+\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Training without overlapping instances - Class wise comparison}}}{36}{figure.caption.39}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Keypoint correspondences using relaxed best buddies}}}{42}{figure.caption.49}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

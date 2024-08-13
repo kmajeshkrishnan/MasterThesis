@@ -1,11 +1,11 @@
 \chapter{Introduction}\label{chap:introduction}
 
 \section{Motivation}
-Instance detection is a critical task in computer vision, with applications ranging from autonomous driving to medical imaging. Despite significant advancements, unsupervised instance detection remains a challenging problem due to the lack of annotated data. This thesis aims to improve unsupervised instance detection by analyzing the problems with the current state-of-the-art unsupervised instance detection and segmentation methods.
+Instance detection is a fundamental challenge in computer vision with critical applications in fields ranging from autonomous driving to medical imaging. Recent advancements have seen a shift from traditional Convolutional Neural Networks (CNNs) to the transformative capabilities of Transformers, as demonstrated by Dosovitskiy et al. (2020) with their Vision Transformer (ViT)~\cite{dosovitskiy2020image}. Subsequently, the concept of utilizing deep ViT features as dense visual descriptors was introduced by Amir et al. (2021)~\cite{amir2021deep}, highlighting the strong semantic information these descriptors provide about instances within an image. This shift highlights a growing interest in leveraging deep, self-supervised features for dense visual representation.
 
-In the field of Computer Vision, a significant shift has occurred from traditional Convolutional Neural Networks (CNNs) to the transformative capabilities of Transformers, as exemplified by the groundbreaking Vision Transformer (ViT) paper by Dosovitskiy et al. (2020)~\cite{dosovitskiy2020image}. Subsequently, the concept of utilizing deep ViT features as dense visual descriptors was introduced by Amir et al. (2021)~\cite{amir2021deep}, highlighting the strong semantic information these descriptors provide about instances within an image. Currently, the state-of-the-art method for unsupervised instance segmentation, CutLER, as proposed by Wang et al. (2023)~\cite{wang2023cut}, employs DINO features~\cite{caron2021emerging} as visual descriptors to effectively identify instances within images.
+In this context, the current state-of-the-art method for unsupervised instance segmentation, CutLER~\cite{wang2023cut}, utilizes DINO features~\cite{caron2021emerging} to identify instances within images. Despite its advancements, CutLER faces challenges such as grouping of nearby instances and complex background patterns. Addressing these issues not only aims to improve the practical performance of unsupervised methods but also contributes to understanding the efficacy of self-supervised features and the role of inductive biases in computer vision. These methods are crucial not only for their direct applications but also as pre-training techniques for downstream tasks, enhancing models trained with limited labeled data.
 
-However, challenges such as the grouping of nearby instances, failure to identify complex background patterns, and the omission of small instances persist even in the current state-of-the-art methods. This thesis aims to investigate these failure cases, mainly based on the CutLER~\cite{wang2023cut} baseline and propose methods to enhance the performance of unsupervised instance detection and segmentation tasks.
+This thesis seeks to investigate and overcome these limitations by analyzing the CutLER baseline and proposing possible enhancements to unsupervised object detection and segmentation. By improving these methods, we aim to advance the state of unsupervised learning, providing deeper insights into feature representations and their impact on vision tasks.
 
 %\input{Images/main/mask_cut_cutler_comparison}
 \begin{figure*}
@@ -29,7 +29,7 @@ This study focuses on the shortcomings of CutLER and the methods to minimize the
     
     \item \textbf{Analysis on the influence of overlapping instances}: We compare the performance of the model when trained with and without overlapping instances and conclude that training without overlapping instances results in better instance discrimination.
 
-    \item \textbf{Refining maskcut masks}: On top of self training, ee refine mask-cut masks using CutLER output to remove noisy masks and retraining to yield better performance.
+    \item \textbf{Refining maskcut masks}: On top of self training, we refine mask-cut masks using CutLER predictions to remove noisy masks and retraining to yield better performance.
 \end{enumerate}
 
 % Wite about the improvement
@@ -37,11 +37,11 @@ This study focuses on the shortcomings of CutLER and the methods to minimize the
 
 \section{Outline}
 \begin{itemize}
-    \item \textbf{Chapter \ref{chap:relatedwork}:} %Explores semantic segmentation in the context of deep learning, with a focus on addressing challenges through weak supervision. Introduces the concept of open vocabulary segmentation and provides an overview of Unsupervised Segmentation.
+	 \item \textbf{Chapter \ref{chap:background}:}Explores the foundational concepts of Vision Transformers and attention mechanisms, with a detailed introduction to DINO features. Also covers the CutLER training pipeline and methods for mask refinement.
+	 
+    \item \textbf{Chapter \ref{chap:relatedwork}:} Explores recent advances in self-supervised feature learning and developments in unsupervised object detection and semantic segmentation.
     
-    \item \textbf{Chapter \ref{chap:background}:} %Delves into the foundational aspects of Transformers, with a special emphasis on the attention mechanism crucial for understanding GroupViT. Also introduces key components of DINO.
+    \item \textbf{Chapter \ref{chap:approach}:} Provides a detailed explanation of the limitations of CutLER, with descriptive examples of the proposed mask filtration method and the baseline approach. Also includes comprehensive background information for experimenting with the impact of overlapping instances.
     
-    \item \textbf{Chapter \ref{chap:approach}:} %Provides an in-depth discussion of GroupViT, including a detailed explanation of entropy regularization techniques.
-    
-    \item \textbf{Chapter \ref{chap:experiments}:} %Details various experiments, starting with the fine-tuning process and progressing to explore entropy regularization and noise-free contrastive loss. The chapter concludes by discussing attempts to integrate DINO features into GroupViT. These experiments reveal an effective method for fine-tuning GroupViT on smaller, cleaner datasets while maintaining strong downstream performance.
+    \item \textbf{Chapter \ref{chap:experiments}:} Details evaluation of the baseline and proposed methods across various datasets, focusing on instance detection and segmentation tasks. It includes a comparison of performance metrics, such as AP and AP50, highlighting improvements and differences between the methods. Additionally, it examines the impact of overlapping instances and discusses the effectiveness of the proposed mask refinement approach.
 \end{itemize}
