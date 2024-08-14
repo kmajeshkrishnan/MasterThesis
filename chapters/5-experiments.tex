@@ -64,7 +64,7 @@ AP50 calculates the AP but only considers a detection as a true positive if the 
 \label{section:implementation_details}
 Our implementation largely follows the baseline approach; however, it is important to note a key difference in our setup. While in the baseline paper experiments use a batch size of 16, we utilize batch sizes of 4 and 8 due to resource constraints. To ensure a fair comparison, we also train the baseline model from scratch using these same batch sizes of 4 and 8. All our experiments follow the following setting. If there are some modifications, it would be mentioned in the respective sections.
 
-\subsection{Training data}
+\subsection{Training Data}
 Only the images from ImageNet dataset(1.3 Million images) are used for the training(including self-training). We do not use any supervised pretrained models or labels for training baseline or the proposed method. However, the bounding box annotations are used to analyze the impact of images with overlapping instances in section~\ref{section:overlap_experiment}.
 
 \subsection{MaskCut}
@@ -111,7 +111,7 @@ The training procedure for both the baseline and our proposed method follows the
 		segm & 8.2 & 16.62 & \textbf{8.80} & \textbf{17.47} \\
 		\bottomrule
 	\end{tabular}
-	\caption[\textbf{Evaluation of Models Trained with and without overlapping instances }]{\textbf{AP and AP50 bounding box and segmentation evaluation} on COCO Eval datasets on models trained (without self-training) on all images and images without overlapping instances}
+	\caption[\textbf{Evaluation of Models Trained with and without Overlapping Instances }]{\textbf{AP and AP50 bounding box and segmentation evaluation} on COCO Eval datasets on models trained (without self-training) on all images and images without overlapping instances}
 	\label{tab:overlap_analysis}
 \end{table}
 
@@ -130,7 +130,7 @@ The training procedure for both the baseline and our proposed method follows the
 		& segm & 5.12 & 11.55 & \textbf{6.18} & \textbf{13.27} \\
 		\bottomrule
 	\end{tabular}
-	\caption[\textbf{Evaluation of Models Trained with and without overlapping instances with evaluation dataset split}]{\textbf{AP and AP50 bounding box and segmentation evaluation on split COOC Eval dataset} on models trained (without self-training) on all images and images without overlapping instances}
+	\caption[\textbf{Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}]{\textbf{AP and AP50 bounding box and segmentation evaluation on split COOC Eval dataset} on models trained (without self-training) on all images and images without overlapping instances}
 	\label{tab:combined_overlap_eval}
 \end{table}
 
@@ -139,11 +139,11 @@ Even though the dropped images with overlapping instances are only 5\% of the an
 
 To gain deeper insights, we further split the evaluation dataset into two subsets: images with overlapping instances and those without. It is to observe to what extend our approach helps to detect individual instances from images with overlapping instances. Results can be observed from Table~\ref{tab:combined_overlap_eval}. As anticipated, the evaluation scores for images with overlapping instances are significantly lower compared to those for images without overlaps. This disparity is likely due to the inherent challenge of grouping of instances when they overlap - a problem that is difficult to address without introducing explicit semantic information, which is typically provided through semi-supervised methods. Despite this challenge, it is noteworthy that both splits - images with and without overlapping instances showed a nearly equal improvement in performance for instance detection and segmentation tasks. This suggests that our approach is effective across different scenarios, affirming the model’s ability to generalize even in complex cases where instances are closely packed or overlapping.
 
-\subsubsection{Improvement across classes}
+\subsubsection{Improvement Across Classes}
 \begin{figure*}
 	\centering
 	\includegraphics[width=1.05\textwidth]{Images/main/overlap_classes.png}
-	\caption[\textbf{Training without overlapping instances - Class wise comparison}]{\textbf{Class wise comparison} of change in \(AP_{segm}\) of models trained using images with and without overlapping instances evaluated on COCO Eval dataset - 20 most and least improved classes}
+	\caption[\textbf{Training without Overlapping Instances - Class-wise Comparison}]{\textbf{Class-wise comparison} of change in \(AP_{segm}\) of models trained using images with and without overlapping instances evaluated on COCO Eval dataset - 20 most and least improved classes}
 	\label{fig:overlap_classes}
 \end{figure*}
 
@@ -181,24 +181,31 @@ The baseline follows training procedure as described in section~\ref{section:imp
 	\label{tab:combined_train}
 \end{table}
 
-\begin{table}[htbp]
+%\begin{table}[htbp]
+%	\centering
+%	\resizebox{1.05\textwidth}{!}{%
+%		\begin{tabular}{c|c|cc|cc|cc|cc|cc}
+%			\toprule
+%			& & \multicolumn{2}{c|}{COCO} & \multicolumn{2}{c|}{KITTI} & \multicolumn{2}{c|}{VOC} & \multicolumn{2}{c|}{Comic} & \multicolumn{2}{c}{Watercolor} \\ \midrule
+%			& & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 \\ \midrule
+%			\multirow{2}{*}{Train} & Baseline & 11.17 & 20.12 & 4.79 & 10.27 & 19.98 & 36.26 & \textbf{11.80} & \textbf{28.39} & \textbf{14.67} & \textbf{35.60} \\ 
+%			& Ours & \textbf{11.47} & \textbf{20.81} & \textbf{6.28} & \textbf{13.48} & \textbf{20.24} & \textbf{36.56} & 10.81 & 26.50 & 14.00 & 35.27 \\ \midrule
+%			\multirow{2}{*}{r1} & Baseline & 11.70 & 21.15 & 6.60 & 14.19 & 19.56 & 36.81 & \textbf{11.05} & \textbf{27.53} & 12.92 & 33.45 \\ 
+%			& Ours & \textbf{11.94} & \textbf{21.65} & \textbf{8.21} & \textbf{18.49} & \textbf{20.24} & \textbf{37.95} & 10.80 & 27.40 & \textbf{15.37} & \textbf{37.74} \\ \midrule
+%			\multirow{2}{*}{r2} & Baseline & \textbf{11.02} & 20.32 & 6.73 & 15.02 & \textbf{18.06} & 35.09 & \textbf{9.90} & \textbf{25.36} & \textbf{13.59} & \textbf{34.31} \\ 
+%			& Ours & 10.81 & \textbf{20.47} & \textbf{7.69} & \textbf{17.04} & 17.93 & \textbf{35.24} & 8.94 & 22.74 & 12.06 & 30.02 \\ \bottomrule
+%		\end{tabular}%
+%	}
+%	\caption[\textbf{\(AP_{segm}\) and \(AP50_{segm}\) for Training and Self-Training}]{\textbf{\(AP_{segm}\) and \(AP50_{segm}\) for Training and Self-Training} evaluated on COCO Eval dataset (Batch size 8)}
+%	\label{tab:combined_train_segm}
+%\end{table}
+
+\begin{figure*}
 	\centering
-	\resizebox{1.05\textwidth}{!}{%
-		\begin{tabular}{c|c|cc|cc|cc|cc|cc}
-			\toprule
-			& & \multicolumn{2}{c|}{COCO} & \multicolumn{2}{c|}{KITTI} & \multicolumn{2}{c|}{VOC} & \multicolumn{2}{c|}{Comic} & \multicolumn{2}{c}{Watercolor} \\ \midrule
-			& & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 & AP & AP50 \\ \midrule
-			\multirow{2}{*}{Train} & Baseline & 11.17 & 20.12 & 4.79 & 10.27 & 19.98 & 36.26 & \textbf{11.80} & \textbf{28.39} & \textbf{14.67} & \textbf{35.60} \\ 
-			& Ours & \textbf{11.47} & \textbf{20.81} & \textbf{6.28} & \textbf{13.48} & \textbf{20.24} & \textbf{36.56} & 10.81 & 26.50 & 14.00 & 35.27 \\ \midrule
-			\multirow{2}{*}{r1} & Baseline & 11.70 & 21.15 & 6.60 & 14.19 & 19.56 & 36.81 & \textbf{11.05} & \textbf{27.53} & 12.92 & 33.45 \\ 
-			& Ours & \textbf{11.94} & \textbf{21.65} & \textbf{8.21} & \textbf{18.49} & \textbf{20.24} & \textbf{37.95} & 10.80 & 27.40 & \textbf{15.37} & \textbf{37.74} \\ \midrule
-			\multirow{2}{*}{r2} & Baseline & \textbf{11.02} & 20.32 & 6.73 & 15.02 & \textbf{18.06} & 35.09 & \textbf{9.90} & \textbf{25.36} & \textbf{13.59} & \textbf{34.31} \\ 
-			& Ours & 10.81 & \textbf{20.47} & \textbf{7.69} & \textbf{17.04} & 17.93 & \textbf{35.24} & 8.94 & 22.74 & 12.06 & 30.02 \\ \bottomrule
-		\end{tabular}%
-	}
-	\caption[\textbf{\(AP_{segm}\) and \(AP50_{segm}\) for Training and Self-Training}]{\textbf{\(AP_{segm}\) and \(AP50_{segm}\) for Training and Self-Training} evaluated on COCO Eval dataset (Batch size 8)}
-	\label{tab:combined_train_segm}
-\end{table}
+	\includegraphics[width=1.05\textwidth]{Images/main/cutler_vs_ours.png}
+	\caption[\textbf{Qualitative Results - Baseline vs Ours}]{\textbf{Qualitative results - Baseline vs Ours} Masks predicted by CUtLER and Our model trained with modified mask filtration}
+	\label{fig:cuter_vs_ours}
+\end{figure*}
 
 In this section, we present the results of our experiments comparing the baseline approach with our enhanced mask filtration method. Our evaluations span across five datasets, including COCO 2017 Evaluation, KITTI, VOC, Comic, and Watercolor, focusing on instance detection and segmentation tasks. We utilized the precision metric to measure the performance, providing a granular analysis of how our method impacts the accuracy of bounding box and segmentation predictions.
 
@@ -207,6 +214,12 @@ The results are summarized in Table~\ref{tab:combined_train} demonstrate the per
 During the initial training phase, our method outperforms the baseline on the majority of the datasets, including COCO, KITTI, and VOC. Specifically, we observe a notable improvement in precision metrics, indicating that our refined mask filtration process is effective in enhancing the quality of pseudo-ground truths, leading to better detection and segmentation performance. However, our model slightly underperforms on the Comic and Watercolor datasets. After the first round of self-training, our model continues to outperform the baseline on 4 out of 5 datasets. In the second round of self-training, we observe a slight decline in performance across most datasets for both the baseline and our method, except for minor improvements in the baseline on the KITTI and Watercolor datasets. This decline could be attributed to overfitting or the model’s diminishing returns from further self-training iterations, especially when using smaller batch sizes, as noted in our experiments in section~\ref{section:choice_of_batch_size}.
 
 The evaluation on the Watercolor and Comic datasets has been somewhat inconsistent for both the baseline and our method. We hypothesize that this inconsistency arises from the stark difference between the types of images in these datasets compared to those in ImageNet. While our training predominantly involved real-life images, the Comic and Watercolor datasets consist of stylized, artistic images that pose a different challenge for the models. This disparity in image types likely contributes to the observed inconsistencies in performance.
+
+\subsubsection{Qualitative Results}
+
+Figure~\ref{fig:cuter_vs_ours} presents a qualitative comparison between our method and the baseline. The predictions shown are generated using the most optimized models from both approaches, specifically after the first round of self-training.
+
+Similar to the mask filtration method, for most images with single instances and distinguishable background, there is no significant difference between predicted masks by the baseline and our method as given in Fig.~\ref{fig:cuter_vs_ours}~(a). As our method is trained with small number of filtered masks, our predictions mostly have lesser number of relatively better quality masks (Fig.~\ref{fig:cuter_vs_ours}~(b-c). Grouping of the instances remains unsolved in both cases(Fig.~\ref{fig:cuter_vs_ours}~(d). However, our method generates more complete masks with finer edges compared to the baseline. As we use only less masks for training due to our mask filtration method, our model often generates less number of masks compared to the baseline. In Fig.~\ref{fig:cuter_vs_ours}~(e), our model doesn't predict any masks, but baseline model predicts 4. However, there are few exceptions like Fig.~\ref{fig:cuter_vs_ours}~(f) where our model manages to predict more correct masks than the baseline. Even with this limitation, due to the improved quality of the masks, our method outperforms the baseline.
 %
 %\begin{table}[htbp]
 %	\centering
@@ -242,7 +255,7 @@ The evaluation on the Watercolor and Comic datasets has been somewhat inconsiste
 %	\label{tab:ablationK}
 %\end{table}
 
-\subsection{Choice of batch size}
+\subsection{Choice of Batch Size}
 \label{section:choice_of_batch_size}
 
 \begin{table}[htbp]
@@ -258,9 +271,9 @@ The evaluation on the Watercolor and Comic datasets has been somewhat inconsiste
 		\multirow{2}{*}{Self-train-r2} & Baseline & \textbf{11.02} & 20.32 & 10.51 & 20.03 \\ 
 		& Ours & 10.81 & \textbf{20.47} & \textbf{11.25} & \textbf{20.20 }\\ \bottomrule
 	\end{tabular}
-	\caption[\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training} for different batch sizes]{\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training} evaluated on COCO Eval dataset  for batch sizes 4 and 8}
+	\caption[\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}]{\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training} evaluated on COCO Eval dataset  for batch sizes 4 and 8}
 	\label{tab:batch_size_table}
-´\end{table}
+\end{table}
 
 In the baseline paper, experiments were conducted using a batch size of 16. However, due to resource limitations, we performed our experiments with smaller batch sizes of 4 and 8. As shown in Table~\ref{tab:batch_size_table}, our results indicate a slight improvement in performance with a larger batch size, consistent with expectations that batch size can impact model performance.
 

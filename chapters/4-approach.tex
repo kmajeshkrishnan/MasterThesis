@@ -8,11 +8,11 @@ In this chapter, we are exploring the limitation of CutLER, looking deeper into 
 \section{Limitations of CutLER}
 Even though CutLER is the state-of-the-art model for unsupervised instance detection and segmentation, it still has several drawbacks. We go through some of them in this section.
 
-\subsection{Overlapping instances}
+\subsection{Overlapping Instances}
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{Images/main/cutler-prob-overlap.png}
-	\caption[\textbf{Cutler performance on images with overlapping instances}]{\textbf{Grouping of overlapping instances} in MaskCut and CutLER outputs, which is a common problem in most of the existing unsupervised instance detection methods.}
+	\caption[\textbf{Cutler's Performance on Images with Overlapping Instances}]{\textbf{Grouping of overlapping instances} in MaskCut and CutLER outputs, which is a common problem in most of the existing unsupervised instance detection methods.}
 	\label{fig:cutler_overlapping_instances_eg}
 \end{figure*}
 
@@ -24,11 +24,11 @@ The problem is not exclusive to CutLER, but most of the existing methods~\cite{e
 
 Another solution to address the grouping of instances would be to provide explicit semantic information of instances during training. It is explored in Wang et al. (2023)~\cite{wang2023cut} by testing with low-shot settings, ie, 2\% and 5\% labeled data, CutLER achieves 5.4\% and 7.3\% higher \(AP_{box}\) than the fully supervised MoCo-v2 with better separation of close and overlapping instances. But as our approach focuses solely on improving the unsupervised instance detection performance, the problem of grouping instances remains unsolved in our approach as well. But we intent to explore the influence of overlapping instances on CutLER training and evaluation which is explained in detail in section~\ref{section:analysis_ol_instancs}.
 
-\subsection{Images with complex background}
+\subsection{Images with Complex Background}
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{Images/main/cutler-prob-noisy-bg.png}
-	\caption[\textbf{Cutler performance on images with complex background}]{\textbf{Images with complex backgrounds} impacting MaskCut and CutLER outputs, leading to undesired background mask generation}
+	\caption[\textbf{Cutler's Performance on Images with Complex Background}]{\textbf{Images with complex backgrounds} impacting MaskCut and CutLER outputs, leading to undesired background mask generation}
 	\label{fig:cutler_noisy_bg_eg}
 \end{figure*}
 
@@ -65,7 +65,7 @@ Through this approach, we expect to observe an improvement by using less trainin
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{Images/main/baseline_method.png}
-	\caption[\textbf{Baseline training pipeline}]{\textbf{Baseline training pipeline} with repeated mask filtration and self-training}
+	\caption[\textbf{Baseline Training Pipeline}]{\textbf{Baseline training pipeline} with repeated mask filtration and self-training}
 	\label{fig:baseline_training}
 \end{figure*}
 Generating initial pseudo-ground truth masks using a pre-trained model or some heuristic methods may contain errors or inaccuracies. Hence, iteratively refining the pseudo-ground truth masks(self-training) is essential for improving the performance of the model. Iterative refinement helps in progressively reducing this noise, leading to cleaner and more reliable labels~\cite{xie2020selftrainingnoisystudentimproves}. Popular refinement methods incorporate strategies like thresholding, where only high-confidence predictions are used for retraining, or use ensemble methods to combine predictions from multiple models for more reliable masks.
@@ -85,7 +85,7 @@ For further self-training loops, the same procedure repeats, except that instead
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{Images/main/proposed_method.png}
-	\caption[\textbf{Proposed training pipeline}]{\textbf{Proposed training pipeline} featuring a one-time MaskCut mask filtration followed by multiple self-training loops with our mask filtration method.}
+	\caption[\textbf{Proposed Training Pipeline}]{\textbf{Proposed training pipeline} featuring a one-time MaskCut mask filtration followed by multiple self-training loops with our mask filtration method.}
 	\label{fig:proposed_training}
 \end{figure*}
 Emphasizing quality over quantity, we introduce an improved approach for mask filtration. Noting that the current mask filtration method in CutLER tends to include unwanted background masks in its pseudo ground truths, we propose to enhance the process by removing ambiguous masks from the ground truth instead of retaining them. This adjustment aims to improve the overall quality and reliability of the pseudo ground truths, leading to better model performance.
@@ -93,7 +93,7 @@ Emphasizing quality over quantity, we introduce an improved approach for mask fi
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{Images/main/filtered_mask_comparison.png}
-	\caption[\textbf{Mask filtration comparison}]{\textbf{Comparison of filtered masks} produced by the baseline and our method. Examples illustrates Cutler prediction masks, MaskCut masks, masks selected by Cutler and masks selected by our method respectively (left to right)}
+	\caption[\textbf{Mask Filtration Outputs - Baseline vs Ours}]{\textbf{Comparison of filtered masks} produced by the baseline and our method. Examples illustrates Cutler prediction masks, MaskCut masks, masks selected by Cutler and masks selected by our method respectively (left to right)}
 	\label{fig:filtered_mask_comparison}
 \end{figure*}
 As illustrated in Fig.~\ref{fig:proposed_training}, we introduce an extra step to refine MaskCut masks by preserving the masks with high certainty by comparing with CutLER predictions. After the first training phase, like in the baseline, high-quality predicted masks are filtered by applying a confidence score threshold of 0.7. Instead of creating the new pseudo-ground truth by selecting masks from both MaskCut masks and CutLER prediction masks, we focus solely on filtering MaskCut masks. Rather than selecting MaskCut masks corresponding to mask pairs with an IoU < 0.5 from the batch IoU matrix, we choose MaskCut masks that correspond to mask pairs with an IoU > 0.5. This selected MaskCut masks are treated as the new pseudo-ground truth and we train from scratch for 160K iterations. With the filtered high quality masks in hand, we expect to achieve a better performance. It’s important to note that if no masks are selected for an image, that image is removed from the training set, resulting in a smaller dataset and reducing the training time (Around 130K images are dropped from ImageNet during this stage). This approach effectively eliminates potentially unwanted masks from the pseudo-ground truth, ensuring higher quality and more accurate mask predictions. For self-training, we follow training pipeline of the baseline, training 80K iterations are without using DropLoss.

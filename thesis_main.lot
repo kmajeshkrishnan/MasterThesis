@@ -3,11 +3,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces \textbf {Evaluation of Models Trained with and without overlapping instances }}}{35}{table.caption.33}%
-\contentsline {table}{\numberline {2}{\ignorespaces \textbf {Evaluation of Models Trained with and without overlapping instances with evaluation dataset split}}}{35}{table.caption.34}%
-\contentsline {table}{\numberline {3}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{38}{table.caption.46}%
-\contentsline {table}{\numberline {4}{\ignorespaces \textbf {\(AP_{segm}\) and \(AP50_{segm}\) for Training and Self-Training}}}{38}{table.caption.47}%
-\contentsline {table}{\numberline {5}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training} for different batch sizes}}{40}{table.caption.48}%
+\contentsline {table}{\numberline {1}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances }}}{37}{table.caption.35}%
+\contentsline {table}{\numberline {2}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}}}{37}{table.caption.36}%
+\contentsline {table}{\numberline {3}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{40}{table.caption.48}%
+\contentsline {table}{\numberline {4}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}}}{43}{table.caption.52}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

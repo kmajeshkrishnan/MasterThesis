@@ -1,23 +1,24 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Comparison of MaskCut and CutLER outputs}}}{2}{figure.caption.6}%
+\contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Comparison of MaskCut and CutLER Outputs}}}{2}{figure.caption.6}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2}{\ignorespaces \textbf {ViT Architecture}}}{6}{figure.caption.7}%
 \contentsline {figure}{\numberline {3}{\ignorespaces \textbf {Transformer Encoder Architecture}}}{7}{figure.caption.8}%
 \contentsline {figure}{\numberline {4}{\ignorespaces \textbf {DINO Architecture }}}{9}{figure.caption.15}%
-\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {CutLER overview}}}{11}{figure.caption.18}%
-\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Maskcut flow}}}{11}{figure.caption.19}%
-\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Copy-Paste Augmentation}}}{13}{figure.caption.20}%
+\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {CutLER Overview}}}{11}{figure.caption.18}%
+\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {MaskCut Flow}}}{12}{figure.caption.19}%
+\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Copy-Paste Augmentation}}}{14}{figure.caption.20}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Cutler performance on images with overlapping instances}}}{20}{figure.caption.21}%
-\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Cutler performance on images with complex background}}}{21}{figure.caption.22}%
-\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Dependence on Initial Masks}}}{22}{figure.caption.23}%
-\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Baseline training pipeline}}}{24}{figure.caption.24}%
-\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Proposed training pipeline}}}{25}{figure.caption.25}%
-\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Mask filtration comparison}}}{26}{figure.caption.26}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Cutler's Performance on Images with Overlapping Instances}}}{22}{figure.caption.23}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Cutler's Performance on Images with Complex Background}}}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Dependence on Initial Masks}}}{24}{figure.caption.25}%
+\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Baseline Training Pipeline}}}{26}{figure.caption.26}%
+\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Proposed Training Pipeline}}}{27}{figure.caption.27}%
+\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Mask Filtration Outputs - Baseline vs Ours}}}{28}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Training without overlapping instances - Class wise comparison}}}{36}{figure.caption.39}%
+\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Training without Overlapping Instances - Class-wise Comparison}}}{38}{figure.caption.41}%
+\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Qualitative Results - Baseline vs Ours}}}{41}{figure.caption.49}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Keypoint correspondences using relaxed best buddies}}}{42}{figure.caption.49}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \textbf {Keypoint correspondences using relaxed best buddies}}}{46}{figure.caption.53}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

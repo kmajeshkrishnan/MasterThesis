@@ -37,7 +37,7 @@
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline Layer Normalization and Residual Connections}{8}{subsubsection*.12}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline Output Layer}{8}{subsubsection*.14}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}DINO}{8}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Knowledge distillation}{8}{subsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Knowledge Distillation}{8}{subsection.2.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {DINO Architecture }}}{9}{figure.caption.15}\protected@file@percent }
 \newlabel{fig:dino}{{4}{9}{\textbf {DINO Architecture }}{figure.caption.15}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline Momentum Encoder for Teacher}{9}{subsubsection*.17}\protected@file@percent }
@@ -46,28 +46,32 @@
 \citation{wang2023cut}
 \citation{wang2023cut}
 \citation{ghiasi2021simplecopypastestrongdata}
-\citation{caron2021emerging}
 \citation{normcut}
-\citation{wang2023cut}
-\citation{caron2021emerging}
-\citation{normcut}
-\citation{wang2023cut}
-\citation{normcut}
-\citation{wang2022tokencut}
-\citation{wang2022tokencut}
-\citation{simeoni2021localizingobjectsselfsupervisedtransformers}
-\citation{vangansbeke2022discoveringobjectmaskstransformers}
-\citation{wang2023tokencutsegmentingobjectsimages}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Training Process}{10}{subsection.2.2.2}\protected@file@percent }
 \newlabel{eq:dino_objective}{{11}{10}{Training Process}{equation.2.2.11}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}CutLER}{10}{section.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}MaskCut}{10}{subsection.2.3.1}\protected@file@percent }
-\newlabel{eq:eig_problem}{{12}{10}{MaskCut}{equation.2.3.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {CutLER overview}}}{11}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:cutler_flow}{{5}{11}{\textbf {CutLER overview}}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Maskcut flow}}}{11}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:maskcut_flow}{{6}{11}{\textbf {Maskcut flow}}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Normalized Cut}{10}{subsection.2.3.1}\protected@file@percent }
+\citation{wang2022tokencut}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {CutLER Overview}}}{11}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:cutler_flow}{{5}{11}{\textbf {CutLER Overview}}{figure.caption.18}{}}
+\newlabel{eq:cut}{{12}{11}{Normalized Cut}{equation.2.3.12}{}}
+\newlabel{eq:norm_cut}{{13}{11}{Normalized Cut}{equation.2.3.13}{}}
+\newlabel{eq:eig_problem}{{14}{11}{Normalized Cut}{equation.2.3.14}{}}
+\citation{caron2021emerging}
 \citation{normcut}
+\citation{wang2023cut}
+\citation{caron2021emerging}
+\citation{normcut}
+\citation{wang2023cut}
+\citation{wang2022tokencut}
+\citation{normcut}
+\citation{simeoni2021localizingobjectsselfsupervisedtransformers}
+\citation{vangansbeke2022discoveringobjectmaskstransformers}
+\citation{wang2023tokencutsegmentingobjectsimages}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}TokenCut}{12}{subsection.2.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}MaskCut}{12}{subsection.2.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {MaskCut Flow}}}{12}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:maskcut_flow}{{6}{12}{\textbf {MaskCut Flow}}{figure.caption.19}{}}
 \citation{wang2023tokencutsegmentingobjectsimages}
 \citation{caron2021emergingpropertiesselfsupervisedvision}
 \citation{caron2021emerging}
@@ -75,23 +79,24 @@
 \citation{obj_centric_prior}
 \citation{caron2021emergingpropertiesselfsupervisedvision}
 \citation{cond1_support_2}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Droploss}{12}{subsection.2.3.2}\protected@file@percent }
-\newlabel{eq:drop_loss}{{14}{12}{Droploss}{equation.2.3.14}{}}
 \citation{ghiasi2021simplecopypastestrongdata}
 \citation{ghiasi2021simplecopypastestrongdata}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}DropLoss}{13}{subsection.2.3.4}\protected@file@percent }
+\newlabel{eq:drop_loss}{{16}{13}{DropLoss}{equation.2.3.16}{}}
 \citation{ghiasi2021simplecopypastestrongdata}
 \citation{cai2019cascadercnnhighquality}
 \citation{he2018maskrcnn}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Copy-Paste Augmentation}}}{13}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:copy_paste_aug}{{7}{13}{\textbf {Copy-Paste Augmentation}}{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Copy-Paste Augmentation}{13}{subsection.2.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Training}{13}{subsection.2.3.4}\protected@file@percent }
 \citation{deng2009imagenet}
 \citation{he2015deepresiduallearningimage}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}Mask refinement in CutLER}{14}{subsection.2.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Copy-Paste Augmentation}}}{14}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:copy_paste_aug}{{7}{14}{\textbf {Copy-Paste Augmentation}}{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}Copy-Paste Augmentation}{14}{subsection.2.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.6}Training}{14}{subsection.2.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Self-Training}{15}{subsubsection*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.7}Mask Refinement in CutLER}{15}{subsection.2.3.7}\protected@file@percent }
 \@setckpt{chapters/3-background}{
-\setcounter{page}{15}
-\setcounter{equation}{14}
+\setcounter{page}{16}
+\setcounter{equation}{16}
 \setcounter{enumi}{2}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -101,7 +106,7 @@
 \setcounter{part}{0}
 \setcounter{chapter}{2}
 \setcounter{section}{3}
-\setcounter{subsection}{5}
+\setcounter{subsection}{7}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
