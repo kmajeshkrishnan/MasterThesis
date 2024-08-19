@@ -3,74 +3,73 @@
 \contentsline {section}{\numberline {1.2}Overview of CutLER}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Contribution and Key Insights}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Outline}{3}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Background}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Background and Related Works}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Vision Transformer}{5}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Patch Tokens and Positional Encoding}{5}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Transformer Encoder}{6}{subsection.2.1.2}%
 \contentsline {subsubsection}{\nonumberline Multi-Head Self-Attention (MSA)}{6}{subsubsection*.10}%
 \contentsline {subsubsection}{\nonumberline Layer Normalization and Residual Connections}{8}{subsubsection*.12}%
 \contentsline {subsubsection}{\nonumberline Output Layer}{8}{subsubsection*.14}%
-\contentsline {section}{\numberline {2.2}DINO}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Knowledge Distillation}{8}{subsection.2.2.1}%
-\contentsline {subsubsection}{\nonumberline Momentum Encoder for Teacher}{9}{subsubsection*.17}%
-\contentsline {subsection}{\numberline {2.2.2}Training Process}{10}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}CutLER}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Normalized Cut}{10}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}TokenCut}{12}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}MaskCut}{12}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}DropLoss}{13}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Copy-Paste Augmentation}{14}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Training}{14}{subsection.2.3.6}%
-\contentsline {subsubsection}{\nonumberline Self-Training}{15}{subsubsection*.22}%
-\contentsline {subsection}{\numberline {2.3.7}Mask Refinement in CutLER}{15}{subsection.2.3.7}%
-\contentsline {chapter}{\numberline {3}Related Work}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Self-Supervised Feature Learning}{17}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Contrastive Learning}{17}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Clustering-Based Feature Learning}{17}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Distillation-Based Methods}{18}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Unsupervised Object Detection and Instance Segmentation}{18}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Approach}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Limitations of CutLER}{21}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Overlapping Instances}{21}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Images with Complex Background}{23}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Dependence on Initial Masks}{24}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Impact of Overlapping Instances}{24}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Mask Filtering}{25}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Baseline Mask Filtering Method}{26}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Proposed Mask Filtering Method}{27}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Experiments and Results}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Datasets}{31}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}ImageNet}{31}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}COCO}{32}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}PASCAL VOC}{32}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}KITTI}{32}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Comic and Watercolor}{32}{subsection.5.1.5}%
-\contentsline {section}{\numberline {5.2}Metrics}{33}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Average Precision}{33}{subsection.5.2.1}%
-\contentsline {subsubsection}{\nonumberline AP50}{33}{subsubsection*.30}%
-\contentsline {section}{\numberline {5.3}Implementation Details}{34}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Training Data}{34}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}MaskCut}{34}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Detector}{34}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Self Training}{35}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Resources}{35}{subsection.5.3.5}%
-\contentsline {section}{\numberline {5.4}Experiments}{35}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Exploring Impact of Overlapping Instances}{35}{subsection.5.4.1}%
-\contentsline {subsubsection}{\nonumberline Dataset}{36}{subsubsection*.32}%
-\contentsline {subsubsection}{\nonumberline Training Procedure}{36}{subsubsection*.34}%
-\contentsline {subsubsection}{\nonumberline Results}{37}{subsubsection*.38}%
-\contentsline {subsubsection}{\nonumberline Improvement Across Classes}{39}{subsubsection*.40}%
-\contentsline {subsection}{\numberline {5.4.2}Proposed Mask Filtering Method}{39}{subsection.5.4.2}%
-\contentsline {subsubsection}{\nonumberline Dataset}{39}{subsubsection*.43}%
-\contentsline {subsubsection}{\nonumberline Training Procedure}{40}{subsubsection*.45}%
-\contentsline {subsubsection}{\nonumberline Results}{40}{subsubsection*.47}%
-\contentsline {subsubsection}{\nonumberline Qualitative Results}{42}{subsubsection*.51}%
-\contentsline {subsection}{\numberline {5.4.3}Choice of Batch Size}{43}{subsection.5.4.3}%
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{45}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Future Work}{46}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Keypoint Correspondences}{46}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Sensitivity to Hyperparameters}{47}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Unsupervised Detection of Overlapping Instances}{47}{subsection.6.1.3}%
-\contentsline {chapter}{\numberline {7}Acknowledgments}{49}{chapter.7}%
-\contentsline {chapter}{Bibliography}{50}{chapter.7}%
+\contentsline {section}{\numberline {2.2}Self-Supervised Feature Learning}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Contrastive Learning}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Clustering-Based Feature Learning}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Distillation-Based Methods}{9}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}DINO}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Knowledge Distillation}{10}{subsection.2.3.1}%
+\contentsline {subsubsection}{\nonumberline Momentum Encoder for Teacher}{10}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {2.3.2}Training Process}{10}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Unsupervised Object Detection and Instance Segmentation}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}CutLER}{12}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Normalized Cut}{13}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}TokenCut}{14}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}MaskCut}{14}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}DropLoss}{16}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Copy-Paste Augmentation}{16}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}Training}{17}{subsection.2.5.6}%
+\contentsline {subsubsection}{\nonumberline Self-Training}{17}{subsubsection*.22}%
+\contentsline {subsection}{\numberline {2.5.7}Mask Refinement in CutLER}{17}{subsection.2.5.7}%
+\contentsline {chapter}{\numberline {3}Approach}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Accessing the limitations of CutLER}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Dependence on Initial Masks}{19}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Overlapping Instances}{20}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Images with Complex Background}{22}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Impact of Overlapping Instances}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Mask Filtering}{24}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Baseline Mask Filtering Method}{24}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Proposed Mask Filtering Method}{26}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Experiments and Results}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Datasets}{31}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}ImageNet}{31}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}COCO}{32}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}PASCAL VOC}{32}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}KITTI}{32}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Comic and Watercolor}{32}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Metrics}{33}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Average Precision}{33}{subsection.4.2.1}%
+\contentsline {subsubsection}{\nonumberline AP50}{33}{subsubsection*.33}%
+\contentsline {section}{\numberline {4.3}Implementation Details}{34}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Training Data}{34}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}MaskCut}{34}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Detector}{34}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Self Training}{35}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Resources}{35}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Experiments}{35}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Exploring the Impact of Overlapping Instances}{35}{subsection.4.4.1}%
+\contentsline {subsubsection}{\nonumberline Dataset}{36}{subsubsection*.35}%
+\contentsline {subsubsection}{\nonumberline Training Procedure}{36}{subsubsection*.37}%
+\contentsline {subsubsection}{\nonumberline Results}{37}{subsubsection*.41}%
+\contentsline {subsubsection}{\nonumberline Improvement Across Classes}{38}{subsubsection*.43}%
+\contentsline {subsection}{\numberline {4.4.2}Proposed Mask Filtering Method}{39}{subsection.4.4.2}%
+\contentsline {subsubsection}{\nonumberline Dataset}{39}{subsubsection*.46}%
+\contentsline {subsubsection}{\nonumberline Training Procedure}{39}{subsubsection*.48}%
+\contentsline {subsubsection}{\nonumberline Results}{40}{subsubsection*.50}%
+\contentsline {subsubsection}{\nonumberline Qualitative Results}{42}{subsubsection*.54}%
+\contentsline {subsection}{\numberline {4.4.3}Choice of Batch Size}{42}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{45}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Future Work}{46}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Keypoint Correspondences}{46}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Sensitivity to Hyperparameters}{47}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Unsupervised Detection of Overlapping Instances}{47}{subsection.5.1.3}%
+\contentsline {chapter}{\numberline {6}Acknowledgments}{49}{chapter.6}%
+\contentsline {chapter}{Bibliography}{50}{chapter.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

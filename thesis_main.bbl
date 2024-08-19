@@ -27,82 +27,6 @@ Y.~Wang, X.~Shen, Y.~Yuan, Y.~Du, M.~Li, S.~X. Hu, J.~L. Crowley, and
   self-supervised transformer and normalized cut,'' {\em arXiv preprint
   arXiv:2209.00383}, 2022.
 
-\bibitem{chen2020simple}
-T.~Chen, S.~Kornblith, M.~Norouzi, and G.~Hinton, ``A simple framework for
-  contrastive learning of visual representations,'' 2020.
-
-\bibitem{he2020momentum}
-K.~He, H.~Fan, Y.~Wu, S.~Xie, and R.~Girshick, ``Momentum contrast for
-  unsupervised visual representation learning,'' 2020.
-
-\bibitem{asano2020selflabelling}
-Y.~M. Asano, C.~Rupprecht, and A.~Vedaldi, ``Self-labelling via simultaneous
-  clustering and representation learning,'' 2020.
-
-\bibitem{caron2021unsupervised}
-M.~Caron, I.~Misra, J.~Mairal, P.~Goyal, P.~Bojanowski, and A.~Joulin,
-  ``Unsupervised learning of visual features by contrasting cluster
-  assignments,'' 2021.
-
-\bibitem{grill2020bootstrap}
-J.-B. Grill, F.~Strub, F.~Altché, C.~Tallec, P.~H. Richemond, E.~Buchatskaya,
-  C.~Doersch, B.~A. Pires, Z.~D. Guo, M.~G. Azar, B.~Piot, K.~Kavukcuoglu,
-  R.~Munos, and M.~Valko, ``Bootstrap your own latent: A new approach to
-  self-supervised learning,'' 2020.
-
-\bibitem{engstler2023understanding}
-P.~Engstler, L.~Melas-Kyriazi, C.~Rupprecht, and I.~Laina, ``Understanding
-  self-supervised features for learning unsupervised instance segmentation,''
-  2023.
-
-\bibitem{simeoni2021localizing}
-O.~Siméoni, G.~Puy, H.~V. Vo, S.~Roburin, S.~Gidaris, A.~Bursuc, P.~Pérez,
-  R.~Marlet, and J.~Ponce, ``Localizing objects with self-supervised
-  transformers and no labels,'' 2021.
-
-\bibitem{wang2022freesolo}
-X.~Wang, Z.~Yu, S.~D. Mello, J.~Kautz, A.~Anandkumar, C.~Shen, and J.~M.
-  Alvarez, ``Freesolo: Learning to segment objects without annotations,'' 2022.
-
-\bibitem{Ishtiak_2023_CVPR}
-T.~Ishtiak, Q.~En, and Y.~Guo, ``Exemplar-freesolo: Enhancing unsupervised
-  instance segmentation with exemplars,'' in {\em Proceedings of the IEEE/CVF
-  Conference on Computer Vision and Pattern Recognition (CVPR)},
-  pp.~15424--15433, June 2023.
-
-\bibitem{vangansbeke2022discovering}
-W.~V. Gansbeke, S.~Vandenhende, and L.~V. Gool, ``Discovering object masks with
-  transformers for unsupervised semantic segmentation,'' 2022.
-
-\bibitem{Li_2022_CVPR}
-Y.-J. Li, X.~Dai, C.-Y. Ma, Y.-C. Liu, K.~Chen, B.~Wu, Z.~He, K.~Kitani, and
-  P.~Vajda, ``Cross-domain adaptive teacher for object detection,'' in {\em
-  Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
-  Recognition (CVPR)}, pp.~7581--7590, June 2022.
-
-\bibitem{liu2021unbiasedteachersemisupervisedobject}
-Y.-C. Liu, C.-Y. Ma, Z.~He, C.-W. Kuo, K.~Chen, P.~Zhang, B.~Wu, Z.~Kira, and
-  P.~Vajda, ``Unbiased teacher for semi-supervised object detection,'' 2021.
-
-\bibitem{xu2021endtoendsemisupervisedobjectdetection}
-M.~Xu, Z.~Zhang, H.~Hu, J.~Wang, L.~Wang, F.~Wei, X.~Bai, and Z.~Liu,
-  ``End-to-end semi-supervised object detection with soft teacher,'' 2021.
-
-\bibitem{sarlin2020supergluelearningfeaturematching}
-P.-E. Sarlin, D.~DeTone, T.~Malisiewicz, and A.~Rabinovich, ``Superglue:
-  Learning feature matching with graph neural networks,'' 2020.
-
-\bibitem{Aberman_2018}
-K.~Aberman, J.~Liao, M.~Shi, D.~Lischinski, B.~Chen, and D.~Cohen-Or, ``Neural
-  best-buddies: sparse cross-domain correspondence,'' {\em ACM Transactions on
-  Graphics}, vol.~37, p.~1–14, July 2018.
-
-\bibitem{WALTEROS2014553}
-J.~L. Walteros, C.~Vogiatzis, E.~L. Pasiliao, and P.~M. Pardalos, ``Integer
-  programming models for the multidimensional assignment problem with star
-  costs,'' {\em European Journal of Operational Research}, vol.~235, no.~3,
-  pp.~553--568, 2014.
-
 \bibitem{vaswani2023attentionneed}
 A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
   L.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' 2023.
@@ -149,28 +73,68 @@ H.~V. Vo, P.~P{\'e}rez, and J.~Ponce, ``Toward unsupervised, multi-object
   2020} (A.~Vedaldi, H.~Bischof, T.~Brox, and J.-M. Frahm, eds.), (Cham),
   pp.~779--795, Springer International Publishing, 2020.
 
+\bibitem{cai2019cascadercnnhighquality}
+Z.~Cai and N.~Vasconcelos, ``Cascade r-cnn: High quality object detection and
+  instance segmentation,'' 2019.
+
+\bibitem{he2018maskrcnn}
+K.~He, G.~Gkioxari, P.~Dollár, and R.~Girshick, ``Mask r-cnn,'' 2018.
+
 \bibitem{deng2009imagenet}
 J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei, ``Imagenet: A
   large-scale hierarchical image database,'' in {\em 2009 IEEE conference on
   computer vision and pattern recognition}, pp.~248--255, Ieee, 2009.
 
-\bibitem{he2018maskrcnn}
-K.~He, G.~Gkioxari, P.~Dollár, and R.~Girshick, ``Mask r-cnn,'' 2018.
-
-\bibitem{cai2019cascadercnnhighquality}
-Z.~Cai and N.~Vasconcelos, ``Cascade r-cnn: High quality object detection and
-  instance segmentation,'' 2019.
-
 \bibitem{he2015deepresiduallearningimage}
 K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
   recognition,'' 2015.
 
-\bibitem{lin2014microsoft}
-T.-Y. Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan,
-  P.~Doll{\'a}r, and C.~L. Zitnick, ``Microsoft coco: Common objects in
-  context,'' in {\em Computer Vision--ECCV 2014: 13th European Conference,
-  Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13},
-  pp.~740--755, Springer, 2014.
+\bibitem{chen2020simple}
+T.~Chen, S.~Kornblith, M.~Norouzi, and G.~Hinton, ``A simple framework for
+  contrastive learning of visual representations,'' 2020.
+
+\bibitem{he2020momentum}
+K.~He, H.~Fan, Y.~Wu, S.~Xie, and R.~Girshick, ``Momentum contrast for
+  unsupervised visual representation learning,'' 2020.
+
+\bibitem{asano2020selflabelling}
+Y.~M. Asano, C.~Rupprecht, and A.~Vedaldi, ``Self-labelling via simultaneous
+  clustering and representation learning,'' 2020.
+
+\bibitem{caron2021unsupervised}
+M.~Caron, I.~Misra, J.~Mairal, P.~Goyal, P.~Bojanowski, and A.~Joulin,
+  ``Unsupervised learning of visual features by contrasting cluster
+  assignments,'' 2021.
+
+\bibitem{grill2020bootstrap}
+J.-B. Grill, F.~Strub, F.~Altché, C.~Tallec, P.~H. Richemond, E.~Buchatskaya,
+  C.~Doersch, B.~A. Pires, Z.~D. Guo, M.~G. Azar, B.~Piot, K.~Kavukcuoglu,
+  R.~Munos, and M.~Valko, ``Bootstrap your own latent: A new approach to
+  self-supervised learning,'' 2020.
+
+\bibitem{engstler2023understanding}
+P.~Engstler, L.~Melas-Kyriazi, C.~Rupprecht, and I.~Laina, ``Understanding
+  self-supervised features for learning unsupervised instance segmentation,''
+  2023.
+
+\bibitem{simeoni2021localizing}
+O.~Siméoni, G.~Puy, H.~V. Vo, S.~Roburin, S.~Gidaris, A.~Bursuc, P.~Pérez,
+  R.~Marlet, and J.~Ponce, ``Localizing objects with self-supervised
+  transformers and no labels,'' 2021.
+
+\bibitem{vangansbeke2022discovering}
+W.~V. Gansbeke, S.~Vandenhende, and L.~V. Gool, ``Discovering object masks with
+  transformers for unsupervised semantic segmentation,'' 2022.
+
+\bibitem{wang2022freesolo}
+X.~Wang, Z.~Yu, S.~D. Mello, J.~Kautz, A.~Anandkumar, C.~Shen, and J.~M.
+  Alvarez, ``Freesolo: Learning to segment objects without annotations,'' 2022.
+
+\bibitem{Ishtiak_2023_CVPR}
+T.~Ishtiak, Q.~En, and Y.~Guo, ``Exemplar-freesolo: Enhancing unsupervised
+  instance segmentation with exemplars,'' in {\em Proceedings of the IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pp.~15424--15433, June 2023.
 
 \bibitem{Wang_2022_CVPR}
 Y.~Wang, X.~Shen, S.~X. Hu, Y.~Yuan, J.~L. Crowley, and D.~Vaufreydaz,
@@ -211,5 +175,20 @@ N.~Inoue, R.~Furuta, T.~Yamasaki, and K.~Aizawa, ``Cross-domain
   weakly-supervised object detection through progressive domain adaptation,''
   in {\em Proceedings of the IEEE Conference on Computer Vision and Pattern
   Recognition (CVPR)}, June 2018.
+
+\bibitem{sarlin2020supergluelearningfeaturematching}
+P.-E. Sarlin, D.~DeTone, T.~Malisiewicz, and A.~Rabinovich, ``Superglue:
+  Learning feature matching with graph neural networks,'' 2020.
+
+\bibitem{Aberman_2018}
+K.~Aberman, J.~Liao, M.~Shi, D.~Lischinski, B.~Chen, and D.~Cohen-Or, ``Neural
+  best-buddies: sparse cross-domain correspondence,'' {\em ACM Transactions on
+  Graphics}, vol.~37, p.~1–14, July 2018.
+
+\bibitem{WALTEROS2014553}
+J.~L. Walteros, C.~Vogiatzis, E.~L. Pasiliao, and P.~M. Pardalos, ``Integer
+  programming models for the multidimensional assignment problem with star
+  costs,'' {\em European Journal of Operational Research}, vol.~235, no.~3,
+  pp.~553--568, 2014.
 
 \end{thebibliography}

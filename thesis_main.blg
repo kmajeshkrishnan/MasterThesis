@@ -5,58 +5,54 @@ A level-1 auxiliary file: chapters/0_0-titlepage.aux
 A level-1 auxiliary file: chapters/0_1-declaration.aux
 A level-1 auxiliary file: chapters/0_2-abstract.aux
 A level-1 auxiliary file: chapters/1-introduction.aux
-A level-1 auxiliary file: chapters/2-relatedwork.aux
 A level-1 auxiliary file: chapters/3-background.aux
+A level-1 auxiliary file: chapters/2-relatedwork.aux
 A level-1 auxiliary file: chapters/4-approach.aux
 A level-1 auxiliary file: chapters/5-experiments.aux
 A level-1 auxiliary file: chapters/6-conclusions.aux
 A level-1 auxiliary file: chapters/7-acknowledgments.aux
 The style file: ieeetr.bst
 Database file #1: bib/topic2.bib
-Repeated entry---line 481 of file bib/topic2.bib
- : @misc{ghiasi2021simplecopypastestrongdata
- :                                          ,
-I'm skipping whatever remains of this entry
 Warning--empty journal in kara2022image
-You've used 44 entries,
+You've used 40 entries,
             1876 wiz_defined-function locations,
-            672 strings with 12603 characters,
-and the built_in function-call counts, 10859 in all, are:
-= -- 793
-> -- 842
+            655 strings with 11583 characters,
+and the built_in function-call counts, 9517 in all, are:
+= -- 696
+> -- 732
 < -- 0
-+ -- 295
-- -- 251
-* -- 847
-:= -- 1679
-add.period$ -- 44
-call.type$ -- 44
-change.case$ -- 44
++ -- 257
+- -- 217
+* -- 735
+:= -- 1476
+add.period$ -- 40
+call.type$ -- 40
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 417
-empty$ -- 1001
-format.name$ -- 251
-if$ -- 2526
+cite$ -- 41
+duplicate$ -- 365
+empty$ -- 888
+format.name$ -- 217
+if$ -- 2217
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 19
-newline$ -- 135
-num.names$ -- 46
-pop$ -- 270
+int.to.str$ -- 40
+missing$ -- 17
+newline$ -- 123
+num.names$ -- 42
+pop$ -- 243
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 304
+skip$ -- 263
 stack$ -- 0
-substring$ -- 366
-swap$ -- 126
+substring$ -- 298
+swap$ -- 106
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 71
-width$ -- 46
-write$ -- 351
-(There was 1 error message)
+while$ -- 62
+width$ -- 42
+write$ -- 318
+(There was 1 warning)
