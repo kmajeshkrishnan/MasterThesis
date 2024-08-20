@@ -34,6 +34,53 @@ A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
 \bibitem{weng2020transformer}
 L.~Weng, ``The transformer family,'' {\em lilianweng.github.io}, Apr 2020.
 
+\bibitem{chen2020simple}
+T.~Chen, S.~Kornblith, M.~Norouzi, and G.~Hinton, ``A simple framework for
+  contrastive learning of visual representations,'' 2020.
+
+\bibitem{he2020momentum}
+K.~He, H.~Fan, Y.~Wu, S.~Xie, and R.~Girshick, ``Momentum contrast for
+  unsupervised visual representation learning,'' 2020.
+
+\bibitem{asano2020selflabelling}
+Y.~M. Asano, C.~Rupprecht, and A.~Vedaldi, ``Self-labelling via simultaneous
+  clustering and representation learning,'' 2020.
+
+\bibitem{caron2021unsupervised}
+M.~Caron, I.~Misra, J.~Mairal, P.~Goyal, P.~Bojanowski, and A.~Joulin,
+  ``Unsupervised learning of visual features by contrasting cluster
+  assignments,'' 2021.
+
+\bibitem{grill2020bootstrap}
+J.-B. Grill, F.~Strub, F.~Altché, C.~Tallec, P.~H. Richemond, E.~Buchatskaya,
+  C.~Doersch, B.~A. Pires, Z.~D. Guo, M.~G. Azar, B.~Piot, K.~Kavukcuoglu,
+  R.~Munos, and M.~Valko, ``Bootstrap your own latent: A new approach to
+  self-supervised learning,'' 2020.
+
+\bibitem{engstler2023understanding}
+P.~Engstler, L.~Melas-Kyriazi, C.~Rupprecht, and I.~Laina, ``Understanding
+  self-supervised features for learning unsupervised instance segmentation,''
+  2023.
+
+\bibitem{simeoni2021localizing}
+O.~Siméoni, G.~Puy, H.~V. Vo, S.~Roburin, S.~Gidaris, A.~Bursuc, P.~Pérez,
+  R.~Marlet, and J.~Ponce, ``Localizing objects with self-supervised
+  transformers and no labels,'' 2021.
+
+\bibitem{vangansbeke2022discovering}
+W.~V. Gansbeke, S.~Vandenhende, and L.~V. Gool, ``Discovering object masks with
+  transformers for unsupervised semantic segmentation,'' 2022.
+
+\bibitem{wang2022freesolo}
+X.~Wang, Z.~Yu, S.~D. Mello, J.~Kautz, A.~Anandkumar, C.~Shen, and J.~M.
+  Alvarez, ``Freesolo: Learning to segment objects without annotations,'' 2022.
+
+\bibitem{Ishtiak_2023_CVPR}
+T.~Ishtiak, Q.~En, and Y.~Guo, ``Exemplar-freesolo: Enhancing unsupervised
+  instance segmentation with exemplars,'' in {\em Proceedings of the IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pp.~15424--15433, June 2023.
+
 \bibitem{ghiasi2021simplecopypastestrongdata}
 G.~Ghiasi, Y.~Cui, A.~Srinivas, R.~Qian, T.-Y. Lin, E.~D. Cubuk, Q.~V. Le, and
   B.~Zoph, ``Simple copy-paste is a strong data augmentation method for
@@ -89,58 +136,22 @@ J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei, ``Imagenet: A
 K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
   recognition,'' 2015.
 
-\bibitem{chen2020simple}
-T.~Chen, S.~Kornblith, M.~Norouzi, and G.~Hinton, ``A simple framework for
-  contrastive learning of visual representations,'' 2020.
-
-\bibitem{he2020momentum}
-K.~He, H.~Fan, Y.~Wu, S.~Xie, and R.~Girshick, ``Momentum contrast for
-  unsupervised visual representation learning,'' 2020.
-
-\bibitem{asano2020selflabelling}
-Y.~M. Asano, C.~Rupprecht, and A.~Vedaldi, ``Self-labelling via simultaneous
-  clustering and representation learning,'' 2020.
-
-\bibitem{caron2021unsupervised}
-M.~Caron, I.~Misra, J.~Mairal, P.~Goyal, P.~Bojanowski, and A.~Joulin,
-  ``Unsupervised learning of visual features by contrasting cluster
-  assignments,'' 2021.
-
-\bibitem{grill2020bootstrap}
-J.-B. Grill, F.~Strub, F.~Altché, C.~Tallec, P.~H. Richemond, E.~Buchatskaya,
-  C.~Doersch, B.~A. Pires, Z.~D. Guo, M.~G. Azar, B.~Piot, K.~Kavukcuoglu,
-  R.~Munos, and M.~Valko, ``Bootstrap your own latent: A new approach to
-  self-supervised learning,'' 2020.
-
-\bibitem{engstler2023understanding}
-P.~Engstler, L.~Melas-Kyriazi, C.~Rupprecht, and I.~Laina, ``Understanding
-  self-supervised features for learning unsupervised instance segmentation,''
-  2023.
-
-\bibitem{simeoni2021localizing}
-O.~Siméoni, G.~Puy, H.~V. Vo, S.~Roburin, S.~Gidaris, A.~Bursuc, P.~Pérez,
-  R.~Marlet, and J.~Ponce, ``Localizing objects with self-supervised
-  transformers and no labels,'' 2021.
-
-\bibitem{vangansbeke2022discovering}
-W.~V. Gansbeke, S.~Vandenhende, and L.~V. Gool, ``Discovering object masks with
-  transformers for unsupervised semantic segmentation,'' 2022.
-
-\bibitem{wang2022freesolo}
-X.~Wang, Z.~Yu, S.~D. Mello, J.~Kautz, A.~Anandkumar, C.~Shen, and J.~M.
-  Alvarez, ``Freesolo: Learning to segment objects without annotations,'' 2022.
-
-\bibitem{Ishtiak_2023_CVPR}
-T.~Ishtiak, Q.~En, and Y.~Guo, ``Exemplar-freesolo: Enhancing unsupervised
-  instance segmentation with exemplars,'' in {\em Proceedings of the IEEE/CVF
-  Conference on Computer Vision and Pattern Recognition (CVPR)},
-  pp.~15424--15433, June 2023.
-
 \bibitem{Wang_2022_CVPR}
 Y.~Wang, X.~Shen, S.~X. Hu, Y.~Yuan, J.~L. Crowley, and D.~Vaufreydaz,
   ``Self-supervised transformers for unsupervised object discovery using
   normalized cut,'' in {\em Proceedings of the IEEE/CVF Conference on Computer
   Vision and Pattern Recognition (CVPR)}, pp.~14543--14553, June 2022.
+
+\bibitem{Gasparim_2021}
+E.~Gasparim, F.~Valencia, and C.~Varea, ``Invariant generalized complex
+  geometry on maximal flag manifolds and their moduli,'' {\em Journal of
+  Geometry and Physics}, vol.~163, p.~104108, May 2021.
+
+\bibitem{Russakovsky}
+O.~Russakovsky, Y.~Lin, K.~Yu, and L.~Fei-Fei, ``Object-centric spatial pooling
+  for image classification,'' in {\em Computer Vision -- ECCV 2012}
+  (A.~Fitzgibbon, S.~Lazebnik, P.~Perona, Y.~Sato, and C.~Schmid, eds.),
+  (Berlin, Heidelberg), pp.~1--15, Springer Berlin Heidelberg, 2012.
 
 \bibitem{Tang_2018_CVPR}
 M.~Tang, A.~Djelouah, F.~Perazzi, Y.~Boykov, and C.~Schroers, ``Normalized cut
@@ -151,10 +162,6 @@ M.~Tang, A.~Djelouah, F.~Perazzi, Y.~Boykov, and C.~Schroers, ``Normalized cut
 \bibitem{ziegler2022selfsupervisedlearningobjectparts}
 A.~Ziegler and Y.~M. Asano, ``Self-supervised learning of object parts for
   semantic segmentation,'' 2022.
-
-\bibitem{kara2022image}
-S.~Kara, H.~Ammar, F.~Chabot, and Q.-C. Pham, ``Image segmentation-based
-  unsupervised multiple objects discovery,'' 2022.
 
 \bibitem{xie2020selftrainingnoisystudentimproves}
 Q.~Xie, M.-T. Luong, E.~Hovy, and Q.~V. Le, ``Self-training with noisy student

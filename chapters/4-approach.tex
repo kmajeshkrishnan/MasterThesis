@@ -39,7 +39,6 @@ In challenging scenarios with cluttered backgrounds, occlusions or low-quality i
 To address this issue before self training, in our approach, we filter the MaskCut masks using the CutLER predictions and train from scratch, assuming the learning from scratch using better quality masks could improve the performance of the model. The approach is explained in detail in section~\ref{section:proposed_method}.
 
 \subsection{Overlapping Instances}
-
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{Images/main/cutler-prob-overlap.png}
@@ -83,6 +82,21 @@ We expect that the model trained without overlapping instances will outperform t
 To test the hypothesis, we make use of ground truth bounding box annotations provided by ImageNet and the images with an overlap (IoU) of \(\tau > \text{10\%}\) is taken as the criteria to filter images for approach 2 and 3. As ImageNet contains mostly object-centric single instance images, Third approach (only using images with overlapping instances) would have significantly less number of training images compared to the other two approaches. Specifically, Approach 3 utilizes 6\% of the annotated ImageNet dataset, while Approach 2 uses the remaining 94\%. Given the significantly smaller training sample size in Approach 3, a fair comparison isn't possible. Therefore, we focus on Approach 2 for comparison with the baseline.
 
 Through this approach, we expect to observe an improvement by using less training data. But using this method in unsupervised fashion is rather difficult. Due to the grouping of nearby instances, the process of filtering images with overlapping instance is extremely challenging. Hence these tests are carried out using bounding box labels of ImageNet. However, the approach gives insights on the influence of overlapping instances in training that can be useful for future research.
+
+\subsubsection{Estimating the Impact of Object-Centric Instances}
+\label{section:analysis_oc_instancs}
+To support our hypothesis that an object-centric prior is a key contributor to CutLER's state-of-the-art performance, we propose that filtering out non-object-centric images from the training dataset could further enhance its effectiveness. Recent research has highlighted the significant role that object-centric images play in model performance~\cite{engstler2023understanding, Gasparim_2021}.
+	
+Object-centricity is hard to define. As we couldn't find a standard way to define object-centicity for our research~\cite{Russakovsky, Gasparim_2021}, we defined two simple hyperparameters to filter object-centric images.
+
+\begin{itemize}
+	\item \textbf{Area Threshold} : Minimum area ratio of bounding box to image
+	\item \textbf{Center Threshold} : Maximum distance ratio from the image center to bounding box center to the image diagonal.
+\end{itemize}
+
+We set Area Threshold to 0.1 and Center Threshold to 0.2. That is, if bounding box has size less than 10\% of the size of the image or the distance between image center and bounding box center is more than 20\% of image's diagonal length, that image will be rejected from the training set.
+
+Like in the previous section, to test the hypothesis, we make use of ground truth bounding box annotations provided by ImageNet. We are only using single instance images as object-centric images can contain overlapping instances as well. Due to the filtration process, we only use 77\% images of annotated ImageNet dataset, that is only 30\% of total ImageNet images. Even with this much less data, we expect to observe a competitive result compared to the baseline. 
 
 \subsection{Images with Complex Background}
 \begin{figure*}
@@ -177,12 +191,15 @@ Once the filtered MaskCut masks are obtained, we train the detector from scratch
 \end{figure*}
 
 
- For self-training, we follow training pipeline of the baseline, training for 80K iterations are without using DropLoss. We use our mask filtration method illustrated in Fig~\ref{fig:our_mask_filtration_self_training} to filter masks between self-training rounds. The only modification to the baseline approach is selecting pseudo-ground truth masks with IoU > 0.5 with predicted masks, rather than those with IoU < 0.5. 
+ For self-training, we follow training pipeline of the baseline, training for 80K iterations are without using DropLoss. We use our mask filtration method illustrated in Fig~\ref{fig:our_mask_filtration_self_training} to filter masks between self-training rounds. 
  
- This way, we always retain masks with high certainty. But this also restricts the exploration. Limiting pseudo-ground truth labels to only high-confidence masks could constrain improvements in the self-training round. This intuition is validated by our experiments in Section <secno>.
+ The only modification to the baseline approach is selecting pseudo-ground truth masks with IoU > 0.5 with predicted masks, rather than those with IoU < 0.5. This way, we always retain masks with high certainty. But this also restricts the exploration. Limiting pseudo-ground truth labels to only high-confidence masks could constrain improvements in the self-training round. 
+ 
+ %This intuition is validated by our experiments in Section <secno>.
+ 
+ %We use baseline filtration method during self-training. As we already have finer masks, refining further might lead to over-fitting. Limiting pseudo-ground truth labels to only high-confidence masks (like in our filtration method) could constrain improvements in the self-training round. Hence baseline filtration
  
  As we are using lesser number of more accurate masks, we expect an improvement of precision. However, the recall could decrease by a small factor if there are not enough masks generated with respect to the ground truth masks. But our experiments indicate that this change is negligibly small. Detailed results and analysis on this can be found in the section~\ref{section:persistant_recall}.
-
 
 
 

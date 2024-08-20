@@ -159,6 +159,30 @@ To ensure that the observed improvements in performance were not simply due to t
 
 The test results are illustrated in Fig.~\ref{fig:overlap_classes}, which highlights the 10 classes with the most significant improvements and the 10 classes with the least improvements in the COCO Eval dataset, based on the Average Precision for instance segmentation. Notably, our approach outperforms the baseline across the majority of classes. Specifically, it performs better in 68 out of the 80 classes assessed. In contrast, for the remaining 12 classes, our method shows reduced performance relative to the baseline. This distribution underscores the effectiveness of our approach in enhancing instance segmentation performance across a broad range of classes, with only a few exceptions where it falls short.
 
+\subsection{Exploring the Impact of Object-Centric Prior}
+In this section, we describe the experiments conducted to evaluate the performance of the approaches mentioned in section~\ref{section:analysis_oc_instancs}. ie, 1) Using all images of ImageNet 2) Only using object-centric images. We follow same training procedure as Experiment~\ref{section:overlap_experiment}. Hence it won't be explained again in this section.
+
+\subsubsection{Dataset}
+We use the ImageNet dataset for training focusing on the subset with ground truth bounding box annotations. We  also use the annotated subset of ImageNet, which comprises 38\% of the entire dataset. After filtration, we only use 30\% of the images employed by the baseline, which is even lesser 5\% lesser images compared to Experiment~\ref{section:overlap_experiment}. It is due to removing the multi-instance images from the dataset. We use same baseline as Experiment~\ref{section:overlap_experiment} and models are evaluated on all images of COCO Eval datatset.
+
+\subsubsection{Results}
+As it can be observed from Table~\ref{tab:object-centric-analysis}, our method improve in both object detection and instance segmentation tasks. The table shows AP and AP50 of both instance detection (bbox) and instance segmentation (segm) tasks on COCO Eval datasets evaluated using the baseline and our approach.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|cc|cc}
+		\toprule
+		\multirow{2}{*}{Metric} & \multicolumn{2}{c|}{Baseline} & \multicolumn{2}{c}{Ours} \\ \cmidrule{2-5}
+		& AP & AP50 & AP & AP50 \\ \midrule
+		bbox & 10.74 & 19.78 & \textbf{11.32} & \textbf{20.43} \\
+		\midrule
+		segm & 8.2 & 16.62 & \textbf{8.62} & \textbf{17.43} \\
+		\bottomrule
+	\end{tabular}
+	\caption[\textbf{Evaluation of baseline vs Model Trained with only object-centric images}]{\textbf{AP and AP50 bounding box and segmentation evaluation} on COCO Eval datasets on baseline and model trained with only object-centric images}
+	\label{tab:object-centric-analysis}
+\end{table}
+Even by using just only 30\% of the training data, we could obtain comparable results with the baseline. However, the model trained without overlapping instances (Experiment~\ref{section:overlap_experiment}) outperform this method by a small margin.
+
 \subsection{Proposed Mask Filtering Method}
 \label{section:mask_refinement_experiment}
 To address the issue of unwanted background masks included in the pseudo-ground truths, we introduce an enhanced mask filtration approach. This section details the experimental setup and results associated with our improved mask filtration technique.
@@ -178,12 +202,44 @@ The baseline follows training procedure as described in section~\ref{section:imp
 	\label{fig:filtered_mask_comparison}
 \end{figure*}
 
+
+In this section, we present a qualitative comparison of mask filtration methods, contrasting the results of the baseline approach with our proposed method.
+
 Figure~\ref{fig:filtered_mask_comparison} illustrates the differences between the masks selected by our method and the baseline method across few example images. For most images with single instances with distinguishable background, there is no significant difference between masks selected by baseline and our method as given in Fig.~\ref{fig:filtered_mask_comparison}~(a). Unfortunately a huge part of ImageNet dataset contains single instance object-centric images with simple backgrounds. Hence the improvement that we might obtain can be minimal. Nevertheless, our method works best for examples shown in Fig.~\ref{fig:filtered_mask_comparison}~(b-d). In Fig.~\ref{fig:filtered_mask_comparison}~(b-c) our approach successfully removes incorrect masks introduced by CutLER that are overlaid on better MaskCut masks. In Fig.~\ref{fig:filtered_mask_comparison}~(d), despite both MaskCut and CutLER containing noisy masks, our method effectively filters out these imperfections.
 
 As we discussed earlier in section~\ref{section:proposed_method}, some images are dropped from the training dataset for not having any selected masks. In Fig.~\ref{fig:filtered_mask_comparison}~(e), the image is dropped due to no selected masks, but CutLER prediction and mask selection are also bad. But in Fig.~\ref{fig:filtered_mask_comparison}~(f) CutLER selection is certainly better compared to predicted masks. But the image will be dropped in our method. These examples reaffirms that we compromise on quantity for quality in our approach. But nevertheless our method outperforms baseline even with lesser data.
 
+\subsubsection{Using Our Mask Filtration Strategy for Self-Training}
 
-\subsubsection{Quantitative Results}
+\begin{table}[htbp]
+	\centering
+	\resizebox{0.45\textwidth}{!}{%
+		\begin{tabular}{c|c|cc}
+			\toprule
+			& & \multicolumn{2}{c}{COCO}  \\ \midrule
+			& & AP & AP50 \\ \midrule
+			\multirow{2}{*}{Train} & Baseline & 11.17 & 20.12  \\ 
+			& Ours & \textbf{11.47} & \textbf{20.81}  \\ \midrule
+			\multirow{2}{*}{r1} & Baseline & \textbf{11.70} & \textbf{21.15}  \\ 
+			& Ours & 10.66 & 19.20 \\ \bottomrule
+		\end{tabular}%
+	}
+	\caption[\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and First Self-Training Round}]{\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training} evaluated on COCO Eval dataset (Batch size 8) using our mask filtration for self-training}
+	\label{tab:combined_train_and_r1}
+\end{table}
+
+All our models use proposed initial mask filtration method. However, using our mask filtration method during self-training results in diminishing evaluation score. The results are illustrated in Table~\ref{tab:combined_train_and_r1}. This however was expected, as our masks are already less and more refined than baseline.
+
+On the other hand, using masks generated using our mask filtration method for initial training and baseline mask filtration strategy for self-training yields better results than baseline. All the following experiments follow this combination of filtrations.
+
+\subsubsection{Combining Mask Filtration Strategies}
+
+In this section, we present how using masks generated using our mask filtration method for initial training and baseline mask filtration strategy for self-training outperforms the baseline. 
+
+Our evaluations span across five datasets, including COCO 2017 Evaluation, KITTI, VOC, Comic, and Watercolor, focusing on instance detection and segmentation tasks. We utilized the precision metric to measure the performance, providing a granular analysis of how our method impacts the accuracy of bounding box and segmentation predictions.
+
+The results are summarized in Table~\ref{tab:combined_train} demonstrate the performance of both the baseline and our proposed method across different stages of training: the initial training phase and subsequent self-training iterations (r1 and r2). This table provides a comprehensive comparison of the model’s effectiveness on various datasets, shedding light on the strengths and weaknesses of each approach throughout the training process.
+
 
 \begin{table}[htbp]
 	\centering
@@ -200,7 +256,7 @@ As we discussed earlier in section~\ref{section:proposed_method}, some images ar
 			& Ours & 10.81 & \textbf{20.47} & \textbf{7.69} & \textbf{17.04} & 17.93 & \textbf{35.24} & 8.94 & 22.74 & 12.06 & 30.02 \\ \bottomrule
 		\end{tabular}%
 	}
-	\caption[\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}]{\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training} evaluated on COCO Eval dataset (Batch size 8)}
+	\caption[\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}]{\textbf{\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training} evaluated on COCO Eval dataset (Batch size 8) using baseline mask filtration for self-training}
 	\label{tab:combined_train}
 \end{table}
 
@@ -228,11 +284,7 @@ As we discussed earlier in section~\ref{section:proposed_method}, some images ar
 	\includegraphics[width=1.05\textwidth]{Images/main/cutler_vs_ours.png}
 	\caption[\textbf{Qualitative Results - Baseline vs Ours}]{\textbf{Qualitative results - Baseline vs Ours} Masks predicted by CUtLER and Our model trained with modified mask filtration}
 	\label{fig:cuter_vs_ours}
-\end{figure*}
-
-In this section, we present the results of our experiments comparing the baseline approach with our enhanced mask filtration method. Our evaluations span across five datasets, including COCO 2017 Evaluation, KITTI, VOC, Comic, and Watercolor, focusing on instance detection and segmentation tasks. We utilized the precision metric to measure the performance, providing a granular analysis of how our method impacts the accuracy of bounding box and segmentation predictions.
-
-The results are summarized in Table~\ref{tab:combined_train} demonstrate the performance of both the baseline and our proposed method across different stages of training: the initial training phase and subsequent self-training iterations (r1 and r2). This table provides a comprehensive comparison of the model’s effectiveness on various datasets, shedding light on the strengths and weaknesses of each approach throughout the training process. 
+\end{figure*} 
 
 During the initial training phase, our method outperforms the baseline on the majority of the datasets, including COCO, KITTI, and VOC. Specifically, we observe a notable improvement in precision metrics, indicating that our refined mask filtration process is effective in enhancing the quality of pseudo-ground truths, leading to better detection and segmentation performance. However, our model slightly underperforms on the Comic and Watercolor datasets. After the first round of self-training, our model continues to outperform the baseline on 4 out of 5 datasets. In the second round of self-training, we observe a slight decline in performance across most datasets for both the baseline and our method, except for minor improvements in the baseline on the KITTI and Watercolor datasets. This decline could be attributed to overfitting or the model’s diminishing returns from further self-training iterations, especially when using smaller batch sizes, as noted in our experiments in section~\ref{section:choice_of_batch_size}.
 

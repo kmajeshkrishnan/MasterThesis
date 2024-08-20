@@ -2,11 +2,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances }}}{37}{table.caption.53}%
-\contentsline {table}{\numberline {2}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}}}{37}{table.caption.54}%
-\contentsline {table}{\numberline {3}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{42}{table.caption.70}%
-\contentsline {table}{\numberline {4}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}}}{45}{table.caption.74}%
-\contentsline {table}{\numberline {5}{\ignorespaces \textbf {\(AR_{100}\) for the Best Models of Baseline and Our Method}}}{46}{table.caption.75}%
+\contentsline {table}{\numberline {1}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances }}}{39}{table.caption.55}%
+\contentsline {table}{\numberline {2}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}}}{39}{table.caption.56}%
+\contentsline {table}{\numberline {3}{\ignorespaces \textbf {Evaluation of baseline vs Model Trained with only object-centric images}}}{42}{table.caption.67}%
+\contentsline {table}{\numberline {4}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and First Self-Training Round}}}{45}{table.caption.77}%
+\contentsline {table}{\numberline {5}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{46}{table.caption.80}%
+\contentsline {table}{\numberline {6}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}}}{49}{table.caption.84}%
+\contentsline {table}{\numberline {7}{\ignorespaces \textbf {\(AR_{100}\) for the Best Models of Baseline and Our Method}}}{49}{table.caption.85}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
