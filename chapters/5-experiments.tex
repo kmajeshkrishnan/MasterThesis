@@ -135,6 +135,7 @@ The training procedure for both the baseline and our proposed method follows the
 \end{table}
 
 \subsubsection{Results}
+\label{section:overlapping-results}
 Even though the dropped images with overlapping instances are only 5\% of the annotated ImageNet subset, there is an observable improvement in the results. As it can be observed from Table~\ref{tab:overlap_analysis}, our method improve in both instance detection and instance segmentation tasks. The table shows AP and AP50 of both instance detection (bbox) and instance segmentation (segm) tasks on COCO Eval datasets evaluated using the baseline and our approach. Even though the experiment is conducted using batch size 4, the results are still comparable to the baseline and model trained using our proposed mask filtration method (will be explained later in section~\ref{section:mask_refinement_experiment}) with batch size 8, which can be observed from Table~\ref{tab:combined_train}. It is to be noted that the evaluation is performed using class-agnostic annotation generated from the original COCO annotations. We reuse the same annotation file used in CutLER.
 
 To gain deeper insights, we further split the evaluation dataset into two subsets: images with overlapping instances and those without. It is to observe to what extend our approach helps to detect individual instances from images with overlapping instances. Results can be observed from Table~\ref{tab:combined_overlap_eval}. As anticipated, the evaluation scores for images with overlapping instances are significantly lower compared to those for images without overlaps. This disparity is likely due to the inherent challenge of grouping of instances when they overlap - a problem that is difficult to address without introducing explicit semantic information, which is typically provided through semi-supervised methods. Despite this challenge, it is noteworthy that both splits - images with and without overlapping instances showed a nearly equal improvement in performance for instance detection and segmentation tasks. This suggests that our approach is effective across different scenarios, affirming the model’s ability to generalize even in complex cases where instances are closely packed or overlapping.
@@ -142,14 +143,21 @@ To gain deeper insights, we further split the evaluation dataset into two subset
 \subsubsection{Improvement Across Classes}
 \begin{figure*}
 	\centering
-	\includegraphics[width=1.05\textwidth]{Images/main/overlap_classes.png}
-	\caption[\textbf{Training without Overlapping Instances - Class-wise Comparison}]{\textbf{Class-wise comparison} of change in \(AP_{segm}\) of models trained using images with and without overlapping instances evaluated on COCO Eval dataset - 20 most and least improved classes}
+	\includegraphics[width=1.05\textwidth]{Images/main/overlap_classes_new.png}
+	\caption[\textbf{Training without Overlapping Instances - Class-wise Comparison}]{\textbf{Class-wise comparison} of change in \(AP_{segm}\) of models trained using images with and without overlapping instances evaluated on COCO Eval dataset - 10 most and least improved classes}
 	\label{fig:overlap_classes}
+\end{figure*}
+
+\begin{figure*}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Images/main/relative_improvement.png}
+	\caption[\textbf{Relative Improvement against Number of Instances}]{\textbf{Relative Improvement (AP (Segm) ) across Classes Against Number of Instances.} Relative improvement of our model against the baseline on the y-axis and number of instances on the x-axis. Classes corresponding to extreme points are highlighted.}
+	\label{fig:relative_improvement}
 \end{figure*}
 
 To ensure that the observed improvements in performance were not simply due to the loss of accuracy in one class being offset by gains in another, class-wise improvements are calculated on the COCO Eval dataset. This analysis allows for a more granular understanding of the model’s performance across different classes. By evaluating each class individually, we can verify that the enhancements in instance detection and segmentation are consistent and not merely the result of compensatory effects between classes. This class-wise assessment provides a clearer picture of the model's true capabilities, ensuring that the overall performance gains are robust and evenly distributed across the dataset.
 
-The test results are illustrated in Fig.~\ref{fig:overlap_classes}, which highlights the 20 classes with the most significant improvements and the 20 classes with the least improvements in the COCO Eval dataset, based on the Average Precision for instance segmentation. Notably, our approach outperforms the baseline across the majority of classes. Specifically, it performs better in 68 out of the 80 classes assessed. In contrast, for the remaining 12 classes, our method shows reduced performance relative to the baseline. This distribution underscores the effectiveness of our approach in enhancing instance segmentation performance across a broad range of classes, with only a few exceptions where it falls short.
+The test results are illustrated in Fig.~\ref{fig:overlap_classes}, which highlights the 10 classes with the most significant improvements and the 10 classes with the least improvements in the COCO Eval dataset, based on the Average Precision for instance segmentation. Notably, our approach outperforms the baseline across the majority of classes. Specifically, it performs better in 68 out of the 80 classes assessed. In contrast, for the remaining 12 classes, our method shows reduced performance relative to the baseline. This distribution underscores the effectiveness of our approach in enhancing instance segmentation performance across a broad range of classes, with only a few exceptions where it falls short.
 
 \subsection{Proposed Mask Filtering Method}
 \label{section:mask_refinement_experiment}
@@ -161,7 +169,22 @@ We use the ImageNet dataset for training and evaluate on COCO, KITTI, PASCAL VOC
 \subsubsection{Training Procedure}
 The baseline follows training procedure as described in section~\ref{section:implementation_details}. But our method comes with once extra step of refining MaskCut masks using our modified mask filtration method explained in section~\ref{section:proposed_method} and training from scratch again. This is followed self-training as employed in the baseline to improve the performance further. We train both models using 4 and 8 batch sizes to analyze the influence of batch size on performance of the model (Section~\ref{section:choice_of_batch_size}). 
 
-\subsubsection{Results}
+\subsubsection{Mask Filtration}
+
+\begin{figure*}
+	\centering
+	\includegraphics[width=1\textwidth]{Images/main/filtered_mask_comparison.png}
+	\caption[\textbf{Mask Filtration Outputs - Baseline vs Ours}]{\textbf{Comparison of filtered masks} produced by the baseline and our method. Examples illustrates Cutler prediction masks, MaskCut masks, masks selected by Cutler and masks selected by our method respectively (left to right)}
+	\label{fig:filtered_mask_comparison}
+\end{figure*}
+
+Figure~\ref{fig:filtered_mask_comparison} illustrates the differences between the masks selected by our method and the baseline method across few example images. For most images with single instances with distinguishable background, there is no significant difference between masks selected by baseline and our method as given in Fig.~\ref{fig:filtered_mask_comparison}~(a). Unfortunately a huge part of ImageNet dataset contains single instance object-centric images with simple backgrounds. Hence the improvement that we might obtain can be minimal. Nevertheless, our method works best for examples shown in Fig.~\ref{fig:filtered_mask_comparison}~(b-d). In Fig.~\ref{fig:filtered_mask_comparison}~(b-c) our approach successfully removes incorrect masks introduced by CutLER that are overlaid on better MaskCut masks. In Fig.~\ref{fig:filtered_mask_comparison}~(d), despite both MaskCut and CutLER containing noisy masks, our method effectively filters out these imperfections.
+
+As we discussed earlier in section~\ref{section:proposed_method}, some images are dropped from the training dataset for not having any selected masks. In Fig.~\ref{fig:filtered_mask_comparison}~(e), the image is dropped due to no selected masks, but CutLER prediction and mask selection are also bad. But in Fig.~\ref{fig:filtered_mask_comparison}~(f) CutLER selection is certainly better compared to predicted masks. But the image will be dropped in our method. These examples reaffirms that we compromise on quantity for quality in our approach. But nevertheless our method outperforms baseline even with lesser data.
+
+
+\subsubsection{Quantitative Results}
+
 \begin{table}[htbp]
 	\centering
 	\resizebox{1.05\textwidth}{!}{%
@@ -280,3 +303,24 @@ In the baseline paper, experiments were conducted using a batch size of 16. Howe
 Specifically, we observed that for both batch sizes of 4 and 8, the performance of our method and the baseline improved after the first round of self-training (r1) but declined in the second round (r2). This pattern diverges from the findings in the baseline paper, where using a batch size of 16 led to continued performance improvement through the second round of self-training. The observed performance drop in the second self-training round at smaller batch sizes suggests that batch size plays a crucial role in stabilizing the training process, potentially by providing more robust gradient estimates or better generalization.
 
 Furthermore, the influence of batch size on the relative gains achieved through self-training is evident in our experiments. Larger batch sizes tend to offer a more stable training environment, which may explain the continued improvement seen in the baseline paper with a batch size of 16. Conversely, the smaller batch sizes used in our experiments may introduce greater variance, leading to less consistent performance gains across self-training rounds. This highlights the importance of considering batch size as a key factor in optimizing training pipelines for tasks involving self-training and iterative refinement.
+
+\subsection{Recall}
+\label{section:persistant_recall}
+
+\begin{table}[htbp]
+	\centering
+	\resizebox{1\textwidth}{!}{%
+		\begin{tabular}{c|c|c|c|c|c|c}
+			\toprule
+			& & COCO & KITTI & VOC & Comic & Watercolor \\ \midrule
+			\multirow{2}{*}{Baseline} & bbox & \textbf{32.06} & 25.91 & \textbf{43.70} & 36.97 & 42.30 \\ 
+			& segm & 26.16 & - & - & - & - \\ \midrule
+			\multirow{2}{*}{Ours} & bbox & 31.75 & \textbf{26.41} & 43.34 & \textbf{38.24} & \textbf{43.46} \\ 
+			& segm & \textbf{26.44} & - & - & - & -
+			\\ \bottomrule
+		\end{tabular}%
+	}
+	\caption[\textbf{\(AR_{100}\) for the Best Models of Baseline and Our Method}]{\textbf{\(AR_{100}\) for the Best Models of Baseline and Our Method (Models from the First Self-Training Round)} evaluated on COCO Eval dataset for segmentation (segm) and detection (bbox) tasks.}
+
+	\label{tab:recall}
+\end{table}

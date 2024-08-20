@@ -19,7 +19,7 @@
 \newlabel{eq:precision}{{17}{33}{Average Precision}{equation.4.2.17}{}}
 \newlabel{eq:recall}{{18}{33}{Average Precision}{equation.4.2.18}{}}
 \newlabel{eq:avg_precision}{{19}{33}{Average Precision}{equation.4.2.19}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline AP50}{33}{subsubsection*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline AP50}{33}{subsubsection*.48}\protected@file@percent }
 \newlabel{eq:iou}{{20}{33}{AP50}{equation.4.2.20}{}}
 \citation{wang2023cut}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Implementation Details}{34}{section.4.3}\protected@file@percent }
@@ -32,34 +32,44 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4.4}Experiments}{35}{section.4.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Exploring the Impact of Overlapping Instances}{35}{subsection.4.4.1}\protected@file@percent }
 \newlabel{section:overlap_experiment}{{4.4.1}{35}{Exploring the Impact of Overlapping Instances}{subsection.4.4.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Dataset}{36}{subsubsection*.35}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Training Procedure}{36}{subsubsection*.37}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textbf  {Evaluation of Models Trained with and without Overlapping Instances }}}{37}{table.caption.38}\protected@file@percent }
-\newlabel{tab:overlap_analysis}{{1}{37}{\textbf {Evaluation of Models Trained with and without Overlapping Instances }}{table.caption.38}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \textbf  {Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}}}{37}{table.caption.39}\protected@file@percent }
-\newlabel{tab:combined_overlap_eval}{{2}{37}{\textbf {Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}}{table.caption.39}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Results}{37}{subsubsection*.41}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces \textbf  {Training without Overlapping Instances - Class-wise Comparison}}}{38}{figure.caption.44}\protected@file@percent }
-\newlabel{fig:overlap_classes}{{17}{38}{\textbf {Training without Overlapping Instances - Class-wise Comparison}}{figure.caption.44}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Improvement Across Classes}{38}{subsubsection*.43}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Proposed Mask Filtering Method}{39}{subsection.4.4.2}\protected@file@percent }
-\newlabel{section:mask_refinement_experiment}{{4.4.2}{39}{Proposed Mask Filtering Method}{subsection.4.4.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Dataset}{39}{subsubsection*.46}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Training Procedure}{39}{subsubsection*.48}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Results}{40}{subsubsection*.50}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \textbf  {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{40}{table.caption.51}\protected@file@percent }
-\newlabel{tab:combined_train}{{3}{40}{\textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}{table.caption.51}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces \textbf  {Qualitative Results - Baseline vs Ours}}}{41}{figure.caption.52}\protected@file@percent }
-\newlabel{fig:cuter_vs_ours}{{18}{41}{\textbf {Qualitative Results - Baseline vs Ours}}{figure.caption.52}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Qualitative Results}{42}{subsubsection*.54}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Choice of Batch Size}{42}{subsection.4.4.3}\protected@file@percent }
-\newlabel{section:choice_of_batch_size}{{4.4.3}{42}{Choice of Batch Size}{subsection.4.4.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \textbf  {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}}}{43}{table.caption.55}\protected@file@percent }
-\newlabel{tab:batch_size_table}{{4}{43}{\textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}}{table.caption.55}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Dataset}{36}{subsubsection*.50}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Training Procedure}{36}{subsubsection*.52}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textbf  {Evaluation of Models Trained with and without Overlapping Instances }}}{37}{table.caption.53}\protected@file@percent }
+\newlabel{tab:overlap_analysis}{{1}{37}{\textbf {Evaluation of Models Trained with and without Overlapping Instances }}{table.caption.53}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \textbf  {Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}}}{37}{table.caption.54}\protected@file@percent }
+\newlabel{tab:combined_overlap_eval}{{2}{37}{\textbf {Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}}{table.caption.54}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Results}{37}{subsubsection*.56}\protected@file@percent }
+\newlabel{section:overlapping-results}{{4.4.1}{37}{Results}{subsubsection*.56}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces \textbf  {Training without Overlapping Instances - Class-wise Comparison}}}{38}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:overlap_classes}{{18}{38}{\textbf {Training without Overlapping Instances - Class-wise Comparison}}{figure.caption.59}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Improvement Across Classes}{38}{subsubsection*.58}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces \textbf  {Relative Improvement against Number of Instances}}}{39}{figure.caption.60}\protected@file@percent }
+\newlabel{fig:relative_improvement}{{19}{39}{\textbf {Relative Improvement against Number of Instances}}{figure.caption.60}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Proposed Mask Filtering Method}{40}{subsection.4.4.2}\protected@file@percent }
+\newlabel{section:mask_refinement_experiment}{{4.4.2}{40}{Proposed Mask Filtering Method}{subsection.4.4.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Dataset}{40}{subsubsection*.62}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Training Procedure}{40}{subsubsection*.64}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Mask Filtration}{40}{subsubsection*.66}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces \textbf  {Mask Filtration Outputs - Baseline vs Ours}}}{41}{figure.caption.67}\protected@file@percent }
+\newlabel{fig:filtered_mask_comparison}{{20}{41}{\textbf {Mask Filtration Outputs - Baseline vs Ours}}{figure.caption.67}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Quantitative Results}{42}{subsubsection*.69}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \textbf  {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{42}{table.caption.70}\protected@file@percent }
+\newlabel{tab:combined_train}{{3}{42}{\textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}{table.caption.70}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces \textbf  {Qualitative Results - Baseline vs Ours}}}{43}{figure.caption.71}\protected@file@percent }
+\newlabel{fig:cuter_vs_ours}{{21}{43}{\textbf {Qualitative Results - Baseline vs Ours}}{figure.caption.71}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Qualitative Results}{44}{subsubsection*.73}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \textbf  {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}}}{45}{table.caption.74}\protected@file@percent }
+\newlabel{tab:batch_size_table}{{4}{45}{\textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}}{table.caption.74}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Choice of Batch Size}{45}{subsection.4.4.3}\protected@file@percent }
+\newlabel{section:choice_of_batch_size}{{4.4.3}{45}{Choice of Batch Size}{subsection.4.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Recall}{45}{subsection.4.4.4}\protected@file@percent }
+\newlabel{section:persistant_recall}{{4.4.4}{45}{Recall}{subsection.4.4.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \textbf  {\(AR_{100}\) for the Best Models of Baseline and Our Method}}}{46}{table.caption.75}\protected@file@percent }
+\newlabel{tab:recall}{{5}{46}{\textbf {\(AR_{100}\) for the Best Models of Baseline and Our Method}}{table.caption.75}{}}
 \@setckpt{chapters/5-experiments}{
-\setcounter{page}{44}
+\setcounter{page}{47}
 \setcounter{equation}{20}
-\setcounter{enumi}{2}
+\setcounter{enumi}{3}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
@@ -68,18 +78,18 @@
 \setcounter{part}{0}
 \setcounter{chapter}{4}
 \setcounter{section}{4}
-\setcounter{subsection}{3}
+\setcounter{subsection}{4}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{18}
-\setcounter{table}{4}
+\setcounter{figure}{21}
+\setcounter{table}{5}
 \setcounter{caption@flags}{0}
 \setcounter{continuedfloat}{0}
 \setcounter{subfigure}{0}
 \setcounter{subtable}{0}
 \setcounter{parentequation}{3}
-\setcounter{Item}{2}
+\setcounter{Item}{5}
 \setcounter{Hfootnote}{0}
 \setcounter{bookmark@seq@number}{0}
 \setcounter{float@type}{8}
