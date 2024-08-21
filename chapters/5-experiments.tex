@@ -60,6 +60,27 @@ AP50 is a specific case of the Average Precision metric, where the Intersection 
 
 AP50 calculates the AP but only considers a detection as a true positive if the IoU between the predicted bounding box and the ground truth is greater than or equal to 0.50. This metric is useful for understanding how well a model can detect objects with a certain level of spatial accuracy.
 
+\subsection{Average Recall}
+Average Recall (AR) is a metric that measures the recall of a model averaged over multiple IoU thresholds. It quantifies how much of ground truth labels were accurately predicted by the model. It is a valuable metric for unsupervised detection as it does not penalize the models for detecting novel objects which are unlabeled in the dataset. The formula for AR is given by Eq.~\ref{eq:avg_recall}.
+
+\begin{equation}
+	\label{eq:avg_recall}
+	AR = \frac{1}{|T|} \sum_{t \in T} R(t)
+\end{equation}
+
+
+where \( T \) is the set of IoU thresholds and \( R(t) \) is the recall (Eq.~\ref{eq:recall}) at a specific IoU threshold \( t \). In our case, AR is averaged over IoU thresholds from 0.5 to 0.95 with a step size of 0.05. 
+
+\subsubsection{AR100}
+AR100 (AR@100) is a variant of Average Recall that limits the number of detections per image to a maximum of 100. It represents the recall averaged across a range of IoU thresholds, constrained to 100 predictions per image. The formula for AR@100 is given by Eq.~\ref{eq:avg_recall_100}.
+
+\begin{equation}
+	\label{eq:avg_recall_100}
+	AR100 = \frac{1}{|T|} \sum_{t \in T} R_{100}(t)
+\end{equation}
+
+where \( R_{100}(t) \) is the recall at IoU threshold \( t \), considering up to 100 detections per image. We use AR100 metric to compare recalls of the baseline and our model in Section~\ref{section:persistant_recall}.
+
 \section{Implementation Details}
 \label{section:implementation_details}
 Our implementation largely follows the baseline approach; however, it is important to note a key difference in our setup. While in the baseline paper experiments use a batch size of 16, we utilize batch sizes of 4 and 8 due to resource constraints. To ensure a fair comparison, we also train the baseline model from scratch using these same batch sizes of 4 and 8. All our experiments follow the following setting. If there are some modifications, it would be mentioned in the respective sections.
@@ -198,8 +219,7 @@ We use the ImageNet dataset for training and evaluate on COCO, KITTI, PASCAL VOC
 \subsubsection{Training Procedure}
 The baseline follows training procedure as described in Section~\ref{section:implementation_details}. But our method comes with once extra step of refining MaskCut masks using our modified mask filtration method explained in Section~\ref{section:proposed_method} and training from scratch again. This is followed by self-training as employed in the baseline to improve the performance further. We train both models using 4 and 8 batch sizes to analyze the influence of batch size on performance of the model (Section~\ref{section:choice_of_batch_size}). 
 
-\subsubsection{Mask Filtration}
-
+\subsubsection{Mask Filtration After Initial Training}
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{Images/main/filtered_mask_comparison.png}
@@ -208,13 +228,13 @@ The baseline follows training procedure as described in Section~\ref{section:imp
 \end{figure*}
 
 
-In this section, we present a qualitative comparison of mask filtration methods, contrasting the results of the baseline approach with our proposed method.
+In this section, we provide a qualitative comparison of mask filtration methods, contrasting the baseline approach with our proposed method used for generating masks after initial training for retraining (Fig.~\ref{fig:our_mask_filtration}).
 
 Figure~\ref{fig:filtered_mask_comparison} illustrates the differences between the masks selected by our method and the baseline method across few example images. For most images with single instances with distinguishable background, there is no significant difference between masks selected by baseline and our method as given in Fig.~\ref{fig:filtered_mask_comparison}~(a). Unfortunately a huge part of ImageNet dataset contains single instance object-centric images with simple backgrounds. Hence the improvement that we might obtain can be minimal. Nevertheless, our method works best for examples shown in Fig.~\ref{fig:filtered_mask_comparison}~(b-d). In Fig.~\ref{fig:filtered_mask_comparison}~(b-c) our approach successfully removes incorrect masks introduced by CutLER that are overlaid on better MaskCut masks. In Fig.~\ref{fig:filtered_mask_comparison}~(d), despite both MaskCut and CutLER containing noisy masks, our method effectively filters out these imperfections.
 
 As we discussed earlier in Section~\ref{section:proposed_method}, some images are dropped from the training dataset for not having any selected masks. In Fig.~\ref{fig:filtered_mask_comparison}~(e), the image is dropped due to no selected masks, but CutLER prediction and mask selection are also bad. But in Fig.~\ref{fig:filtered_mask_comparison}~(f) CutLER selection is certainly better compared to predicted masks. But the image will be dropped in our method. These examples reaffirms that we compromise on quantity for quality in our approach. But nevertheless our method outperforms baseline even with lesser data.
 
-\subsubsection{Using Our Mask Filtration Strategy for Self-Training}
+\subsubsection{Self-Training Using Proposed Mask Filtration Strategy}
 
 \begin{table}[htbp]
 	\centering
@@ -237,7 +257,7 @@ All our models use proposed initial mask filtration method. However, using our m
 
 On the other hand, using masks generated using our mask filtration method for initial training and baseline mask filtration strategy for self-training yields better results than baseline. All the following experiments follow this combination of filtrations.
 
-\subsubsection{Combining Mask Filtration Strategies}
+\subsubsection{Self-Training Using Combination of Mask Filtration Strategies}
 
 In this section, we present how using masks generated using our mask filtration method for initial training and baseline mask filtration strategy for self-training outperforms the baseline. 
 
@@ -295,9 +315,9 @@ During the initial training phase, our method outperforms the baseline on the ma
 
 The evaluation on the Watercolor and Comic datasets has been somewhat inconsistent for both the baseline and our method. We hypothesize that this inconsistency arises from the stark difference between the types of images in these datasets compared to those in ImageNet. While our training predominantly involved real-life images, the Comic and Watercolor datasets consist of stylized, artistic images that pose a different challenge for the models. This disparity in image types likely contributes to the observed inconsistencies in performance.
 
-\subsubsection{Qualitative Results}
+\paragraph{Qualitative Results}
 
-Figure~\ref{fig:cuter_vs_ours} presents a qualitative comparison between our method and the baseline. The predictions shown are generated using the most optimized models from both approaches, specifically after the first round of self-training.
+Figure~\ref{fig:cuter_vs_ours} presents a qualitative comparison between our method (with combination of mask filtration strategies for self-training) and the baseline. The predictions shown are generated using the most optimized models from both approaches, specifically after the first round of self-training.
 
 Similar to the mask filtration method, for most images with single instances and distinguishable background, there is no significant difference between predicted masks by the baseline and our method as given in Fig.~\ref{fig:cuter_vs_ours}~(a). As our method is trained with small number of filtered masks, our predictions mostly have lesser number of relatively better quality masks (Fig.~\ref{fig:cuter_vs_ours}~(b-c)). 
 
