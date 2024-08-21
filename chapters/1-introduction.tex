@@ -27,9 +27,11 @@ This study focuses on the shortcomings of CutLER and the methods to minimize the
 \begin{enumerate}
 %    \item \textbf{Analysis on the performance of different metrics for discriminating instances}: We compare the effectiveness of distance and similarity measures on discriminating instances of same and different classes.
     
-    \item \textbf{Analysis on the influence of overlapping instances}: We compare the performance of the model when trained with and without overlapping instances and conclude that training without overlapping instances results in better instance discrimination.
+    \item \textbf{Analysis on the Influence of Overlapping Instances}: We compare the performance of the model when trained with and without overlapping instances and conclude that training without overlapping instances results in better instance discrimination.
+    
+    \item \textbf{Exploring the Strength of Object-Centric Prior}: We compare the performance of the model when trained only with object-centric images against the baseline trained with all images.
 
-    \item \textbf{Refining maskcut masks}: On top of self training, we refine mask-cut masks using CutLER predictions to remove noisy masks and retraining to yield better performance.
+    \item \textbf{Proposing New Mask Filtration Method}: On top of self-training, we refine MaskCut masks using our modified mask filtration method to remove inaccurate masks and retraining to yield better performance.
 \end{enumerate}
 
 % Wite about the improvement
@@ -37,11 +39,9 @@ This study focuses on the shortcomings of CutLER and the methods to minimize the
 
 \section{Outline}
 \begin{itemize}
-	 \item \textbf{Chapter \ref{chap:background}:}Explores the foundational concepts of Vision Transformers and attention mechanisms, with a detailed introduction to DINO features. Also covers the CutLER training pipeline and methods for mask refinement.
+	 \item \textbf{Chapter \ref{chap:background}:} Explores recent advances in self-supervised feature learning and developments in unsupervised object detection and semantic segmentation along with the foundational concepts of Vision Transformers and attention mechanisms, with a detailed introduction to DINO features. Also covers the CutLER training pipeline and methods for mask refinement. 
 	 
-    \item \textbf{Chapter \ref{chap:relatedwork}:} Explores recent advances in self-supervised feature learning and developments in unsupervised object detection and semantic segmentation.
-    
-    \item \textbf{Chapter \ref{chap:approach}:} Provides a detailed explanation of the limitations of CutLER, with descriptive examples of the proposed mask filtration method and the baseline approach. Also includes comprehensive background information for experimenting with the impact of overlapping instances.
+    \item \textbf{Chapter \ref{chap:approach}:} Provides a detailed explanation of the limitations of CutLER, with descriptive examples of the proposed mask filtration method and the baseline approach. Also includes comprehensive background information for experimenting with the impact of overlapping instances and object-centric priors.
     
     \item \textbf{Chapter \ref{chap:experiments}:} Details evaluation of the baseline and proposed methods across various datasets, focusing on instance detection and segmentation tasks. It includes a comparison of performance metrics, such as AP and AP50, highlighting improvements and differences between the methods. Additionally, it examines the impact of overlapping instances and discusses the effectiveness of the proposed mask refinement approach.
 \end{itemize}

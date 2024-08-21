@@ -25,11 +25,11 @@
 \contentsline {subsection}{\numberline {2.5.3}MaskCut}{14}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.5.4}DropLoss}{16}{subsection.2.5.4}%
 \contentsline {subsection}{\numberline {2.5.5}Copy-Paste Augmentation}{16}{subsection.2.5.5}%
-\contentsline {subsection}{\numberline {2.5.6}Training}{17}{subsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.5.6}Training}{16}{subsection.2.5.6}%
 \contentsline {subsubsection}{\nonumberline Self-Training}{17}{subsubsection*.22}%
 \contentsline {subsection}{\numberline {2.5.7}Mask Refinement in CutLER}{17}{subsection.2.5.7}%
 \contentsline {chapter}{\numberline {3}Approach}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Accessing the limitations of CutLER}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Assessing the Limitations of CutLER}{19}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Dependence on Initial Masks}{19}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Overlapping Instances}{20}{subsection.3.1.2}%
 \contentsline {subsubsection}{\nonumberline Approach to Estimate the Impact of Overlapping Instances}{22}{subsubsection*.27}%
@@ -38,10 +38,10 @@
 \contentsline {section}{\numberline {3.2}Mask Filtration}{24}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Baseline Mask Filtration Method}{25}{subsection.3.2.1}%
 \contentsline {subsubsection}{\nonumberline Initial Training}{25}{subsubsection*.33}%
-\contentsline {subsubsection}{\nonumberline Mask Filtration and Self-Training}{28}{subsubsection*.37}%
+\contentsline {subsubsection}{\nonumberline Mask Filtration and Self-Training}{25}{subsubsection*.37}%
 \contentsline {subsubsection}{\nonumberline Qualitative Examples}{28}{subsubsection*.39}%
 \contentsline {subsection}{\numberline {3.2.2}Proposed Mask Filtering Method}{28}{subsection.3.2.2}%
-\contentsline {subsubsection}{\nonumberline Initial Training}{30}{subsubsection*.42}%
+\contentsline {subsubsection}{\nonumberline Initial Training}{28}{subsubsection*.42}%
 \contentsline {subsubsection}{\nonumberline Proposed Mask Filtration and Retraining}{30}{subsubsection*.45}%
 \contentsline {subsubsection}{\nonumberline Further Mask Filtration and Self-Training}{30}{subsubsection*.47}%
 \contentsline {chapter}{\numberline {4}Experiments and Results}{33}{chapter.4}%
@@ -60,11 +60,11 @@
 \contentsline {subsection}{\numberline {4.3.3}Detector}{36}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Self Training}{37}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Resources}{37}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}Experiments}{37}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Exploring the Impact of Overlapping Instances}{37}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.4}Experiments}{38}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Exploring the Impact of Overlapping Instances}{38}{subsection.4.4.1}%
 \contentsline {subsubsection}{\nonumberline Dataset}{38}{subsubsection*.52}%
-\contentsline {subsubsection}{\nonumberline Training Procedure}{38}{subsubsection*.54}%
-\contentsline {subsubsection}{\nonumberline Results}{39}{subsubsection*.58}%
+\contentsline {subsubsection}{\nonumberline Training Procedure}{39}{subsubsection*.54}%
+\contentsline {subsubsection}{\nonumberline Results}{40}{subsubsection*.58}%
 \contentsline {subsubsection}{\nonumberline Improvement Across Classes}{40}{subsubsection*.60}%
 \contentsline {subsection}{\numberline {4.4.2}Exploring the Impact of Object-Centric Prior}{42}{subsection.4.4.2}%
 \contentsline {subsubsection}{\nonumberline Dataset}{42}{subsubsection*.64}%
@@ -72,12 +72,12 @@
 \contentsline {subsection}{\numberline {4.4.3}Proposed Mask Filtering Method}{43}{subsection.4.4.3}%
 \contentsline {subsubsection}{\nonumberline Dataset}{43}{subsubsection*.69}%
 \contentsline {subsubsection}{\nonumberline Training Procedure}{43}{subsubsection*.71}%
-\contentsline {subsubsection}{\nonumberline Mask Filtration}{43}{subsubsection*.73}%
-\contentsline {subsubsection}{\nonumberline Using Our Mask Filtration Strategy for Self-Training}{45}{subsubsection*.76}%
-\contentsline {subsubsection}{\nonumberline Combining Mask Filtration Strategies}{45}{subsubsection*.79}%
+\contentsline {subsubsection}{\nonumberline Mask Filtration}{44}{subsubsection*.73}%
+\contentsline {subsubsection}{\nonumberline Using Our Mask Filtration Strategy for Self-Training}{44}{subsubsection*.76}%
+\contentsline {subsubsection}{\nonumberline Combining Mask Filtration Strategies}{46}{subsubsection*.79}%
 \contentsline {subsubsection}{\nonumberline Qualitative Results}{48}{subsubsection*.83}%
-\contentsline {subsection}{\numberline {4.4.4}Choice of Batch Size}{48}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Recall}{49}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.4}Choice of Batch Size}{49}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Impact on Recall}{50}{subsection.4.4.5}%
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{51}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Future Work}{52}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Keypoint Correspondences}{52}{subsection.5.1.1}%
