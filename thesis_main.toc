@@ -47,7 +47,7 @@
 \contentsline {paragraph}{\nonumberline Proposed Mask Filtration and Retraining}{30}{paragraph*.45}%
 \contentsline {paragraph}{\nonumberline Further Mask Filtration and Self-Training}{30}{figure.caption.48}%
 \contentsline {paragraph}{\nonumberline Using Our Mask Filtration Strategy for Self-Training}{31}{paragraph*.50}%
-\contentsline {paragraph}{\nonumberline Combination of Mask Filtration Strategies}{31}{figure.caption.53}%
+\contentsline {paragraph}{\nonumberline Using CutLER Mask Filtration Strategy for Self-Training}{31}{figure.caption.53}%
 \contentsline {paragraph}{\nonumberline Recall Reduction Concerns}{32}{paragraph*.55}%
 \contentsline {chapter}{\numberline {4}Experiments and Results}{33}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Datasets}{33}{section.4.1}%
@@ -79,17 +79,17 @@
 \contentsline {subsection}{\numberline {4.4.3}Proposed Mask Filtering Method}{44}{subsection.4.4.3}%
 \contentsline {subsubsection}{\nonumberline Dataset}{44}{subsubsection*.78}%
 \contentsline {subsubsection}{\nonumberline Training Procedure}{44}{subsubsection*.80}%
-\contentsline {subsubsection}{\nonumberline Mask Filtration After Initial Training}{45}{subsubsection*.82}%
-\contentsline {subsubsection}{\nonumberline Self-Training Using Proposed Mask Filtration Strategy}{45}{subsubsection*.85}%
-\contentsline {subsubsection}{\nonumberline Self-Training Using Combination of Mask Filtration Strategies}{47}{subsubsection*.88}%
-\contentsline {paragraph}{\nonumberline Qualitative Results}{49}{paragraph*.92}%
+\contentsline {subsubsection}{\nonumberline Initial Training Phase: Mask Filtration}{45}{subsubsection*.82}%
+\contentsline {paragraph}{\nonumberline Qualitative Examples}{45}{paragraph*.86}%
+\contentsline {subsubsection}{\nonumberline Self-Training Using Proposed Mask Filtration Strategy}{47}{subsubsection*.88}%
+\contentsline {subsubsection}{\nonumberline Self-Training Using CutLER Mask Filtration Strategy}{48}{subsubsection*.91}%
+\contentsline {paragraph}{\nonumberline Qualitative Results}{50}{paragraph*.95}%
 \contentsline {subsection}{\numberline {4.4.4}Choice of Batch Size}{50}{subsection.4.4.4}%
 \contentsline {subsection}{\numberline {4.4.5}Impact on Recall}{51}{subsection.4.4.5}%
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{53}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Future Work}{54}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Keypoint Correspondences}{54}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Sensitivity to Hyperparameters}{55}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Unsupervised Detection of Overlapping Instances}{55}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.2}Unsupervised Detection of Overlapping Instances}{55}{subsection.5.1.2}%
 \contentsline {chapter}{\numberline {6}Acknowledgments}{57}{chapter.6}%
 \contentsline {chapter}{Bibliography}{58}{chapter.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

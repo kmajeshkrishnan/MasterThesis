@@ -205,15 +205,17 @@ It’s important to note that if no masks are selected for an image, that image 
 \end{figure*}
 
 
- For self-training, we follow training pipeline of the baseline, training for 80K iterations are without using DropLoss. We use our mask filtration method illustrated in Fig~\ref{fig:our_mask_filtration_self_training} to filter masks between self-training rounds. 
+For self-training, we follow training pipeline of the baseline, training for 80K iterations are without using DropLoss. We use our mask filtration method illustrated in Fig~\ref{fig:our_mask_filtration_self_training} to filter masks between self-training rounds. 
+ 
+We evaluate our approach in two scenarios: applying our mask filtration method versus the baseline mask filtration method during the self-training round. It is because the baseline method may offer greater potential for further improvement across self-training loops, as it retains less overlapping masks, encouraging broader exploration.
  
 \paragraph{Using Our Mask Filtration Strategy for Self-Training}
 \label{para:our_mask_filtration}
 The only modification to the baseline approach in self-training loop is selecting pseudo-ground truth masks with IoU > 0.5 with predicted masks, rather than those with IoU < 0.5. This way, we always retain masks with high certainty. 
 
-But this also restricts the exploration. Limiting pseudo-ground truth labels to only high-confidence masks could constrain improvements in the self-training round. The experiments carries out using our mask filtration method in self-training can be accessed in Section~\ref{section:mask_refinement_experiment}.
+But limiting pseudo-ground truth labels to only high-certainty masks could constrain improvements in the self-training round. This hypothesis is verified by the experiments carries out using our mask filtration method in self-training can be accessed in Section~\ref{section:mask_refinement_experiment}.
  
-\paragraph{Combination of Mask Filtration Strategies}
+\paragraph{Using CutLER Mask Filtration Strategy for Self-Training}
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{Images/main/our_approach.pdf}

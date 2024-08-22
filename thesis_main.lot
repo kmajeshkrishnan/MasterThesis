@@ -5,10 +5,11 @@
 \contentsline {table}{\numberline {1}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances }}}{40}{table.caption.64}%
 \contentsline {table}{\numberline {2}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}}}{40}{table.caption.65}%
 \contentsline {table}{\numberline {3}{\ignorespaces \textbf {Evaluation of baseline vs Model Trained with Only Object-Centric Images}}}{44}{table.caption.76}%
-\contentsline {table}{\numberline {4}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and First Self-Training Round}}}{47}{table.caption.86}%
-\contentsline {table}{\numberline {5}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{49}{table.caption.89}%
-\contentsline {table}{\numberline {6}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}}}{50}{table.caption.93}%
-\contentsline {table}{\numberline {7}{\ignorespaces \textbf {\(AR_{100}\) for the Best Models of Baseline and Our Method}}}{51}{table.caption.94}%
+\contentsline {table}{\numberline {4}{\ignorespaces \textbf {Quantitative Comparison of CutLER vs Proposed Mask Filtration Methods}}}{45}{table.caption.84}%
+\contentsline {table}{\numberline {5}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and First Self-Training Round}}}{47}{table.caption.89}%
+\contentsline {table}{\numberline {6}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{48}{table.caption.92}%
+\contentsline {table}{\numberline {7}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training for Different Batch Sizes}}}{51}{table.caption.96}%
+\contentsline {table}{\numberline {8}{\ignorespaces \textbf {\(AR_{100}\) for the Best Models of Baseline and Our Method}}}{52}{table.caption.97}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
