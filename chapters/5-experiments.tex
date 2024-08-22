@@ -90,7 +90,7 @@ Only the images from ImageNet dataset (1.3 Million images) are used for the init
 
 \subsection{MaskCut}
 
-We apply MaskCut with N=3, generating upto three masks per image through repeated N-Cut operations, on images resized to 480×480 pixels to create pseudo-ground truths. The value of N is optimal at 3 for generating best quality masks for ImageNet dataset~\cite{wang2023cut}. The patch-wise affinity matrix generated from the key descriptors of the ViT-B/8 DINO model is used to perform the N-Cut operation. Additionally, we employ Conditional Random Fields (CRF) to refine the masks and extract their bounding boxes.
+We apply MaskCut with N=3, generating upto three masks per image through repeated N-Cut operations, on images resized to 480×480 pixels to create pseudo-ground truths. The value of N is optimal at 3 for generating best quality masks for ImageNet dataset~\cite{wang2023cut}. The patch-wise affinity matrix generated from the key descriptors of the ViT-B/8 DINO model is used to perform the N-Cut operation. Additionally, we employ Conditional Random Fields (CRF)~\cite{sutton2010introductionconditionalrandomfields} to refine the masks and extract their bounding boxes.
 
 \subsection{Detector}
 Although CutLER is designed to be agnostic to the choice of object detector, we chose to use Cascade Mask R-CNN for all our experiments. This decision is based on the baseline paper's findings, which demonstrated that Cascade Mask R-CNN outperforms Mask R-CNN. We train the detector on ImageNet with MaskCut pseudo masks and bounding boxes for 160K iterations with a batch size of 4 or 8. 
@@ -180,7 +180,7 @@ To gain deeper insights, we further split the evaluation dataset into two subset
 
 To ensure that the observed improvements in performance were not simply due to the loss of accuracy in one class being offset by gains in another, class-wise improvements are calculated on the COCO validation set. This analysis allows for a more granular understanding of the model’s performance across different classes. By evaluating each class individually, we can verify that the enhancements in instance detection and segmentation are consistent and not merely the result of compensatory effects between classes. This class-wise assessment provides a clearer picture of the model's true capabilities, ensuring that the overall performance gains are robust and evenly distributed across the dataset.
 
-The test results are illustrated in Fig.~\ref{fig:overlap_classes}, which highlights the 10 classes with the most significant improvements and the 10 classes with the least improvements evaluated on COCO validation set, based on the Average Precision for instance segmentation. Notably, our approach outperforms the baseline across the majority of classes. Specifically, it performs better in 68 out of the 80 classes assessed. In contrast, for the remaining 12 classes, our method shows reduced performance relative to the baseline.´
+The test results are illustrated in Fig.~\ref{fig:overlap_classes}, which highlights the 10 classes with the most significant improvements and the 10 classes with the least improvements evaluated on COCO validation set, based on the Average Precision for instance segmentation. Notably, our approach outperforms the baseline across the majority of classes. Specifically, it performs better in 68 out of the 80 classes assessed. In contrast, for the remaining 12 classes, our method shows reduced performance relative to the baseline.
 
 To provide more clarity, we plot the relative improvement of our model over the baseline against the number of instances per class (Fig.~\ref{fig:relative_improvement}). This allows us to explore any potential correlation between the number of instances and the observed relative improvement. It can be observed that for most classes with higher number of instances provide consistent improvement whereas classes with few instances are rather unpredictable. It underscores the effectiveness of our approach in enhancing instance segmentation performance across a broad range of classes, with only a few exceptions where it falls short.
 
@@ -204,7 +204,7 @@ As it can be observed from Table~\ref{tab:object-centric-analysis}, our method i
 		segm & 8.2 & 16.62 & \textbf{8.62} & \textbf{17.43} \\
 		\bottomrule
 	\end{tabular}
-	\caption[\textbf{Evaluation of baseline vs Model Trained with Only Object-Centric Images}]{\textbf{AP and AP50 bounding box and segmentation evaluation} on COCO validation set with baseline and model trained using only object-centric images}
+	\caption[\textbf{Evaluation of Baseline vs Model Trained with Only Object-Centric Images}]{\textbf{AP and AP50 Bounding Box and Segmentation Evaluation} on COCO validation set with baseline and model trained using only object-centric images}
 	\label{tab:object-centric-analysis}
 \end{table}
 Even by using just only 30\% of the training data, we could obtain comparable results with the baseline. However, the model trained without overlapping instances (Experiment~\ref{section:overlap_experiment}) outperforms this method by a small margin.
@@ -223,7 +223,7 @@ The baseline follows training procedure as described in Section~\ref{section:imp
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{Images/main/filtered_mask_comparison.png}
-	\caption[\textbf{Mask Filtration Outputs - Baseline vs Ours}]{\textbf{Comparison of filtered masks} produced by the baseline and our method. Examples illustrates Cutler prediction masks, MaskCut masks, masks selected by CutLER and masks selected by our method re´spectively (left to right)}
+	\caption[\textbf{Mask Filtration Outputs - Baseline vs Ours}]{\textbf{Comparison of filtered masks} produced by the baseline and our method. Examples illustrates Cutler prediction masks, MaskCut masks, masks selected by CutLER and masks selected by our method respectively (left to right)}
 	\label{fig:filtered_mask_comparison}
 \end{figure*}
 \begin{table}[htbp]

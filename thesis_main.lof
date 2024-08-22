@@ -25,6 +25,7 @@
 \contentsline {figure}{\numberline {21}{\ignorespaces \textbf {Mask Filtration Outputs - Baseline vs Ours}}}{46}{figure.caption.83}%
 \contentsline {figure}{\numberline {22}{\ignorespaces \textbf {Qualitative Results - Baseline vs Ours}}}{49}{figure.caption.93}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {Keypoint Correspondences Using Relaxed Best Buddies}}}{54}{figure.caption.98}%
+\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {Keypoint Correspondences Using DINO Features}}}{54}{figure.caption.98}%
+\contentsline {figure}{\numberline {24}{\ignorespaces \textbf {Keypoint Correspondences Using Relaxed Best Buddies}}}{55}{figure.caption.99}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

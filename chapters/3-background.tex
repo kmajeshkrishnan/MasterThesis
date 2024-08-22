@@ -30,7 +30,7 @@ For each token, instead of using sinusoidal position encodings~\cite{vaswani2023
 \end{equation}
 
 Apart from \cite{vaswani2023attentionneed}, ViT~\cite{dosovitskiy2020image} introduces a special classification token \(z_{class}\) which is prepended to the sequence of patch embeddings. This token aggregates information from all patches and is used for the final classification task. The final encoding look like Eq.~\ref{eq:full_pos_encoding}.
-´
+
 \subsection{Transformer Encoder}
 The sequence of patch embeddings, augmented with positional information, is processed by the Transformer encoder. The encoder consists of multiple layers, each comprising Multi-Head Self-Attention (MSA) and Multi-Layer Perceptrons (MLPs), with Layer Normalization (LN) and residual connections. A weighted average~\cite{weng2020transformer} of individual attention outputs constitute the final output. Figure~\ref{fig:transformer_encoder} illustrates the architecture of the transformer encoder. We briefly look into each part.
 

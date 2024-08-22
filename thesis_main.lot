@@ -4,7 +4,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances }}}{40}{table.caption.64}%
 \contentsline {table}{\numberline {2}{\ignorespaces \textbf {Evaluation of Models Trained with and without Overlapping Instances with Evaluation Dataset Split}}}{40}{table.caption.65}%
-\contentsline {table}{\numberline {3}{\ignorespaces \textbf {Evaluation of baseline vs Model Trained with Only Object-Centric Images}}}{44}{table.caption.76}%
+\contentsline {table}{\numberline {3}{\ignorespaces \textbf {Evaluation of Baseline vs Model Trained with Only Object-Centric Images}}}{44}{table.caption.76}%
 \contentsline {table}{\numberline {4}{\ignorespaces \textbf {Quantitative Comparison of CutLER vs Proposed Mask Filtration Methods}}}{45}{table.caption.84}%
 \contentsline {table}{\numberline {5}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and First Self-Training Round}}}{47}{table.caption.89}%
 \contentsline {table}{\numberline {6}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Training and Self-Training}}}{48}{table.caption.92}%

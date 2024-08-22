@@ -10,20 +10,37 @@ Through comprehensive experiments across multiple datasets, including COCO, PASC
 In conclusion, this thesis contributes to the ongoing development of unsupervised learning methods by addressing critical limitations within the CutLER framework. While the improvements made in this work represent a significant step forward, they also highlight the need for continued research into more robust techniques for handling complex visual environments.
 
 \section{Future Work}
-\subsection{Keypoint Correspondences}
+\subsection{Potential of Keypoint Correspondences}
 \label{section:keypoint-correspondences}
 \begin{figure*}
 	\centering
+	\includegraphics[width=0.95\textwidth]{Images/main/keypoint-comparison.png}
+	\caption[\textbf{Keypoint Correspondences Using DINO Features}]{\textbf{Keypoint Correspondences Using DINO Features}. Keypoints are mapped from the left image to the right. Same colored points represent similar features.}
+	\label{fig:correspondecences-vanila}
+\end{figure*}
+
+\begin{figure*}
+	\centering
 	\includegraphics[width=0.95\textwidth]{Images/main/correspondences.png}
-	\caption[\textbf{Keypoint Correspondences Using Relaxed Best Buddies}]{\textbf{Keypoint Correspondences Using Relaxed Best Buddies}. Prototype images at the top and query images at the bottom. Same colored points represent similar features }
+	\caption[\textbf{Keypoint Correspondences Using Relaxed Best Buddies}]{\textbf{Keypoint Correspondences Using Relaxed Best Buddies}. Prototype images at the top and query images at the bottom. Same colored points represent similar features.}
 	\label{fig:correspondecences}
 \end{figure*}
 
-For a good part of the thesis work, we worked with keypoint correspondences extracted from similarity matrix of key descriptors of two images to extract semantically similar parts in the image and use this information to separate the instances. We extracted the instances using keypoint correspondences taking inspiration from the Superglue~\cite{sarlin2020supergluelearningfeaturematching} paper. But the main challenge was instead of working with images taken two different perspectives, we are dealing with entirely different pair of images with similar instances.
+For a good part of the thesis work, we worked with keypoint correspondences extracted from ViT-DINO model to extract semantically similar parts in the image and use this information to separate the instances. The motivation was to implement a method for distinguishing overlapping instances in an image and potentially devise a semi-supervised method (Using few prototypes for each class) to train an object detection model. We briefly describe our attempted approach in this section without going into too much detail.
+%We extracted the instances using keypoint correspondences taking inspiration from the Superglue~\cite{sarlin2020supergluelearningfeaturematching} paper. But one main challenge was instead of working with images taken two different perspectives, we are dealing with entirely different pair of images with similar instances.
 
-Figure~\ref{fig:correspondecences} shows the keypoint correspondences between the prototype and query images. The correspondence is calculated by applying the relaxed best buddy algorithm on the descriptors corresponding to the foreground part of the prototype and query images, which is selected by applying a threshold on the saliency map. We relaxed the original best buddy algorithm~\cite{Aberman_2018} to extract more correspondence points enough to form a graph to perform graph-cut similar to~\cite{wang2022tokencut, sarlin2020supergluelearningfeaturematching}. We explored our options to geometrically separate the instances using the semantic information in the correspondences. But as we were unable to find a promising approach or inspiration from our research. For instance, Integer programming for multidimensional assignment problem~\cite{WALTEROS2014553} has a strict initial graph specification which restrict us to adapt it to our problem.
+\subsubsection{Best Buddies}
+The correspondences are calculated using Best Buddy algorithm~\cite{Aberman_2018}. A pair of patches is considered a "Best Buddy" if the patch in the first image chooses a patch in the second image as its best match, and that same patch in the second image also chooses the original patch in the first image as its best match. We apply the Best Buddies algorithm to the similarity matrix derived from the key descriptors retrieved from the final layer of the DINO-ViT model for both images, generating the correspondences.
 
-By considering the limitations of implementing a semi-supervised method using keypoint correspondences, we focused mostly on improving the unsupervised instance detection and segmentation by diving into the current state-of-the-art method CutLER~\cite{wang2023cut}; exploring it's limitations and ways to improve them. Nevertheless we recognize the potential of leveraging keypoint correspondences for instance detection and believe this approach warrants further exploration in future research.
+The fundamental problem of point correspondences involving multiple instances is illustrated in Fig.~\ref{fig:correspondecences-vanila}. 
+In the first image pair, while the correspondences are accurate, they fail to cover a significant portion of the instances. In the second pair, the correspondences are scattered between two instances. This indicates either an insufficient number of correspondences or that the correspondences are unevenly divided between the instances, preventing clear distinction.
+
+\subsubsection{Relaxed Best Buddies}
+To generate sufficient number of correspondences for each instances in a multi-instance image, we "relax" the Best Buddy algorithm by allowing top N best matches for each patch instead of choosing just one. In doing so, we increase the number of correspondences, but slightly compromise the quality of those correspondences.
+
+Figure~\ref{fig:correspondecences} shows the keypoint correspondences between the prototype and query images generated using our relaxed algorithm. We can see small clusters of points representing similar features in both instances. We explored our options to geometrically separate the instances using the semantic information in the correspondences using graph-cut approaches similar to~\cite{wang2022tokencut, sarlin2020supergluelearningfeaturematching}. But we were unable to find a promising approach or inspiration suited for the problem from our research. For instance, Integer programming for multidimensional assignment problem~\cite{WALTEROS2014553} has a strict initial graph specification which restrict us to adapt it to our problem.
+
+By considering the limitations of implementing a semi-supervised method using keypoint correspondences, we focused mostly on improving the unsupervised instance detection and segmentation by diving into the current state-of-the-art method CutLER. Nevertheless, we acknowledge the potential of utilizing keypoint correspondences for instance detection and believe this approach warrants further exploration. It could also potentially lead to a more effective method for separating overlapping instances in future research.
 
 %\subsection{Sensitivity to Hyperparameters}
 %The MaskCut and mask filtration processes within the CutLER framework are highly dependent on various hyperparameters, such as the theshold for maximum number of masks generated in MaskCut, IoU threshold for mask selection and the confidence score used to filter pseudo-ground truths. These hyperparameters play a crucial role in determining the quality of the masks and, consequently, the overall performance of the model in unsupervised instance detection and segmentation tasks.
@@ -31,7 +48,7 @@ By considering the limitations of implementing a semi-supervised method using ke
 %Investigating the potential of adaptive or dynamic hyperparameter tuning, where the model adjusts these values during training based on performance metrics, could lead to more robust and generalized mask generation. Such future work would help in further refining the CutLER framework and potentially extend its applicability across a broader range of datasets and tasks.
 
 \subsection{Unsupervised Detection of Overlapping Instances}
-Based on our findings, a key area for future research will be the development of unsupervised methods designed to better detect both individual and overlapping instances within images. It would be beneficial to extend our approach beyond merely filtering out images with overlapping instances. Developing techniques to further separate and identify individual instances within these overlapping regions could address a significant challenge in unsupervised learning. Given that many unsupervised methods currently struggle with distinguishing overlapping instances, this direction holds promise for enhancing the accuracy and robustness of instance detection and segmentation in complex scenarios.
+Based on our findings, a key area for future research could be the development of unsupervised methods designed to better detect both individual and overlapping instances within images. It would be beneficial to extend our approach beyond merely filtering out images with overlapping instances. Developing techniques to further separate and identify individual instances within these overlapping regions could address a significant challenge in unsupervised learning. Given that many unsupervised methods currently struggle with distinguishing overlapping instances, this direction holds promise for enhancing the accuracy and robustness of instance detection and segmentation in complex scenarios.
 
 
 %GroupViT introduced a fresh perspective to semantic segmentation through a bottom-up approach. We closely examined GroupViT to grasp its two fundamental ideas: Grouping and Recognition. We then assessed each of these concepts individually to identify opportunities for improvement. We systematically pursued these enhancements to develop an efficient fine-tuning strategy.
