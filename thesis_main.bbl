@@ -27,12 +27,23 @@ Y.~Wang, X.~Shen, Y.~Yuan, Y.~Du, M.~Li, S.~X. Hu, J.~L. Crowley, and
   self-supervised transformer and normalized cut,'' {\em arXiv preprint
   arXiv:2209.00383}, 2022.
 
+\bibitem{he2015deepresiduallearningimage}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
+  recognition,'' 2015.
+
+\bibitem{wang2022freesolo}
+X.~Wang, Z.~Yu, S.~D. Mello, J.~Kautz, A.~Anandkumar, C.~Shen, and J.~M.
+  Alvarez, ``Freesolo: Learning to segment objects without annotations,'' 2022.
+
 \bibitem{vaswani2023attentionneed}
 A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
   L.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' 2023.
 
 \bibitem{weng2020transformer}
 L.~Weng, ``The transformer family,'' {\em lilianweng.github.io}, Apr 2020.
+
+\bibitem{hendrycks2023gaussianerrorlinearunits}
+D.~Hendrycks and K.~Gimpel, ``Gaussian error linear units (gelus),'' 2023.
 
 \bibitem{chen2020simple}
 T.~Chen, S.~Kornblith, M.~Norouzi, and G.~Hinton, ``A simple framework for
@@ -70,10 +81,6 @@ O.~Siméoni, G.~Puy, H.~V. Vo, S.~Roburin, S.~Gidaris, A.~Bursuc, P.~Pérez,
 \bibitem{vangansbeke2022discovering}
 W.~V. Gansbeke, S.~Vandenhende, and L.~V. Gool, ``Discovering object masks with
   transformers for unsupervised semantic segmentation,'' 2022.
-
-\bibitem{wang2022freesolo}
-X.~Wang, Z.~Yu, S.~D. Mello, J.~Kautz, A.~Anandkumar, C.~Shen, and J.~M.
-  Alvarez, ``Freesolo: Learning to segment objects without annotations,'' 2022.
 
 \bibitem{Ishtiak_2023_CVPR}
 T.~Ishtiak, Q.~En, and Y.~Guo, ``Exemplar-freesolo: Enhancing unsupervised
@@ -132,10 +139,6 @@ J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei, ``Imagenet: A
   large-scale hierarchical image database,'' in {\em 2009 IEEE conference on
   computer vision and pattern recognition}, pp.~248--255, Ieee, 2009.
 
-\bibitem{he2015deepresiduallearningimage}
-K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
-  recognition,'' 2015.
-
 \bibitem{Tang_2018_CVPR}
 M.~Tang, A.~Djelouah, F.~Perazzi, Y.~Boykov, and C.~Schroers, ``Normalized cut
   loss for weakly-supervised cnn segmentation,'' in {\em Proceedings of the
@@ -187,14 +190,14 @@ N.~Inoue, R.~Furuta, T.~Yamasaki, and K.~Aizawa, ``Cross-domain
 C.~Sutton and A.~McCallum, ``An introduction to conditional random fields,''
   2010.
 
-\bibitem{sarlin2020supergluelearningfeaturematching}
-P.-E. Sarlin, D.~DeTone, T.~Malisiewicz, and A.~Rabinovich, ``Superglue:
-  Learning feature matching with graph neural networks,'' 2020.
-
 \bibitem{Aberman_2018}
 K.~Aberman, J.~Liao, M.~Shi, D.~Lischinski, B.~Chen, and D.~Cohen-Or, ``Neural
   best-buddies: sparse cross-domain correspondence,'' {\em ACM Transactions on
   Graphics}, vol.~37, p.~1–14, July 2018.
+
+\bibitem{sarlin2020supergluelearningfeaturematching}
+P.-E. Sarlin, D.~DeTone, T.~Malisiewicz, and A.~Rabinovich, ``Superglue:
+  Learning feature matching with graph neural networks,'' 2020.
 
 \bibitem{WALTEROS2014553}
 J.~L. Walteros, C.~Vogiatzis, E.~L. Pasiliao, and P.~M. Pardalos, ``Integer

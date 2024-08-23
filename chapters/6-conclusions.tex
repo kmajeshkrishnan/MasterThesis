@@ -1,13 +1,13 @@
 \chapter{Conclusion and Future Work}\label{chap:conclusion}
 In this thesis, we explored and enhanced the CutLER framework for unsupervised object detection and segmentation, focusing on the challenges posed by overlapping instances and the quality of mask annotations. Our investigation began with a detailed analysis of the impact of overlapping instances on model performance. We observed that the presence of overlapping objects in training images often led to confusion in instance differentiation, adversely affecting the model's ability to accurately detect and segment individual objects.
 
-Secondly, By proposing the filtering of non-object-centric images from the training dataset, we aim to support our hypothesis that an object-centric prior is a key contributor to CutLER's state-of-the-art performance. Following the proposed method, we have demonstrated an enhancement in the model's performance.
+Secondly, by proposing the filtering of non-object-centric images from the training dataset, we aim to support our hypothesis that an object-centric prior is a key contributor to CutLER's state-of-the-art performance. Following the proposed method, we have demonstrated an enhancement in the model's performance.
 
 Building on these findings, we proposed a refined approach to mask filtration aimed at improving the quality of pseudo-ground truth annotations. By selectively filtering out ambiguous and low-certainty masks, we were able to enhance the reliability of the training data, thereby improving the overall performance of the model. This adjustment proved to be particularly beneficial in reducing the inclusion of unwanted background regions.
 
 Through comprehensive experiments across multiple datasets, including COCO, PASCAL VOC, KITTI and others, we demonstrated the effectiveness of our proposed improvements. The results consistently showed that our method outperformed the baseline, particularly in scenarios involving complex and overlapping instances.
 
-In conclusion, this thesis contributes to the ongoing development of unsupervised learning methods by addressing critical limitations within the CutLER framework. While the improvements made in this work represent a significant step forward, they also highlight the need for continued research into more robust techniques for handling complex visual environments.
+In conclusion, this thesis advances the development of unsupervised learning methods by addressing key limitations in the CutLER framework. While the improvements made are notable, they also emphasize the need for further research into more effective techniques for handling complex visual environments.
 
 \section{Future Work}
 \subsection{Potential of Keypoint Correspondences}
@@ -26,7 +26,7 @@ In conclusion, this thesis contributes to the ongoing development of unsupervise
 	\label{fig:correspondecences}
 \end{figure*}
 
-For a good part of the thesis work, we worked with keypoint correspondences extracted from ViT-DINO model to extract semantically similar parts in the image and use this information to separate the instances. The motivation was to implement a method for distinguishing overlapping instances in an image and potentially devise a semi-supervised method (Using few prototypes for each class) to train an object detection model. We briefly describe our attempted approach in this section without going into too much detail.
+For a good part of the thesis work, we worked with keypoint correspondences extracted from ViT-DINO model to extract semantically similar parts in the image and use this information to separate the instances. The motivation was to implement a method for distinguishing overlapping instances in an image and potentially devise a semi-supervised method (using few prototypes for each class) to train an object detection model. We briefly describe our attempted approach in this section without going into too much detail.
 %We extracted the instances using keypoint correspondences taking inspiration from the Superglue~\cite{sarlin2020supergluelearningfeaturematching} paper. But one main challenge was instead of working with images taken two different perspectives, we are dealing with entirely different pair of images with similar instances.
 
 \subsubsection{Best Buddies}
@@ -38,7 +38,7 @@ In the first image pair, while the correspondences are accurate, they fail to co
 \subsubsection{Relaxed Best Buddies}
 To generate sufficient number of correspondences for each instances in a multi-instance image, we "relax" the Best Buddy algorithm by allowing top N best matches for each patch instead of choosing just one. In doing so, we increase the number of correspondences, but slightly compromise the quality of those correspondences.
 
-Figure~\ref{fig:correspondecences} shows the keypoint correspondences between the prototype and query images generated using our relaxed algorithm. We can see small clusters of points representing similar features in both instances. We explored our options to geometrically separate the instances using the semantic information in the correspondences using graph-cut approaches similar to~\cite{wang2022tokencut, sarlin2020supergluelearningfeaturematching}. But we were unable to find a promising approach or inspiration suited for the problem from our research. For instance, Integer programming for multidimensional assignment problem~\cite{WALTEROS2014553} has a strict initial graph specification which restrict us to adapt it to our problem.
+Figure~\ref{fig:correspondecences} shows the keypoint correspondences between the prototype and query images generated using our relaxed algorithm. We can see small clusters of points representing similar features in both instances. We explored our options to geometrically separate the instances using the semantic information in the correspondences using graph-cut approaches~\cite{wang2022tokencut, sarlin2020supergluelearningfeaturematching}. But we were unable to find a promising approach or inspiration suited for the problem from our research. For instance, Integer programming for multidimensional assignment problem~\cite{WALTEROS2014553} has a strict initial graph specification which restricts us to adapt it to our problem.
 
 By considering the limitations of implementing a semi-supervised method using keypoint correspondences, we focused mostly on improving the unsupervised instance detection and segmentation by diving into the current state-of-the-art method CutLER. Nevertheless, we acknowledge the potential of utilizing keypoint correspondences for instance detection and believe this approach warrants further exploration. It could also potentially lead to a more effective method for separating overlapping instances in future research.
 

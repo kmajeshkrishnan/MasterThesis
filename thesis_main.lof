@@ -7,25 +7,26 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces \textbf {CutLER Overview}}}{13}{figure.caption.18}%
 \contentsline {figure}{\numberline {6}{\ignorespaces \textbf {MaskCut Flow}}}{15}{figure.caption.19}%
 \contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Copy-Paste Augmentation}}}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Mask Filtration Method in Baseline}}}{18}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Dependence on Initial Masks}}}{20}{figure.caption.23}%
-\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Cutler's Performance on Images with Overlapping Instances}}}{21}{figure.caption.24}%
-\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Cutler's Performance on Images with Complex Background}}}{22}{figure.caption.25}%
-\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Mask Filtration in Baseline - Qualitative Examples}}}{23}{figure.caption.26}%
-\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {MaskCut vs Part Co-Segmentation Masks}}}{24}{figure.caption.29}%
-\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Baseline Training Pipeline}}}{28}{figure.caption.32}%
-\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Mask Filtration Method in Baseline}}}{28}{figure.caption.35}%
-\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Proposed Training Pipeline 1}}}{29}{figure.caption.40}%
-\contentsline {figure}{\numberline {16}{\ignorespaces \textbf {Mask Filtration in Proposed Method}}}{30}{figure.caption.43}%
-\contentsline {figure}{\numberline {17}{\ignorespaces \textbf {Mask Filtration in Proposed Method During Self-Training}}}{31}{figure.caption.48}%
-\contentsline {figure}{\numberline {18}{\ignorespaces \textbf {Proposed Training Pipeline 2}}}{32}{figure.caption.53}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Dependence on Initial Masks}}}{22}{figure.caption.24}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Cutler's Performance on Images with Overlapping Instances}}}{23}{figure.caption.25}%
+\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Cutler's Performance on Images with Complex Background}}}{24}{figure.caption.26}%
+\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Mask Filtration in Baseline - Qualitative Examples.}}}{25}{figure.caption.27}%
+\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {MaskCut vs Part Co-Segmentation Masks}}}{26}{figure.caption.30}%
+\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Baseline Training Pipeline}}}{30}{figure.caption.33}%
+\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Mask Filtration Method in Baseline}}}{30}{figure.caption.36}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \textbf {Proposed Training Pipeline 1}}}{31}{figure.caption.41}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \textbf {Mask Filtration in Proposed Method}}}{32}{figure.caption.44}%
+\contentsline {figure}{\numberline {18}{\ignorespaces \textbf {Mask Filtration in Proposed Method During Self-Training}}}{33}{figure.caption.49}%
+\contentsline {figure}{\numberline {19}{\ignorespaces \textbf {Proposed Training Pipeline 2}}}{33}{figure.caption.54}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {19}{\ignorespaces \textbf {Training without Overlapping Instances - Class-wise Comparison}}}{42}{figure.caption.70}%
-\contentsline {figure}{\numberline {20}{\ignorespaces \textbf {Relative Improvement Against Number of Instances}}}{42}{figure.caption.71}%
-\contentsline {figure}{\numberline {21}{\ignorespaces \textbf {Mask Filtration Outputs - Baseline vs Ours}}}{46}{figure.caption.83}%
-\contentsline {figure}{\numberline {22}{\ignorespaces \textbf {Qualitative Results - Baseline vs Ours}}}{49}{figure.caption.93}%
+\contentsline {figure}{\numberline {20}{\ignorespaces \textbf {Training Without Overlapping Instances - Class-wise Comparison}}}{43}{figure.caption.71}%
+\contentsline {figure}{\numberline {21}{\ignorespaces \textbf {Relative Improvement Against Number of Instances}}}{44}{figure.caption.72}%
+\contentsline {figure}{\numberline {22}{\ignorespaces \textbf {Mask Filtration Outputs - Baseline vs Ours}}}{47}{figure.caption.84}%
+\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {Qualitative Results - Baseline vs Ours}}}{50}{figure.caption.94}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {Keypoint Correspondences Using DINO Features}}}{54}{figure.caption.98}%
-\contentsline {figure}{\numberline {24}{\ignorespaces \textbf {Keypoint Correspondences Using Relaxed Best Buddies}}}{55}{figure.caption.99}%
+\contentsline {figure}{\numberline {24}{\ignorespaces \textbf {Keypoint Correspondences Using DINO Features}}}{56}{figure.caption.99}%
+\contentsline {figure}{\numberline {25}{\ignorespaces \textbf {Keypoint Correspondences Using Relaxed Best Buddies}}}{57}{figure.caption.100}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

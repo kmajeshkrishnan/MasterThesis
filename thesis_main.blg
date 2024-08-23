@@ -12,36 +12,36 @@ A level-1 auxiliary file: chapters/6-conclusions.aux
 A level-1 auxiliary file: chapters/7-acknowledgments.aux
 The style file: ieeetr.bst
 Database file #1: bib/topic2.bib
-You've used 42 entries,
+You've used 43 entries,
             1876 wiz_defined-function locations,
-            673 strings with 12078 characters,
-and the built_in function-call counts, 10176 in all, are:
-= -- 758
-> -- 768
+            676 strings with 12180 characters,
+and the built_in function-call counts, 10315 in all, are:
+= -- 769
+> -- 776
 < -- 0
-+ -- 269
-- -- 227
-* -- 784
-:= -- 1567
-add.period$ -- 42
-call.type$ -- 42
-change.case$ -- 42
++ -- 272
+- -- 229
+* -- 790
+:= -- 1587
+add.period$ -- 43
+call.type$ -- 43
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 397
-empty$ -- 944
-format.name$ -- 227
-if$ -- 2380
+cite$ -- 43
+duplicate$ -- 401
+empty$ -- 962
+format.name$ -- 229
+if$ -- 2415
 int.to.chr$ -- 0
-int.to.str$ -- 42
+int.to.str$ -- 43
 missing$ -- 18
-newline$ -- 129
-num.names$ -- 46
-pop$ -- 251
+newline$ -- 132
+num.names$ -- 47
+pop$ -- 258
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 295
+skip$ -- 300
 stack$ -- 0
 substring$ -- 329
 swap$ -- 124
@@ -50,6 +50,6 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 69
-width$ -- 44
-write$ -- 339
+while$ -- 70
+width$ -- 45
+write$ -- 346
