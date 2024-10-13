@@ -4,12 +4,14 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1}{\ignorespaces \textbf {Evaluation of Models Trained With and Without Overlapping Instances }}}{42}{table.caption.65}%
 \contentsline {table}{\numberline {2}{\ignorespaces \textbf {Evaluation of Models Trained With and Without Overlapping Instances With Evaluation Dataset Split}}}{42}{table.caption.66}%
-\contentsline {table}{\numberline {3}{\ignorespaces \textbf {Evaluation of Baseline vs Model Trained With Only Object-Centric Images}}}{46}{table.caption.77}%
-\contentsline {table}{\numberline {4}{\ignorespaces \textbf {Quantitative Comparison of CutLER vs Proposed Mask Filtration Methods}}}{47}{table.caption.85}%
-\contentsline {table}{\numberline {5}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Initial Training and First Self-Training Round}}}{49}{table.caption.90}%
-\contentsline {table}{\numberline {6}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Initial Training and Self-Training}}}{50}{table.caption.93}%
-\contentsline {table}{\numberline {7}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Initial Training and Self-Training for Different Batch Sizes}}}{52}{table.caption.97}%
-\contentsline {table}{\numberline {8}{\ignorespaces \textbf {\(AR_{100}\) for the Best Models of the Baseline and Our Method}}}{53}{table.caption.98}%
+\contentsline {table}{\numberline {3}{\ignorespaces \textbf {Evaluation of Models COCO VaTrained With and Without Overlapping Instances With Evaluation Dataset Split}}}{42}{table.caption.67}%
+\contentsline {table}{\numberline {4}{\ignorespaces \textbf {Evaluation of Baseline vs Model Trained With Only Object-Centric Images}}}{46}{table.caption.78}%
+\contentsline {table}{\numberline {5}{\ignorespaces \textbf {Evaluation of Baseline vs Model Trained With Only Object-Centric Images}}}{46}{table.caption.79}%
+\contentsline {table}{\numberline {6}{\ignorespaces \textbf {Quantitative Comparison of CutLER vs Proposed Mask Filtration Methods}}}{47}{table.caption.87}%
+\contentsline {table}{\numberline {7}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Initial Training and First Self-Training Round}}}{49}{table.caption.92}%
+\contentsline {table}{\numberline {8}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Initial Training and Self-Training}}}{50}{table.caption.95}%
+\contentsline {table}{\numberline {9}{\ignorespaces \textbf {\(AP_{box}\) and \(AP50_{box}\) for Initial Training and Self-Training for Different Batch Sizes}}}{53}{table.caption.99}%
+\contentsline {table}{\numberline {10}{\ignorespaces \textbf {\(AR_{100}\) for the Best Models of the Baseline and Our Method}}}{54}{table.caption.100}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

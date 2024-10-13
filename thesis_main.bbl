@@ -82,6 +82,9 @@ O.~Siméoni, G.~Puy, H.~V. Vo, S.~Roburin, S.~Gidaris, A.~Bursuc, P.~Pérez,
 W.~V. Gansbeke, S.~Vandenhende, and L.~V. Gool, ``Discovering object masks with
   transformers for unsupervised semantic segmentation,'' 2022.
 
+\bibitem{he2018maskrcnn}
+K.~He, G.~Gkioxari, P.~Dollár, and R.~Girshick, ``Mask r-cnn,'' 2018.
+
 \bibitem{Ishtiak_2023_CVPR}
 T.~Ishtiak, Q.~En, and Y.~Guo, ``Exemplar-freesolo: Enhancing unsupervised
   instance segmentation with exemplars,'' in {\em Proceedings of the IEEE/CVF
@@ -89,9 +92,8 @@ T.~Ishtiak, Q.~En, and Y.~Guo, ``Exemplar-freesolo: Enhancing unsupervised
   pp.~15424--15433, June 2023.
 
 \bibitem{ghiasi2021simplecopypastestrongdata}
-G.~Ghiasi, Y.~Cui, A.~Srinivas, R.~Qian, T.-Y. Lin, E.~D. Cubuk, Q.~V. Le, and
-  B.~Zoph, ``Simple copy-paste is a strong data augmentation method for
-  instance segmentation,'' 2021.
+``Simple copy-paste is a strong data augmentation method for instance
+  segmentation,'' 2021.
 
 \bibitem{normcut}
 J.~Shi and J.~Malik, ``Normalized cuts and image segmentation,'' {\em IEEE
@@ -130,9 +132,6 @@ H.~V. Vo, P.~P{\'e}rez, and J.~Ponce, ``Toward unsupervised, multi-object
 \bibitem{cai2019cascadercnnhighquality}
 Z.~Cai and N.~Vasconcelos, ``Cascade r-cnn: High quality object detection and
   instance segmentation,'' 2019.
-
-\bibitem{he2018maskrcnn}
-K.~He, G.~Gkioxari, P.~Dollár, and R.~Girshick, ``Mask r-cnn,'' 2018.
 
 \bibitem{deng2009imagenet}
 J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei, ``Imagenet: A

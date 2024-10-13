@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.28)  23 AUG 2024 03:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.28)  6 SEP 2024 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,7 +993,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 14
+(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen300
+\c@nlinenum=\count333
+\TeXr@lab=\toks52
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 18
 .
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
@@ -1002,31 +1008,37 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 (./chapters/0_0-titlepage.aux) (./chapters/0_1-declaration.aux)
 (./chapters/0_2-abstract.aux) (./chapters/1-introduction.aux)
 (./chapters/3-background.aux) (./chapters/4-approach.aux)
-(./chapters/5-experiments.aux) (./chapters/6-conclusions.aux)
-(./chapters/7-acknowledgments.aux))
+(./chapters/5-experiments.aux
+
+LaTeX Warning: Label `tab:combined_overlap_eval' multiply defined.
+
+
+LaTeX Warning: Label `tab:object-centric-analysis' multiply defined.
+
+) (./chapters/6-conclusions.aux) (./chapters/7-acknowledgments.aux))
 \openout1 = `thesis_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-Package scrbase Info: activating english \contentsname on input line 14.
-Package scrbase Info: activating english \listfigurename on input line 14.
-Package scrbase Info: activating english \listtablename on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+Package scrbase Info: activating english \contentsname on input line 18.
+Package scrbase Info: activating english \listfigurename on input line 18.
+Package scrbase Info: activating english \listtablename on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -1039,17 +1051,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
-\scratchdimen=\dimen300
+\scratchcounter=\count334
+\scratchdimen=\dimen301
 \scratchbox=\box74
-\nofMPsegments=\count334
-\nofMParguments=\count335
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count336
-\MPscratchDim=\dimen301
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
-\everyMPtoPDFconversion=\toks53
+\nofMPsegments=\count335
+\nofMParguments=\count336
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count337
+\MPscratchDim=\dimen302
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
+\everyMPtoPDFconversion=\toks54
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1059,7 +1071,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1070,11 +1082,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count339
+\c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
 
 (./thesis_main.out) (./thesis_main.out)
 \@outlinefile=\write4
@@ -1087,30 +1099,30 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 14.
+(scrbook)           before \begin{document} on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count340
+\BKM@id=\count341
 ))
-LaTeX Info: Redefining \microtypecontext on input line 14.
-Package microtype Info: Applying patch `item' on input line 14.
-Package microtype Info: Applying patch `toc' on input line 14.
+LaTeX Info: Redefining \microtypecontext on input line 18.
+Package microtype Info: Applying patch `item' on input line 18.
+Package microtype Info: Applying patch `toc' on input line 18.
 
 
-Package microtype Warning: Unable to apply patch `eqnum' on input line 14.
+Package microtype Warning: Unable to apply patch `eqnum' on input line 18.
 
-Package microtype Info: Applying patch `footnote' on input line 14.
+Package microtype Info: Applying patch `footnote' on input line 18.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 14.
+LaTeX Info: Redefining \showhyphens on input line 18.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: Adjustment of character kerning enabled.
@@ -1119,7 +1131,7 @@ Package microtype Info: Using default kerning set `alltext'.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Option `pageanchor' set `false' on input line 18.
+Package hyperref Info: Option `pageanchor' set `false' on input line 22.
 \openout2 = `chapters/0_0-titlepage.aux'.
 
 
@@ -1220,7 +1232,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 24
+Package tocbasic Info: character protrusion at toc deactivated on input line 28
 .
  (./thesis_main.toc [5])
 \tf@toc=\write5
@@ -1230,7 +1242,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 24
 
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 25
+Package tocbasic Info: character protrusion at lof deactivated on input line 29
 .
  (./thesis_main.lof)
 \tf@lof=\write6
@@ -1241,13 +1253,13 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 25
 
 
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 26
+Package tocbasic Info: character protrusion at lot deactivated on input line 30
 .
  (./thesis_main.lot)
 \tf@lot=\write7
 \openout7 = `thesis_main.lot'.
 
-Package hyperref Info: Option `pageanchor' set `true' on input line 27.
+Package hyperref Info: Option `pageanchor' set `true' on input line 31.
  [11] [12
 
 
@@ -1256,7 +1268,7 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 27.
 
  (./chapters/1-introduction.tex
 chapter 1.
-<Images/main/intro_cutler_pic.png, id=272, 854.2314pt x 401.0985pt>
+<Images/main/intro_cutler_pic.png, id=278, 854.2314pt x 401.0985pt>
 File: Images/main/intro_cutler_pic.png Graphic file (type png)
 <use Images/main/intro_cutler_pic.png>
 Package pdftex.def Info: Images/main/intro_cutler_pic.png  used on input line 1
@@ -1280,7 +1292,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
  (./chapters/3-background.tex
 chapter 2.
-<Images/main/vit_full_arch.png, id=311, 1168.365pt x 800.9925pt>
+<Images/main/vit_full_arch.png, id=317, 1168.365pt x 800.9925pt>
 File: Images/main/vit_full_arch.png Graphic file (type png)
 <use Images/main/vit_full_arch.png>
 Package pdftex.def Info: Images/main/vit_full_arch.png  used on input line 7.
@@ -1294,7 +1306,7 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 
 
 ]
-<Images/main/transformerblock.png, id=335, 155.98276pt x 332.442pt>
+<Images/main/transformerblock.png, id=341, 155.98276pt x 332.442pt>
 File: Images/main/transformerblock.png Graphic file (type png)
 <use Images/main/transformerblock.png>
 Package pdftex.def Info: Images/main/transformerblock.png  used on input line 3
@@ -1306,7 +1318,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [6 <./Images/main/vit_full_arch.png>] [7 <./Images/main/transformerblock.png>]
  [8]
 [9]
-<Images/main/dino.png, id=396, 242.70676pt x 251.13824pt>
+<Images/main/dino.png, id=402, 242.70676pt x 251.13824pt>
 File: Images/main/dino.png Graphic file (type png)
 <use Images/main/dino.png>
 Package pdftex.def Info: Images/main/dino.png  used on input line 114.
@@ -1318,14 +1330,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 1248) has occurred while \output is active []
 
  [12]
-<Images/main/cutler_flow.png, id=439, 1134.2375pt x 393.47pt>
+<Images/main/cutler_flow.png, id=445, 1134.2375pt x 393.47pt>
 File: Images/main/cutler_flow.png Graphic file (type png)
 <use Images/main/cutler_flow.png>
 Package pdftex.def Info: Images/main/cutler_flow.png  used on input line 154.
 (pdftex.def)             Requested size: 318.67212pt x 110.54909pt.
 
 [13 <./Images/main/cutler_flow.png>]
-<Images/main/maskcut_eg.png, id=456, 1488.56125pt x 313.17pt>
+<Images/main/maskcut_eg.png, id=462, 1488.56125pt x 313.17pt>
 File: Images/main/maskcut_eg.png Graphic file (type png)
 <use Images/main/maskcut_eg.png>
 Package pdftex.def Info: Images/main/maskcut_eg.png  used on input line 193.
@@ -1347,7 +1359,7 @@ Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/8'
 (microtype)             (new value: 8.0pt) on input line 224.
 Package microtype Info: Fixing zero fontdimen6 for font `U/dsrom/m/n/6'
 (microtype)             (new value: 6.0pt) on input line 224.
-<Images/main/copy-paste.png, id=497, 1403.2425pt x 600.2425pt>
+<Images/main/copy-paste.png, id=503, 1403.2425pt x 600.2425pt>
 File: Images/main/copy-paste.png Graphic file (type png)
 <use Images/main/copy-paste.png>
 Package pdftex.def Info: Images/main/copy-paste.png  used on input line 231.
@@ -1357,7 +1369,7 @@ Package pdftex.def Info: Images/main/copy-paste.png  used on input line 231.
 pdfTeX warning: /usr/bin/pdflatex (file ./Images/main/baseline_mask_filtration.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<Images/main/baseline_mask_filtration.pdf, id=517, 587.3142pt x 158.51219pt>
+<Images/main/baseline_mask_filtration.pdf, id=523, 587.3142pt x 158.51219pt>
 File: Images/main/baseline_mask_filtration.pdf Graphic file (type pdf)
 <use Images/main/baseline_mask_filtration.pdf>
 Package pdftex.def Info: Images/main/baseline_mask_filtration.pdf  used on inpu
@@ -1375,34 +1387,34 @@ t line 249.
 
 ]
 chapter 3.
-<Images/main/cutler_problem_3.png, id=563, 1414.3239pt x 428.5611pt>
+<Images/main/cutler_problem_3.png, id=569, 1414.3239pt x 428.5611pt>
 File: Images/main/cutler_problem_3.png Graphic file (type png)
 <use Images/main/cutler_problem_3.png>
 Package pdftex.def Info: Images/main/cutler_problem_3.png  used on input line 1
 4.
 (pdftex.def)             Requested size: 398.33864pt x 120.70253pt.
 [21]
-<Images/main/cutler-prob-overlap.png, id=570, 1414.3239pt x 632.3625pt>
+<Images/main/cutler-prob-overlap.png, id=576, 1414.3239pt x 632.3625pt>
 File: Images/main/cutler-prob-overlap.png Graphic file (type png)
 <use Images/main/cutler-prob-overlap.png>
 Package pdftex.def Info: Images/main/cutler-prob-overlap.png  used on input lin
 e 45.
 (pdftex.def)             Requested size: 398.33864pt x 178.10239pt.
  [22 <./Images/main/cutler_problem_3.png>]
-<Images/main/cutler-prob-noisy-bg.png, id=586, 1414.3239pt x 583.9416pt>
+<Images/main/cutler-prob-noisy-bg.png, id=592, 1414.3239pt x 583.9416pt>
 File: Images/main/cutler-prob-noisy-bg.png Graphic file (type png)
 <use Images/main/cutler-prob-noisy-bg.png>
 Package pdftex.def Info: Images/main/cutler-prob-noisy-bg.png  used on input li
 ne 63.
 (pdftex.def)             Requested size: 398.33864pt x 164.46483pt.
-<Images/main/filtered_mask_problem.png, id=587, 1048.6377pt x 898.3161pt>
+<Images/main/filtered_mask_problem.png, id=593, 1048.6377pt x 898.3161pt>
 File: Images/main/filtered_mask_problem.png Graphic file (type png)
 <use Images/main/filtered_mask_problem.png>
 Package pdftex.def Info: Images/main/filtered_mask_problem.png  used on input l
 ine 70.
 (pdftex.def)             Requested size: 398.33864pt x 341.2403pt.
  [23 <./Images/main/cutler-prob-overlap.png>]
-<Images/main/part-cosegm.png, id=599, 320.397pt x 192.72pt>
+<Images/main/part-cosegm.png, id=605, 320.397pt x 192.72pt>
 File: Images/main/part-cosegm.png Graphic file (type png)
 <use Images/main/part-cosegm.png>
 Package pdftex.def Info: Images/main/part-cosegm.png  used on input line 88.
@@ -1412,7 +1424,7 @@ _problem.png>] [26 <./Images/main/part-cosegm.png>] [27] [28]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Images/main/baseline_approach.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/main/baseline_approach.pdf, id=641, 601.28638pt x 233.9139pt>
+<Images/main/baseline_approach.pdf, id=647, 601.28638pt x 233.9139pt>
 File: Images/main/baseline_approach.pdf Graphic file (type pdf)
 <use Images/main/baseline_approach.pdf>
 Package pdftex.def Info: Images/main/baseline_approach.pdf  used on input line 
@@ -1427,7 +1439,7 @@ t line 156.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Images/main/proposed_method_last.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/main/proposed_method_last.pdf, id=673, 601.28638pt x 240.9pt>
+<Images/main/proposed_method_last.pdf, id=679, 601.28638pt x 240.9pt>
 File: Images/main/proposed_method_last.pdf Graphic file (type pdf)
 <use Images/main/proposed_method_last.pdf>
 Package pdftex.def Info: Images/main/proposed_method_last.pdf  used on input li
@@ -1437,7 +1449,7 @@ ne 175.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Images/main/our_mask_filtration_1.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/main/our_mask_filtration_1.pdf, id=674, 529.01637pt x 113.4639pt>
+<Images/main/our_mask_filtration_1.pdf, id=680, 529.01637pt x 113.4639pt>
 File: Images/main/our_mask_filtration_1.pdf Graphic file (type pdf)
 <use Images/main/our_mask_filtration_1.pdf>
 Package pdftex.def Info: Images/main/our_mask_filtration_1.pdf  used on input l
@@ -1448,7 +1460,7 @@ ine 184.
 pdfTeX warning: /usr/bin/pdflatex (file ./Images/main/our_filtration_self_train
 ing.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<Images/main/our_filtration_self_training.pdf, id=698, 587.3142pt x 158.51219pt
+<Images/main/our_filtration_self_training.pdf, id=704, 587.3142pt x 158.51219pt
 >
 File: Images/main/our_filtration_self_training.pdf Graphic file (type pdf)
 <use Images/main/our_filtration_self_training.pdf>
@@ -1459,7 +1471,7 @@ input line 202.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Images/main/our_approach.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/main/our_approach.pdf, id=719, 601.28638pt x 240.9pt>
+<Images/main/our_approach.pdf, id=725, 601.28638pt x 240.9pt>
 File: Images/main/our_approach.pdf Graphic file (type pdf)
 <use Images/main/our_approach.pdf>
 Package pdftex.def Info: Images/main/our_approach.pdf  used on input line 221.
@@ -1481,54 +1493,59 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 ) [39] [40]
+Overfull \hbox (25.38774pt too wide) in paragraph at lines 164--180
+ [][] 
+ []
+
+
 Underfull \vbox (badness 2318) has occurred while \output is active []
 
  [41]
 [42]
-<Images/main/overlap_classes_new.png, id=840, 903.375pt x 339.669pt>
+<Images/main/overlap_classes_new.png, id=846, 903.375pt x 339.669pt>
 File: Images/main/overlap_classes_new.png Graphic file (type png)
 <use Images/main/overlap_classes_new.png>
 Package pdftex.def Info: Images/main/overlap_classes_new.png  used on input lin
-e 171.
+e 193.
 (pdftex.def)             Requested size: 418.25677pt x 157.26549pt.
 
-Overfull \hbox (19.91814pt too wide) in paragraph at lines 171--172
+Overfull \hbox (19.91814pt too wide) in paragraph at lines 193--194
  [][] 
  []
 
-<Images/main/relative_improvement_combined.png, id=841, 852.786pt x 317.2653pt>
+<Images/main/relative_improvement_combined.png, id=847, 852.786pt x 317.2653pt>
 
 File: Images/main/relative_improvement_combined.png Graphic file (type png)
 <use Images/main/relative_improvement_combined.png>
 Package pdftex.def Info: Images/main/relative_improvement_combined.png  used on
- input line 178.
+ input line 200.
 (pdftex.def)             Requested size: 398.33864pt x 148.1949pt.
 [43] [44 <./Images/main/overlap_classes_new.png> <./Images/main/relative_improv
-ement_combined.png>] [45]
-<Images/main/filtered_mask_comparison.png, id=875, 1450.4589pt x 1879.02pt>
+ement_combined.png>] [45] [46]
+<Images/main/filtered_mask_comparison.png, id=887, 1450.4589pt x 1879.02pt>
 File: Images/main/filtered_mask_comparison.png Graphic file (type png)
 <use Images/main/filtered_mask_comparison.png>
 Package pdftex.def Info: Images/main/filtered_mask_comparison.png  used on inpu
-t line 227.
+t line 266.
 (pdftex.def)             Requested size: 398.33864pt x 516.02965pt.
- [46] [47] [48 <./Images/main/filtered_mask_comparison.png>] [49]
-Overfull \hbox (19.92627pt too wide) in paragraph at lines 294--307
+ [47] [48 <./Images/main/filtered_mask_comparison.png>] [49]
+Overfull \hbox (19.92627pt too wide) in paragraph at lines 333--346
  [][] 
  []
 
-<Images/main/cutler_vs_ours.png, id=919, 1450.4589pt x 2095.83pt>
+<Images/main/cutler_vs_ours.png, id=924, 1450.4589pt x 2095.83pt>
 File: Images/main/cutler_vs_ours.png Graphic file (type png)
 <use Images/main/cutler_vs_ours.png>
-Package pdftex.def Info: Images/main/cutler_vs_ours.png  used on input line 332
+Package pdftex.def Info: Images/main/cutler_vs_ours.png  used on input line 371
 .
 (pdftex.def)             Requested size: 418.25677pt x 604.35332pt.
 
-Overfull \hbox (19.91814pt too wide) in paragraph at lines 332--333
+Overfull \hbox (19.91814pt too wide) in paragraph at lines 371--372
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 45.75305pt on input line 335.
+LaTeX Warning: Float too large for page by 45.75305pt on input line 374.
 
 [50] [51 <./Images/main/cutler_vs_ours.png>] [52] [53]) [54]
 \openout2 = `chapters/6-conclusions.aux'.
@@ -1536,13 +1553,13 @@ LaTeX Warning: Float too large for page by 45.75305pt on input line 335.
 
 (./chapters/6-conclusions.tex
 chapter 5.
-<Images/main/keypoint-comparison.png, id=954, 650.43pt x 542.025pt>
+<Images/main/keypoint-comparison.png, id=960, 650.43pt x 542.025pt>
 File: Images/main/keypoint-comparison.png Graphic file (type png)
 <use Images/main/keypoint-comparison.png>
 Package pdftex.def Info: Images/main/keypoint-comparison.png  used on input lin
 e 17.
 (pdftex.def)             Requested size: 378.42049pt x 315.35892pt.
-<Images/main/correspondences.png, id=955, 251.4996pt x 162.6075pt>
+<Images/main/correspondences.png, id=961, 251.4996pt x 162.6075pt>
 File: Images/main/correspondences.png Graphic file (type png)
 <use Images/main/correspondences.png>
 Package pdftex.def Info: Images/main/correspondences.png  used on input line 24
@@ -1581,17 +1598,20 @@ chapter 6.
 (./chapters/3-background.aux) (./chapters/4-approach.aux)
 (./chapters/5-experiments.aux) (./chapters/6-conclusions.aux)
 (./chapters/7-acknowledgments.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis_main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32185 strings out of 480171
- 615779 string characters out of 5894489
- 1004853 words of memory out of 5000000
- 48913 multiletter control sequences out of 15000+600000
- 553100 words of font info for 206 fonts, out of 8000000 for 9000
+ 32354 strings out of 480171
+ 617897 string characters out of 5894489
+ 1009840 words of memory out of 5000000
+ 49074 multiletter control sequences out of 15000+600000
+ 553194 words of font info for 207 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 108i,11n,106p,10606b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,12n,106p,10606b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -1607,10 +1627,10 @@ xmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 s/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis_main.pdf (81 pages, 21979863 bytes).
+Output written on thesis_main.pdf (81 pages, 21981700 bytes).
 PDF statistics:
- 1369 PDF objects out of 1440 (max. 8388607)
- 1170 compressed objects within 12 object streams
- 313 named destinations out of 1000 (max. 500000)
+ 1375 PDF objects out of 1440 (max. 8388607)
+ 1176 compressed objects within 12 object streams
+ 315 named destinations out of 1000 (max. 500000)
  46717 words of extra memory for PDF output out of 51595 (max. 10000000)
 

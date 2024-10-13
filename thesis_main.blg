@@ -14,15 +14,15 @@ The style file: ieeetr.bst
 Database file #1: bib/topic2.bib
 You've used 43 entries,
             1876 wiz_defined-function locations,
-            676 strings with 12180 characters,
-and the built_in function-call counts, 10315 in all, are:
-= -- 769
-> -- 776
+            675 strings with 12055 characters,
+and the built_in function-call counts, 10199 in all, are:
+= -- 767
+> -- 751
 < -- 0
-+ -- 272
-- -- 229
-* -- 790
-:= -- 1587
++ -- 264
+- -- 221
+* -- 774
+:= -- 1558
 add.period$ -- 43
 call.type$ -- 43
 change.case$ -- 43
@@ -30,14 +30,14 @@ chr.to.int$ -- 0
 cite$ -- 43
 duplicate$ -- 401
 empty$ -- 962
-format.name$ -- 229
-if$ -- 2415
+format.name$ -- 221
+if$ -- 2397
 int.to.chr$ -- 0
 int.to.str$ -- 43
 missing$ -- 18
 newline$ -- 132
-num.names$ -- 47
-pop$ -- 258
+num.names$ -- 46
+pop$ -- 259
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
@@ -50,6 +50,6 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 70
+while$ -- 69
 width$ -- 45
-write$ -- 346
+write$ -- 345

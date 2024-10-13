@@ -159,6 +159,28 @@ The training procedure for both the baseline and our proposed methods follow the
 	\label{tab:combined_overlap_eval}
 \end{table}
 
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|cc|cc|cc}
+		\toprule
+		\multicolumn{2}{c|}{\multirow{3}{*}{Evaluation on COCO Val}}
+		 &  \multicolumn{2}{c|}{All images} & 
+		\multicolumn{2}{c|}{\vtop{\hbox{\strut No overlapping}\hbox{\strut instances}}} & 
+		\multicolumn{2}{c}{\vtop{\hbox{\strut Only overlapping}\hbox{\strut instances}}} \\ \cmidrule{3-8}
+		
+		
+		&  & AP & AP50 & AP & AP50 & AP & AP50 \\ \midrule
+		\multirow{2}{*}{Baseline} & bbox & 10.74 & 19.78 & 23.45 & 38.11 & 7.25 & 15.11 \\ 
+		& segm & 8.2 & 16.62 & 19.19 & 35.19 & 5.12 & 11.55 \\ \midrule
+		\multirow{2}{*}{\vtop{\hbox{\strut Model Trained Without}\hbox{\strut Overlapping Instances}}} 
+		& bbox & \textbf{11.52} & \textbf{20.67} & \textbf{24.77} & \textbf{39.46} & \textbf{8.52} & \textbf{16.8}\\
+		& segm & \textbf{8.80} & \textbf{17.47}  & \textbf{20.13} & \textbf{36.36} & \textbf{6.18} & \textbf{13.27} \\
+		\bottomrule
+	\end{tabular}
+	\caption[\textbf{Evaluation of Models COCO VaTrained With and Without Overlapping Instances With Evaluation Dataset Split}]{\textbf{AP and AP50 for Object Detection and Instance Segmentation Tasks Evaluated on Split COCO Validation Set} using models trained (without self-training) on all images and images without overlapping instances}
+	\label{tab:combined_overlap_eval}
+\end{table}
+
 \subsubsection{Results}
 \label{section:overlapping-results}
 Even though the dropped images with overlapping instances are only 5\% of the annotated ImageNet subset, there is a notable improvement in the results. As it can be observed from Table~\ref{tab:overlap_analysis}, our method improves in both object detection and instance segmentation tasks. The table shows AP and AP50 of both object detection (bbox) and instance segmentation (segm) tasks on COCO validation set evaluated using the baseline and our approach. Even though the experiment is conducted using batch size 4, the results are still comparable to the baseline and model trained using our proposed mask filtration method (will be explained later in Section~\ref{section:mask_refinement_experiment}) with batch size 8, which can be observed from Table~\ref{tab:combined_train}. It is to be noted that the evaluation is performed using class-agnostic annotation generated from the original COCO annotations. We reuse the same annotation file used in CutLER.
@@ -209,6 +231,23 @@ As it can be observed from Table~\ref{tab:object-centric-analysis}, our method i
 	\caption[\textbf{Evaluation of Baseline vs Model Trained With Only Object-Centric Images}]{\textbf{AP and AP50 Bounding Box and Segmentation Evaluation} on COCO validation set with baseline and model trained using only object-centric images}
 	\label{tab:object-centric-analysis}
 \end{table}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|cc|cc}
+		\toprule
+		\multirow{2}{*}{} & \multicolumn{2}{c|}{bbox} & \multicolumn{2}{c}{segm} \\ \cmidrule{2-5}
+		& AP & AP50 & AP & AP50 \\ \midrule
+		Baseline & 
+		10.74 & 19.78 & 8.2 & 16.62´ \\
+		\midrule
+		\vtop{\hbox{\strut Model Trained With}\hbox{\strut Object-Centric Images}} & \multirow{2}{*}{\textbf{11.32}} & \multirow{2}{*}{\textbf{20.43}} & \multirow{2}{*}{\textbf{8.62}} & \multirow{2}{*}{\textbf{17.43}} \\
+		\bottomrule
+	\end{tabular}
+	\caption[\textbf{Evaluation of Baseline vs Model Trained With Only Object-Centric Images}]{\textbf{AP and AP50 Bounding Box and Segmentation Evaluation} on COCO validation set with baseline and model trained using only object-centric images}
+	\label{tab:object-centric-analysis}
+\end{table}
+
 Even by using only 30\% of the training data, we could obtain comparable results with the baseline. However, the model trained without overlapping instances (Experiment~\ref{section:overlap_experiment}) outperforms this method by a small margin.
 
 \subsection{Proposed Mask Filtering Method}
@@ -233,7 +272,7 @@ The baseline follows the training procedure as described in Section~\ref{section
 	\resizebox{0.67\textwidth}{!}{%
 	\begin{tabular}{c|cccc}
 		\toprule
-		Metric & AP & AP50 & AR1 & AR10 \\ \midrule
+		 & AP & AP50 & AR1 & AR10 \\ \midrule
 		MaskCut & 23.3 & 42.6 & 41.5 & 47.5 \\
 		\midrule
 		Our Mask Filtration & \textbf{28.3} & \textbf{50.3} & \textbf{44.4} & \textbf{48.0} \\
